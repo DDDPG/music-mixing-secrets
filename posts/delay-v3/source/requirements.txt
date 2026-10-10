@@ -1,0 +1,4 @@
+WeasyPrint==66.0
+PyMuPDF
+Pillow
+fonttools

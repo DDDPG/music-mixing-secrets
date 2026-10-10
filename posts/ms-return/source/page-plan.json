@@ -1,0 +1,160 @@
+{
+  "status": "content_and_assets_ready_for_independent_design_review",
+  "page_count": 7,
+  "audience": "有基础 Send / Return 经验的音乐制作人",
+  "learning_outcome": "先诊断湿声堆积，再对效果返回的目标 Side 频段做小幅 EQ，并验证整段与 Mono。",
+  "pages": [
+    {
+      "page": 1,
+      "title": "人声一加空间，\n中频就糊了？",
+      "kicker": "先查效果返回，再决定要不要收窄",
+      "body": [
+        "如果静音 Reverb / Delay 返回后，臃肿感明显减轻，问题可能在湿声。",
+        "只有当多余的中频主要落在 Side，才考虑用 M/S EQ 收一点。"
+      ],
+      "takeaway": "“臃肿”是听感描述，不等于“宽度过大”。",
+      "visual": "概念信号图：干声与湿声汇合；不画伪造声波。",
+      "assets": [
+        "routing.svg"
+      ],
+      "facts": [
+        "F01",
+        "F02"
+      ]
+    },
+    {
+      "page": 2,
+      "title": "先分清：多了，\n还是宽了？",
+      "body": [
+        "① 静音／恢复 Return：确认问题是否随湿声出现。",
+        "② 先降低 Return 电平试听：若已经清楚，不必强行 M/S。",
+        "③ 分别听 Mid / Side 辅助定位，回到整段混音作决定。"
+      ],
+      "decision_rows": [
+        {
+          "hear": "Mid 和 Side 都厚",
+          "try": "先试 Stereo EQ 或减少湿声"
+        },
+        {
+          "hear": "主要是 Mid 厚",
+          "try": "检查 Mid 与干声的叠加"
+        },
+        {
+          "hear": "Side 中频铺得太满",
+          "try": "再试 Side 频段衰减"
+        }
+      ],
+      "takeaway": "Solo 只帮助定位；选不选、削多少，要在整段混音里判断。",
+      "visual": "三个诊断分支；不要做不带条件的疗效前后对比。",
+      "assets": [
+        "diagnosis.svg"
+      ],
+      "facts": [
+        "F01",
+        "F02",
+        "F03"
+      ]
+    },
+    {
+      "page": 3,
+      "title": "EQ 放在\n效果器之后",
+      "body": [
+        "干声继续直达混音；Send 送往立体声效果返回。",
+        "在 Reverb / Delay 后插入 M/S EQ，处理已经生成的湿声。",
+        "常规并行效果链先确认效果器为 100% Wet，避免额外叠加干声。"
+      ],
+      "takeaway": "共享 Return 会连同其他声源一起改变；需要只改人声时，使用独立返回。",
+      "visual": "双路线：Dry 直达；Send → Reverb / Delay → M/S EQ → Return → 汇合。",
+      "assets": [
+        "routing.svg"
+      ],
+      "facts": [
+        "F04",
+        "F05"
+      ]
+    },
+    {
+      "page": 4,
+      "title": "Side 不是\n“两边的乐器”",
+      "body": [
+        "Mid 是左右声道的和；Side 是左右声道的差。",
+        "只削 Side 的某段频率，会降低该段左右差分成分；常可让这一段更收拢。",
+        "Mid 不等于“只有主唱”，Side 也不是可以单独提取的两侧乐器。"
+      ],
+      "formula": [
+        "M = (L + R) / 2",
+        "S = (L − R) / 2",
+        "L = M + S",
+        "R = M − S"
+      ],
+      "takeaway": "本图采用 1/2 编码约定。实际听感还取决于原始 M/S 比例、相位与素材。",
+      "visual": "编码→只处理 S→解码；公式固定一套归一化。",
+      "assets": [
+        "matrix.svg"
+      ],
+      "facts": [
+        "F06",
+        "F07"
+      ]
+    },
+    {
+      "page": 5,
+      "title": "Pro-Q 4：\n选中这个 Side",
+      "body": [
+        "在立体声 Return 打开 FabFilter Pro-Q 4，建立 Bell。",
+        "打开频段控制区右侧的 stereo placement 菜单，选择 Side。",
+        "调整 FREQ、GAIN 与 Q；这是单个频段的处理范围，不是整条返回的全频 Width。"
+      ],
+      "takeaway": "官方菜单图当前选中 Right；此处只定位 Side 选项，未展示本教程已设置状态。",
+      "caption": "FabFilter Pro-Q 4 官方界面局部。原图参数与频谱不是推荐值，也不是本文实测。",
+      "visual": "小幅完整产品图定位对象，大幅官方控制区裁切 + 菜单原图；引线指向 Side 行。",
+      "assets": [
+        "pro-q-4-official-full.jpg",
+        "pro-q-4-controls-crop.png",
+        "stereo-options.jpg"
+      ],
+      "facts": [
+        "F08",
+        "F09"
+      ]
+    },
+    {
+      "page": 6,
+      "title": "先小幅削，\n不要一刀切",
+      "body": [
+        "试听起点：Side · Bell · 400 Hz · −2 dB · Q 1.0。",
+        "400 Hz 只是搜索起点；实际频点、带宽与衰减量跟着素材走。",
+        "反复旁路这一频段，尽量匹配整体听感响度，确认字头更清楚、尾音仍自然。"
+      ],
+      "example": "计算例：若目标频率的 Side 衰减为 −3 dB，幅度约为原来的 70.8%。",
+      "takeaway": "−3 dB 的计算例不等于“宽度变成 70.8%”；它也不是上方 −2 dB 的试听设置。",
+      "visual": "M 保持 100%，S 从100%变70.8%的同尺度幅度条；标“计算示意”，不伪造插件曲线。",
+      "assets": [
+        "attenuation.svg"
+      ],
+      "facts": [
+        "F10",
+        "F11"
+      ]
+    },
+    {
+      "page": 7,
+      "title": "收窄之后，\n还要过这三关",
+      "body": [
+        "① Stereo：字头更清楚吗？空间是否自然？没有更好就撤回。",
+        "② Mono：按 DAW 的单声道合并方式检查音色与平衡，不是只听左声道。",
+        "③ 整段：主歌、副歌、句尾都检查；共享返回上的其他声源也要听。"
+      ],
+      "callout": "理想纯 M/S Side EQ 不改 Mid；因此 Mono 不一定听得出差别，也不能用它证明“已去糊”。",
+      "takeaway": "线性相位不是必选项：它可能增加延迟和前振铃。以旁路与实际听感验证。",
+      "visual": "三个听音检查节点 + 一行 Mono 推导。",
+      "assets": [
+        "mono-check.svg"
+      ],
+      "facts": [
+        "F12",
+        "F13"
+      ]
+    }
+  ]
+}

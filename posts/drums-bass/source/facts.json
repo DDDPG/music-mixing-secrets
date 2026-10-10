@@ -1,0 +1,164 @@
+{
+  "retrieved_at": "2026-10-09",
+  "facts": [
+    {
+      "id": "F01",
+      "type": "product_fact",
+      "claim": "各级处理与输出都需留余量；单轨峰值不能替代总线检查。",
+      "sources": [
+        "S01"
+      ],
+      "pages": [
+        2
+      ],
+      "conditions": "不承诺所有内部轨道一过 0 dBFS 就削波，也不推广“红灯无害”。"
+    },
+    {
+      "id": "F02",
+      "type": "editorial_workflow",
+      "claim": "先辨认节奏主角，再用推子建立 Kick / Bass / Snare 的关系；没有跨曲风固定音量排序。",
+      "sources": [],
+      "pages": [
+        1,
+        2
+      ],
+      "conditions": "试听起点，不是标准。"
+    },
+    {
+      "id": "F03",
+      "type": "definition",
+      "claim": "Polarity 反转是 x(t)→−x(t)；Delay 是 x(t)→x(t−τ)，两者不等价。",
+      "sources": [
+        "S02",
+        "S10"
+      ],
+      "pages": [
+        3
+      ],
+      "conditions": "单一正弦在半周期时二者可能等效；宽频复杂信号不能混同。"
+    },
+    {
+      "id": "F04",
+      "type": "calculation",
+      "claim": "5 ms 对 50 Hz 是 90°，对 100 Hz 是 180°。",
+      "sources": [],
+      "pages": [
+        3
+      ],
+      "conditions": "Δφ=360°fτ；用稳定正弦说明，不是实际鼓波形测量。"
+    },
+    {
+      "id": "F05",
+      "type": "calculation",
+      "claim": "两个同相同幅正弦相加，振幅 2 倍，20log10(2)=6.0206 dB；相反极性且完全相同则理想抵消。",
+      "sources": [
+        "S02"
+      ],
+      "pages": [
+        2,
+        3
+      ],
+      "conditions": "不意味着两条任意乐器相加固定 +6 dB。"
+    },
+    {
+      "id": "F06",
+      "type": "product_fact",
+      "claim": "FabFilter Pro-Q 4 的 Analyzer 可显示 Pre/Post/外部频谱；Show Collisions 仅给潜在冲突提示。",
+      "sources": [
+        "S03"
+      ],
+      "pages": [
+        4
+      ],
+      "conditions": "频谱重叠并不自动证明听觉遮蔽，也不等于相消。"
+    },
+    {
+      "id": "F07",
+      "type": "calculation",
+      "claim": "在 A4=440 Hz 的十二平均律中，E1≈41.20 Hz，A1=55 Hz；A1 的前四阶谐波是 55/110/165/220 Hz。",
+      "sources": [
+        "S04",
+        "S05"
+      ],
+      "pages": [
+        4,
+        5
+      ],
+      "conditions": "音符八度命名以 C4 为中央 C；某些 DAW 八度标签不同，频率不变。"
+    },
+    {
+      "id": "F08",
+      "type": "editorial_workflow",
+      "claim": "Kick 约 100 Hz 或 Bass 800 Hz–2.5 kHz 只能作有问题时的搜索区；先确认音色、音高与编曲角色。",
+      "sources": [
+        "S06",
+        "S07"
+      ],
+      "pages": [
+        4,
+        5
+      ],
+      "conditions": "不是必须提升，也不是每个素材的基频或唯一可听区域。"
+    },
+    {
+      "id": "F09",
+      "type": "editorial_workflow",
+      "claim": "高频 Bass 层可由低频层的谐波感觉出发，匹配起音与时值，再判断音高和增益。",
+      "sources": [
+        "S05",
+        "S07"
+      ],
+      "pages": [
+        5
+      ],
+      "conditions": "审美目标；不同音符或独立节奏也可有意成为两个声部。"
+    },
+    {
+      "id": "F10",
+      "type": "editorial_workflow",
+      "claim": "Snare 的厚度、击打感、空间尾声分开判断；300 Hz、1 kHz、2–3 kHz、10 kHz 只是局部试听假设。",
+      "sources": [
+        "S08"
+      ],
+      "pages": [
+        6
+      ],
+      "conditions": "削 2–3 kHz 后抬 10 kHz 无法等价恢复原来的击打清晰度。"
+    },
+    {
+      "id": "F11",
+      "type": "editorial_workflow",
+      "claim": "Hi-hat / Cymbal 先降推子，再定位刺耳频段；只在重击刺耳时可试动态 EQ。",
+      "sources": [
+        "S08"
+      ],
+      "pages": [
+        7
+      ],
+      "conditions": "不能一律低切到固定频率或削去整个 5–8 kHz。"
+    },
+    {
+      "id": "F12",
+      "type": "calculation",
+      "claim": "120 BPM 的一拍为 500 ms；该速度的八分音符为 250 ms。",
+      "sources": [],
+      "pages": [
+        1,
+        8
+      ],
+      "conditions": "时间示意不规定实际 groove 或包络长度。"
+    },
+    {
+      "id": "F14",
+      "type": "signal_flow",
+      "claim": "常规并行 Send / Return Reverb 使用 100% Wet，让主路保留本体，返回通道独立控制混响音量与 EQ。",
+      "sources": [
+        "S11"
+      ],
+      "pages": [
+        6
+      ],
+      "conditions": "仅指所画常规并行路径；不是所有混响路由唯一方式。"
+    }
+  ]
+}

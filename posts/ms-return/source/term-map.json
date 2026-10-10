@@ -1,0 +1,101 @@
+{
+  "baseline": "MIXING_TERMINOLOGY.md v1.0.0; 2026-10-09",
+  "product": "FabFilter Pro-Q 4",
+  "normalization": {
+    "encode": [
+      "M=(L+R)/2",
+      "S=(L−R)/2"
+    ],
+    "decode": [
+      "L=M+S",
+      "R=M−S"
+    ]
+  },
+  "terms": [
+    {
+      "term": "M/S",
+      "label": "Mid/Side",
+      "meaning": "和差信号；统一1/2编码约定"
+    },
+    {
+      "term": "Mid",
+      "label": "Mid",
+      "meaning": "左右和信号；不是只含居中主唱"
+    },
+    {
+      "term": "Side",
+      "label": "Side",
+      "meaning": "左右差信号；不是两侧乐器的独立提取"
+    },
+    {
+      "term": "Send",
+      "label": "Send",
+      "meaning": "发送；不等于返回或效果器"
+    },
+    {
+      "term": "Return",
+      "label": "Return / Aux",
+      "meaning": "效果返回通道；各 DAW 命名与路由不同"
+    },
+    {
+      "term": "Reverb",
+      "label": "Reverb",
+      "meaning": "混响"
+    },
+    {
+      "term": "Delay",
+      "label": "Delay",
+      "meaning": "延时；不将正式标签改成回声"
+    },
+    {
+      "term": "Wet",
+      "label": "Wet",
+      "meaning": "效果处理支路"
+    },
+    {
+      "term": "Dry",
+      "label": "Dry",
+      "meaning": "此并行链中未经过该空间效果的直达支路"
+    },
+    {
+      "term": "Bell",
+      "label": "Bell",
+      "meaning": "钟形均衡"
+    },
+    {
+      "term": "FREQ",
+      "label": "FREQ",
+      "meaning": "Pro-Q 4 UI 频率控件"
+    },
+    {
+      "term": "GAIN",
+      "label": "GAIN",
+      "meaning": "Pro-Q 4 UI 增益控件；单位 dB"
+    },
+    {
+      "term": "Q",
+      "label": "Q",
+      "meaning": "带宽相关参数；不是立体声宽度"
+    },
+    {
+      "term": "stereo placement",
+      "label": "stereo placement",
+      "meaning": "每频段声道处理范围；菜单项保留 Side"
+    },
+    {
+      "term": "Stereo Width",
+      "label": "Stereo Width",
+      "meaning": "立体声宽度；不能与 Pan 或幅度百分比互换"
+    },
+    {
+      "term": "Mono",
+      "label": "Mono",
+      "meaning": "左右合并单声道，非只听左声道"
+    },
+    {
+      "term": "Linear Phase",
+      "label": "Linear Phase",
+      "meaning": "线性相位；有延迟/前振铃取舍"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="655" viewBox="0 0 1200 655" role="img" aria-labelledby="title desc">
+<title id="title">160 BPM 下 Ping Pong 的左右交替时序</title>
+<desc id="desc">单次短输入，普通八分音符延迟 187.5 ms。干声在零时刻；左声道回声在 187.5 与 562.5 ms；右声道回声在 375 与 750 ms。等大点不编码振幅。</desc>
+<rect width="1200" height="655" fill="#F7F4EE"/>
+<defs><marker id="arrow-teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#177D78" stroke-width="1.4"/></marker><marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#263335" stroke-width="1.4"/></marker><marker id="arrow-coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#C86451" stroke-width="1.4"/></marker><marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#506FB0" stroke-width="1.4"/></marker><linearGradient id="low-fade"><stop offset="0%" stop-color="#C86451" stop-opacity=".12"/><stop offset="100%" stop-color="#C86451" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0%" stop-color="#506FB0" stop-opacity="0"/><stop offset="100%" stop-color="#506FB0" stop-opacity=".12"/></linearGradient></defs>
+<text x="60" y="62" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" text-anchor="start" >左右交替发生在时间上</text>
+<text x="60" y="106" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="start" >160 BPM · 普通 1/8 · 从左开始的单次输入示意</text>
+<line x1="210.0" y1="160" x2="210.0" y2="453" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="210.0" y="500" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" text-anchor="middle" >0</text>
+<line x1="429.375" y1="160" x2="429.375" y2="453" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="429.375" y="500" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" text-anchor="middle" >187.5</text>
+<line x1="648.75" y1="160" x2="648.75" y2="453" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="648.75" y="500" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" text-anchor="middle" >375</text>
+<line x1="868.125" y1="160" x2="868.125" y2="453" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="868.125" y="500" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" text-anchor="middle" >562.5</text>
+<line x1="1087.5" y1="160" x2="1087.5" y2="453" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1087.5" y="500" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" text-anchor="middle" >750</text>
+<text x="1150" y="544" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="end" >时间 / ms</text>
+<text x="70" y="244" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="start" >L 左</text>
+<line x1="177" y1="235" x2="1135" y2="235" stroke="#DCDDD5" stroke-width="2" stroke-linecap="round"/>
+<text x="70" y="324" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="start" >干声</text>
+<text x="70" y="404" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="start" >R 右</text>
+<line x1="177" y1="395" x2="1135" y2="395" stroke="#DCDDD5" stroke-width="2" stroke-linecap="round"/>
+<circle cx="210.0" cy="315" r="11" fill="#263335"/>
+<text x="231.0" y="324" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start" >0 ms</text>
+<circle cx="429.375" cy="235" r="12" fill="#177D78"/>
+<text x="429.375" y="209" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" >第 1 次</text>
+<circle cx="648.75" cy="395" r="12" fill="#506FB0"/>
+<text x="648.75" y="369" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" >第 2 次</text>
+<circle cx="868.125" cy="235" r="12" fill="#177D78"/>
+<text x="868.125" y="209" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" >第 3 次</text>
+<circle cx="1087.5" cy="395" r="12" fill="#506FB0"/>
+<text x="1087.5" y="369" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" >第 4 次</text>
+<path d="M429.375,183 V166 H868.125 V183" fill="none" stroke="#177D78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="648.75" y="153" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="600" text-anchor="middle" >同侧间隔 375 ms</text>
+<text x="60" y="577" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="29" font-weight="600" text-anchor="start" >相邻回声间隔 187.5 ms</text>
+<text x="60" y="625" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="start" >单次输入、等间隔时序示意，非音频实测；左右起点可互换。</text>
+</svg>

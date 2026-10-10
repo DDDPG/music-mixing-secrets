@@ -1,0 +1,319 @@
+{
+  "version": "3.0",
+  "source_glossary": "MIXING_TERMINOLOGY.json v1.0.0 (56 entries, checked 2026-10-09)",
+  "language_rule": "Necessary technical labels remain English. Main prose stays professional, idiomatic Chinese. Never use 回声 as a formal translation of Delay.",
+  "terms": [
+    {
+      "id": "pan",
+      "category_zh": "信号与路由",
+      "preferred_label": "Pan",
+      "explanation_label_zh": "声像",
+      "meaning_zh": "在立体声场中定位信号；实际控制方式取决于单声道、立体声及 Pan 模式。",
+      "avoid_zh": "不等于 Stereo Width；立体声轨上的 Pan 不一定是两个声道共同平移。",
+      "context_notes_zh": "核对 Mono Pan、Balance、Dual/Split Stereo Pan，以及 Pan Law。",
+      "aliases": [],
+      "source_ids": [
+        "S02"
+      ]
+    },
+    {
+      "id": "insert",
+      "category_zh": "信号与路由",
+      "preferred_label": "Insert",
+      "explanation_label_zh": "插入处理",
+      "meaning_zh": "把处理器放入某条通道的信号路径，典型为串联：上一处理器的输出进入下一处理器。",
+      "avoid_zh": "Insert 不是「只能处理干声」；插件内部也可带 Dry/Wet 或并行路径。",
+      "context_notes_zh": "",
+      "aliases": [],
+      "source_ids": [
+        "S05"
+      ]
+    },
+    {
+      "id": "send",
+      "category_zh": "信号与路由",
+      "preferred_label": "Send",
+      "explanation_label_zh": "发送",
+      "meaning_zh": "把某取样点的信号按指定电平送到另一目的地，常用于并行效果或监听。",
+      "avoid_zh": "Send 不是效果器本身；也不天然等于 Wet 比例。",
+      "context_notes_zh": "",
+      "aliases": [],
+      "source_ids": [
+        "S02"
+      ]
+    },
+    {
+      "id": "hpf",
+      "category_zh": "均衡与滤波",
+      "preferred_label": "High-Pass Filter (HPF)",
+      "explanation_label_zh": "高通或低切",
+      "meaning_zh": "主要让较高频率通过，衰减截止频率以下的成分。",
+      "avoid_zh": "高通不是削高频；截止点以下通常是渐进衰减，不是一律完全消失。",
+      "context_notes_zh": "",
+      "aliases": [
+        "High Pass",
+        "HPF",
+        "Low Cut"
+      ],
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "lpf",
+      "category_zh": "均衡与滤波",
+      "preferred_label": "Low-Pass Filter (LPF)",
+      "explanation_label_zh": "低通或高切",
+      "meaning_zh": "主要让较低频率通过，衰减截止频率以上的成分。",
+      "avoid_zh": "低通不是削低频；不要把 High Cut 错认成 High Shelf。",
+      "context_notes_zh": "",
+      "aliases": [
+        "Low Pass",
+        "LPF",
+        "High Cut"
+      ],
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "delay",
+      "category_zh": "延时与空间",
+      "preferred_label": "Delay",
+      "explanation_label_zh": "延时",
+      "meaning_zh": "把信号延后输出；可用于对齐、加厚、空间感或产生重复。",
+      "avoid_zh": "禁止把 Delay 的正式标签直接替换成「回声」；并非所有 Delay 都能听成独立重复。",
+      "context_notes_zh": "标题、图中模块、插件名和控件保留 Delay；正文可准确解释「延时」。",
+      "aliases": [],
+      "source_ids": [
+        "S17"
+      ]
+    },
+    {
+      "id": "delay_time",
+      "category_zh": "延时与空间",
+      "preferred_label": "Delay Time",
+      "explanation_label_zh": "延时时间",
+      "meaning_zh": "信号在相应延时路径中被延后的时长，常以 ms 或节拍分值显示。",
+      "avoid_zh": "不是 Feedback、重复次数或混响 Decay；多抽头路径未必只有一个重复间隔。",
+      "context_notes_zh": "Sync 数值需同时说明工程速度、音符分值及附点或三连音状态。",
+      "aliases": [
+        "Time"
+      ],
+      "source_ids": [
+        "S17",
+        "S18"
+      ]
+    },
+    {
+      "id": "feedback",
+      "category_zh": "延时与空间",
+      "preferred_label": "Feedback",
+      "explanation_label_zh": "反馈量",
+      "meaning_zh": "将处理输出的一部分送回输入；在 Delay 中常影响重复的衰减和持续程度。",
+      "avoid_zh": "不是重复次数，也不是 Wet 音量；高反馈可能累积电平或自激。",
+      "context_notes_zh": "百分比不是跨产品通用的尾音长度；还取决于环路中的滤波、增益与非线性。",
+      "aliases": [],
+      "source_ids": [
+        "S01",
+        "S18"
+      ]
+    },
+    {
+      "id": "wet",
+      "category_zh": "延时与空间",
+      "preferred_label": "Wet",
+      "explanation_label_zh": "湿声或处理后信号",
+      "meaning_zh": "相对于所讨论的某个处理器或支路，经过该处理的信号。",
+      "avoid_zh": "不要只解释为「带混响的声音」；压缩、失真、Delay 都有 Wet。",
+      "context_notes_zh": "Wet 可以是电平控制，也可以是混合比例，先看单位和信号图。",
+      "aliases": [],
+      "source_ids": [
+        "S18",
+        "S13"
+      ]
+    },
+    {
+      "id": "dry",
+      "category_zh": "延时与空间",
+      "preferred_label": "Dry",
+      "explanation_label_zh": "干声或未经过该处理的信号",
+      "meaning_zh": "相对于当前处理器或支路，未经该项处理的信号。",
+      "avoid_zh": "Dry 不表示这条音轨从未经过任何插件，也不等于完全没有空间声。",
+      "context_notes_zh": "",
+      "aliases": [],
+      "source_ids": [
+        "S18",
+        "S13"
+      ]
+    },
+    {
+      "id": "dry_wet",
+      "category_zh": "延时与空间",
+      "preferred_label": "Dry/Wet",
+      "explanation_label_zh": "干湿混合",
+      "meaning_zh": "调节未处理与处理后信号的混合关系。",
+      "avoid_zh": "50% 不保证听感各一半或总响度恒定；干湿电平也可能是两个独立旋钮。",
+      "context_notes_zh": "常规并行发送效果通常使用 100% Wet，避免重复叠加干声；特殊路由另论。",
+      "aliases": [
+        "Mix",
+        "Wet/Dry"
+      ],
+      "source_ids": [
+        "S18",
+        "S01"
+      ]
+    },
+    {
+      "id": "stereo_width",
+      "category_zh": "立体声与相位",
+      "preferred_label": "Stereo Width",
+      "explanation_label_zh": "立体声宽度",
+      "meaning_zh": "描述或调节左右声道共同形成的宽阔程度，具体算法可改变声道差异、M/S 比例等。",
+      "avoid_zh": "不是左右声像位置；Width 100% 的含义不能跨插件照搬。",
+      "context_notes_zh": "加宽后检查单声道折叠；纯 M/S 增益不能凭空给完全相同的左右信号增加 Side。",
+      "aliases": [],
+      "source_ids": [
+        "S22",
+        "S18"
+      ]
+    },
+    {
+      "id": "phase",
+      "category_zh": "立体声与相位",
+      "preferred_label": "Phase",
+      "explanation_label_zh": "相位",
+      "meaning_zh": "描述波形各频率成分的周期位置及彼此关系；相加时可能增强或抵消。",
+      "avoid_zh": "不等于 Polarity；固定时间偏移对不同频率产生不同相位差。",
+      "context_notes_zh": "讨论相位问题时说明频率、参考信号和路由，不能只看一个波峰是否对齐。",
+      "aliases": [],
+      "source_ids": [
+        "S24"
+      ]
+    },
+    {
+      "id": "polarity",
+      "category_zh": "立体声与相位",
+      "preferred_label": "Polarity",
+      "explanation_label_zh": "极性",
+      "meaning_zh": "极性反转把信号正负号翻转，即 x 变为 −x，本身不把信号向后延时。",
+      "avoid_zh": "不要把极性反转说成万能相位对齐；单一正弦的 180° 等效关系不能泛化为宽带统一时间位移。",
+      "context_notes_zh": "UI 可能写 Phase Invert 或 Ø；照录原名，并说明这里实际是极性反转。",
+      "aliases": [],
+      "source_ids": [
+        "S24",
+        "S04"
+      ]
+    },
+    {
+      "id": "mono_compatibility",
+      "category_zh": "立体声与相位",
+      "preferred_label": "Mono Compatibility",
+      "explanation_label_zh": "单声道兼容性",
+      "meaning_zh": "检查立体声合并为单声道后，重要内容、音色与平衡是否仍然可用。",
+      "avoid_zh": "相关度短暂为负不自动等于不合格；仅听左声道也不等于检查 L+R 折叠。",
+      "context_notes_zh": "结合折叠试听和相关度读数，确认折叠增益规则。",
+      "aliases": [],
+      "source_ids": [
+        "S22",
+        "S04"
+      ]
+    }
+  ],
+  "product_overrides": [
+    {
+      "concept": "Product",
+      "preferred_label": "Waves H-Delay",
+      "subsequent_label": "H-Delay",
+      "actual_image_brand": "HDELAY",
+      "source": "S0/S1"
+    },
+    {
+      "concept": "Dry/Wet",
+      "prose": "Dry/Wet",
+      "actual_ui": "DRY/WET",
+      "manual_name": "Dry/Wet Mix",
+      "range": "0–100",
+      "avoid": "Do not label the UI Mix, although the manual abbreviates it as Mix. No implied measured wet/dry gain ratio."
+    },
+    {
+      "concept": "Feedback",
+      "prose": "Feedback",
+      "actual_ui": "FEEDBACK",
+      "range": "0–200 as shown on UI; manual uses %",
+      "avoid": "The >1 display threshold is not g>1. No fixed repeat count from a knob value."
+    },
+    {
+      "concept": "Delay Time",
+      "prose": "延时时间 / Delay",
+      "actual_ui": "DELAY R in A01 because right side is selected in DUAL mode; generic control DELAY",
+      "avoid": "Do not pretend DELAY R is an always-present independent right parameter in Ping Pong mode."
+    },
+    {
+      "concept": "Ping Pong",
+      "prose": "Ping Pong",
+      "actual_ui": "PING PONG",
+      "meaning_zh": "延迟信号左右交替；不等同于声像或宽度旋钮。"
+    },
+    {
+      "concept": "High-Pass Filter",
+      "prose": "HiPASS（高通）",
+      "actual_ui": "HiPASS",
+      "manual_name": "HP Filter",
+      "meaning_zh": "主要衰减低于截止点的频率。"
+    },
+    {
+      "concept": "Low-Pass Filter",
+      "prose": "LoPASS（低通）",
+      "actual_ui": "LoPASS",
+      "manual_name": "LP Filter",
+      "meaning_zh": "主要衰减高于截止点的频率。"
+    },
+    {
+      "concept": "Mono-to-stereo component",
+      "preferred_label": "M>S",
+      "meaning_zh": "单声道输入、立体声输出；不是 M/S（中侧）处理。"
+    },
+    {
+      "concept": "Phase Reverse",
+      "prose": "ØL / ØR（手册名 Phase Reverse）",
+      "actual_ui": [
+        "ØL",
+        "ØR"
+      ],
+      "meaning_zh": "极性反转语境；不得说成延时对齐或普适加宽。此试听起点关闭。"
+    },
+    {
+      "concept": "Synchronization",
+      "actual_ui": [
+        "BPM",
+        "HOST",
+        "MS"
+      ],
+      "meaning_zh": "HOST 跟随工程速度；BPM 手动设速度；MS 手动设毫秒。"
+    },
+    {
+      "concept": "Modulation depth",
+      "actual_ui": "DEPTH in MODULATION section",
+      "prose": "MODULATION 的 DEPTH",
+      "suggestion": "0"
+    },
+    {
+      "concept": "Analog and low-fidelity modes",
+      "actual_ui": [
+        "ANALOG",
+        "LoFi",
+        "OFF"
+      ],
+      "suggestion": "本轮先关闭以减少变量。"
+    }
+  ],
+  "units": [
+    "BPM",
+    "ms",
+    "Hz",
+    "kHz",
+    "%"
+  ],
+  "exact_case_note": "Narrative title case is permitted; callouts identifying actual controls use exact UI spelling/case. The lowercase i/o in HiPASS/LoPASS are intentional."
+}

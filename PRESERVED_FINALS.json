@@ -1,0 +1,265 @@
+{
+  "note": "These approved/current final HTML, slide images, contact sheets and PDFs are byte-identical to their source artifacts. Rebuilding can change output metadata or pixels across dependency versions.",
+  "files": [
+    {
+      "file": "posts/delay-v3/source/index.html",
+      "sha256": "caaddbefcf6172ecc9bf58411cc2ef2682fdadff43deb766a1ff45b6a0afae46",
+      "bytes": 56605
+    },
+    {
+      "file": "posts/delay-v3/source/output/vocal-delay-v3-contact-sheet.png",
+      "sha256": "8206c160768c29402fc17d7aee1f230c03b4d191a40516e655e05b4aa75a302d",
+      "bytes": 487501
+    },
+    {
+      "file": "posts/delay-v3/source/output/xhs-01-cover.png",
+      "sha256": "72da12b63442b950290a7212a2baffe279ddc0d03e37df6440b9169bd089a135",
+      "bytes": 412530
+    },
+    {
+      "file": "posts/delay-v3/source/output/xhs-02-routing.png",
+      "sha256": "3b36ef8940452f140c86c0e2a1842bed02d6a56d147d7458700f149a58092de2",
+      "bytes": 138214
+    },
+    {
+      "file": "posts/delay-v3/source/output/xhs-03-time.png",
+      "sha256": "9c20e21d5401ff7fad6697eaefb4927929d4a18373119584af726c1fa2672d74",
+      "bytes": 166693
+    },
+    {
+      "file": "posts/delay-v3/source/output/xhs-04-pingpong.png",
+      "sha256": "3b822987d3e12fc60ebad2b65194c36ef71e7d6aaea2eb6badaceae58f666586",
+      "bytes": 160817
+    },
+    {
+      "file": "posts/delay-v3/source/output/xhs-05-feedback.png",
+      "sha256": "ddc821407c23e79258b80d612ca9e5f23099b36f204ba142ea0ea45bccb38573",
+      "bytes": 223290
+    },
+    {
+      "file": "posts/delay-v3/source/output/xhs-06-filter.png",
+      "sha256": "e18ddfbf64941cad408b5e2f38e9a3421bc67326f0fc1a3c56e2d605643dc252",
+      "bytes": 247017
+    },
+    {
+      "file": "posts/delay-v3/source/output/xhs-07-audition.png",
+      "sha256": "b0d43997a848caebe7c203676230b56d96b4cdea3d126ee27afec1d7c6b3c470",
+      "bytes": 154516
+    },
+    {
+      "file": "posts/delay-v3/source/output/xhs-08-check.png",
+      "sha256": "49ea87b25ac73cd3bc3c2b5507279eb0de0228883527c9c7ac3d7825e82822cd",
+      "bytes": 148605
+    },
+    {
+      "file": "posts/delay-v3/source/output/vocal-delay-v3.pdf",
+      "sha256": "80d2613de1367c2df7713b3f40996dd28161a1e00fe39cd85106d6278d99605b",
+      "bytes": 655027
+    },
+    {
+      "file": "posts/ms-return/source/index.html",
+      "sha256": "827896c44f327d2b7b48ffef04f78253c0d95b341fbf42d5e58b99c9a5771036",
+      "bytes": 31538
+    },
+    {
+      "file": "posts/ms-return/source/output/vocal-side-eq-contact-sheet.png",
+      "sha256": "29142d537a725260de17ed7b4335796165b7525a4407c8f07a23ae7a1e863af4",
+      "bytes": 329059
+    },
+    {
+      "file": "posts/ms-return/source/output/xhs-01-cover.png",
+      "sha256": "8890d49deeb299bed7db4d7038842a6e44ed0e64db9de02db4bcbc829cf520bf",
+      "bytes": 462982
+    },
+    {
+      "file": "posts/ms-return/source/output/xhs-02-diagnosis.png",
+      "sha256": "f8454cc0d146dc228115d2d252a17a0d6068607532163c2a2ccd6992bdef9bc9",
+      "bytes": 118036
+    },
+    {
+      "file": "posts/ms-return/source/output/xhs-03-routing.png",
+      "sha256": "0479496451abc927ed1cea92c67e7627126eb051bb84a3f59c7d006482e723e1",
+      "bytes": 108804
+    },
+    {
+      "file": "posts/ms-return/source/output/xhs-04-matrix.png",
+      "sha256": "c9666fc36e008cb850ed9fa9ecca8e62c1cc8aff2d4f130fb41c3a127e243e9d",
+      "bytes": 115433
+    },
+    {
+      "file": "posts/ms-return/source/output/xhs-05-pro-q-4.png",
+      "sha256": "3fa973426c07681a3b05658dcbd7126538497f7cd0dc39d361d177e0a0516e71",
+      "bytes": 358850
+    },
+    {
+      "file": "posts/ms-return/source/output/xhs-06-attenuation.png",
+      "sha256": "2888f12e51a949c4c2f6e836d358c22fe93da9e7daa3e82dc23cd09980c87ad3",
+      "bytes": 111044
+    },
+    {
+      "file": "posts/ms-return/source/output/xhs-07-check.png",
+      "sha256": "d49c2b2d9c611cb76701c9486e252b0354871deda6b8833929d11f864f6e9d7b",
+      "bytes": 120235
+    },
+    {
+      "file": "posts/ms-return/source/output/vocal-side-eq.pdf",
+      "sha256": "0cb4c3722a3646ab4ec38aafde3e73cc45a719d672bc6a2dc0b24954f1a69844",
+      "bytes": 1756292
+    },
+    {
+      "file": "posts/drums-bass/source/index.html",
+      "sha256": "80ca364603fe2bccce528eb7370caff51c83b328d9c4bf8c56af331024ac9f48",
+      "bytes": 61781
+    },
+    {
+      "file": "posts/drums-bass/source/output/drums-bass-contact-sheet.png",
+      "sha256": "99aef64570e7bd4b9256f1351122d661d0c9d5ba5ca0d1b35589afec97174764",
+      "bytes": 396537
+    },
+    {
+      "file": "posts/drums-bass/source/output/xhs-01-cover.png",
+      "sha256": "a1a80cc6c2f940d77fba4c28abbbabf9b840e3d64dfe118a9e16df4fcfd8c758",
+      "bytes": 447234
+    },
+    {
+      "file": "posts/drums-bass/source/output/xhs-02-balance.png",
+      "sha256": "a5bc0afcfb49d1c9f892668fada1bff668e8d7423d02e8d93e7810a0193409b8",
+      "bytes": 116757
+    },
+    {
+      "file": "posts/drums-bass/source/output/xhs-03-timing.png",
+      "sha256": "01124861e5f014bbbd57b55046733273845970ea4c49cb8db7b175602c4e32d1",
+      "bytes": 151839
+    },
+    {
+      "file": "posts/drums-bass/source/output/xhs-04-frequency.png",
+      "sha256": "b05c58101580a432ad0993e1de62436ce21d79a3a42c6e745783b4518819c43a",
+      "bytes": 374320
+    },
+    {
+      "file": "posts/drums-bass/source/output/xhs-05-harmonics.png",
+      "sha256": "fcf775244bb9b1ab9006891332ec8fafe2901a323cb57a340a5b4addf27e28f1",
+      "bytes": 121703
+    },
+    {
+      "file": "posts/drums-bass/source/output/xhs-06-snare.png",
+      "sha256": "ae19c00f42cbeb95f6885185b2bdc778728d188c07693701f4e69b548225d3b0",
+      "bytes": 117799
+    },
+    {
+      "file": "posts/drums-bass/source/output/xhs-07-percussion.png",
+      "sha256": "29acd87dcbf2af1552e83578ec35b139a9522608fe0834b2f6f092f12db1e256",
+      "bytes": 130009
+    },
+    {
+      "file": "posts/drums-bass/source/output/xhs-08-check.png",
+      "sha256": "f5263d5ab24558331cf6f4bd51be692e90ca5c8b468a67dc1e2aaa907760ff8d",
+      "bytes": 128069
+    },
+    {
+      "file": "posts/drums-bass/source/output/drums-bass.pdf",
+      "sha256": "8d922aa6a36f4b10cbe14c57bc7b5dc6f3e6001b46f1980a0732613db1b11de0",
+      "bytes": 1756635
+    },
+    {
+      "file": "history/delay-v2/source/index.html",
+      "sha256": "5724c831ea7bf3cdb23fdb157ba51b886044e23c8c78f3931a380f84f1de92d1",
+      "bytes": 76780
+    },
+    {
+      "file": "history/delay-v2/source/output/vocal-delay-v2-contact-sheet.png",
+      "sha256": "9627fbd3b081e15eba415ac4f30dae5b0d78f57ee97b6b7c1eb9711f85465e02",
+      "bytes": 417315
+    },
+    {
+      "file": "history/delay-v2/source/output/xhs-01-cover.png",
+      "sha256": "0da6f64191a7562af3c79fa18dda3bd633c516ee0f6ac269ed910853d4e5cd17",
+      "bytes": 1361166
+    },
+    {
+      "file": "history/delay-v2/source/output/xhs-02-routing.png",
+      "sha256": "b16ceae5d8ab52bf032cd8c6259f531e6d10ee249e8c378025bf209f6fed12a9",
+      "bytes": 106628
+    },
+    {
+      "file": "history/delay-v2/source/output/xhs-03-time.png",
+      "sha256": "c5b6d5c970b0edf8c4cc9ada2c5fc24fed94b49c92766724f0c0a2391a8ecb93",
+      "bytes": 100679
+    },
+    {
+      "file": "history/delay-v2/source/output/xhs-04-pingpong.png",
+      "sha256": "c1d4c36d21479525a1af9cde2853acce320503b372b6b028153d4eefc486b5a1",
+      "bytes": 98233
+    },
+    {
+      "file": "history/delay-v2/source/output/xhs-05-feedback.png",
+      "sha256": "346c1713bd0ec0f4a25a5c2664726362391bebafb9696f91b03e323d3334602c",
+      "bytes": 114745
+    },
+    {
+      "file": "history/delay-v2/source/output/xhs-06-filter.png",
+      "sha256": "10bc37ce69285449da6573d1e61fadbb580f79c982a0d0d86218abed84d8671f",
+      "bytes": 113350
+    },
+    {
+      "file": "history/delay-v2/source/output/xhs-07-audition.png",
+      "sha256": "c5fdbf0ccbb35049b69e35f36b58c132e2b536bdc0030009ea0081d1c7e0b6ec",
+      "bytes": 132452
+    },
+    {
+      "file": "history/delay-v2/source/output/xhs-08-check.png",
+      "sha256": "06306c1aeb5e49f228543fa63e872a86ad8073df97cf46493fe28b83af72bccd",
+      "bytes": 115912
+    },
+    {
+      "file": "history/delay-v2/source/output/vocal-delay-v2.pdf",
+      "sha256": "9f1c920cc11b921fe8a8bbfdb56adc32163846b9e160da2d13bf66dd9feaee39",
+      "bytes": 2628376
+    },
+    {
+      "file": "history/delay-v1/source/index.html",
+      "sha256": "55946d102ad6dca6e90a685801b9f2e4fcfb92a65ce7e8082f7a80093f969165",
+      "bytes": 40066
+    },
+    {
+      "file": "history/delay-v1/source/output/xhs-01-cover.png",
+      "sha256": "b385ef606a28017a24547b9298ced3717ab88467ec81065708111a27863df139",
+      "bytes": 732577
+    },
+    {
+      "file": "history/delay-v1/source/output/xhs-02-original-note.png",
+      "sha256": "61f00a77fc258562188eff385551168631b411bd4ee76e48da72b1b3568d3325",
+      "bytes": 77430
+    },
+    {
+      "file": "history/delay-v1/source/output/xhs-03-low-wet.png",
+      "sha256": "2a99c7111ca05f370dfc20b0cc2133ad473f7dcf2a85aaf98cb6b735fcf6c1f1",
+      "bytes": 84570
+    },
+    {
+      "file": "history/delay-v1/source/output/xhs-04-eighth-note.png",
+      "sha256": "ed3041e65421a30aaf4f9c3d99e3182d588d767b1fafe14b0e17f33a23b99310",
+      "bytes": 71331
+    },
+    {
+      "file": "history/delay-v1/source/output/xhs-05-pingpong-feedback.png",
+      "sha256": "ea5f041819079179c81702710f02a0198a1b9f096ecb12030459874400dc913d",
+      "bytes": 79423
+    },
+    {
+      "file": "history/delay-v1/source/output/xhs-06-insert-vs-send.png",
+      "sha256": "1151f596aca61286cfee8716bd7f9c10fcda901434c9f779f3eff9d53bcacdfc",
+      "bytes": 101177
+    },
+    {
+      "file": "history/delay-v1/source/output/xhs-07-listening-checklist.png",
+      "sha256": "df563e4344b0ad6c3cf67f0f5a6999af44fa1ac7183fe0cb9e07dc16cece407c",
+      "bytes": 82677
+    },
+    {
+      "file": "history/delay-v1/source/output/一点延迟-七页图文.pdf",
+      "sha256": "b98d211545e60fcd82ee855ce4a79d3a7441e21386aacfdc26d43e742dac4dfa",
+      "bytes": 1831496
+    }
+  ]
+}

@@ -1,0 +1,2755 @@
+{
+  "schema_version": "3.1",
+  "status": "Rendered; all 7 full-size and 360px pages reviewed; awaiting final parent QA.",
+  "topic": "人声效果返回的 M/S EQ",
+  "canvas": {
+    "width": 1080,
+    "height": 1440,
+    "preview_width": 360,
+    "text_safe_x": [
+      72,
+      1008
+    ],
+    "essential_content_bottom": 1380,
+    "footer_bottom": 1420,
+    "raster_scale": 1
+  },
+  "tokens": {
+    "colors": {
+      "canvas": "#ffffff",
+      "surface": "#f5f5f7",
+      "ink": "#1d1d1f",
+      "secondary": "#515154",
+      "accent": "#0066cc",
+      "comparison": "#697887",
+      "hairline": "#d2d2d7",
+      "grid": "#e5e5ea"
+    },
+    "font_family": "Noto Sans SC",
+    "font_files": {
+      "400": "assets/fonts/NotoSansSC-400.ttf",
+      "600": "assets/fonts/NotoSansSC-600.ttf"
+    },
+    "font_license": "assets/fonts/OFL.txt",
+    "font_licensing": "SIL OFL; copy fonts and license to the V3 package. Do not package SF Pro.",
+    "font_sizes": {
+      "hero": 68,
+      "heading": 58,
+      "long_heading": 56,
+      "section": 40,
+      "body": 38,
+      "dense_body": 36,
+      "diagram_essential": 32,
+      "diagram_min": 30,
+      "caveat": 28,
+      "caveat_min": 26,
+      "source": 26
+    },
+    "weights": [
+      400,
+      600
+    ],
+    "letter_spacing_cjk": 0,
+    "numeric_features": "tabular-nums where supported; keep decimal places exactly as supplied",
+    "spacing_grid": 8,
+    "chart_line": 4,
+    "grid_line": 2,
+    "panel_radius": 18,
+    "border_radius_rule": "Only meaningful grouped panels are rounded. Images remain uncropped beyond verified asset crops and have no rounded masks.",
+    "shadows": "none",
+    "gradients": "none"
+  },
+  "coordinate_convention": {
+    "box": "[left, top, width, height], pixels; text y is line-box top, not baseline",
+    "text": "Use supplied explicit newlines. Do not shrink fonts to fit. If browser metrics differ, report and reflow while preserving reading order and stated minimum sizes.",
+    "arrows": "Arrowhead size about 12 px for stroke 3–4; arrowheads must point toward the stated destination.",
+    "chart_adaptation": "Rebuild at final 1080px coordinates using the data and elements below. Never embed the complete landscape SVG at reduced scale.",
+    "layering": "Elements appear in drawing order. Text is always above shapes but must not cover source image controls."
+  },
+  "design_reference": {
+    "primary": "User-approved immutable style-baseline-v3; actual final images + HTML + production_spec",
+    "secondary": "guizang-cf4b810 recovered SKILL.md, components.md, platform-specs.md, production-workflow.md, qa-checklist.md",
+    "priority": "V3 wins over Guizang type sizes, palettes, serif/Swiss templates, density scoring. Borrow expression-first and QA only."
+  },
+  "refinement": {
+    "allowed": [
+      "1px running rule",
+      "consistent optical alignment and tabular numbers",
+      "small numbered annotation rings",
+      "selective light-gray grouping",
+      "one modest AI concept illustration on cover"
+    ],
+    "forbidden": [
+      "giant type",
+      "large colored fills",
+      "new brand style",
+      "repeated card-grid pages",
+      "invented plugin UI",
+      "decorative fake waveforms"
+    ]
+  },
+  "publication": {
+    "status": "Reviewable educational draft; no external publication authorized",
+    "third_party_images": "FabFilter official images; public republication scope unverified. Retain assets.json and rights record; attribution is not clearance.",
+    "ai_art": "AI concept, not product image or measured audio; visible adjacent label required."
+  },
+  "pages": [
+    {
+      "page": 1,
+      "title": "人声一加空间，中频就糊了？",
+      "background": "#ffffff",
+      "layout": "concept-cover",
+      "narrative": "Open with the audible problem; return diagnosis before Side treatment.",
+      "source_diagrams": [],
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · M/S EQ",
+          "box": [
+            72,
+            48,
+            770,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "01 / 07",
+          "box": [
+            884,
+            48,
+            124,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "running-rule",
+          "type": "line",
+          "points": [
+            [
+              72,
+              100
+            ],
+            [
+              1008,
+              100
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 1,
+          "end_arrow": false
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "人声一加空间，\n中频就糊了？",
+          "box": [
+            72,
+            124,
+            936,
+            160
+          ],
+          "font_size": 60,
+          "font_weight": 600,
+          "line_height": 76,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "dek",
+          "type": "text",
+          "text": "先查效果返回，再决定要不要收窄。",
+          "box": [
+            72,
+            304,
+            936,
+            64
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "ai-vocal",
+          "type": "image",
+          "asset_id": "ai-vocal",
+          "file": "assets/source/vocal_stereo_ai_concept.png",
+          "box": [
+            162,
+            398,
+            756,
+            504
+          ],
+          "fit": "contain",
+          "preserve_aspect_ratio": true,
+          "retouch": false,
+          "radius": 0,
+          "shadow": false,
+          "alt": "AI 概念插画：中心主体与两侧空间，非声场测量"
+        },
+        {
+          "id": "art-label",
+          "type": "text",
+          "text": "AI 概念插画 · 不是声场测量",
+          "box": [
+            72,
+            918,
+            936,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "lead",
+          "type": "text",
+          "text": "静音 Reverb / Delay 返回后，\n臃肿感明显减轻？先从湿声查起。",
+          "box": [
+            72,
+            1000,
+            936,
+            108
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "takeaway-rule",
+          "type": "line",
+          "points": [
+            [
+              72,
+              1160
+            ],
+            [
+              1008,
+              1160
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "takeaway",
+          "type": "text",
+          "text": "“臃肿”不等于“宽度过大”。",
+          "box": [
+            72,
+            1192,
+            936,
+            60
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 56,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "condition",
+          "type": "text",
+          "text": "只有多余中频主要在 Side，才考虑收一点。",
+          "box": [
+            72,
+            1274,
+            936,
+            58
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "诊断为试听建议 · 机制与操作见后页",
+          "box": [
+            72,
+            1386,
+            936,
+            36
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "title": "先分清：多了，还是宽了？",
+      "background": "#ffffff",
+      "layout": "diagnostic-ladder",
+      "narrative": "A simple level test precedes a conditional three-way decision.",
+      "source_diagrams": [
+        "assets/svg/diagnosis.svg"
+      ],
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · M/S EQ",
+          "box": [
+            72,
+            48,
+            770,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "02 / 07",
+          "box": [
+            884,
+            48,
+            124,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "running-rule",
+          "type": "line",
+          "points": [
+            [
+              72,
+              100
+            ],
+            [
+              1008,
+              100
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 1,
+          "end_arrow": false
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "先分清：多了，还是宽了？",
+          "box": [
+            72,
+            124,
+            936,
+            82
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 76,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "lead",
+          "type": "text",
+          "text": "先静音／恢复 Return，再降低返回电平。\n已经清楚，就不必强行加入 M/S。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "section",
+          "type": "text",
+          "text": "仍然偏厚？用 Mid / Side 辅助定位",
+          "box": [
+            72,
+            402,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "hear0",
+          "type": "text",
+          "text": "Mid 和 Side 都厚",
+          "box": [
+            72,
+            506,
+            420,
+            112
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "arrow0",
+          "type": "line",
+          "points": [
+            [
+              496,
+              554
+            ],
+            [
+              548,
+              554
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": true
+        },
+        {
+          "id": "try0",
+          "type": "text",
+          "text": "先试 Stereo EQ\n或减少湿声",
+          "box": [
+            592,
+            506,
+            416,
+            116
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "row0",
+          "type": "line",
+          "points": [
+            [
+              72,
+              670
+            ],
+            [
+              1008,
+              670
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "hear1",
+          "type": "text",
+          "text": "主要是 Mid 厚",
+          "box": [
+            72,
+            722,
+            420,
+            112
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "arrow1",
+          "type": "line",
+          "points": [
+            [
+              496,
+              770
+            ],
+            [
+              548,
+              770
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": true
+        },
+        {
+          "id": "try1",
+          "type": "text",
+          "text": "检查湿声 Mid\n与干声的叠加",
+          "box": [
+            592,
+            722,
+            416,
+            116
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "row1",
+          "type": "line",
+          "points": [
+            [
+              72,
+              886
+            ],
+            [
+              1008,
+              886
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "hear2",
+          "type": "text",
+          "text": "Side 中频铺得太满",
+          "box": [
+            72,
+            938,
+            420,
+            112
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "arrow2",
+          "type": "line",
+          "points": [
+            [
+              496,
+              986
+            ],
+            [
+              548,
+              986
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": true
+        },
+        {
+          "id": "try2",
+          "type": "text",
+          "text": "再试 Side\n频段衰减",
+          "box": [
+            592,
+            938,
+            416,
+            116
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "row2",
+          "type": "line",
+          "points": [
+            [
+              72,
+              1102
+            ],
+            [
+              1008,
+              1102
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "takeaway",
+          "type": "text",
+          "text": "Solo 只帮助定位，决定要回到整段混音。",
+          "box": [
+            72,
+            1198,
+            936,
+            64
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "Pro-Q 的 Band Solo 不等于全频 Mid / Side Solo。",
+          "box": [
+            72,
+            1280,
+            936,
+            82
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "试听诊断 · FabFilter Pro-Q 4 Help：Solo",
+          "box": [
+            72,
+            1386,
+            936,
+            36
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "title": "EQ 放在效果器之后",
+      "background": "#ffffff",
+      "layout": "parallel-routing",
+      "narrative": "Dry bypasses the effect branch; EQ follows the generated stereo wet signal.",
+      "source_diagrams": [
+        "assets/svg/routing.svg"
+      ],
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · M/S EQ",
+          "box": [
+            72,
+            48,
+            770,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "03 / 07",
+          "box": [
+            884,
+            48,
+            124,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "running-rule",
+          "type": "line",
+          "points": [
+            [
+              72,
+              100
+            ],
+            [
+              1008,
+              100
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 1,
+          "end_arrow": false
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "EQ 放在效果器之后",
+          "box": [
+            72,
+            124,
+            936,
+            82
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 76,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "lead",
+          "type": "text",
+          "text": "干声直达混音；只处理生成后的湿声。",
+          "box": [
+            72,
+            230,
+            936,
+            64
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "diagram-label",
+          "type": "text",
+          "text": "常规并行效果链 · 信号流示意",
+          "box": [
+            72,
+            346,
+            936,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "vocal-surface",
+          "type": "rect",
+          "box": [
+            72,
+            432,
+            260,
+            132
+          ],
+          "fill": "#f5f5f7",
+          "radius": 12,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "vocal",
+          "type": "text",
+          "text": "人声轨",
+          "box": [
+            92,
+            448,
+            220,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "vocal-sub",
+          "type": "text",
+          "text": "Dry 直达",
+          "box": [
+            92,
+            502,
+            220,
+            90
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "mix-surface",
+          "type": "rect",
+          "box": [
+            736,
+            432,
+            272,
+            132
+          ],
+          "fill": "#f5f5f7",
+          "radius": 12,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "mix",
+          "type": "text",
+          "text": "混音汇合",
+          "box": [
+            756,
+            448,
+            232,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "dry",
+          "type": "line",
+          "points": [
+            [
+              332,
+              490
+            ],
+            [
+              736,
+              490
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "send",
+          "type": "line",
+          "points": [
+            [
+              202,
+              564
+            ],
+            [
+              202,
+              680
+            ],
+            [
+              300,
+              680
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "send-label",
+          "type": "text",
+          "text": "Send",
+          "box": [
+            72,
+            604,
+            160,
+            44
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "fx-surface",
+          "type": "rect",
+          "box": [
+            300,
+            616,
+            408,
+            142
+          ],
+          "fill": "#f5f5f7",
+          "radius": 12,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "fx",
+          "type": "text",
+          "text": "Reverb / Delay",
+          "box": [
+            320,
+            632,
+            368,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "fx-sub",
+          "type": "text",
+          "text": "100% Wet",
+          "box": [
+            320,
+            686,
+            368,
+            90
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "eq-surface",
+          "type": "rect",
+          "box": [
+            300,
+            866,
+            408,
+            142
+          ],
+          "fill": "#f5f5f7",
+          "radius": 12,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "eq",
+          "type": "text",
+          "text": "M/S EQ",
+          "box": [
+            320,
+            882,
+            368,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "eq-sub",
+          "type": "text",
+          "text": "只处理目标 Side 频段",
+          "box": [
+            320,
+            936,
+            368,
+            90
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "fx-eq",
+          "type": "line",
+          "points": [
+            [
+              504,
+              758
+            ],
+            [
+              504,
+              866
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "return",
+          "type": "line",
+          "points": [
+            [
+              708,
+              938
+            ],
+            [
+              872,
+              938
+            ],
+            [
+              872,
+              564
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "return-label",
+          "type": "text",
+          "text": "Return",
+          "box": [
+            744,
+            976,
+            250,
+            48
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "one",
+          "type": "text",
+          "text": "放在效果器前的 EQ，\n不保证等价于处理最终湿声。",
+          "box": [
+            72,
+            1070,
+            936,
+            108
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "共享 Return 会一起改变其他声源。\n需要只改人声时，使用独立返回。",
+          "box": [
+            72,
+            1230,
+            936,
+            96
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "路由：Ableton Live 12 Manual · 常规并行 Wet 100%",
+          "box": [
+            72,
+            1386,
+            936,
+            36
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "title": "Side 不是“两边的乐器”",
+      "background": "#ffffff",
+      "layout": "matrix-parallel-lanes",
+      "narrative": "Demystify M/S with two matched formula lanes and a single affected branch.",
+      "source_diagrams": [
+        "assets/svg/matrix.svg"
+      ],
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · M/S EQ",
+          "box": [
+            72,
+            48,
+            770,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "04 / 07",
+          "box": [
+            884,
+            48,
+            124,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "running-rule",
+          "type": "line",
+          "points": [
+            [
+              72,
+              100
+            ],
+            [
+              1008,
+              100
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 1,
+          "end_arrow": false
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "Side 不是“两边的乐器”",
+          "box": [
+            72,
+            124,
+            936,
+            82
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 76,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "lead",
+          "type": "text",
+          "text": "Mid 是左右的和，Side 是左右的差。",
+          "box": [
+            72,
+            230,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "m-label",
+          "type": "text",
+          "text": "MID · 和信号",
+          "box": [
+            72,
+            354,
+            444,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "s-label",
+          "type": "text",
+          "text": "SIDE · 差信号",
+          "box": [
+            564,
+            354,
+            444,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "lane-divider",
+          "type": "line",
+          "points": [
+            [
+              540,
+              354
+            ],
+            [
+              540,
+              1030
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "m-encode",
+          "type": "text",
+          "text": "M = (L + R) / 2",
+          "box": [
+            72,
+            446,
+            444,
+            64
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "s-encode",
+          "type": "text",
+          "text": "S = (L − R) / 2",
+          "box": [
+            564,
+            446,
+            444,
+            64
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "m-down",
+          "type": "line",
+          "points": [
+            [
+              294,
+              538
+            ],
+            [
+              294,
+              646
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 3,
+          "end_arrow": true
+        },
+        {
+          "id": "s-down",
+          "type": "line",
+          "points": [
+            [
+              786,
+              538
+            ],
+            [
+              786,
+              646
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": true
+        },
+        {
+          "id": "m-hold-surface",
+          "type": "rect",
+          "box": [
+            72,
+            674,
+            444,
+            134
+          ],
+          "fill": "#f5f5f7",
+          "radius": 12,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "m-hold",
+          "type": "text",
+          "text": "Mid 保持不变",
+          "box": [
+            92,
+            690,
+            404,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "s-eq-surface",
+          "type": "rect",
+          "box": [
+            564,
+            674,
+            444,
+            134
+          ],
+          "fill": "#f5f5f7",
+          "radius": 12,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "s-eq",
+          "type": "text",
+          "text": "只处理 Side",
+          "box": [
+            584,
+            690,
+            404,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "s-eq-sub",
+          "type": "text",
+          "text": "目标频段衰减",
+          "box": [
+            584,
+            744,
+            404,
+            90
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "decode-label",
+          "type": "text",
+          "text": "重新解码",
+          "box": [
+            72,
+            870,
+            936,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "decode-l",
+          "type": "text",
+          "text": "L′ = M + S′",
+          "box": [
+            72,
+            938,
+            444,
+            64
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 56,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "decode-r",
+          "type": "text",
+          "text": "R′ = M − S′",
+          "box": [
+            564,
+            938,
+            444,
+            64
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 56,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "takeaway",
+          "type": "text",
+          "text": "减少该段左右差分，常可让这一段更收拢。\n不代表提取或单独处理“两侧的乐器”。",
+          "box": [
+            72,
+            1100,
+            936,
+            110
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "本文用 1/2 编码约定，并非插件内部缩放声明。\n实际听感还取决于原始 M/S 比例、相位与素材。",
+          "box": [
+            72,
+            1270,
+            936,
+            92
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "M/S 定义参考 Voxengo MSED · 公式为教学约定",
+          "box": [
+            72,
+            1386,
+            936,
+            36
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "title": "Pro-Q 4：选中这个 Side",
+      "background": "#ffffff",
+      "layout": "official-object-and-target",
+      "narrative": "Identify the real product and exact menu option without pretending the official image is configured.",
+      "source_diagrams": [],
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · M/S EQ",
+          "box": [
+            72,
+            48,
+            770,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "05 / 07",
+          "box": [
+            884,
+            48,
+            124,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "running-rule",
+          "type": "line",
+          "points": [
+            [
+              72,
+              100
+            ],
+            [
+              1008,
+              100
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 1,
+          "end_arrow": false
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "Pro-Q 4：选中这个 Side",
+          "box": [
+            72,
+            124,
+            936,
+            82
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 76,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "lead",
+          "type": "text",
+          "text": "在立体声 Return 建立 Bell，\n打开频段右侧的 stereo placement 菜单。",
+          "box": [
+            72,
+            226,
+            936,
+            112
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "pro-q-4-official-full.jpg",
+          "type": "image",
+          "asset_id": "pro-q-4-official-full.jpg",
+          "file": "assets/source/pro-q-4-official-full.jpg",
+          "box": [
+            72,
+            366,
+            400,
+            240.2
+          ],
+          "fit": "contain",
+          "preserve_aspect_ratio": true,
+          "retouch": false,
+          "radius": 0,
+          "shadow": false,
+          "alt": "FabFilter Pro-Q 4 官方完整示例界面"
+        },
+        {
+          "id": "full-caption",
+          "type": "text",
+          "text": "FabFilter Pro-Q 4\n官方示例界面",
+          "box": [
+            514,
+            398,
+            494,
+            96
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 46,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "full-caveat",
+          "type": "text",
+          "text": "原图参数、频谱不是\n推荐设置或本文实测。",
+          "box": [
+            514,
+            514,
+            494,
+            88
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "pro-q-4-controls-crop.png",
+          "type": "image",
+          "asset_id": "pro-q-4-controls-crop.png",
+          "file": "assets/derived/pro-q-4-controls-crop.png",
+          "box": [
+            72,
+            658,
+            936,
+            253.25
+          ],
+          "fit": "contain",
+          "preserve_aspect_ratio": true,
+          "retouch": false,
+          "radius": 0,
+          "shadow": false,
+          "alt": "官方控制区裁切，Stereo 显示状态"
+        },
+        {
+          "id": "controls-caption",
+          "type": "text",
+          "text": "频段控制区：FREQ · GAIN · Q · stereo placement",
+          "box": [
+            72,
+            932,
+            936,
+            46
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "stereo-options.jpg",
+          "type": "image",
+          "asset_id": "stereo-options.jpg",
+          "file": "assets/source/stereo-options.jpg",
+          "box": [
+            72,
+            990,
+            234,
+            360
+          ],
+          "fit": "contain",
+          "preserve_aspect_ratio": true,
+          "retouch": false,
+          "radius": 0,
+          "shadow": false,
+          "alt": "官方菜单：Right 当前选中；Side 行可见"
+        },
+        {
+          "id": "side-pointer",
+          "type": "line",
+          "points": [
+            [
+              342,
+              1220
+            ],
+            [
+              310,
+              1220
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": true
+        },
+        {
+          "id": "side-choice",
+          "type": "text",
+          "text": "这里选择 Side",
+          "box": [
+            354,
+            1024,
+            654,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "menu-caveat",
+          "type": "text",
+          "text": "图中当前选中 Right；\n箭头仅定位 Side，未显示已设置。",
+          "box": [
+            354,
+            1106,
+            654,
+            90
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "scope",
+          "type": "text",
+          "text": "这是单频段范围，\n不是整条返回的全频 Width。",
+          "box": [
+            354,
+            1218,
+            654,
+            94
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "mono",
+          "type": "text",
+          "text": "Mono 实例没有这些立体声选项。",
+          "box": [
+            354,
+            1320,
+            654,
+            42
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 36,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "© FabFilter · 官方 Press Area / Pro-Q 4 Help",
+          "box": [
+            72,
+            1386,
+            936,
+            36
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ],
+      "implementation_notes": [
+        "Menu native234×360 placed234×360 at72,990. Side label center native y231 maps1221; end arrow at300,1220, near right menu edge306. Pointer must not obscure Side text or selected Right dot.",
+        "At360px preview product full only identifies object; controls and external labels carry detail. The external Side label and adjacent state disclaimer must remain readable; preserve the original menu, do not redraw UI."
+      ]
+    },
+    {
+      "page": 6,
+      "title": "先小幅削，不要一刀切",
+      "background": "#ffffff",
+      "layout": "settings-and-amplitude",
+      "narrative": "Separate an audition recipe from a different, explicitly independent mathematical example.",
+      "source_diagrams": [
+        "assets/svg/attenuation.svg"
+      ],
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · M/S EQ",
+          "box": [
+            72,
+            48,
+            770,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "06 / 07",
+          "box": [
+            884,
+            48,
+            124,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "running-rule",
+          "type": "line",
+          "points": [
+            [
+              72,
+              100
+            ],
+            [
+              1008,
+              100
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 1,
+          "end_arrow": false
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "先小幅削，不要一刀切",
+          "box": [
+            72,
+            124,
+            936,
+            82
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 76,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "lead",
+          "type": "text",
+          "text": "试听起点，不是官方推荐或最佳值。",
+          "box": [
+            72,
+            230,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "recipe",
+          "type": "rect",
+          "box": [
+            72,
+            342,
+            936,
+            202
+          ],
+          "fill": "#f5f5f7",
+          "radius": 12,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "recipe-label",
+          "type": "text",
+          "text": "Side · Bell",
+          "box": [
+            104,
+            366,
+            872,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "recipe-numbers",
+          "type": "text",
+          "text": "400 Hz     −2 dB     Q 1.0",
+          "box": [
+            104,
+            442,
+            872,
+            70
+          ],
+          "font_size": 42,
+          "font_weight": 600,
+          "line_height": 58,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "search",
+          "type": "text",
+          "text": "按素材移动频点、改变带宽与衰减量。",
+          "box": [
+            72,
+            578,
+            936,
+            58
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "separation",
+          "type": "line",
+          "points": [
+            [
+              72,
+              674
+            ],
+            [
+              1008,
+              674
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "calc-title",
+          "type": "text",
+          "text": "另一个计算例：Side 衰减 −3 dB",
+          "box": [
+            72,
+            716,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar-label0",
+          "type": "text",
+          "text": "Mid 保持",
+          "box": [
+            72,
+            822,
+            244,
+            60
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar-bg0",
+          "type": "rect",
+          "box": [
+            338,
+            830,
+            528,
+            36
+          ],
+          "fill": "#f5f5f7",
+          "radius": 5,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "bar0",
+          "type": "rect",
+          "box": [
+            338,
+            830,
+            528,
+            36
+          ],
+          "fill": "#697887",
+          "radius": 5,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "pct0",
+          "type": "text",
+          "text": "100.0%",
+          "box": [
+            886,
+            822,
+            122,
+            55
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar-label1",
+          "type": "text",
+          "text": "Side 处理前",
+          "box": [
+            72,
+            932,
+            244,
+            60
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar-bg1",
+          "type": "rect",
+          "box": [
+            338,
+            940,
+            528,
+            36
+          ],
+          "fill": "#f5f5f7",
+          "radius": 5,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "bar1",
+          "type": "rect",
+          "box": [
+            338,
+            940,
+            528,
+            36
+          ],
+          "fill": "#697887",
+          "radius": 5,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "pct1",
+          "type": "text",
+          "text": "100.0%",
+          "box": [
+            886,
+            932,
+            122,
+            55
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar-label2",
+          "type": "text",
+          "text": "Side 处理后",
+          "box": [
+            72,
+            1042,
+            244,
+            60
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar-bg2",
+          "type": "rect",
+          "box": [
+            338,
+            1050,
+            528,
+            36
+          ],
+          "fill": "#f5f5f7",
+          "radius": 5,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "bar2",
+          "type": "rect",
+          "box": [
+            338,
+            1050,
+            373.7953741548248,
+            36
+          ],
+          "fill": "#0066cc",
+          "radius": 5,
+          "stroke": "none",
+          "stroke_width": 1
+        },
+        {
+          "id": "pct2",
+          "type": "text",
+          "text": "70.8%",
+          "box": [
+            886,
+            1042,
+            122,
+            55
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "scale",
+          "type": "text",
+          "text": "各条以自身处理前幅度为 100%；共用幅度尺度。",
+          "box": [
+            72,
+            1156,
+            936,
+            48
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "10^(−3/20) ≈ 0.708；这是幅度，不是宽度。\n此 −3 dB 计算例，与上方 −2 dB 试听设置不同。",
+          "box": [
+            72,
+            1242,
+            936,
+            96
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "上方：试听建议 · 下方：独立计算示意，非实测",
+          "box": [
+            72,
+            1386,
+            936,
+            36
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "title": "收窄之后，还要过三关",
+      "background": "#ffffff",
+      "layout": "verification-and-mono-proof",
+      "narrative": "Finish with practical listening and clarify why unchanged mono does not disprove Side processing.",
+      "source_diagrams": [
+        "assets/svg/mono-check.svg"
+      ],
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · M/S EQ",
+          "box": [
+            72,
+            48,
+            770,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "07 / 07",
+          "box": [
+            884,
+            48,
+            124,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "running-rule",
+          "type": "line",
+          "points": [
+            [
+              72,
+              100
+            ],
+            [
+              1008,
+              100
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 1,
+          "end_arrow": false
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "收窄之后，还要过三关",
+          "box": [
+            72,
+            124,
+            936,
+            82
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 76,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check-number0",
+          "type": "text",
+          "text": "01",
+          "box": [
+            72,
+            256,
+            86,
+            60
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check-label0",
+          "type": "text",
+          "text": "Stereo",
+          "box": [
+            176,
+            256,
+            832,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check-body0",
+          "type": "text",
+          "text": "字头更清楚吗？尾声仍自然吗？\n没有更好，就撤回。",
+          "box": [
+            176,
+            326,
+            832,
+            104
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check-rule0",
+          "type": "line",
+          "points": [
+            [
+              176,
+              442
+            ],
+            [
+              1008,
+              442
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "check-number1",
+          "type": "text",
+          "text": "02",
+          "box": [
+            72,
+            478,
+            86,
+            60
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check-label1",
+          "type": "text",
+          "text": "Mono",
+          "box": [
+            176,
+            478,
+            832,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check-body1",
+          "type": "text",
+          "text": "按 DAW 合并单声道；\n检查音色与平衡，不是只听左声道。",
+          "box": [
+            176,
+            548,
+            832,
+            104
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check-rule1",
+          "type": "line",
+          "points": [
+            [
+              176,
+              664
+            ],
+            [
+              1008,
+              664
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "check-number2",
+          "type": "text",
+          "text": "03",
+          "box": [
+            72,
+            700,
+            86,
+            60
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check-label2",
+          "type": "text",
+          "text": "整段",
+          "box": [
+            176,
+            700,
+            832,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check-body2",
+          "type": "text",
+          "text": "主歌、副歌、句尾都复核；\n共享返回上的其他声源也要听。",
+          "box": [
+            176,
+            770,
+            832,
+            104
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check-rule2",
+          "type": "line",
+          "points": [
+            [
+              176,
+              886
+            ],
+            [
+              1008,
+              886
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "mono-label",
+          "type": "text",
+          "text": "为什么 Mono 可能听不出变化？",
+          "box": [
+            72,
+            964,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "proof",
+          "type": "text",
+          "text": "(L′ + R′) / 2 = M",
+          "box": [
+            72,
+            1040,
+            936,
+            66
+          ],
+          "font_size": 42,
+          "font_weight": 600,
+          "line_height": 60,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "ideal",
+          "type": "text",
+          "text": "理想纯 Side EQ 不改 Mid。\n限无额外增益、非线性或后级变化。",
+          "box": [
+            72,
+            1136,
+            936,
+            92
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "closing",
+          "type": "text",
+          "text": "Mono 检查不能单独证明“去糊成功”。",
+          "box": [
+            72,
+            1284,
+            936,
+            58
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "数学推导 + 听音验收 · 不构成实测效果承诺",
+          "box": [
+            72,
+            1386,
+            936,
+            36
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ]
+    }
+  ],
+  "qa_requirements": [
+    "Render and inspect every full-size page and every 360px preview; do not rely on contact sheet alone.",
+    "Essential labels ≥30px; body normally36–40px; limitations28px; no font shrinking to fix overflow.",
+    "No text/images beyond x72–1008 except nonessential image breathing; footer bottom≤1420.",
+    "Source-image caveat adjacent, not only footer. Preserve selected menu state and original colors/aspect ratio.",
+    "Rebuild explanation diagrams at final coordinates. Never scale complete 960×620 SVG including its text into a small box.",
+    "Use original data and formulas; same axes/scales for comparisons; state mathematical idealization adjacent.",
+    "Check Chinese line endings, minus signs, primes, arrows, degree symbols, frequency units, product names against term-map.",
+    "If layout requires change, preserve claim+caveat together; move optional detail to caption, not smaller type."
+  ],
+  "editorial_omissions": [
+    "Linear Phase paragraph remains in full article and sources; omitted from final page to protect the single verification task.",
+    "Detailed Solo and normalization context remains in article; essential limits remain adjacent on pages."
+  ],
+  "production_revision": "Rendered QA: page 5 Side pointer endpoint moved from x300 to x310, y1220 unchanged, to avoid the image layer concealing its arrowhead. No copy or screenshot pixel changes."
+}

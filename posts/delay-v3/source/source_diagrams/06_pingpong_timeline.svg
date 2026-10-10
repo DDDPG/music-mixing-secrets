@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Ping Pong 的左右交替时序</title>
+<desc id="desc">160 BPM 普通 1/8，单次短输入。延迟信号在 187.5、375、562.5、750 ms 依次落于左、右、左、右。干声在 0 ms，原有声像不变。</desc>
+<rect id="background" width="1200" height="650" fill="#ffffff"/>
+<defs>
+<marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#0066cc" stroke-width="1.3"/></marker>
+<marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#1d1d1f" stroke-width="1.3"/></marker>
+<marker id="arrow-second" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#7c8997" stroke-width="1.3"/></marker>
+<marker id="arrow-muted" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#62666d" stroke-width="1.3"/></marker>
+</defs>
+<text id="text-1" x="56" y="58" fill="#1d1d1f" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" text-anchor="start">交替的是延迟声部</text>
+<text id="text-2" x="56" y="100" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start">160 BPM · 普通 1/8 · 单次短输入 · 从左开始</text>
+<line x1="200.0" y1="179" x2="200.0" y2="459" stroke="#dfe3e8" stroke-width="1.4" stroke-linecap="round"/>
+<text id="text-3" x="200.0" y="500" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">0</text>
+<line x1="419.375" y1="179" x2="419.375" y2="459" stroke="#dfe3e8" stroke-width="1.4" stroke-linecap="round"/>
+<text id="text-4" x="419.375" y="500" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">187.5</text>
+<line x1="638.75" y1="179" x2="638.75" y2="459" stroke="#dfe3e8" stroke-width="1.4" stroke-linecap="round"/>
+<text id="text-5" x="638.75" y="500" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">375</text>
+<line x1="858.125" y1="179" x2="858.125" y2="459" stroke="#dfe3e8" stroke-width="1.4" stroke-linecap="round"/>
+<text id="text-6" x="858.125" y="500" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">562.5</text>
+<line x1="1077.5" y1="179" x2="1077.5" y2="459" stroke="#dfe3e8" stroke-width="1.4" stroke-linecap="round"/>
+<text id="text-7" x="1077.5" y="500" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">750</text>
+<text id="text-8" x="56" y="257" fill="#0066cc" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="start">L 左</text>
+<line x1="173" y1="247" x2="1125" y2="247" stroke="#dfe3e8" stroke-width="2" stroke-linecap="round"/>
+<text id="text-9" x="56" y="335" fill="#1d1d1f" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="start">干声</text>
+<text id="text-10" x="56" y="413" fill="#7c8997" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="start">R 右</text>
+<line x1="173" y1="403" x2="1125" y2="403" stroke="#dfe3e8" stroke-width="2" stroke-linecap="round"/>
+<circle cx="200.0" cy="325" r="10" fill="#1d1d1f"/>
+<text id="text-11" x="222.0" y="334" fill="#1d1d1f" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start">0 ms</text>
+<circle cx="419.375" cy="247" r="11" fill="#0066cc"/>
+<text id="text-12" x="419.375" y="221" fill="#0066cc" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="600" text-anchor="middle">第 1 次</text>
+<circle cx="638.75" cy="403" r="11" fill="#7c8997"/>
+<text id="text-13" x="638.75" y="377" fill="#7c8997" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="600" text-anchor="middle">第 2 次</text>
+<circle cx="858.125" cy="247" r="11" fill="#0066cc"/>
+<text id="text-14" x="858.125" y="221" fill="#0066cc" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="600" text-anchor="middle">第 3 次</text>
+<circle cx="1077.5" cy="403" r="11" fill="#7c8997"/>
+<text id="text-15" x="1077.5" y="377" fill="#7c8997" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="600" text-anchor="middle">第 4 次</text>
+<path d="M419.375,187 V165 H858.125 V187" fill="none" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="text-16" x="638.75" y="148" fill="#0066cc" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" text-anchor="middle">同侧间隔 375 ms</text>
+<text id="text-17" x="56" y="559" fill="#1d1d1f" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="start">相邻重复间隔 187.5 ms</text>
+<text id="text-18" x="1125" y="543" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="end">时间 / ms</text>
+<text id="text-19" x="56" y="588" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="start">干声保持原有声像；等大事件点不编码振幅。</text>
+<text id="text-20" x="56" y="622" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="start">单次输入、等间隔时序示意，非音频实测；左右起点可互换。</text>
+</svg>

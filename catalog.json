@@ -1,0 +1,38 @@
+{
+  "title": "Music Mixing Secrets",
+  "author": "Kangdi Wang",
+  "repository": "https://github.com/DDDPG/music-mixing-secrets",
+  "archive_date": "2026-10-10",
+  "posts": [
+    {
+      "id": "vocal-delay",
+      "current": "posts/delay-v3",
+      "pages": 8,
+      "history": [
+        {
+          "version": "v1",
+          "directory": "history/delay-v1",
+          "pages": 7
+        },
+        {
+          "version": "v2",
+          "directory": "history/delay-v2",
+          "pages": 8
+        }
+      ]
+    },
+    {
+      "id": "ms-return",
+      "current": "posts/ms-return",
+      "pages": 7,
+      "history": []
+    },
+    {
+      "id": "drums-bass",
+      "current": "posts/drums-bass",
+      "pages": 8,
+      "history": []
+    }
+  ],
+  "research_report_status": "Current reports reconstructed from retained production artifacts; historical missing reports are disclosed separately."
+}

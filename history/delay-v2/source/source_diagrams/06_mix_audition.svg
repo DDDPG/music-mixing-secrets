@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="530" viewBox="0 0 1200 530" role="img" aria-labelledby="title desc">
+<title id="title">Mix 0、3、5、8 的试听实验</title>
+<desc id="desc">固定其余参数，带伴奏循环同一段，依次试听 H-Delay Dry/Wet 显示值 0、3、5、8。四个等大候选不表示测量结果或推荐排名。</desc>
+<rect width="1200" height="530" fill="#F7F4EE"/>
+<defs><marker id="arrow-teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#177D78" stroke-width="1.4"/></marker><marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#263335" stroke-width="1.4"/></marker><marker id="arrow-coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#C86451" stroke-width="1.4"/></marker><marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#506FB0" stroke-width="1.4"/></marker><linearGradient id="low-fade"><stop offset="0%" stop-color="#C86451" stop-opacity=".12"/><stop offset="100%" stop-color="#C86451" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0%" stop-color="#506FB0" stop-opacity="0"/><stop offset="100%" stop-color="#506FB0" stop-opacity=".12"/></linearGradient></defs>
+<text x="60" y="62" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" text-anchor="start" >固定其他参数，只比较 Mix</text>
+<text x="60" y="106" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="start" >H-Delay 的 0–100 显示刻度 · 下面四个数字是试听选项</text>
+<line x1="253" y1="238" x2="383" y2="238" stroke="#DCDDD5" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-ink)"/>
+<circle cx="177" cy="238" r="63" fill="#F7F4EE" stroke="#177D78" stroke-width="2.7"/>
+<text x="177" y="259" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="58" font-weight="600" text-anchor="middle" >0</text>
+<text x="177" y="351" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" >先听原声</text>
+<line x1="535" y1="238" x2="665" y2="238" stroke="#DCDDD5" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-ink)"/>
+<circle cx="459" cy="238" r="63" fill="#F7F4EE" stroke="#177D78" stroke-width="2.7"/>
+<text x="459" y="259" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="58" font-weight="600" text-anchor="middle" >3</text>
+<text x="459" y="351" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" >少量加入</text>
+<line x1="817" y1="238" x2="947" y2="238" stroke="#DCDDD5" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-ink)"/>
+<circle cx="741" cy="238" r="63" fill="#F7F4EE" stroke="#177D78" stroke-width="2.7"/>
+<text x="741" y="259" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="58" font-weight="600" text-anchor="middle" >5</text>
+<text x="741" y="351" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" >继续对比</text>
+<circle cx="1023" cy="238" r="63" fill="#F7F4EE" stroke="#177D78" stroke-width="2.7"/>
+<text x="1023" y="259" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="58" font-weight="600" text-anchor="middle" >8</text>
+<text x="1023" y="351" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" >再多一点</text>
+<text x="60" y="423" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="29" font-weight="600" text-anchor="start" >带伴奏，回放同一段。选好量，再比 1/8 与 1/16。</text>
+<text x="60" y="473" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="start" >这是试听实验，不是官方预设；数字不等于实测干湿电平比例。</text>
+<text x="60" y="511" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="start" >对比前先确认输出不削波，每次只改变一个条件。</text>
+</svg>

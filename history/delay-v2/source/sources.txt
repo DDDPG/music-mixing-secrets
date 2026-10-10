@@ -1,0 +1,40 @@
+给人声一点空间：资料与图形说明
+
+核对日期：2026-10-09
+
+S1  Waves H-Delay User Guide
+https://www.waves.com/1lib/pdf/plugins/h-delay-hybrid-delay.pdf
+参考印刷页码：4, 5, 6, 8, 10, 11
+
+S2  Waves: 10 Delay Tips for Mixing Vocals
+https://www.waves.com/delay-tips-for-mixing-vocals
+
+S3  FabFilter Timeless 3 Help: Delay controls
+https://www.fabfilter.com/help/timeless/using/delaycontrols
+
+S4  Ableton Live 12 Manual: Delay
+https://www.ableton.com/en/manual/live-audio-effect-reference/
+
+S5  Ableton Learning Music: Beat and tempo
+https://learningmusic.ableton.com/make-beats/beat-and-tempo.html
+
+S6  Waves: 4 Tips for Mixing 2021 Pop Vocals
+https://www.waves.com/tips-for-mixing-2021-pop-vocals
+
+S7  Soundtoys EchoBoy Manual
+https://www.soundtoys.com/wp-content/uploads/EchoBoy-Manual.pdf
+参考印刷页码：14, 17
+
+S8  iZotope: 6 Tips for Using Ozone's Utilities in Mixing and Mastering
+https://www.izotope.com/community/blog/how-to-use-ozone-utilities
+
+数值性质
+- 120/160 BPM 对应时长为音符时值计算。
+- 左右事件为单次输入、等间隔示意，不是音频实测。
+- 反馈图是固定回送系数的理想线性模型；8倍仅指第4次相对振幅比，不是响度。
+- Mix 5、Feedback 20、HP 200 Hz、LP 6 kHz 是教程试听起点，不是官方预设。
+- 频率图表达滤波方向，不是完整频响或实测曲线。
+- 封面为 AI 生成概念插画，不编码实际声学或工程数据。
+
+素材
+解释图由本套教程的数据重绘。字体采用 Noto Sans SC，许可见 assets/fonts/OFL.txt。导出骨架改编自 guizang-social-card-skill，版本 cf4b810，许可见 THIRD_PARTY_NOTICES.txt。

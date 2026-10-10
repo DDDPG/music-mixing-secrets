@@ -1,0 +1,328 @@
+P01 series
+人声空间 · M/S EQ
+
+P01 page
+01 / 07
+
+P01 title
+人声一加空间，
+中频就糊了？
+
+P01 dek
+先查效果返回，再决定要不要收窄。
+
+P01 art-label
+AI 概念插画 · 不是声场测量
+
+P01 lead
+静音 Reverb / Delay 返回后，
+臃肿感明显减轻？先从湿声查起。
+
+P01 takeaway
+“臃肿”不等于“宽度过大”。
+
+P01 condition
+只有多余中频主要在 Side，才考虑收一点。
+
+P01 source_footer
+诊断为试听建议 · 机制与操作见后页
+
+P02 series
+人声空间 · M/S EQ
+
+P02 page
+02 / 07
+
+P02 title
+先分清：多了，还是宽了？
+
+P02 lead
+先静音／恢复 Return，再降低返回电平。
+已经清楚，就不必强行加入 M/S。
+
+P02 section
+仍然偏厚？用 Mid / Side 辅助定位
+
+P02 hear0
+Mid 和 Side 都厚
+
+P02 try0
+先试 Stereo EQ
+或减少湿声
+
+P02 hear1
+主要是 Mid 厚
+
+P02 try1
+检查湿声 Mid
+与干声的叠加
+
+P02 hear2
+Side 中频铺得太满
+
+P02 try2
+再试 Side
+频段衰减
+
+P02 takeaway
+Solo 只帮助定位，决定要回到整段混音。
+
+P02 caveat
+Pro-Q 的 Band Solo 不等于全频 Mid / Side Solo。
+
+P02 source_footer
+试听诊断 · FabFilter Pro-Q 4 Help：Solo
+
+P03 series
+人声空间 · M/S EQ
+
+P03 page
+03 / 07
+
+P03 title
+EQ 放在效果器之后
+
+P03 lead
+干声直达混音；只处理生成后的湿声。
+
+P03 diagram-label
+常规并行效果链 · 信号流示意
+
+P03 vocal
+人声轨
+
+P03 vocal-sub
+Dry 直达
+
+P03 mix
+混音汇合
+
+P03 send-label
+Send
+
+P03 fx
+Reverb / Delay
+
+P03 fx-sub
+100% Wet
+
+P03 eq
+M/S EQ
+
+P03 eq-sub
+只处理目标 Side 频段
+
+P03 return-label
+Return
+
+P03 one
+放在效果器前的 EQ，
+不保证等价于处理最终湿声。
+
+P03 caveat
+共享 Return 会一起改变其他声源。
+需要只改人声时，使用独立返回。
+
+P03 source_footer
+路由：Ableton Live 12 Manual · 常规并行 Wet 100%
+
+P04 series
+人声空间 · M/S EQ
+
+P04 page
+04 / 07
+
+P04 title
+Side 不是“两边的乐器”
+
+P04 lead
+Mid 是左右的和，Side 是左右的差。
+
+P04 m-label
+MID · 和信号
+
+P04 s-label
+SIDE · 差信号
+
+P04 m-encode
+M = (L + R) / 2
+
+P04 s-encode
+S = (L − R) / 2
+
+P04 m-hold
+Mid 保持不变
+
+P04 s-eq
+只处理 Side
+
+P04 s-eq-sub
+目标频段衰减
+
+P04 decode-label
+重新解码
+
+P04 decode-l
+L′ = M + S′
+
+P04 decode-r
+R′ = M − S′
+
+P04 takeaway
+减少该段左右差分，常可让这一段更收拢。
+不代表提取或单独处理“两侧的乐器”。
+
+P04 caveat
+本文用 1/2 编码约定，并非插件内部缩放声明。
+实际听感还取决于原始 M/S 比例、相位与素材。
+
+P04 source_footer
+M/S 定义参考 Voxengo MSED · 公式为教学约定
+
+P05 series
+人声空间 · M/S EQ
+
+P05 page
+05 / 07
+
+P05 title
+Pro-Q 4：选中这个 Side
+
+P05 lead
+在立体声 Return 建立 Bell，
+打开频段右侧的 stereo placement 菜单。
+
+P05 full-caption
+FabFilter Pro-Q 4
+官方示例界面
+
+P05 full-caveat
+原图参数、频谱不是
+推荐设置或本文实测。
+
+P05 controls-caption
+频段控制区：FREQ · GAIN · Q · stereo placement
+
+P05 side-choice
+这里选择 Side
+
+P05 menu-caveat
+图中当前选中 Right；
+箭头仅定位 Side，未显示已设置。
+
+P05 scope
+这是单频段范围，
+不是整条返回的全频 Width。
+
+P05 mono
+Mono 实例没有这些立体声选项。
+
+P05 source_footer
+© FabFilter · 官方 Press Area / Pro-Q 4 Help
+
+P06 series
+人声空间 · M/S EQ
+
+P06 page
+06 / 07
+
+P06 title
+先小幅削，不要一刀切
+
+P06 lead
+试听起点，不是官方推荐或最佳值。
+
+P06 recipe-label
+Side · Bell
+
+P06 recipe-numbers
+400 Hz     −2 dB     Q 1.0
+
+P06 search
+按素材移动频点、改变带宽与衰减量。
+
+P06 calc-title
+另一个计算例：Side 衰减 −3 dB
+
+P06 bar-label0
+Mid 保持
+
+P06 pct0
+100.0%
+
+P06 bar-label1
+Side 处理前
+
+P06 pct1
+100.0%
+
+P06 bar-label2
+Side 处理后
+
+P06 pct2
+70.8%
+
+P06 scale
+各条以自身处理前幅度为 100%；共用幅度尺度。
+
+P06 caveat
+10^(−3/20) ≈ 0.708；这是幅度，不是宽度。
+此 −3 dB 计算例，与上方 −2 dB 试听设置不同。
+
+P06 source_footer
+上方：试听建议 · 下方：独立计算示意，非实测
+
+P07 series
+人声空间 · M/S EQ
+
+P07 page
+07 / 07
+
+P07 title
+收窄之后，还要过三关
+
+P07 check-number0
+01
+
+P07 check-label0
+Stereo
+
+P07 check-body0
+字头更清楚吗？尾声仍自然吗？
+没有更好，就撤回。
+
+P07 check-number1
+02
+
+P07 check-label1
+Mono
+
+P07 check-body1
+按 DAW 合并单声道；
+检查音色与平衡，不是只听左声道。
+
+P07 check-number2
+03
+
+P07 check-label2
+整段
+
+P07 check-body2
+主歌、副歌、句尾都复核；
+共享返回上的其他声源也要听。
+
+P07 mono-label
+为什么 Mono 可能听不出变化？
+
+P07 proof
+(L′ + R′) / 2 = M
+
+P07 ideal
+理想纯 Side EQ 不改 Mid。
+限无额外增益、非线性或后级变化。
+
+P07 closing
+Mono 检查不能单独证明“去糊成功”。
+
+P07 source_footer
+数学推导 + 听音验收 · 不构成实测效果承诺

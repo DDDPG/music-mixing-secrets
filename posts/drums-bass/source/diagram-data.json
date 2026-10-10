@@ -1,0 +1,140 @@
+{
+  "disclaimer": "Original computed or conceptual diagrams. No recorded audio, no fake plugin UI. All amplitudes illustrative.",
+  "diagrams": {
+    "foundation-timeline": {
+      "bpm": 120,
+      "meter": "4/4",
+      "quarter_ms": 500,
+      "eighth_ms": 250,
+      "bar_ms": 2000,
+      "kick_onsets_ms": [
+        0,
+        1000
+      ],
+      "bass_intervals_ms": [
+        [
+          150,
+          900
+        ],
+        [
+          1150,
+          1900
+        ]
+      ],
+      "snare_onsets_ms": [
+        500,
+        1500
+      ],
+      "note": "Blocks show illustrative musical events, not measured sound envelopes; Kick/Snare block widths have no acoustic decay meaning."
+    },
+    "headroom-sum": {
+      "unit": "dBFS sample peak, normalized full scale=1",
+      "input_peak_dbfs": [
+        -12,
+        -12
+      ],
+      "input_amplitude": 0.251188643150958,
+      "output_amplitude": 0.502377286301916,
+      "output_peak_dbfs": -5.979400086720376,
+      "assumptions": "identical coherent sine waves, exactly in phase, no processor"
+    },
+    "polarity-time": {
+      "frequencies_hz": [
+        50,
+        100
+      ],
+      "delay_seconds": 0.005,
+      "time_axis_ms": [
+        0,
+        40
+      ],
+      "normalized_peak": 1,
+      "phase_shift_degrees": [
+        90,
+        180
+      ],
+      "formula": "phase_lag_deg=360*f*delay; x=sin(2*pi*f*t), delayed=sin(2*pi*f*(t-delay))",
+      "interpretation": "100 Hz shifted half-cycle is same as inversion for that sine only; 50 Hz is not."
+    },
+    "harmonic-ladder": {
+      "fundamental_hz": 55,
+      "harmonics": [
+        {
+          "n": 1,
+          "frequency_hz": 55,
+          "illustrative_amplitude": 1
+        },
+        {
+          "n": 2,
+          "frequency_hz": 110,
+          "illustrative_amplitude": 0.62
+        },
+        {
+          "n": 3,
+          "frequency_hz": 165,
+          "illustrative_amplitude": 0.4
+        },
+        {
+          "n": 4,
+          "frequency_hz": 220,
+          "illustrative_amplitude": 0.26
+        }
+      ],
+      "x_axis": "log frequency from 45 to 300 Hz",
+      "y_axis": "linear illustrative relative amplitude",
+      "a4_hz": 440,
+      "e1_hz": 41.20344461410875
+    },
+    "snare-routing": {
+      "edges": [
+        [
+          "snare",
+          "dry_main"
+        ],
+        [
+          "dry_main",
+          "mix"
+        ],
+        [
+          "snare_send",
+          "reverb_100wet"
+        ],
+        [
+          "reverb_100wet",
+          "return_eq"
+        ],
+        [
+          "return_eq",
+          "mix"
+        ]
+      ],
+      "notes": "Illustrative parallel reverb; send tap intentionally unspecified. Return EQ only affects wet branch. No gain values claimed."
+    },
+    "role-hierarchy": {
+      "type": "qualitative decision flow",
+      "steps": [
+        [
+          "先调推子",
+          "整段是否一直太突出？"
+        ],
+        [
+          "再找刺点",
+          "哪一次击打、哪一段频率？"
+        ],
+        [
+          "选处理方式",
+          "整段太亮：静态；偶尔刺：可试动态"
+        ],
+        [
+          "回到合奏",
+          "与人声、Snare 和高潮一起判断"
+        ]
+      ],
+      "numeric_levels": false
+    },
+    "verification-path": {
+      "type": "editorial listening checklist",
+      "measurements": false
+    }
+  }
+}

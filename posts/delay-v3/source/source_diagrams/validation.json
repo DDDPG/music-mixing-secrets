@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "tempo_formula": true,
+    "tempo_25_percent_shorter": true,
+    "pingpong_equal_intervals": true,
+    "feedback_formula": true,
+    "fourth_repeat_amplitude_ratio_8": true,
+    "dotted_1_5": true,
+    "original_image_hash_unchanged": true,
+    "all_crop_pixels_exact": true,
+    "no_prohibited_delay_translation": true,
+    "eight_pages_covered": true,
+    "all_svg_png_pairs_exist": true,
+    "all_text_inside_canvas": true,
+    "no_text_collisions": true
+  },
+  "text_overflows": [],
+  "text_overlaps": [],
+  "status": "passed",
+  "not_audio_measured": true,
+  "not_final_page_layout": true
+}

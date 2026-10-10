@@ -1,0 +1,427 @@
+P01 series
+鼓与 Bass · 混音基础
+
+P01 page
+01 / 08
+
+P01 title
+鼓与 Bass，
+先把地基搭稳
+
+P01 dek
+先关系，后音色。
+
+P01 art-label
+AI 概念插画
+
+P01 roles
+Kick 定落点 · Bass 接延续 · Snare 撑重音
+
+P01 path
+音量平衡 → 时间与极性
+频率分工 → 前后层次
+
+P01 action
+先只听这三个声部，找到歌曲的重心。
+
+P01 caveat
+角色会随编曲改变，不规定固定音量排序。
+
+P01 source_footer
+试听工作流 · 参考 iZotope：How to Mix Kick and Bass
+
+P02 series
+鼓与 Bass · 混音基础
+
+P02 page
+02 / 08
+
+P02 title
+第一步：平衡先过关
+
+P02 lead
+一个推子能解决的事，先不交给 EQ。
+
+P02 sequence
+Kick 留余量 → 慢慢加入 Bass → 再加 Snare
+
+P02 question
+同时出现时，落点与音符仍分得清吗？
+
+P02 chart-title
+叠加后的峰值，需要重新检查
+
+P02 math-condition
+计算例：两条完全相同、同相正弦
+
+P02 tick0
+0
+
+P02 tick-6
+-6
+
+P02 tick-12
+-12
+
+P02 tick-18
+-18
+
+P02 bar-value0
+−12 dBFS
+
+P02 bar-label0
+A
+
+P02 bar-value1
+−12 dBFS
+
+P02 bar-label1
+B
+
+P02 bar-value2
+−5.98 dBFS
+
+P02 bar-label2
+A + B
+
+P02 axis-label
+Sample Peak / dBFS
+
+P02 calculation
+振幅相加：0.251 + 0.251 = 0.502
+
+P02 caveat
+本例增加 6.02 dB；任意两件乐器不固定增加此值。
+检查轨道、处理器、总线；没有通用 Kick 峰值目标。
+
+P02 source_footer
+计算示意，非实测 · Ableton Mixing / Shure Recording
+
+P03 series
+鼓与 Bass · 混音基础
+
+P03 page
+03 / 08
+
+P03 title
+低频变薄，先分清原因
+
+P03 lead
+难辨可能是遮蔽；重叠时低频明显减少，
+再检查极性与时间关系。
+
+P03 definition1
+Polarity：上下翻转 x(t) → −x(t)
+
+P03 definition2
+Delay：沿时间移动 x(t) → x(t−5 ms)
+
+P03 legend
+数学示意：蓝实线 原正弦 · 灰虚线 延后 5 ms
+
+P03 freq0
+50 Hz
+
+P03 deg0
+90°
+
+P03 freq1
+100 Hz
+
+P03 deg1
+180°
+
+P03 time0
+0
+
+P03 time10
+10
+
+P03 time20
+20
+
+P03 time30
+30
+
+P03 time40
+40
+
+P03 axis
+共用时间轴 / ms · 振幅归一化
+
+P03 takeaway
+一次反相，不等于全曲“相位对齐”。
+
+P03 caveat
+实际 Kick / Bass 不是固定正弦。对比多个音符与鼓点；
+别为对齐一个波峰破坏 groove，也要检查尾长与编曲。
+
+P03 source_footer
+定义：Shure / Ableton Utility · 角度为独立计算
+
+P04 series
+鼓与 Bass · 混音基础
+
+P04 page
+04 / 08
+
+P04 title
+频率是线索，不是处方
+
+P04 lead
+Kick 的重量不固定在 100 Hz；
+先听共振区域、尾长与击打轮廓。
+
+P04 state-caveat
+官方示例：Guitar · Equalize 4。
+曲线不是鼓／Bass 设置，频谱也不是本文实测。
+
+P04 analyzer
+Analyzer 帮助定位，频谱重叠不能单凭
+画面判成遮蔽或相消。
+
+P04 notes
+Bass 会换音：E1 ≈ 41.20 Hz · A1 = 55 Hz。
+固定削减对一个音有效，也可能伤到另一个音。
+
+P04 tuning
+A4 = 440 Hz · 十二平均律 · 中央 C 记为 C4
+
+P04 source_footer
+© FabFilter · Pro-Q 4 Help：Analyzer / Piano display
+
+P05 series
+鼓与 Bass · 混音基础
+
+P05 page
+05 / 08
+
+P05 title
+让 Bass 在小音箱也有形
+
+P05 lead
+低频负责重量，谐波帮助辨认音高与轮廓。
+
+P05 chart-label
+A1 = 55 Hz · 前 4 阶谐波
+
+P05 axis-y
+相对振幅（人为设定）
+
+P05 tick50
+50
+
+P05 tick100
+100
+
+P05 tick200
+200
+
+P05 tick300
+300
+
+P05 hz0
+55 Hz
+
+P05 order0
+1 阶
+
+P05 hz1
+110 Hz
+
+P05 order1
+2 阶
+
+P05 hz2
+165 Hz
+
+P05 order2
+3 阶
+
+P05 hz3
+220 Hz
+
+P05 order3
+4 阶
+
+P05 log-axis
+横轴：对数频率 / Hz
+
+P05 listen
+换音时，基频与谐波一起移动。
+听不清 Bass，别只继续推最底下。
+
+P05 layer
+独立高频层先匹配起音与时值，再小声加入；
+用实际小音箱与全频监听来回检查。
+
+P05 caveat
+非实测频谱；不保证任意小音箱可重放图中频率。
+
+P05 source_footer
+谐波：FabFilter One Help · 聆听建议：iZotope low end
+
+P06 series
+鼓与 Bass · 混音基础
+
+P06 page
+06 / 08
+
+P06 title
+Snare：本体与空间分开管
+
+P06 lead
+先让本体站住，再决定空间需要多少。
+
+P06 diagram-caption
+常规并行 Reverb · 信号流示意
+
+P06 snare
+Snare
+
+P06 dry
+Dry 主路
+
+P06 mix
+鼓组／混音
+
+P06 sendlabel
+Send
+
+P06 reverb
+Reverb
+
+P06 reverb-sub
+100% Wet
+
+P06 return
+Return EQ
+
+P06 body-label
+本体
+
+P06 body-search
+约 300 Hz：搜索厚度
+约 1 kHz 显硬／共振：再局部试削
+
+P06 space-label
+空间
+
+P06 space-search
+先少送一点，或缩短尾声；
+再听 Return 的 2–3 kHz 是否拥挤。
+
+P06 caveat
+以上是试听起点，并非所有 Snare 都要 Reverb。
+抬 10 kHz 不能等价补回削去的击打清晰度。
+
+P06 source_footer
+iZotope：How to EQ Drums · FabFilter Learn：Reverb
+
+P07 series
+鼓与 Bass · 混音基础
+
+P07 page
+07 / 08
+
+P07 title
+亮，不必每一下都扎耳
+
+P07 lead
+Hi-hat / Cymbal 先收一点推子，
+再听节奏是否仍然连贯。
+
+P07 listen-question
+刺耳是偶尔出现，还是持续整段？
+
+P07 leftcase
+整段太亮
+
+P07 rightcase
+只有重击刺耳
+
+P07 leftaction
+再考虑静态 EQ
+
+P07 rightaction
+可试 Dynamic EQ
+
+P07 freq-note
+5–8 kHz 只是可能的搜索区，先听出问题再处理。
+
+P07 perc-title
+大打击乐：体积也要服务高潮
+
+P07 perc-copy
+检查 1–3 kHz 的硬度、尾长与进入时机，
+别用无限加低频换气势。
+
+P07 takeaway
+和人声、Snare 一起听，保留需要的身体感。
+
+P07 caveat
+不设固定削减频率；避免高通过头后只剩尖锐边缘。
+
+P07 source_footer
+条件性试听建议 · iZotope：How to EQ Drums
+
+P08 series
+鼓与 Bass · 混音基础
+
+P08 page
+08 / 08
+
+P08 title
+最后，用一段音乐验收
+
+P08 lead
+整段通过，比某一击“巨大”更重要。
+
+P08 number0
+01
+
+P08 label0
+低音量
+
+P08 body0
+Kick 落点、Bass 音符、Snare 重音，
+都能跟住吗？
+
+P08 number1
+02
+
+P08 label1
+Mono
+
+P08 body1
+合并单声道后，低频与高频 Bass 层
+有没有异常变薄？
+
+P08 number2
+03
+
+P08 label2
+换段落、换音符
+
+P08 body2
+主歌与高潮都稳定吗？
+镲片有没有盖过主角？
+
+P08 number3
+04
+
+P08 label3
+匹配响度旁通
+
+P08 body3
+关系更清楚，还是只是更响？
+最后再检查输出余量。
+
+P08 closing
+一次只解决一个已听到的问题。
+
+P08 caveat
+数值只用于解释与起步试听；本套没有工程音频实测。
+
+P08 source_footer
+整段复核 · 参考 Ableton / FabFilter / iZotope

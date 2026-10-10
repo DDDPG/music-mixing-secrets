@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">单声道检查需要合并左右声道</title>
+<desc id="desc">左声道和右声道一起进入单声道折叠，再听音色、音量和平衡。实际折叠增益由工程或工具决定。只听左声道不是单声道兼容检查。</desc>
+<rect id="background" width="1200" height="520" fill="#ffffff"/>
+<defs>
+<marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#0066cc" stroke-width="1.3"/></marker>
+<marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#1d1d1f" stroke-width="1.3"/></marker>
+<marker id="arrow-second" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#7c8997" stroke-width="1.3"/></marker>
+<marker id="arrow-muted" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#62666d" stroke-width="1.3"/></marker>
+</defs>
+<text id="text-1" x="56" y="58" fill="#1d1d1f" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" text-anchor="start">单声道检查：合并 L + R 再听</text>
+<text id="text-2" x="56" y="100" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start">尽量匹配开关前后的响度，检查音色、音量和平衡</text>
+<text id="text-3" x="93" y="206" fill="#0066cc" font-family="Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start">L</text>
+<text id="text-4" x="93" y="351" fill="#7c8997" font-family="Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start">R</text>
+<path d="M151,194 H446 V238" fill="none" stroke="#0066cc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<path d="M151,339 H446 V294" fill="none" stroke="#7c8997" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-second)"/>
+<circle cx="446" cy="266" r="27" fill="#ffffff" stroke="#1d1d1f" stroke-width="2.5"/>
+<text id="text-5" x="446" y="277" fill="#1d1d1f" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="600" text-anchor="middle">+</text>
+<line x1="479" y1="266" x2="699" y2="266" stroke="#1d1d1f" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-ink)"/>
+<text id="text-6" x="577" y="242" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="middle">折叠为单声道</text>
+<rect x="723" y="215" width="315" height="104" rx="8" fill="#ffffff" stroke="#dfe3e8" stroke-width="2"/>
+<text id="text-7" x="880" y="278" fill="#1d1d1f" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="middle">试听整首歌的平衡</text>
+<text id="text-8" x="56" y="458" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="start">这不是只听左声道；折叠增益以所用工程或工具为准。</text>
+<text id="text-9" x="56" y="492" fill="#62666d" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="start">功能示意，未绘制或暗示单声道兼容性实测结果。</text>
+</svg>

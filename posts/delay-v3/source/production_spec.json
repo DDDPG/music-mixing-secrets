@@ -1,0 +1,5099 @@
+{
+  "schema_version": "3.0",
+  "status": "Implementation-ready design plan; not rendered",
+  "canvas": {
+    "width": 1080,
+    "height": 1440,
+    "preview_width": 360,
+    "text_safe_x": [
+      72,
+      1008
+    ],
+    "essential_content_bottom": 1380,
+    "footer_bottom": 1420,
+    "raster_scale": 1
+  },
+  "design_reference": {
+    "selected": "Apple",
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "commit": "13be5c05c63be24b57581162364167028020f043",
+    "path": "design-md/apple/DESIGN.md",
+    "url": "https://github.com/VoltAgent/awesome-design-md/blob/13be5c05c63be24b57581162364167028020f043/design-md/apple/DESIGN.md",
+    "source_kind": "Third-party design analysis, not official Apple guidance",
+    "candidates_read": [
+      "design-md/apple/DESIGN.md",
+      "design-md/ibm/DESIGN.md",
+      "design-md/linear.app/DESIGN.md"
+    ]
+  },
+  "tokens": {
+    "colors": {
+      "canvas": "#ffffff",
+      "surface": "#f5f5f7",
+      "ink": "#1d1d1f",
+      "secondary": "#515154",
+      "accent": "#0066cc",
+      "comparison": "#697887",
+      "hairline": "#d2d2d7",
+      "grid": "#e5e5ea"
+    },
+    "font_family": "Noto Sans SC",
+    "font_files": {
+      "400": "assets/fonts/NotoSansSC-400.ttf",
+      "600": "assets/fonts/NotoSansSC-600.ttf"
+    },
+    "font_license": "assets/fonts/OFL.txt",
+    "font_licensing": "SIL OFL; copy fonts and license to the V3 package. Do not package SF Pro.",
+    "font_sizes": {
+      "hero": 68,
+      "heading": 58,
+      "long_heading": 56,
+      "section": 40,
+      "body": 38,
+      "dense_body": 36,
+      "diagram_essential": 32,
+      "diagram_min": 30,
+      "caveat": 28,
+      "caveat_min": 26,
+      "source": 26
+    },
+    "weights": [
+      400,
+      600
+    ],
+    "letter_spacing_cjk": 0,
+    "numeric_features": "tabular-nums where supported; keep decimal places exactly as supplied",
+    "spacing_grid": 8,
+    "chart_line": 4,
+    "grid_line": 2,
+    "panel_radius": 18,
+    "border_radius_rule": "Only meaningful grouped panels are rounded. Images remain uncropped beyond verified asset crops and have no rounded masks.",
+    "shadows": "none",
+    "gradients": "none"
+  },
+  "coordinate_convention": {
+    "box": "[left, top, width, height], pixels; text y is line-box top, not baseline",
+    "text": "Use supplied explicit newlines. Do not shrink fonts to fit. If browser metrics differ, report and reflow while preserving reading order and stated minimum sizes.",
+    "arrows": "Arrowhead size about 12 px for stroke 3–4; arrowheads must point toward the stated destination.",
+    "chart_adaptation": "Rebuild at final 1080px coordinates using the data and elements below. Never embed the complete landscape SVG at reduced scale.",
+    "layering": "Elements appear in drawing order. Text is always above shapes but must not cover source image controls."
+  },
+  "publication": {
+    "status": "Reviewable educational tutorial draft",
+    "source_image_owner": "Waves Audio Ltd.",
+    "rights_status": "unverified_for_public_republication",
+    "disclosure": "Official image and exact crops are limited product-specific educational quotations. Attribution does not establish republication permission. Do not claim blanket copyright clearance or publish externally without separate approval/rights review.",
+    "image_state": "Official image: DUAL highlighted, BPM highlighted, 120 BPM, L 1/8D, R 1/2. It is not the Ping Pong / HOST tutorial recipe.",
+    "artifact_sources": "Carry assets.json, sources.md, and source-image disclaimers into the editable package."
+  },
+  "pages": [
+    {
+      "page": 1,
+      "title": "给人声一点空间",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · Waves H-Delay",
+          "box": [
+            72,
+            52,
+            760,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "01 / 08",
+          "box": [
+            874,
+            52,
+            134,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "给人声一点空间",
+          "box": [
+            72,
+            110,
+            936,
+            86
+          ],
+          "font_size": 68,
+          "font_weight": 600,
+          "line_height": 78,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "subtitle",
+          "type": "text",
+          "text": "低 Wet 的 Ping Pong Delay",
+          "box": [
+            72,
+            212,
+            936,
+            60
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 56,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "lead",
+          "type": "text",
+          "text": "主唱已经够清楚，只想再添一点空间？\n让少量延迟信号在左右交替，\n用干湿比例控制它的存在感。",
+          "box": [
+            72,
+            296,
+            936,
+            164
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "official_full",
+          "type": "image",
+          "asset_id": "A01",
+          "file": "assets/source/h-delay-official-product.png",
+          "box": [
+            48,
+            528,
+            984,
+            357.759
+          ],
+          "fit": "contain",
+          "preserve_aspect_ratio": true,
+          "retouch": false,
+          "radius": 0,
+          "shadow": false
+        },
+        {
+          "id": "pointer_1",
+          "type": "line",
+          "points": [
+            [
+              320,
+              514
+            ],
+            [
+              320,
+              528
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "number_1",
+          "type": "circle",
+          "center": [
+            320,
+            494
+          ],
+          "radius": 19,
+          "fill": "#ffffff",
+          "stroke": "#0066cc",
+          "stroke_width": 2
+        },
+        {
+          "id": "number_label_1",
+          "type": "text",
+          "text": "1",
+          "box": [
+            301,
+            474,
+            38,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 600,
+          "line_height": 38,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "pointer_2",
+          "type": "line",
+          "points": [
+            [
+              728,
+              514
+            ],
+            [
+              728,
+              528
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "number_2",
+          "type": "circle",
+          "center": [
+            728,
+            494
+          ],
+          "radius": 19,
+          "fill": "#ffffff",
+          "stroke": "#0066cc",
+          "stroke_width": 2
+        },
+        {
+          "id": "number_label_2",
+          "type": "text",
+          "text": "2",
+          "box": [
+            709,
+            474,
+            38,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 600,
+          "line_height": 38,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "pointer_3",
+          "type": "line",
+          "points": [
+            [
+              970,
+              514
+            ],
+            [
+              970,
+              528
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "number_3",
+          "type": "circle",
+          "center": [
+            970,
+            494
+          ],
+          "radius": 19,
+          "fill": "#ffffff",
+          "stroke": "#0066cc",
+          "stroke_width": 2
+        },
+        {
+          "id": "number_label_3",
+          "type": "text",
+          "text": "3",
+          "box": [
+            951,
+            474,
+            38,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 600,
+          "line_height": 38,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "pointer_4",
+          "type": "line",
+          "points": [
+            [
+              670,
+              900
+            ],
+            [
+              670,
+              885.759
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "number_4",
+          "type": "circle",
+          "center": [
+            670,
+            920
+          ],
+          "radius": 19,
+          "fill": "#ffffff",
+          "stroke": "#0066cc",
+          "stroke_width": 2
+        },
+        {
+          "id": "number_label_4",
+          "type": "text",
+          "text": "4",
+          "box": [
+            651,
+            900,
+            38,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 600,
+          "line_height": 38,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "image_disclaimer",
+          "type": "text",
+          "text": "Waves 官方界面，仅用于定位控件。\n图为 DUAL / BPM 状态；参数不是本教程设置。",
+          "box": [
+            72,
+            962,
+            936,
+            80
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "delay_head",
+          "type": "text",
+          "text": "① DELAY R",
+          "box": [
+            72,
+            1080,
+            440,
+            50
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "delay_body",
+          "type": "text",
+          "text": "时间位置（图中为 R 声道）",
+          "box": [
+            72,
+            1131,
+            440,
+            46
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "feedback_head",
+          "type": "text",
+          "text": "② FEEDBACK",
+          "box": [
+            568,
+            1080,
+            440,
+            50
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "feedback_body",
+          "type": "text",
+          "text": "后续重复",
+          "box": [
+            568,
+            1131,
+            440,
+            46
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "wet_head",
+          "type": "text",
+          "text": "③ DRY/WET",
+          "box": [
+            72,
+            1190,
+            440,
+            50
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "wet_body",
+          "type": "text",
+          "text": "干湿混合",
+          "box": [
+            72,
+            1241,
+            440,
+            46
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "filters_head",
+          "type": "text",
+          "text": "④ HiPASS / LoPASS",
+          "box": [
+            568,
+            1190,
+            440,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "filters_body",
+          "type": "text",
+          "text": "延迟声部的音色",
+          "box": [
+            568,
+            1241,
+            440,
+            46
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "closing",
+          "type": "text",
+          "text": "先把时间、反馈和滤波分开调。",
+          "box": [
+            72,
+            1314,
+            936,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "界面：Waves 官方产品页 · © Waves Audio Ltd.",
+          "box": [
+            72,
+            1388,
+            936,
+            34
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ],
+      "diagram_references": [
+        "visuals/01_official_control_map.svg"
+      ],
+      "must_not": [
+        "Do not relabel DELAY R inside the screenshot.",
+        "Do not state Ping Pong or HOST is enabled in this official image."
+      ]
+    },
+    {
+      "page": 2,
+      "title": "低 Wet 插入，信号怎么走？",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · Waves H-Delay",
+          "box": [
+            72,
+            52,
+            760,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "02 / 08",
+          "box": [
+            874,
+            52,
+            134,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "低 Wet 插入，信号怎么走？",
+          "box": [
+            72,
+            110,
+            936,
+            86
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 78,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "插在人声轨，干声与 Delay 在插件内部混合。\n单声道人声选 M>S；立体声轨选 Stereo。",
+          "box": [
+            72,
+            220,
+            936,
+            110
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "processor_boundary",
+          "type": "rect",
+          "box": [
+            208,
+            402,
+            640,
+            470
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 18
+        },
+        {
+          "id": "processor_label",
+          "type": "text",
+          "text": "H-Delay 内部",
+          "box": [
+            232,
+            425,
+            400,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 46,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "input",
+          "type": "text",
+          "text": "人声",
+          "box": [
+            72,
+            598,
+            105,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "input_line",
+          "type": "line",
+          "points": [
+            [
+              159,
+              652
+            ],
+            [
+              256,
+              652
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "split",
+          "type": "circle",
+          "center": [
+            256,
+            652
+          ],
+          "radius": 6,
+          "fill": "#1d1d1f",
+          "stroke": null,
+          "stroke_width": 3
+        },
+        {
+          "id": "dry_path",
+          "type": "polyline",
+          "points": [
+            [
+              256,
+              652
+            ],
+            [
+              256,
+              536
+            ],
+            [
+              754,
+              536
+            ],
+            [
+              754,
+              618
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": true,
+          "fill": "none"
+        },
+        {
+          "id": "dry_branch",
+          "type": "text",
+          "text": "干声支路",
+          "box": [
+            416,
+            488,
+            280,
+            50
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "wet_in",
+          "type": "polyline",
+          "points": [
+            [
+              256,
+              652
+            ],
+            [
+              256,
+              710
+            ],
+            [
+              388,
+              710
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true,
+          "fill": "none"
+        },
+        {
+          "id": "delay_box",
+          "type": "rect",
+          "box": [
+            388,
+            673,
+            218,
+            76
+          ],
+          "fill": "#ffffff",
+          "stroke": "#0066cc",
+          "stroke_width": 2,
+          "radius": 10
+        },
+        {
+          "id": "delay_label",
+          "type": "text",
+          "text": "Delay 支路",
+          "box": [
+            388,
+            683,
+            218,
+            55
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "wet_out",
+          "type": "polyline",
+          "points": [
+            [
+              606,
+              710
+            ],
+            [
+              754,
+              710
+            ],
+            [
+              754,
+              686
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true,
+          "fill": "none"
+        },
+        {
+          "id": "feedback_tap",
+          "type": "circle",
+          "center": [
+            632,
+            710
+          ],
+          "radius": 6,
+          "fill": "#0066cc",
+          "stroke": null,
+          "stroke_width": 3
+        },
+        {
+          "id": "feedback_loop",
+          "type": "polyline",
+          "points": [
+            [
+              632,
+              710
+            ],
+            [
+              632,
+              802
+            ],
+            [
+              334,
+              802
+            ],
+            [
+              334,
+              710
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true,
+          "fill": "none"
+        },
+        {
+          "id": "feedback_label",
+          "type": "text",
+          "text": "Feedback：取一部分回送",
+          "box": [
+            286,
+            818,
+            512,
+            45
+          ],
+          "font_size": 30,
+          "font_weight": 600,
+          "line_height": 42,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "mix",
+          "type": "circle",
+          "center": [
+            754,
+            652
+          ],
+          "radius": 34,
+          "fill": "#ffffff",
+          "stroke": "#1d1d1f",
+          "stroke_width": 3
+        },
+        {
+          "id": "mix_plus",
+          "type": "text",
+          "text": "+",
+          "box": [
+            720,
+            619,
+            68,
+            66
+          ],
+          "font_size": 42,
+          "font_weight": 400,
+          "line_height": 60,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "mix_label",
+          "type": "text",
+          "text": "Dry/Wet",
+          "box": [
+            562,
+            578,
+            164,
+            45
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "output_line",
+          "type": "line",
+          "points": [
+            [
+              790,
+              652
+            ],
+            [
+              918,
+              652
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "output",
+          "type": "text",
+          "text": "混音",
+          "box": [
+            907,
+            593,
+            101,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "diagram_caption",
+          "type": "text",
+          "text": "功能路由示意，不是插件内部精确 DSP 电路。",
+          "box": [
+            72,
+            902,
+            936,
+            48
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "send_compare",
+          "type": "rect",
+          "box": [
+            72,
+            990,
+            936,
+            226
+          ],
+          "fill": "#f5f5f7",
+          "stroke": null,
+          "stroke_width": 0,
+          "radius": 18
+        },
+        {
+          "id": "send_title",
+          "type": "text",
+          "text": "如果改用发送",
+          "box": [
+            104,
+            1014,
+            872,
+            56
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "send_copy",
+          "type": "text",
+          "text": "原人声直接进混音；效果轨 Dry/Wet 设为 100。\n只返回处理后的信号，\n再用发送量或返回推子调多少。",
+          "box": [
+            104,
+            1078,
+            872,
+            130
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "Dry/Wet 5 是插件读数，\n不能直接当成干湿电平比或响度比。",
+          "box": [
+            72,
+            1272,
+            936,
+            84
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "功能依据：Waves H-Delay User Guide · 路由为示意",
+          "box": [
+            72,
+            1388,
+            936,
+            34
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ],
+      "diagram_references": [
+        "visuals/02_insert_signal_path.svg",
+        "visuals/03_send_signal_path.svg"
+      ],
+      "must_not": [
+        "The only dry split in the large insert diagram is inside the H-Delay boundary.",
+        "Feedback must tap Delay output and return to Delay input, never the Dry/Wet mix.",
+        "The send comparison is prose, not a second miniature landscape diagram."
+      ]
+    },
+    {
+      "page": 3,
+      "title": "同一个 1/8，速度不同就不同",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · Waves H-Delay",
+          "box": [
+            72,
+            52,
+            760,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "03 / 08",
+          "box": [
+            874,
+            52,
+            134,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "同一个 1/8，速度不同就不同",
+          "box": [
+            72,
+            110,
+            936,
+            86
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 78,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "conditions",
+          "type": "text",
+          "text": "普通时值 · 固定速度 · 四分音符为一拍",
+          "box": [
+            72,
+            218,
+            936,
+            50
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "grid_0",
+          "type": "line",
+          "points": [
+            [
+              282.0,
+              305
+            ],
+            [
+              282.0,
+              634
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "tick_0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            242.0,
+            650,
+            80,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "grid_50",
+          "type": "line",
+          "points": [
+            [
+              385.2,
+              305
+            ],
+            [
+              385.2,
+              634
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "tick_50",
+          "type": "text",
+          "text": "50",
+          "box": [
+            345.2,
+            650,
+            80,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "grid_100",
+          "type": "line",
+          "points": [
+            [
+              488.4,
+              305
+            ],
+            [
+              488.4,
+              634
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "tick_100",
+          "type": "text",
+          "text": "100",
+          "box": [
+            448.4,
+            650,
+            80,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "grid_150",
+          "type": "line",
+          "points": [
+            [
+              591.6,
+              305
+            ],
+            [
+              591.6,
+              634
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "tick_150",
+          "type": "text",
+          "text": "150",
+          "box": [
+            551.6,
+            650,
+            80,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "grid_200",
+          "type": "line",
+          "points": [
+            [
+              694.8,
+              305
+            ],
+            [
+              694.8,
+              634
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "tick_200",
+          "type": "text",
+          "text": "200",
+          "box": [
+            654.8,
+            650,
+            80,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "grid_250",
+          "type": "line",
+          "points": [
+            [
+              798.0,
+              305
+            ],
+            [
+              798.0,
+              634
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "tick_250",
+          "type": "text",
+          "text": "250",
+          "box": [
+            758.0,
+            650,
+            80,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "axis_unit",
+          "type": "text",
+          "text": "ms",
+          "box": [
+            923,
+            650,
+            85,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "slow_bpm",
+          "type": "text",
+          "text": "120",
+          "box": [
+            72,
+            341,
+            114,
+            61
+          ],
+          "font_size": 44,
+          "font_weight": 600,
+          "line_height": 60,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "slow_bpm_unit",
+          "type": "text",
+          "text": "BPM",
+          "box": [
+            72,
+            401,
+            114,
+            43
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "slow_1/8_label",
+          "type": "text",
+          "text": "1/8",
+          "box": [
+            193,
+            317,
+            78,
+            48
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#0066cc",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "slow_1/8_bar",
+          "type": "line",
+          "points": [
+            [
+              282,
+              342
+            ],
+            [
+              798.0,
+              342
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 11,
+          "end_arrow": false
+        },
+        {
+          "id": "slow_1/8_start",
+          "type": "circle",
+          "center": [
+            282,
+            342
+          ],
+          "radius": 6,
+          "fill": "#ffffff",
+          "stroke": "#0066cc",
+          "stroke_width": 3
+        },
+        {
+          "id": "slow_1/8_value",
+          "type": "text",
+          "text": "250 ms",
+          "box": [
+            816.0,
+            316,
+            205,
+            52
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "slow_1/16_label",
+          "type": "text",
+          "text": "1/16",
+          "box": [
+            193,
+            399,
+            78,
+            48
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#697887",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "slow_1/16_bar",
+          "type": "line",
+          "points": [
+            [
+              282,
+              424
+            ],
+            [
+              540.0,
+              424
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 11,
+          "end_arrow": false
+        },
+        {
+          "id": "slow_1/16_start",
+          "type": "circle",
+          "center": [
+            282,
+            424
+          ],
+          "radius": 6,
+          "fill": "#ffffff",
+          "stroke": "#697887",
+          "stroke_width": 3
+        },
+        {
+          "id": "slow_1/16_value",
+          "type": "text",
+          "text": "125 ms",
+          "box": [
+            558.0,
+            398,
+            205,
+            52
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "fast_bpm",
+          "type": "text",
+          "text": "160",
+          "box": [
+            72,
+            537,
+            114,
+            61
+          ],
+          "font_size": 44,
+          "font_weight": 600,
+          "line_height": 60,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "fast_bpm_unit",
+          "type": "text",
+          "text": "BPM",
+          "box": [
+            72,
+            597,
+            114,
+            43
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "fast_1/8_label",
+          "type": "text",
+          "text": "1/8",
+          "box": [
+            193,
+            513,
+            78,
+            48
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#0066cc",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "fast_1/8_bar",
+          "type": "line",
+          "points": [
+            [
+              282,
+              538
+            ],
+            [
+              669.0,
+              538
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 11,
+          "end_arrow": false
+        },
+        {
+          "id": "fast_1/8_start",
+          "type": "circle",
+          "center": [
+            282,
+            538
+          ],
+          "radius": 6,
+          "fill": "#ffffff",
+          "stroke": "#0066cc",
+          "stroke_width": 3
+        },
+        {
+          "id": "fast_1/8_value",
+          "type": "text",
+          "text": "187.5 ms",
+          "box": [
+            687.0,
+            512,
+            205,
+            52
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "fast_1/16_label",
+          "type": "text",
+          "text": "1/16",
+          "box": [
+            193,
+            595,
+            78,
+            48
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#697887",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "fast_1/16_bar",
+          "type": "line",
+          "points": [
+            [
+              282,
+              620
+            ],
+            [
+              475.5,
+              620
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 11,
+          "end_arrow": false
+        },
+        {
+          "id": "fast_1/16_start",
+          "type": "circle",
+          "center": [
+            282,
+            620
+          ],
+          "radius": 6,
+          "fill": "#ffffff",
+          "stroke": "#697887",
+          "stroke_width": 3
+        },
+        {
+          "id": "fast_1/16_value",
+          "type": "text",
+          "text": "93.75 ms",
+          "box": [
+            493.5,
+            594,
+            205,
+            52
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "key",
+          "type": "text",
+          "text": "120 → 160 BPM：同一音符时长缩短 25%",
+          "box": [
+            72,
+            726,
+            936,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "formulas",
+          "type": "text",
+          "text": "1/8 = 60,000 ÷ BPM ÷ 2（ms）\n1/16 = 60,000 ÷ BPM ÷ 4（ms）",
+          "box": [
+            72,
+            806,
+            936,
+            92
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "host",
+          "type": "text",
+          "text": "HOST 跟随工程速度；歌词密度仍需试听。",
+          "box": [
+            72,
+            918,
+            936,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "section_rule",
+          "type": "line",
+          "points": [
+            [
+              72,
+              992
+            ],
+            [
+              1008,
+              992
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "official_time_crop",
+          "type": "image",
+          "asset_id": "A02",
+          "file": "assets/derived/h-delay-time-sync.png",
+          "box": [
+            72,
+            1030,
+            300,
+            210
+          ],
+          "fit": "contain",
+          "preserve_aspect_ratio": true,
+          "retouch": false,
+          "radius": 0,
+          "shadow": false
+        },
+        {
+          "id": "dotted_title",
+          "type": "text",
+          "text": "确认普通 1/8",
+          "box": [
+            412,
+            1024,
+            596,
+            54
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "dotted_values",
+          "type": "text",
+          "text": "160 BPM：\n普通 1/8 = 187.5 ms\n1/8D = 281.25 ms（长 50%）",
+          "box": [
+            412,
+            1084,
+            596,
+            147
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 47,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "default_warning",
+          "type": "text",
+          "text": "手册默认 1/8D；加载预设后复核。",
+          "box": [
+            72,
+            1262,
+            936,
+            43
+          ],
+          "font_size": 28,
+          "font_weight": 600,
+          "line_height": 40,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "image_caption",
+          "type": "text",
+          "text": "Waves 官方局部：120 BPM / 1/8D / 1/2，BPM 状态。\n仅辨认字符，非本教程设置。© Waves Audio Ltd.",
+          "box": [
+            72,
+            1308,
+            936,
+            70
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "计算：60,000 / BPM · 默认时值：H-Delay User Guide p.8",
+          "box": [
+            72,
+            1388,
+            936,
+            34
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ],
+      "diagram_references": [
+        "visuals/04_tempo_duration.svg",
+        "visuals/05_ordinary_vs_dotted.svg",
+        "visuals/13_ui_time_reference.svg"
+      ],
+      "must_not": [
+        "Do not align the official 120 BPM dotted-note screenshot with the ordinary-note bars as if it were the recipe.",
+        "Do not draw a second tiny dotted-note chart; use the prominent exact numeric comparison.",
+        "Keep the four bars on one shared linear millisecond scale."
+      ]
+    },
+    {
+      "page": 4,
+      "title": "Ping Pong，交替的是延迟声部",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · Waves H-Delay",
+          "box": [
+            72,
+            52,
+            760,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "04 / 08",
+          "box": [
+            874,
+            52,
+            134,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "Ping Pong，交替的是延迟声部",
+          "box": [
+            72,
+            110,
+            936,
+            86
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 78,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "conditions",
+          "type": "text",
+          "text": "160 BPM · 普通 1/8 · 单次短输入 · 从左开始",
+          "box": [
+            72,
+            218,
+            936,
+            50
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "time_grid_0",
+          "type": "line",
+          "points": [
+            [
+              234.0,
+              370
+            ],
+            [
+              234.0,
+              722
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_tick_0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            177.0,
+            748,
+            114,
+            47
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "time_grid_187.5",
+          "type": "line",
+          "points": [
+            [
+              409.5,
+              370
+            ],
+            [
+              409.5,
+              722
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_tick_187.5",
+          "type": "text",
+          "text": "187.5",
+          "box": [
+            352.5,
+            748,
+            114,
+            47
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "time_grid_375",
+          "type": "line",
+          "points": [
+            [
+              585.0,
+              370
+            ],
+            [
+              585.0,
+              722
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_tick_375",
+          "type": "text",
+          "text": "375",
+          "box": [
+            528.0,
+            748,
+            114,
+            47
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "time_grid_562.5",
+          "type": "line",
+          "points": [
+            [
+              760.5,
+              370
+            ],
+            [
+              760.5,
+              722
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_tick_562.5",
+          "type": "text",
+          "text": "562.5",
+          "box": [
+            703.5,
+            748,
+            114,
+            47
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "time_grid_750",
+          "type": "line",
+          "points": [
+            [
+              936.0,
+              370
+            ],
+            [
+              936.0,
+              722
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_tick_750",
+          "type": "text",
+          "text": "750",
+          "box": [
+            879.0,
+            748,
+            114,
+            47
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "L_lane",
+          "type": "line",
+          "points": [
+            [
+              206,
+              455
+            ],
+            [
+              976,
+              455
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 3,
+          "end_arrow": false
+        },
+        {
+          "id": "R_lane",
+          "type": "line",
+          "points": [
+            [
+              206,
+              651
+            ],
+            [
+              976,
+              651
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 3,
+          "end_arrow": false
+        },
+        {
+          "id": "L_label",
+          "type": "text",
+          "text": "L 左",
+          "box": [
+            72,
+            429,
+            116,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "R_label",
+          "type": "text",
+          "text": "R 右",
+          "box": [
+            72,
+            625,
+            116,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "dry_label",
+          "type": "text",
+          "text": "干声",
+          "box": [
+            72,
+            527,
+            116,
+            58
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "dry_event",
+          "type": "circle",
+          "center": [
+            234,
+            553
+          ],
+          "radius": 12,
+          "fill": "#1d1d1f",
+          "stroke": null,
+          "stroke_width": 3
+        },
+        {
+          "id": "dry_zero",
+          "type": "text",
+          "text": "0 ms",
+          "box": [
+            256,
+            526,
+            146,
+            52
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "event_1",
+          "type": "circle",
+          "center": [
+            409.5,
+            455
+          ],
+          "radius": 13,
+          "fill": "#0066cc",
+          "stroke": null,
+          "stroke_width": 3
+        },
+        {
+          "id": "repeat_1",
+          "type": "text",
+          "text": "第 1 次",
+          "box": [
+            337.5,
+            389,
+            144,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "event_2",
+          "type": "circle",
+          "center": [
+            585.0,
+            651
+          ],
+          "radius": 13,
+          "fill": "#697887",
+          "stroke": null,
+          "stroke_width": 3
+        },
+        {
+          "id": "repeat_2",
+          "type": "text",
+          "text": "第 2 次",
+          "box": [
+            513.0,
+            585,
+            144,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#697887",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "event_3",
+          "type": "circle",
+          "center": [
+            760.5,
+            455
+          ],
+          "radius": 13,
+          "fill": "#0066cc",
+          "stroke": null,
+          "stroke_width": 3
+        },
+        {
+          "id": "repeat_3",
+          "type": "text",
+          "text": "第 3 次",
+          "box": [
+            688.5,
+            389,
+            144,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "event_4",
+          "type": "circle",
+          "center": [
+            936.0,
+            651
+          ],
+          "radius": 13,
+          "fill": "#697887",
+          "stroke": null,
+          "stroke_width": 3
+        },
+        {
+          "id": "repeat_4",
+          "type": "text",
+          "text": "第 4 次",
+          "box": [
+            864.0,
+            585,
+            144,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#697887",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "same_side_bracket",
+          "type": "polyline",
+          "points": [
+            [
+              409.5,
+              375
+            ],
+            [
+              409.5,
+              347
+            ],
+            [
+              760.5,
+              347
+            ],
+            [
+              760.5,
+              375
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": false,
+          "fill": "none"
+        },
+        {
+          "id": "same_side_caption",
+          "type": "text",
+          "text": "同侧间隔 375 ms",
+          "box": [
+            416,
+            294,
+            450,
+            48
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 46,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "axis_unit",
+          "type": "text",
+          "text": "时间 / ms",
+          "box": [
+            808,
+            800,
+            200,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "key",
+          "type": "text",
+          "text": "相邻重复间隔 187.5 ms。\n干声保持原有声像，延迟声部提供左右运动。",
+          "box": [
+            72,
+            862,
+            936,
+            108
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "official_pingpong_crop",
+          "type": "image",
+          "asset_id": "A03",
+          "file": "assets/derived/h-delay-pingpong-button.png",
+          "box": [
+            72,
+            1034,
+            310,
+            122.558
+          ],
+          "fit": "contain",
+          "preserve_aspect_ratio": true,
+          "retouch": false,
+          "radius": 0,
+          "shadow": false
+        },
+        {
+          "id": "operation",
+          "type": "text",
+          "text": "选 Stereo 或 M>S，\n打开 PING PONG。",
+          "box": [
+            424,
+            1010,
+            584,
+            104
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "threshold",
+          "type": "text",
+          "text": "Feedback 显示值 > 1",
+          "box": [
+            424,
+            1120,
+            584,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "image_caption",
+          "type": "text",
+          "text": "Waves 官方局部，仅定位按钮，不表示已开启。\n© Waves Audio Ltd.",
+          "box": [
+            72,
+            1184,
+            936,
+            72
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "必要时暂时提高 Dry/Wet 辨认，再收回低 Wet。\n时序示意，非实测；左右起点可换，点大小不表示振幅。\n“> 1”为插件读数，不是模型系数 g。",
+          "box": [
+            72,
+            1262,
+            936,
+            112
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 36,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "功能与门槛：Waves H-Delay User Guide p.4、p.10",
+          "box": [
+            72,
+            1388,
+            936,
+            34
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ],
+      "diagram_references": [
+        "visuals/06_pingpong_timeline.svg",
+        "visuals/14_ui_pingpong_reference.svg"
+      ],
+      "must_not": [
+        "Dry event is separate from L/R lanes; its vertical position does not assert a center-panned dry signal.",
+        "Identical dots mark events, not equal measured amplitudes.",
+        "PING PONG source button is unmodified and cannot be described as enabled."
+      ]
+    },
+    {
+      "page": 5,
+      "title": "Feedback 管重复，Dry/Wet 管混合",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · Waves H-Delay",
+          "box": [
+            72,
+            52,
+            760,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "05 / 08",
+          "box": [
+            874,
+            52,
+            134,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "Feedback 管重复，Dry/Wet 管混合",
+          "box": [
+            72,
+            110,
+            936,
+            86
+          ],
+          "font_size": 56,
+          "font_weight": 600,
+          "line_height": 78,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "把第 1 次延迟信号的振幅统一为 100。\n假设每次反馈回送固定比例，看后续怎样衰减。",
+          "box": [
+            72,
+            218,
+            936,
+            108
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "feedback_crop",
+          "type": "image",
+          "asset_id": "A04",
+          "file": "assets/derived/h-delay-feedback.png",
+          "box": [
+            72,
+            365,
+            184,
+            193.946
+          ],
+          "fit": "contain",
+          "preserve_aspect_ratio": true,
+          "retouch": false,
+          "radius": 0,
+          "shadow": false
+        },
+        {
+          "id": "wet_crop",
+          "type": "image",
+          "asset_id": "A05",
+          "file": "assets/derived/h-delay-drywet.png",
+          "box": [
+            568,
+            365,
+            203.416,
+            193.946
+          ],
+          "fit": "contain",
+          "preserve_aspect_ratio": true,
+          "retouch": false,
+          "radius": 0,
+          "shadow": false
+        },
+        {
+          "id": "feedback_ui_title",
+          "type": "text",
+          "text": "FEEDBACK",
+          "box": [
+            280,
+            367,
+            250,
+            48
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "feedback_action",
+          "type": "text",
+          "text": "第一下合适，\n后面拖太久\n→ 先减它",
+          "box": [
+            280,
+            420,
+            254,
+            144
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "wet_ui_title",
+          "type": "text",
+          "text": "DRY/WET",
+          "box": [
+            795,
+            367,
+            213,
+            48
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "wet_action",
+          "type": "text",
+          "text": "整个延迟声部\n太明显\n→ 先减它",
+          "box": [
+            795,
+            420,
+            213,
+            144
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "image_caption",
+          "type": "text",
+          "text": "Waves 官方局部；旋钮位置不是教程起点。© Waves Audio Ltd.",
+          "box": [
+            72,
+            591,
+            936,
+            44
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 36,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "legend_03",
+          "type": "text",
+          "text": "模型 g = 0.3",
+          "box": [
+            72,
+            668,
+            440,
+            48
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 46,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "legend_03_sub",
+          "type": "text",
+          "text": "每次回送 30% 振幅",
+          "box": [
+            72,
+            716,
+            440,
+            43
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "legend_06",
+          "type": "text",
+          "text": "模型 g = 0.6",
+          "box": [
+            568,
+            668,
+            440,
+            48
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 46,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "legend_06_sub",
+          "type": "text",
+          "text": "每次回送 60% 振幅",
+          "box": [
+            568,
+            716,
+            440,
+            43
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "grid_0",
+          "type": "line",
+          "points": [
+            [
+              183,
+              1028.0
+            ],
+            [
+              968,
+              1028.0
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y_0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            72,
+            1006.0,
+            88,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "grid_50",
+          "type": "line",
+          "points": [
+            [
+              183,
+              918.0
+            ],
+            [
+              968,
+              918.0
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y_50",
+          "type": "text",
+          "text": "50",
+          "box": [
+            72,
+            896.0,
+            88,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "grid_100",
+          "type": "line",
+          "points": [
+            [
+              183,
+              808.0
+            ],
+            [
+              968,
+              808.0
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y_100",
+          "type": "text",
+          "text": "100",
+          "box": [
+            72,
+            786.0,
+            88,
+            44
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar_1_a",
+          "type": "line",
+          "points": [
+            [
+              236,
+              1028
+            ],
+            [
+              236,
+              808.0
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 16,
+          "end_arrow": false
+        },
+        {
+          "id": "value_1_a",
+          "type": "text",
+          "text": "100",
+          "box": [
+            192,
+            757.0,
+            88,
+            46
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#697887",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar_1_b",
+          "type": "line",
+          "points": [
+            [
+              316,
+              1028
+            ],
+            [
+              316,
+              808.0
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 16,
+          "end_arrow": false
+        },
+        {
+          "id": "value_1_b",
+          "type": "text",
+          "text": "100",
+          "box": [
+            272,
+            757.0,
+            88,
+            46
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "n_1",
+          "type": "text",
+          "text": "第 1 次",
+          "box": [
+            196,
+            1048,
+            160,
+            49
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar_2_a",
+          "type": "line",
+          "points": [
+            [
+              434,
+              1028
+            ],
+            [
+              434,
+              962.0
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 16,
+          "end_arrow": false
+        },
+        {
+          "id": "value_2_a",
+          "type": "text",
+          "text": "30",
+          "box": [
+            390,
+            911.0,
+            88,
+            46
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#697887",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar_2_b",
+          "type": "line",
+          "points": [
+            [
+              514,
+              1028
+            ],
+            [
+              514,
+              896.0
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 16,
+          "end_arrow": false
+        },
+        {
+          "id": "value_2_b",
+          "type": "text",
+          "text": "60",
+          "box": [
+            470,
+            845.0,
+            88,
+            46
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "n_2",
+          "type": "text",
+          "text": "第 2 次",
+          "box": [
+            394,
+            1048,
+            160,
+            49
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar_3_a",
+          "type": "line",
+          "points": [
+            [
+              632,
+              1028
+            ],
+            [
+              632,
+              1008.2
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 16,
+          "end_arrow": false
+        },
+        {
+          "id": "value_3_a",
+          "type": "text",
+          "text": "9",
+          "box": [
+            588,
+            957.2,
+            88,
+            46
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#697887",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar_3_b",
+          "type": "line",
+          "points": [
+            [
+              712,
+              1028
+            ],
+            [
+              712,
+              948.8
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 16,
+          "end_arrow": false
+        },
+        {
+          "id": "value_3_b",
+          "type": "text",
+          "text": "36",
+          "box": [
+            668,
+            897.8,
+            88,
+            46
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "n_3",
+          "type": "text",
+          "text": "第 3 次",
+          "box": [
+            592,
+            1048,
+            160,
+            49
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar_4_a",
+          "type": "line",
+          "points": [
+            [
+              830,
+              1028
+            ],
+            [
+              830,
+              1022.06
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 16,
+          "end_arrow": false
+        },
+        {
+          "id": "value_4_a",
+          "type": "text",
+          "text": "2.7",
+          "box": [
+            786,
+            971.06,
+            88,
+            46
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#697887",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "bar_4_b",
+          "type": "line",
+          "points": [
+            [
+              910,
+              1028
+            ],
+            [
+              910,
+              980.48
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 16,
+          "end_arrow": false
+        },
+        {
+          "id": "value_4_b",
+          "type": "text",
+          "text": "21.6",
+          "box": [
+            866,
+            929.48,
+            88,
+            46
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 44,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "n_4",
+          "type": "text",
+          "text": "第 4 次",
+          "box": [
+            790,
+            1048,
+            160,
+            49
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "ratio",
+          "type": "text",
+          "text": "第 4 次：21.6 ÷ 2.7 = 8 倍振幅",
+          "box": [
+            72,
+            1132,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "model_caveat",
+          "type": "text",
+          "text": "理想线性模型：第 n 次振幅 = 100 × g⁽ⁿ⁻¹⁾。\n不含滤波和饱和；g 不是 H-Delay 旋钮读数。\n图为计算示意，振幅倍数不等于响度倍数。",
+          "box": [
+            72,
+            1240,
+            936,
+            117
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "反馈定义：Waves / FabFilter · 数列为独立计算",
+          "box": [
+            72,
+            1388,
+            936,
+            34
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ],
+      "diagram_references": [
+        "visuals/07_feedback_decay.svg",
+        "visuals/15_ui_feedback_drywet.svg"
+      ],
+      "must_not": [
+        "The chart uses a shared 0–100 relative-amplitude axis.",
+        "Do not relabel model coefficients as H-Delay Feedback 30 or 60.",
+        "Do not make the official knob positions appear to correspond to chart values."
+      ]
+    },
+    {
+      "page": 6,
+      "title": "滤波，让延迟声部让出位置",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · Waves H-Delay",
+          "box": [
+            72,
+            52,
+            760,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "06 / 08",
+          "box": [
+            874,
+            52,
+            134,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "滤波，让延迟声部让出位置",
+          "box": [
+            72,
+            110,
+            936,
+            86
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 78,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "高通减少低频，低通收暗高频。\n只处理延迟声部；实际效果放回伴奏判断。",
+          "box": [
+            72,
+            220,
+            936,
+            110
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "filters_crop",
+          "type": "image",
+          "asset_id": "A06",
+          "file": "assets/derived/h-delay-filters.png",
+          "box": [
+            210,
+            376,
+            660,
+            288
+          ],
+          "fit": "contain",
+          "preserve_aspect_ratio": true,
+          "retouch": false,
+          "radius": 0,
+          "shadow": false
+        },
+        {
+          "id": "image_caption",
+          "type": "text",
+          "text": "Waves 官方滤波区；图中旋钮位置不是教程设置。\n© Waves Audio Ltd.",
+          "box": [
+            72,
+            688,
+            936,
+            78
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "hp",
+          "type": "text",
+          "text": "HiPASS · 200 Hz",
+          "box": [
+            197.0,
+            806,
+            390,
+            56
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 52,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "lp",
+          "type": "text",
+          "text": "LoPASS · 6 kHz",
+          "box": [
+            645.2278913970201,
+            806,
+            368,
+            56
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 52,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "freq_axis",
+          "type": "line",
+          "points": [
+            [
+              96,
+              951
+            ],
+            [
+              984,
+              951
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 3,
+          "end_arrow": false
+        },
+        {
+          "id": "hp_marker",
+          "type": "line",
+          "points": [
+            [
+              392.0,
+              875
+            ],
+            [
+              392.0,
+              951
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": false
+        },
+        {
+          "id": "lp_marker",
+          "type": "line",
+          "points": [
+            [
+              829.2278913970201,
+              875
+            ],
+            [
+              829.2278913970201,
+              951
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": false
+        },
+        {
+          "id": "hp_point",
+          "type": "circle",
+          "center": [
+            392.0,
+            951
+          ],
+          "radius": 7,
+          "fill": "#0066cc",
+          "stroke": null,
+          "stroke_width": 3
+        },
+        {
+          "id": "lp_point",
+          "type": "circle",
+          "center": [
+            829.2278913970201,
+            951
+          ],
+          "radius": 7,
+          "fill": "#0066cc",
+          "stroke": null,
+          "stroke_width": 3
+        },
+        {
+          "id": "hp_direction",
+          "type": "line",
+          "points": [
+            [
+              382.0,
+              903
+            ],
+            [
+              101,
+              903
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "lp_direction",
+          "type": "line",
+          "points": [
+            [
+              839.2278913970201,
+              903
+            ],
+            [
+              979,
+              903
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "hp_direction_label",
+          "type": "text",
+          "text": "向低频侧衰减",
+          "box": [
+            72,
+            860,
+            310,
+            43
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "lp_direction_label",
+          "type": "text",
+          "text": "向高频侧衰减",
+          "box": [
+            680,
+            860,
+            328,
+            43
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "tick_20",
+          "type": "line",
+          "points": [
+            [
+              96.0,
+              943
+            ],
+            [
+              96.0,
+              959
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "freq_20",
+          "type": "text",
+          "text": "20",
+          "box": [
+            56.0,
+            976,
+            80,
+            45
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "tick_100",
+          "type": "line",
+          "points": [
+            [
+              302.89512128346155,
+              943
+            ],
+            [
+              302.89512128346155,
+              959
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "freq_100",
+          "type": "text",
+          "text": "100",
+          "box": [
+            262.89512128346155,
+            976,
+            80,
+            45
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "tick_1000",
+          "type": "line",
+          "points": [
+            [
+              598.8951212834615,
+              943
+            ],
+            [
+              598.8951212834615,
+              959
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "freq_1000",
+          "type": "text",
+          "text": "1k",
+          "box": [
+            558.8951212834615,
+            976,
+            80,
+            45
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "tick_10000",
+          "type": "line",
+          "points": [
+            [
+              894.8951212834615,
+              943
+            ],
+            [
+              894.8951212834615,
+              959
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "freq_10000",
+          "type": "text",
+          "text": "10k",
+          "box": [
+            854.8951212834615,
+            976,
+            80,
+            45
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "tick_20000",
+          "type": "line",
+          "points": [
+            [
+              984.0,
+              943
+            ],
+            [
+              984.0,
+              959
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "freq_20000",
+          "type": "text",
+          "text": "20k",
+          "box": [
+            944.0,
+            976,
+            80,
+            45
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "axis_caption",
+          "type": "text",
+          "text": "对数频率 / Hz",
+          "box": [
+            762,
+            1027,
+            246,
+            42
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "trials",
+          "type": "text",
+          "text": "低频仍浑：HiPASS 200 → 300 Hz\n齿音突出：LoPASS 6 → 4 kHz",
+          "box": [
+            72,
+            1090,
+            936,
+            102
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "one_at_time",
+          "type": "text",
+          "text": "一次只改一个截止点；太薄或太暗就往回调。",
+          "box": [
+            72,
+            1220,
+            936,
+            53
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "数值仅为试听起点；图只表示滤波方向。\n截止点外逐渐衰减，不是完全切除或实测频响。",
+          "box": [
+            72,
+            1290,
+            936,
+            78
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "功能：H-Delay User Guide · 200 Hz / 6 kHz 为本文试听起点",
+          "box": [
+            72,
+            1388,
+            936,
+            34
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ],
+      "diagram_references": [
+        "visuals/08_filter_direction.svg",
+        "visuals/16_ui_filter_reference.svg"
+      ],
+      "must_not": [
+        "Never draw an invented frequency-response slope, dB axis, brick wall, or measured curve.",
+        "Frequency positions must be logarithmic, with no linear spacing of 200 and 6000.",
+        "Screenshot values are not the 200 Hz / 6 kHz recipe."
+      ]
+    },
+    {
+      "page": 7,
+      "title": "从这组参数，做一次对照",
+      "background": "#f5f5f7",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · Waves H-Delay",
+          "box": [
+            72,
+            52,
+            760,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "07 / 08",
+          "box": [
+            874,
+            52,
+            134,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "从这组参数，做一次对照",
+          "box": [
+            72,
+            110,
+            936,
+            86
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 78,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "整组为试听起点，不是官方预设。",
+          "box": [
+            72,
+            222,
+            936,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "settings_surface",
+          "type": "rect",
+          "box": [
+            72,
+            314,
+            936,
+            386
+          ],
+          "fill": "#ffffff",
+          "stroke": null,
+          "stroke_width": 0,
+          "radius": 18
+        },
+        {
+          "id": "setting_label_0",
+          "type": "text",
+          "text": "H-Delay",
+          "box": [
+            104,
+            339,
+            438,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "setting_value_0",
+          "type": "text",
+          "text": "M>S 或 Stereo",
+          "box": [
+            563,
+            339,
+            413,
+            52
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "row_rule_0",
+          "type": "line",
+          "points": [
+            [
+              104,
+              397
+            ],
+            [
+              976,
+              397
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "setting_label_1",
+          "type": "text",
+          "text": "PING PONG",
+          "box": [
+            104,
+            410,
+            438,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "setting_value_1",
+          "type": "text",
+          "text": "开",
+          "box": [
+            563,
+            410,
+            413,
+            52
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "row_rule_1",
+          "type": "line",
+          "points": [
+            [
+              104,
+              468
+            ],
+            [
+              976,
+              468
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "setting_label_2",
+          "type": "text",
+          "text": "HOST",
+          "box": [
+            104,
+            481,
+            438,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "setting_value_2",
+          "type": "text",
+          "text": "普通 1/8（无 D/T）",
+          "box": [
+            563,
+            481,
+            413,
+            52
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "row_rule_2",
+          "type": "line",
+          "points": [
+            [
+              104,
+              539
+            ],
+            [
+              976,
+              539
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "setting_label_3",
+          "type": "text",
+          "text": "FEEDBACK / DRY/WET",
+          "box": [
+            104,
+            552,
+            438,
+            52
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "setting_value_3",
+          "type": "text",
+          "text": "20 / 5",
+          "box": [
+            563,
+            552,
+            413,
+            52
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "row_rule_3",
+          "type": "line",
+          "points": [
+            [
+              104,
+              610
+            ],
+            [
+              976,
+              610
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "setting_label_4",
+          "type": "text",
+          "text": "HiPASS / LoPASS",
+          "box": [
+            104,
+            623,
+            438,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "setting_value_4",
+          "type": "text",
+          "text": "200 Hz / 6 kHz",
+          "box": [
+            563,
+            623,
+            413,
+            52
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "readout_caption",
+          "type": "text",
+          "text": "数字按 H-Delay 显示值记录。",
+          "box": [
+            72,
+            722,
+            936,
+            43
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "reduce_title",
+          "type": "text",
+          "text": "先减少变量",
+          "box": [
+            72,
+            787,
+            936,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "reduce_copy",
+          "type": "text",
+          "text": "ANALOG OFF · LoFi 关 · MODULATION DEPTH 0\nØL / ØR 关",
+          "box": [
+            72,
+            844,
+            936,
+            92
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "audition_title",
+          "type": "text",
+          "text": "带伴奏，循环同一段",
+          "box": [
+            72,
+            974,
+            936,
+            53
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "step_1",
+          "type": "text",
+          "text": "1  固定其他参数：Dry/Wet 0、3、5、8。",
+          "box": [
+            72,
+            1046,
+            936,
+            53
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "step_2",
+          "type": "text",
+          "text": "2  选定混合后：比较普通 1/8 与 1/16。",
+          "box": [
+            72,
+            1116,
+            936,
+            53
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "step_3",
+          "type": "text",
+          "text": "3  尾巴太久，Feedback 从 20 往下收；\n   需要更多延续，再小幅增加。",
+          "box": [
+            72,
+            1186,
+            936,
+            100
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "每次只听一个变化。数字不是干湿电平比例；\n留意输出峰值，避免削波。",
+          "box": [
+            72,
+            1310,
+            936,
+            70
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "操作清单：本文试听建议 · 功能名称按 Waves 手册",
+          "box": [
+            72,
+            1388,
+            936,
+            34
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ],
+      "diagram_references": [
+        "visuals/09_audition_recipe.svg",
+        "visuals/10_audition_sequence.svg"
+      ],
+      "must_not": [
+        "Do not put these numbers on the official screenshot.",
+        "Do not render simulated H-Delay knobs, buttons, or preset chrome.",
+        "M>S means mono input to stereo output; M/S is a different concept."
+      ]
+    },
+    {
+      "page": 8,
+      "title": "最后，回到整首歌",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声空间 · Waves H-Delay",
+          "box": [
+            72,
+            52,
+            760,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "08 / 08",
+          "box": [
+            874,
+            52,
+            134,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "最后，回到整首歌",
+          "box": [
+            72,
+            110,
+            936,
+            86
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 78,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "先找到问题，再动对应的控制项。",
+          "box": [
+            72,
+            222,
+            936,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "problem_0",
+          "type": "text",
+          "text": "延迟声部太抢耳",
+          "box": [
+            72,
+            338,
+            397,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "diagnostic_arrow_0",
+          "type": "line",
+          "points": [
+            [
+              452,
+              362
+            ],
+            [
+              538,
+              362
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": true
+        },
+        {
+          "id": "control_0",
+          "type": "text",
+          "text": "Dry/Wet",
+          "box": [
+            586,
+            336,
+            422,
+            56
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 52,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "row_0",
+          "type": "line",
+          "points": [
+            [
+              72,
+              432
+            ],
+            [
+              1008,
+              432
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "problem_1",
+          "type": "text",
+          "text": "后续重复拖太久",
+          "box": [
+            72,
+            456,
+            397,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "diagnostic_arrow_1",
+          "type": "line",
+          "points": [
+            [
+              452,
+              480
+            ],
+            [
+              538,
+              480
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": true
+        },
+        {
+          "id": "control_1",
+          "type": "text",
+          "text": "Feedback",
+          "box": [
+            586,
+            454,
+            422,
+            56
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 52,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "row_1",
+          "type": "line",
+          "points": [
+            [
+              72,
+              550
+            ],
+            [
+              1008,
+              550
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "problem_2",
+          "type": "text",
+          "text": "重复挤住咬字",
+          "box": [
+            72,
+            574,
+            397,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "diagnostic_arrow_2",
+          "type": "line",
+          "points": [
+            [
+              452,
+              598
+            ],
+            [
+              538,
+              598
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": true
+        },
+        {
+          "id": "control_2",
+          "type": "text",
+          "text": "1/8 / 1/16",
+          "box": [
+            586,
+            572,
+            422,
+            56
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 52,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "note_2",
+          "type": "text",
+          "text": "再检查 Feedback",
+          "box": [
+            586,
+            625,
+            422,
+            45
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "row_2",
+          "type": "line",
+          "points": [
+            [
+              72,
+              682
+            ],
+            [
+              1008,
+              682
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "problem_3",
+          "type": "text",
+          "text": "低频浑 / 高频刺",
+          "box": [
+            72,
+            712,
+            397,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "diagnostic_arrow_3",
+          "type": "line",
+          "points": [
+            [
+              452,
+              736
+            ],
+            [
+              538,
+              736
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 3,
+          "end_arrow": true
+        },
+        {
+          "id": "control_3",
+          "type": "text",
+          "text": "HiPASS / LoPASS",
+          "box": [
+            586,
+            710,
+            422,
+            56
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 52,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "note_3",
+          "type": "text",
+          "text": "分别调整",
+          "box": [
+            586,
+            763,
+            422,
+            45
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check_title",
+          "type": "text",
+          "text": "最后做三个检查",
+          "box": [
+            72,
+            836,
+            936,
+            58
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 56,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check_1_label",
+          "type": "text",
+          "text": "带伴奏",
+          "box": [
+            72,
+            924,
+            220,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check_1",
+          "type": "text",
+          "text": "歌词、句尾、下一句仍然清楚吗？",
+          "box": [
+            304,
+            924,
+            704,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check_2_label",
+          "type": "text",
+          "text": "匹配响度",
+          "box": [
+            72,
+            998,
+            220,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check_2",
+          "type": "text",
+          "text": "尽量匹配开关前后的响度，\n再判断空间感。",
+          "box": [
+            304,
+            998,
+            704,
+            100
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check_3_label",
+          "type": "text",
+          "text": "折叠单声道",
+          "box": [
+            72,
+            1118,
+            220,
+            52
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "check_3",
+          "type": "text",
+          "text": "合并 L + R，\n听音色、音量和平衡是否明显变差。",
+          "box": [
+            304,
+            1118,
+            704,
+            100
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "closing",
+          "type": "text",
+          "text": "合适就好，已经够了就不必再加。",
+          "box": [
+            72,
+            1248,
+            936,
+            59
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 56,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "单声道检查不是只听左声道。未经音频实测，\n固定设置不保证更宽、更清楚或兼容单声道。",
+          "box": [
+            72,
+            1320,
+            936,
+            60
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 30,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "诊断为试听建议 · 参考 Waves、iZotope 官方教程",
+          "box": [
+            72,
+            1388,
+            936,
+            34
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 32,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "vertical_align": "top"
+        }
+      ],
+      "diagram_references": [
+        "visuals/11_diagnostic_map.svg",
+        "visuals/12_mono_fold_check.svg"
+      ],
+      "must_not": [
+        "Do not add fabricated waveform, width, correlation, LUFS, or before/after measurements.",
+        "L + R is fold-down; it must not be depicted as listening only to one channel."
+      ]
+    }
+  ],
+  "qa_requirements": [
+    "Inspect every full-size page and 360×480 preview before delivery.",
+    "Check exact text widths with the packaged font; no automated font shrinking.",
+    "Essential chart labels 30–34 px; body 36–40 px; caveats at least 26 px.",
+    "Review every arrow and numerical scale against diagram_data.json.",
+    "Confirm DUAL/BPM disclaimers beside all screenshot uses.",
+    "Keep original source PNG and crop pixels unchanged.",
+    "Confirm FEEDBACK display threshold > 1 is not model g.",
+    "Keep Delay, Dry/Wet, Feedback, M>S, HOST, PING PONG, HiPASS, LoPASS, ANALOG, LoFi, MODULATION DEPTH, ØL / ØR exact.",
+    "Keep all publication-rights limitations in the delivery note; no external posting.",
+    "Read generated PNG/PDF text for glyph fallback, clipping, decimal errors, and unintended wraps."
+  ],
+  "production_note": "production_spec.json is the authoritative final plan. write_design_spec.py is a draft construction utility and does not include final fit corrections; do not rerun it.",
+  "production_revision": "Rendered QA correction: P2 mix_label moved to [562,578,164,45], right aligned, so dry path does not cross text; all geometry otherwise unchanged."
+}

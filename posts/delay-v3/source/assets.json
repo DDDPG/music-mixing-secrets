@@ -1,0 +1,243 @@
+{
+  "version": "3.0",
+  "created_at": "2026-10-09T15:40:51.138857+00:00",
+  "assets": [
+    {
+      "asset_id": "A01",
+      "file": "assets/source/h-delay-official-product.png",
+      "dimensions": [
+        1499,
+        545
+      ],
+      "bytes": 227161,
+      "sha256": "676253145a7dd0d8d3bd5d267741ef0b4bda2f775ea467fdd99b4730f61cc2a5",
+      "modifications": "None; original downloaded PNG.",
+      "used_on_pages": [
+        1
+      ],
+      "depicted_state": "DUAL highlighted; BPM highlighted; display 120 BPM, L 1/8D and R 1/2. Not the tutorial Ping Pong/HOST recipe.",
+      "entity": "Waves H-Delay Hybrid Delay",
+      "version": "官方产品页图；具体插件版本未标注。该图包含 DUAL 功能。",
+      "component": "可见左右延迟与 DUAL；图片未标注 Stereo 或 M>S，不进一步推定。",
+      "source_page": "https://www.waves.com/plugins/h-delay-hybrid-delay",
+      "asset_url": "https://media.wavescdn.com/images/products/plugins/max/h-delay-hybrid-delay.png",
+      "retrieved_at": "2026-10-09T15:40:51.138857+00:00",
+      "copyright_holder": "Waves Audio Ltd.",
+      "rights_status": "unverified_for_public_republication",
+      "rights_basis": "Authentic official product image. Limited, attributed reproduction is prepared only for product-specific educational commentary. No explicit image redistribution license or written permission was found; public publication and commercial reuse are not represented as cleared. User authorization to prepare this tutorial does not grant the manufacturer’s copyright.",
+      "rights_source": "https://www.waves.com/legal/waves-terms-of-use",
+      "license_notes": "Waves retains IP rights; no CC/open license is stated. Preserve markings in the complete object image. Do not use the brand as an endorsement. Do not redistribute the standalone official image as a stock asset or imply unrestricted reuse. Publication rights remain for review before external publication.",
+      "attribution": "界面图：Waves H-Delay 官方产品页；仅用于控件讲解。",
+      "publication_status": "Reviewable tutorial draft; no claim of blanket image publication clearance."
+    },
+    {
+      "asset_id": "A02",
+      "file": "assets/derived/h-delay-time-sync.png",
+      "dimensions": [
+        300,
+        210
+      ],
+      "bytes": 14906,
+      "sha256": "f8c8c630afee7e504a4f2d3be82e29f2f705855ceed2efdf1535a3cd0acab42d",
+      "parent_asset_id": "A01",
+      "crop_box_xyxy": [
+        575,
+        88,
+        875,
+        298
+      ],
+      "modifications": "Exact axis-aligned crop only. No repainting, generative retouching, recoloring, relabeling, or parameter changes.",
+      "description": "真实时值显示区和 BPM / HOST / MS 按钮；原图处于 BPM 状态。",
+      "used_on_pages": [
+        3
+      ],
+      "entity": "Waves H-Delay Hybrid Delay",
+      "version": "官方产品页图；具体插件版本未标注。该图包含 DUAL 功能。",
+      "component": "可见左右延迟与 DUAL；图片未标注 Stereo 或 M>S，不进一步推定。",
+      "source_page": "https://www.waves.com/plugins/h-delay-hybrid-delay",
+      "asset_url": "https://media.wavescdn.com/images/products/plugins/max/h-delay-hybrid-delay.png",
+      "retrieved_at": "2026-10-09T15:40:51.138857+00:00",
+      "copyright_holder": "Waves Audio Ltd.",
+      "rights_status": "unverified_for_public_republication",
+      "rights_basis": "Authentic official product image. Limited, attributed reproduction is prepared only for product-specific educational commentary. No explicit image redistribution license or written permission was found; public publication and commercial reuse are not represented as cleared. User authorization to prepare this tutorial does not grant the manufacturer’s copyright.",
+      "rights_source": "https://www.waves.com/legal/waves-terms-of-use",
+      "license_notes": "Waves retains IP rights; no CC/open license is stated. Preserve markings in the complete object image. Do not use the brand as an endorsement. Do not redistribute the standalone official image as a stock asset or imply unrestricted reuse. Publication rights remain for review before external publication.",
+      "attribution": "界面图：Waves H-Delay 官方产品页；仅用于控件讲解。",
+      "publication_status": "Reviewable tutorial draft; no claim of blanket image publication clearance."
+    },
+    {
+      "asset_id": "A03",
+      "file": "assets/derived/h-delay-pingpong-button.png",
+      "dimensions": [
+        129,
+        51
+      ],
+      "bytes": 2473,
+      "sha256": "35dabea56efc5a87e668b182790417761f3d008e2bd8ad7c8045cb01c0348c2d",
+      "parent_asset_id": "A01",
+      "crop_box_xyxy": [
+        625,
+        32,
+        754,
+        83
+      ],
+      "modifications": "Exact axis-aligned crop only. No repainting, generative retouching, recoloring, relabeling, or parameter changes.",
+      "description": "真实 PING PONG 按钮定位；不宣称该图按钮已开启。",
+      "used_on_pages": [
+        4
+      ],
+      "entity": "Waves H-Delay Hybrid Delay",
+      "version": "官方产品页图；具体插件版本未标注。该图包含 DUAL 功能。",
+      "component": "可见左右延迟与 DUAL；图片未标注 Stereo 或 M>S，不进一步推定。",
+      "source_page": "https://www.waves.com/plugins/h-delay-hybrid-delay",
+      "asset_url": "https://media.wavescdn.com/images/products/plugins/max/h-delay-hybrid-delay.png",
+      "retrieved_at": "2026-10-09T15:40:51.138857+00:00",
+      "copyright_holder": "Waves Audio Ltd.",
+      "rights_status": "unverified_for_public_republication",
+      "rights_basis": "Authentic official product image. Limited, attributed reproduction is prepared only for product-specific educational commentary. No explicit image redistribution license or written permission was found; public publication and commercial reuse are not represented as cleared. User authorization to prepare this tutorial does not grant the manufacturer’s copyright.",
+      "rights_source": "https://www.waves.com/legal/waves-terms-of-use",
+      "license_notes": "Waves retains IP rights; no CC/open license is stated. Preserve markings in the complete object image. Do not use the brand as an endorsement. Do not redistribute the standalone official image as a stock asset or imply unrestricted reuse. Publication rights remain for review before external publication.",
+      "attribution": "界面图：Waves H-Delay 官方产品页；仅用于控件讲解。",
+      "publication_status": "Reviewable tutorial draft; no claim of blanket image publication clearance."
+    },
+    {
+      "asset_id": "A04",
+      "file": "assets/derived/h-delay-feedback.png",
+      "dimensions": [
+        296,
+        312
+      ],
+      "bytes": 29677,
+      "sha256": "450dc11052928fac636f6ad1d73b3383c8de74288bee3a88a775d224ccb757d4",
+      "parent_asset_id": "A01",
+      "crop_box_xyxy": [
+        888,
+        18,
+        1184,
+        330
+      ],
+      "modifications": "Exact axis-aligned crop only. No repainting, generative retouching, recoloring, relabeling, or parameter changes.",
+      "description": "真实 FEEDBACK 旋钮与 0–200 刻度，读数不是模型 g。",
+      "used_on_pages": [
+        5
+      ],
+      "entity": "Waves H-Delay Hybrid Delay",
+      "version": "官方产品页图；具体插件版本未标注。该图包含 DUAL 功能。",
+      "component": "可见左右延迟与 DUAL；图片未标注 Stereo 或 M>S，不进一步推定。",
+      "source_page": "https://www.waves.com/plugins/h-delay-hybrid-delay",
+      "asset_url": "https://media.wavescdn.com/images/products/plugins/max/h-delay-hybrid-delay.png",
+      "retrieved_at": "2026-10-09T15:40:51.138857+00:00",
+      "copyright_holder": "Waves Audio Ltd.",
+      "rights_status": "unverified_for_public_republication",
+      "rights_basis": "Authentic official product image. Limited, attributed reproduction is prepared only for product-specific educational commentary. No explicit image redistribution license or written permission was found; public publication and commercial reuse are not represented as cleared. User authorization to prepare this tutorial does not grant the manufacturer’s copyright.",
+      "rights_source": "https://www.waves.com/legal/waves-terms-of-use",
+      "license_notes": "Waves retains IP rights; no CC/open license is stated. Preserve markings in the complete object image. Do not use the brand as an endorsement. Do not redistribute the standalone official image as a stock asset or imply unrestricted reuse. Publication rights remain for review before external publication.",
+      "attribution": "界面图：Waves H-Delay 官方产品页；仅用于控件讲解。",
+      "publication_status": "Reviewable tutorial draft; no claim of blanket image publication clearance."
+    },
+    {
+      "asset_id": "A05",
+      "file": "assets/derived/h-delay-drywet.png",
+      "dimensions": [
+        169,
+        161
+      ],
+      "bytes": 8836,
+      "sha256": "68bc90be4491ace3b024526cea4417dbd2beaafb43d22b991caa8279455ca3e6",
+      "parent_asset_id": "A01",
+      "crop_box_xyxy": [
+        1318,
+        16,
+        1487,
+        177
+      ],
+      "modifications": "Exact axis-aligned crop only. No repainting, generative retouching, recoloring, relabeling, or parameter changes.",
+      "description": "真实 DRY/WET 旋钮与 0–100 刻度。",
+      "used_on_pages": [
+        5
+      ],
+      "entity": "Waves H-Delay Hybrid Delay",
+      "version": "官方产品页图；具体插件版本未标注。该图包含 DUAL 功能。",
+      "component": "可见左右延迟与 DUAL；图片未标注 Stereo 或 M>S，不进一步推定。",
+      "source_page": "https://www.waves.com/plugins/h-delay-hybrid-delay",
+      "asset_url": "https://media.wavescdn.com/images/products/plugins/max/h-delay-hybrid-delay.png",
+      "retrieved_at": "2026-10-09T15:40:51.138857+00:00",
+      "copyright_holder": "Waves Audio Ltd.",
+      "rights_status": "unverified_for_public_republication",
+      "rights_basis": "Authentic official product image. Limited, attributed reproduction is prepared only for product-specific educational commentary. No explicit image redistribution license or written permission was found; public publication and commercial reuse are not represented as cleared. User authorization to prepare this tutorial does not grant the manufacturer’s copyright.",
+      "rights_source": "https://www.waves.com/legal/waves-terms-of-use",
+      "license_notes": "Waves retains IP rights; no CC/open license is stated. Preserve markings in the complete object image. Do not use the brand as an endorsement. Do not redistribute the standalone official image as a stock asset or imply unrestricted reuse. Publication rights remain for review before external publication.",
+      "attribution": "界面图：Waves H-Delay 官方产品页；仅用于控件讲解。",
+      "publication_status": "Reviewable tutorial draft; no claim of blanket image publication clearance."
+    },
+    {
+      "asset_id": "A06",
+      "file": "assets/derived/h-delay-filters.png",
+      "dimensions": [
+        495,
+        216
+      ],
+      "bytes": 26357,
+      "sha256": "308176473172c751bd6a2ea1fd68b5739cdbccbefcf31ce211209a39a94cdf96",
+      "parent_asset_id": "A01",
+      "crop_box_xyxy": [
+        700,
+        328,
+        1195,
+        544
+      ],
+      "modifications": "Exact axis-aligned crop only. No repainting, generative retouching, recoloring, relabeling, or parameter changes.",
+      "description": "真实 HiPASS / LINK / LoPASS 区域，旋钮位置不是本教程起点。",
+      "used_on_pages": [
+        6
+      ],
+      "entity": "Waves H-Delay Hybrid Delay",
+      "version": "官方产品页图；具体插件版本未标注。该图包含 DUAL 功能。",
+      "component": "可见左右延迟与 DUAL；图片未标注 Stereo 或 M>S，不进一步推定。",
+      "source_page": "https://www.waves.com/plugins/h-delay-hybrid-delay",
+      "asset_url": "https://media.wavescdn.com/images/products/plugins/max/h-delay-hybrid-delay.png",
+      "retrieved_at": "2026-10-09T15:40:51.138857+00:00",
+      "copyright_holder": "Waves Audio Ltd.",
+      "rights_status": "unverified_for_public_republication",
+      "rights_basis": "Authentic official product image. Limited, attributed reproduction is prepared only for product-specific educational commentary. No explicit image redistribution license or written permission was found; public publication and commercial reuse are not represented as cleared. User authorization to prepare this tutorial does not grant the manufacturer’s copyright.",
+      "rights_source": "https://www.waves.com/legal/waves-terms-of-use",
+      "license_notes": "Waves retains IP rights; no CC/open license is stated. Preserve markings in the complete object image. Do not use the brand as an endorsement. Do not redistribute the standalone official image as a stock asset or imply unrestricted reuse. Publication rights remain for review before external publication.",
+      "attribution": "界面图：Waves H-Delay 官方产品页；仅用于控件讲解。",
+      "publication_status": "Reviewable tutorial draft; no claim of blanket image publication clearance."
+    },
+    {
+      "asset_id": "A07",
+      "file": "assets/derived/h-delay-delay.png",
+      "dimensions": [
+        311,
+        306
+      ],
+      "bytes": 34164,
+      "sha256": "b5c1ef081ed5c95e159d3507afb8c4199148f88b3e245ee844cc8af4e3bd1969",
+      "parent_asset_id": "A01",
+      "crop_box_xyxy": [
+        260,
+        18,
+        571,
+        324
+      ],
+      "modifications": "Exact axis-aligned crop only. No repainting, generative retouching, recoloring, relabeling, or parameter changes.",
+      "description": "真实 DELAY R 区域；R 后缀来自官网图的 DUAL 右声道选择。",
+      "used_on_pages": [],
+      "entity": "Waves H-Delay Hybrid Delay",
+      "version": "官方产品页图；具体插件版本未标注。该图包含 DUAL 功能。",
+      "component": "可见左右延迟与 DUAL；图片未标注 Stereo 或 M>S，不进一步推定。",
+      "source_page": "https://www.waves.com/plugins/h-delay-hybrid-delay",
+      "asset_url": "https://media.wavescdn.com/images/products/plugins/max/h-delay-hybrid-delay.png",
+      "retrieved_at": "2026-10-09T15:40:51.138857+00:00",
+      "copyright_holder": "Waves Audio Ltd.",
+      "rights_status": "unverified_for_public_republication",
+      "rights_basis": "Authentic official product image. Limited, attributed reproduction is prepared only for product-specific educational commentary. No explicit image redistribution license or written permission was found; public publication and commercial reuse are not represented as cleared. User authorization to prepare this tutorial does not grant the manufacturer’s copyright.",
+      "rights_source": "https://www.waves.com/legal/waves-terms-of-use",
+      "license_notes": "Waves retains IP rights; no CC/open license is stated. Preserve markings in the complete object image. Do not use the brand as an endorsement. Do not redistribute the standalone official image as a stock asset or imply unrestricted reuse. Publication rights remain for review before external publication.",
+      "attribution": "界面图：Waves H-Delay 官方产品页；仅用于控件讲解。",
+      "publication_status": "Reviewable tutorial draft; no claim of blanket image publication clearance."
+    }
+  ],
+  "production_rule": "Use images only as real-object/control evidence, with attribution and parameter-state disclaimer. Do not use them as screenshots of the audition recipe. Permission status must accompany delivery; do not say publication-cleared."
+}

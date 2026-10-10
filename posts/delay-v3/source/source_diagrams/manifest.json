@@ -1,0 +1,550 @@
+{
+  "version": "3.0",
+  "created_date": "2026-10-09",
+  "purpose": "Independent modular visual assets for eight-page tutorial. No final page design.",
+  "design_constraints": {
+    "background": "#ffffff",
+    "ink": "#1d1d1f",
+    "accent": "#0066cc",
+    "comparison": "#7c8997",
+    "no_giant_color_blocks": true,
+    "no_warm_paper": true
+  },
+  "source_files": [
+    "../research_and_story.md",
+    "../diagram_data.json",
+    "../term-map.json",
+    "../page-plan.json",
+    "../assets.json"
+  ],
+  "assets": [
+    {
+      "id": "01_official_control_map",
+      "svg": "01_official_control_map.svg",
+      "png": "01_official_control_map.png",
+      "dimensions_svg": [
+        1620,
+        980
+      ],
+      "dimensions_png": [
+        1800,
+        1089
+      ],
+      "title": "Waves H-Delay：真实界面与控件键",
+      "description": "完整官方产品图，带四组外部文字索引。截图为 DUAL/BPM，120 BPM，左 1/8D、右 1/2，不是教程的 Ping Pong/HOST 试听设置。",
+      "pages": [
+        1
+      ],
+      "evidence_class": "official",
+      "source_ids": [
+        "S0",
+        "S1"
+      ],
+      "required_adjacent_caption": "Waves 官方界面，仅用于定位控件；图中参数不是本教程设置。",
+      "designer_notes": "Use complete genuine image; do not call screenshot Ping Pong active or HOST synced. External numbered markers do not alter the image.",
+      "official_asset_ids": [
+        "A01"
+      ],
+      "contains_genuine_product_image": true,
+      "rights_status": "unverified_for_public_republication",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "02_insert_signal_path",
+      "svg": "02_insert_signal_path.svg",
+      "png": "02_insert_signal_path.png",
+      "dimensions_svg": [
+        1200,
+        690
+      ],
+      "dimensions_png": [
+        1800,
+        1035
+      ],
+      "title": "低 Wet 插入路由",
+      "description": "人声先进入 H-Delay 边界，内部拆为干声支路和 Delay 支路，由 Dry/Wet 混合后输出到混音。Feedback 仅从 Delay 输出回送 Delay 输入。",
+      "pages": [
+        2
+      ],
+      "evidence_class": "conceptual",
+      "source_ids": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "required_adjacent_caption": "功能路由示意，不是插件内部精确 DSP 电路。",
+      "designer_notes": "The dry bypass is inside H-Delay only. Feedback loop must stay on the Delay branch.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "03_send_signal_path",
+      "svg": "03_send_signal_path.svg",
+      "png": "03_send_signal_path.png",
+      "dimensions_svg": [
+        1200,
+        560
+      ],
+      "dimensions_png": [
+        1800,
+        840
+      ],
+      "title": "发送与返回的路由",
+      "description": "原人声直接进入混音；发送支路经 H-Delay（Dry/Wet 100）返回混音，以发送量或返回推子控制多少。",
+      "pages": [
+        2
+      ],
+      "evidence_class": "conceptual",
+      "source_ids": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "required_adjacent_caption": "功能路由示意，不是插件内部精确 DSP 电路。",
+      "designer_notes": "Optional secondary figure. Do not combine the send dry route with the insert diagram.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "04_tempo_duration",
+      "svg": "04_tempo_duration.svg",
+      "png": "04_tempo_duration.png",
+      "dimensions_svg": [
+        1200,
+        660
+      ],
+      "dimensions_png": [
+        1800,
+        990
+      ],
+      "title": "普通音符的时长比较",
+      "description": "120 BPM：1/8 为 250 ms、1/16 为 125 ms。160 BPM：1/8 为 187.5 ms、1/16 为 93.75 ms。四组使用共同毫秒轴。",
+      "pages": [
+        3
+      ],
+      "evidence_class": "calculated",
+      "source_ids": [
+        "S1",
+        "S5"
+      ],
+      "required_adjacent_caption": "按固定速度计算，四分音符为一拍。",
+      "designer_notes": "Never align the source screenshot 120 BPM / 1/8D with these ordinary-note values as if it showed our settings.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "05_ordinary_vs_dotted",
+      "svg": "05_ordinary_vs_dotted.svg",
+      "png": "05_ordinary_vs_dotted.png",
+      "dimensions_svg": [
+        1200,
+        390
+      ],
+      "dimensions_png": [
+        1800,
+        585
+      ],
+      "title": "普通 1/8 与 1/8D 的时长",
+      "description": "固定 160 BPM，普通 1/8 为 187.5 ms；附点 1/8D 为 281.25 ms，是普通时值的 1.5 倍。",
+      "pages": [
+        3
+      ],
+      "evidence_class": "calculated",
+      "source_ids": [
+        "S1",
+        "S5"
+      ],
+      "required_adjacent_caption": "固定 160 BPM；附点为普通时值的 1.5 倍。",
+      "designer_notes": "Secondary warning; keep ordinary and dotted durations visibly distinct.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "06_pingpong_timeline",
+      "svg": "06_pingpong_timeline.svg",
+      "png": "06_pingpong_timeline.png",
+      "dimensions_svg": [
+        1200,
+        650
+      ],
+      "dimensions_png": [
+        1800,
+        975
+      ],
+      "title": "Ping Pong 的左右交替时序",
+      "description": "160 BPM 普通 1/8，单次短输入。延迟信号在 187.5、375、562.5、750 ms 依次落于左、右、左、右。干声在 0 ms，原有声像不变。",
+      "pages": [
+        4
+      ],
+      "evidence_class": "calculated",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "required_adjacent_caption": "单次输入、等间隔时序示意，非音频实测。左右起点可互换。",
+      "designer_notes": "Equal event markers intentionally do not encode amplitude. Dry shown as a separate event, not necessarily a center-panned signal.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "07_feedback_decay",
+      "svg": "07_feedback_decay.svg",
+      "png": "07_feedback_decay.png",
+      "dimensions_svg": [
+        1200,
+        715
+      ],
+      "dimensions_png": [
+        1800,
+        1073
+      ],
+      "title": "Feedback 理想模型中的振幅衰减",
+      "description": "首个延迟信号振幅统一为 100。模型 g=0.3：100,30,9,2.7。g=0.6：100,60,36,21.6。第 4 次相差 8 倍振幅，并非响度比或插件读数。",
+      "pages": [
+        5
+      ],
+      "evidence_class": "calculated",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "required_adjacent_caption": "理想线性模型：相对振幅，不是 H-Delay 旋钮读数、实测或响度倍数。",
+      "designer_notes": "Keep model coefficient g explicitly separate from H-Delay FEEDBACK display values.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "08_filter_direction",
+      "svg": "08_filter_direction.svg",
+      "png": "08_filter_direction.png",
+      "dimensions_svg": [
+        1200,
+        660
+      ],
+      "dimensions_png": [
+        1800,
+        990
+      ],
+      "title": "延迟声部的滤波方向",
+      "description": "对数频率标尺从 20 Hz 到 20 kHz。HiPASS 200 Hz、LoPASS 6 kHz 为试听起点；低频仍浑时试 300 Hz，齿音突出时试 4 kHz。仅示意方向。",
+      "pages": [
+        6
+      ],
+      "evidence_class": "audition_proposal",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S6"
+      ],
+      "required_adjacent_caption": "试听起点；仅示意滤波方向，不是实测频响。",
+      "designer_notes": "Use exact logarithmic positions. Arrows show the affected side or proposed trial direction, never a response slope.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "09_audition_recipe",
+      "svg": "09_audition_recipe.svg",
+      "png": "09_audition_recipe.png",
+      "dimensions_svg": [
+        1200,
+        695
+      ],
+      "dimensions_png": [
+        1800,
+        1043
+      ],
+      "title": "H-Delay 试听起点清单",
+      "description": "M>S 或 Stereo；PING PONG 开；HOST 普通 1/8；Feedback 20；Dry/Wet 5；HiPASS 200 Hz；LoPASS 6 kHz。Analog OFF、LoFi 关、Depth 0、ØL/ØR 关。不是官方预设。",
+      "pages": [
+        7
+      ],
+      "evidence_class": "audition_proposal",
+      "source_ids": [
+        "S1",
+        "S6"
+      ],
+      "required_adjacent_caption": "整组为试听起点，不是官方预设。数字按 H-Delay 显示值记录。",
+      "designer_notes": "Do not paste these values onto the genuine product screenshot or simulate a preset UI.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "10_audition_sequence",
+      "svg": "10_audition_sequence.svg",
+      "png": "10_audition_sequence.png",
+      "dimensions_svg": [
+        1200,
+        535
+      ],
+      "dimensions_png": [
+        1800,
+        803
+      ],
+      "title": "分步试听 Dry/Wet、音符与 Feedback",
+      "description": "带伴奏循环同一段，固定其他参数比较 Dry/Wet 显示值 0,3,5,8；选定后比较普通 1/8 与 1/16；最后根据延续调整 Feedback。",
+      "pages": [
+        7
+      ],
+      "evidence_class": "audition_proposal",
+      "source_ids": [
+        "S1"
+      ],
+      "required_adjacent_caption": "这是试听对照，数字为 H-Delay 显示值，不是干湿电平比例。",
+      "designer_notes": "Candidate circles are categorical choices, not knob simulation or a numerical spacing claim.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "11_diagnostic_map",
+      "svg": "11_diagnostic_map.svg",
+      "png": "11_diagnostic_map.png",
+      "dimensions_svg": [
+        1200,
+        650
+      ],
+      "dimensions_png": [
+        1800,
+        975
+      ],
+      "title": "问题与控制项的诊断对应",
+      "description": "延迟太抢耳先调 Dry/Wet；后续重复太久先调 Feedback；重复挤住咬字比较 1/8 和 1/16 并检查反馈；低频浑和高频刺分别调 HiPASS/LoPASS。",
+      "pages": [
+        8
+      ],
+      "evidence_class": "audition_proposal",
+      "source_ids": [
+        "S2",
+        "S8"
+      ],
+      "required_adjacent_caption": "诊断顺序为试听建议，结果需结合完整伴奏判断。",
+      "designer_notes": "No fabricated width, LUFS, correlation, waveform, or before/after measurements.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "12_mono_fold_check",
+      "svg": "12_mono_fold_check.svg",
+      "png": "12_mono_fold_check.png",
+      "dimensions_svg": [
+        1200,
+        520
+      ],
+      "dimensions_png": [
+        1800,
+        780
+      ],
+      "title": "单声道检查需要合并左右声道",
+      "description": "左声道和右声道一起进入单声道折叠，再听音色、音量和平衡。实际折叠增益由工程或工具决定。只听左声道不是单声道兼容检查。",
+      "pages": [
+        8
+      ],
+      "evidence_class": "conceptual",
+      "source_ids": [
+        "S8"
+      ],
+      "required_adjacent_caption": "L 与 R 合并为单声道；不是只听左声道。",
+      "designer_notes": "Do not assign an arbitrary fold-down gain or claim guaranteed mono compatibility.",
+      "official_asset_ids": [],
+      "contains_genuine_product_image": false,
+      "rights_status": "original_explanatory_diagram",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "13_ui_time_reference",
+      "svg": "13_ui_time_reference.svg",
+      "png": "13_ui_time_reference.png",
+      "dimensions_svg": [
+        1200,
+        530
+      ],
+      "dimensions_png": [
+        1800,
+        795
+      ],
+      "title": "真实时间显示与同步按钮",
+      "description": "官方图原样裁切，显示 120 BPM、L 1/8D、R 1/2。BPM 亮起，HOST 未亮，不是 160 BPM 普通 1/8 设置。",
+      "pages": [
+        3
+      ],
+      "evidence_class": "official",
+      "source_ids": [
+        "S0",
+        "S1"
+      ],
+      "required_adjacent_caption": "图中为 120 BPM / 1/8D / 1/2，仅用于辨认字符，不是本教程设置。",
+      "designer_notes": "Exact crop A02; preserve all depicted values.",
+      "official_asset_ids": [
+        "A02"
+      ],
+      "contains_genuine_product_image": true,
+      "rights_status": "unverified_for_public_republication",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "14_ui_pingpong_reference",
+      "svg": "14_ui_pingpong_reference.svg",
+      "png": "14_ui_pingpong_reference.png",
+      "dimensions_svg": [
+        1200,
+        350
+      ],
+      "dimensions_png": [
+        1800,
+        525
+      ],
+      "title": "真实 PING PONG 按钮参考",
+      "description": "从官方产品图裁切的 PING PONG 按钮，仅定位控件，不宣称按钮已开启。",
+      "pages": [
+        4
+      ],
+      "evidence_class": "official",
+      "source_ids": [
+        "S0",
+        "S1"
+      ],
+      "required_adjacent_caption": "真实 PING PONG 按钮定位图，不宣称该图按钮已开启。",
+      "designer_notes": "The > 1 threshold is H-Delay display value, not model coefficient g. Publication rights remain unverified.",
+      "official_asset_ids": [
+        "A03"
+      ],
+      "contains_genuine_product_image": true,
+      "rights_status": "unverified_for_public_republication",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "15_ui_feedback_drywet",
+      "svg": "15_ui_feedback_drywet.svg",
+      "png": "15_ui_feedback_drywet.png",
+      "dimensions_svg": [
+        1200,
+        650
+      ],
+      "dimensions_png": [
+        1800,
+        975
+      ],
+      "title": "真实 FEEDBACK 与 DRY/WET 控件",
+      "description": "两个官方图裁切并列，保留原始旋钮与刻度。Feedback 控制反馈，Dry/Wet 控制混合；图中旋钮位置不是教程起点。",
+      "pages": [
+        5
+      ],
+      "evidence_class": "official",
+      "source_ids": [
+        "S0",
+        "S1"
+      ],
+      "required_adjacent_caption": "图中旋钮位置不是本教程起点；模型 g 也不是 FEEDBACK 旋钮读数。",
+      "designer_notes": "Maintain disclaimer adjacent if combined with the model chart. Publication rights remain unverified.",
+      "official_asset_ids": [
+        "A04",
+        "A05"
+      ],
+      "contains_genuine_product_image": true,
+      "rights_status": "unverified_for_public_republication",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    },
+    {
+      "id": "16_ui_filter_reference",
+      "svg": "16_ui_filter_reference.svg",
+      "png": "16_ui_filter_reference.png",
+      "dimensions_svg": [
+        1200,
+        440
+      ],
+      "dimensions_png": [
+        1800,
+        660
+      ],
+      "title": "真实滤波控件参考",
+      "description": "官方图裁切 HiPASS / LINK / LoPASS，未改变旋钮位置。控制对象是延迟声部，不是干声 EQ。",
+      "pages": [
+        6
+      ],
+      "evidence_class": "official",
+      "source_ids": [
+        "S0",
+        "S1"
+      ],
+      "required_adjacent_caption": "界面局部：Waves 官方产品图 A06；图中旋钮位置不是本教程设置。",
+      "designer_notes": "Attribution must stay adjacent. Exact crop A06; public republication license unverified.",
+      "official_asset_ids": [
+        "A06"
+      ],
+      "contains_genuine_product_image": true,
+      "rights_status": "unverified_for_public_republication",
+      "background": "#ffffff",
+      "ink": "#1d1d1f",
+      "accent": "#0066cc",
+      "comparison": "#7c8997"
+    }
+  ],
+  "screenshot_rights": "Official Waves product image and exact crops. Public republication permission is unverified; these are attributed product-specific commentary assets, not licensed stock.",
+  "contact_sheet": "contact_sheet.png",
+  "validation": "validation.json",
+  "rebuild": "python build_visuals.py"
+}

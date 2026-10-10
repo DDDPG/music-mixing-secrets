@@ -1,0 +1,300 @@
+{
+  "version": "2.0",
+  "language": "zh-CN",
+  "purpose": "Standalone educational diagram data; not page design",
+  "created_date": "2026-10-09",
+  "evidence_classes": {
+    "official": "Official function or control definition; product-specific",
+    "calculated": "Deterministic arithmetic under stated assumptions",
+    "audition_proposal": "Suggested starting or comparison setting, not factory preset or tested optimum",
+    "conceptual": "Illustrative signal path, not an exact DSP circuit or measured audio"
+  },
+  "tempo_comparison": {
+    "evidence_class": "calculated",
+    "assumption": "Quarter note is one beat, constant tempo",
+    "unit": "ms",
+    "formula_quarter": "60000 / bpm",
+    "rows": [
+      {
+        "bpm": 120,
+        "quarter_ms": 500.0,
+        "eighth_ms": 250.0,
+        "sixteenth_ms": 125.0
+      },
+      {
+        "bpm": 160,
+        "quarter_ms": 375.0,
+        "eighth_ms": 187.5,
+        "sixteenth_ms": 93.75
+      }
+    ],
+    "axis_requirement": "Common millisecond scale for comparing durations",
+    "annotation": "同一音符从 120 到 160 BPM，时长缩短 25%",
+    "duration_change_percent": -25
+  },
+  "pingpong_timeline": {
+    "evidence_class": "calculated",
+    "model": "Ideal equal-delay, alternate-channel echoes after one short input, start left",
+    "bpm": 160,
+    "note": "1/8",
+    "delay_ms": 187.5,
+    "same_channel_interval_ms": 375,
+    "dry_event": {
+      "time_ms": 0,
+      "channel": "C",
+      "label": "干声"
+    },
+    "echoes": [
+      {
+        "repeat": 1,
+        "time_ms": 187.5,
+        "channel": "L",
+        "label": "左 · 第 1 次"
+      },
+      {
+        "repeat": 2,
+        "time_ms": 375.0,
+        "channel": "R",
+        "label": "右 · 第 2 次"
+      },
+      {
+        "repeat": 3,
+        "time_ms": 562.5,
+        "channel": "L",
+        "label": "左 · 第 3 次"
+      },
+      {
+        "repeat": 4,
+        "time_ms": 750.0,
+        "channel": "R",
+        "label": "右 · 第 4 次"
+      }
+    ],
+    "display_amplitude": null,
+    "required_caption": "单次输入的等间隔时序示意，非音频实测。左右起点可互换。",
+    "prohibited": "Do not fabricate waveform shapes or imply measured amplitudes."
+  },
+  "feedback_decay": {
+    "evidence_class": "calculated",
+    "model": "Ideal linear feedback, first repeat normalized to 100, constant amplitude feedback fraction g, no filtering or saturation",
+    "formula": "100 * g ** (n - 1)",
+    "x_label": "回声次数",
+    "y_label": "相对振幅（第 1 次 = 100）",
+    "series": [
+      {
+        "g": 0.3,
+        "label": "每次回送 30% 振幅",
+        "points": [
+          {
+            "repeat": 1,
+            "relative_amplitude": 100.0
+          },
+          {
+            "repeat": 2,
+            "relative_amplitude": 30.0
+          },
+          {
+            "repeat": 3,
+            "relative_amplitude": 9.0
+          },
+          {
+            "repeat": 4,
+            "relative_amplitude": 2.7
+          }
+        ]
+      },
+      {
+        "g": 0.6,
+        "label": "每次回送 60% 振幅",
+        "points": [
+          {
+            "repeat": 1,
+            "relative_amplitude": 100.0
+          },
+          {
+            "repeat": 2,
+            "relative_amplitude": 60.0
+          },
+          {
+            "repeat": 3,
+            "relative_amplitude": 36.0
+          },
+          {
+            "repeat": 4,
+            "relative_amplitude": 21.6
+          }
+        ]
+      }
+    ],
+    "fourth_repeat_amplitude_ratio": 8,
+    "required_caption": "理想线性模型。相对振幅，不代表听感响度或 H-Delay 实测。",
+    "prohibited": "Do not label as H-Delay Feedback 30/60 measurement. Do not label ratio as loudness."
+  },
+  "filter_regions": {
+    "evidence_class": "audition_proposal",
+    "plot_type": "Log-frequency ruler with regions and arrows; no measured response curve",
+    "axis_unit": "Hz",
+    "axis_scale": "log10",
+    "axis_min": 20,
+    "axis_max": 20000,
+    "ticks": [
+      20,
+      100,
+      200,
+      1000,
+      6000,
+      10000,
+      20000
+    ],
+    "initial": {
+      "highpass_hz": 200,
+      "lowpass_hz": 6000
+    },
+    "suggested_trials": [
+      {
+        "control": "HP",
+        "from_hz": 200,
+        "to_hz": 300,
+        "condition": "回声低频仍浑"
+      },
+      {
+        "control": "LP",
+        "from_hz": 6000,
+        "to_hz": 4000,
+        "condition": "齿音跟着重复"
+      }
+    ],
+    "required_caption": "试听起点；仅示意滤波方向。实际坡度取决于滤波器。",
+    "prohibited": "No invented dB attenuation or H-Delay filter slope; no brick-wall zero response."
+  },
+  "signal_paths": {
+    "evidence_class": "conceptual",
+    "insert": {
+      "input": "人声",
+      "processor": "延迟插件",
+      "internal_branches": [
+        "干声",
+        "延迟回声"
+      ],
+      "mix_control": "Dry/Wet",
+      "output": "混音"
+    },
+    "send": {
+      "dry_path": [
+        "人声",
+        "混音"
+      ],
+      "wet_path": [
+        "人声",
+        "发送",
+        "效果轨：100% Wet",
+        "返回",
+        "混音"
+      ],
+      "amount_controls": [
+        "发送量",
+        "返回推子"
+      ]
+    },
+    "required_caption": "功能路由示意；不是插件内部精确 DSP 电路。"
+  },
+  "audition_recipe": {
+    "evidence_class": "audition_proposal",
+    "plugin": "Waves H-Delay",
+    "component_options": [
+      "M>S for mono input",
+      "Stereo for stereo input"
+    ],
+    "settings": {
+      "ping_pong": "On",
+      "sync": "HOST",
+      "note": "1/8",
+      "feedback_display_value": 20,
+      "dry_wet_display_value": 5,
+      "highpass_hz": 200,
+      "lowpass_hz": 6000,
+      "analog": "Off",
+      "lofi": "Off",
+      "modulation_depth": 0,
+      "phase_reverse": "Off"
+    },
+    "mix_display_trials": [
+      0,
+      3,
+      5,
+      8
+    ],
+    "delay_note_trials": [
+      "1/8",
+      "1/16"
+    ],
+    "mix_control_scale": [
+      0,
+      100
+    ],
+    "required_caption": "整组为试听起点，不是官方预设。数字按 H-Delay 显示值记录。",
+    "procedure": [
+      "带伴奏循环同一段",
+      "固定其他参数比较 Mix 0/3/5/8",
+      "选量后比较普通 1/8 与 1/16",
+      "再按尾巴调整反馈",
+      "一次只调一个滤波截止点",
+      "匹配响度开关对比",
+      "检查单声道与输出削波"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Waves H-Delay User Guide",
+      "url": "https://www.waves.com/1lib/pdf/plugins/h-delay-hybrid-delay.pdf",
+      "pages": [
+        4,
+        5,
+        6,
+        8,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Waves: 10 Delay Tips for Mixing Vocals",
+      "url": "https://www.waves.com/delay-tips-for-mixing-vocals"
+    },
+    {
+      "id": "S3",
+      "title": "FabFilter Timeless 3 Help: Delay controls",
+      "url": "https://www.fabfilter.com/help/timeless/using/delaycontrols"
+    },
+    {
+      "id": "S4",
+      "title": "Ableton Live 12 Manual: Delay",
+      "url": "https://www.ableton.com/en/manual/live-audio-effect-reference/"
+    },
+    {
+      "id": "S5",
+      "title": "Ableton Learning Music: Beat and tempo",
+      "url": "https://learningmusic.ableton.com/make-beats/beat-and-tempo.html"
+    },
+    {
+      "id": "S6",
+      "title": "Waves: 4 Tips for Mixing 2021 Pop Vocals",
+      "url": "https://www.waves.com/tips-for-mixing-2021-pop-vocals"
+    },
+    {
+      "id": "S7",
+      "title": "Soundtoys EchoBoy Manual",
+      "url": "https://www.soundtoys.com/wp-content/uploads/EchoBoy-Manual.pdf",
+      "pages": [
+        14,
+        17
+      ]
+    },
+    {
+      "id": "S8",
+      "title": "iZotope: 6 Tips for Using Ozone's Utilities in Mixing and Mastering",
+      "url": "https://www.izotope.com/community/blog/how-to-use-ozone-utilities"
+    }
+  ]
+}

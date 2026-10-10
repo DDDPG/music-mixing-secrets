@@ -1,0 +1,153 @@
+{
+  "baseline": "MIXING_TERMINOLOGY.md v1.0.0",
+  "terms": [
+    {
+      "preferred_label": "Kick",
+      "explanation_zh": "底鼓"
+    },
+    {
+      "preferred_label": "Bass",
+      "explanation_zh": "贝斯／低音声部"
+    },
+    {
+      "preferred_label": "Snare",
+      "explanation_zh": "军鼓"
+    },
+    {
+      "preferred_label": "Hi-hat",
+      "explanation_zh": "踩镲"
+    },
+    {
+      "preferred_label": "Cymbal",
+      "explanation_zh": "镲片"
+    },
+    {
+      "preferred_label": "Percussion",
+      "explanation_zh": "打击乐"
+    },
+    {
+      "preferred_label": "Overheads",
+      "explanation_zh": "上方拾音话筒／轨道"
+    },
+    {
+      "preferred_label": "Fader",
+      "explanation_zh": "推子"
+    },
+    {
+      "preferred_label": "Gain",
+      "explanation_zh": "增益"
+    },
+    {
+      "preferred_label": "Headroom",
+      "explanation_zh": "余量"
+    },
+    {
+      "preferred_label": "Sample Peak",
+      "explanation_zh": "采样峰值"
+    },
+    {
+      "preferred_label": "dBFS",
+      "explanation_zh": "数字满刻度相对电平"
+    },
+    {
+      "preferred_label": "Polarity",
+      "explanation_zh": "极性"
+    },
+    {
+      "preferred_label": "Phase",
+      "explanation_zh": "相位"
+    },
+    {
+      "preferred_label": "Delay",
+      "explanation_zh": "延时"
+    },
+    {
+      "preferred_label": "EQ",
+      "explanation_zh": "均衡"
+    },
+    {
+      "preferred_label": "Bell",
+      "explanation_zh": "钟形均衡"
+    },
+    {
+      "preferred_label": "Q",
+      "explanation_zh": "品质因数"
+    },
+    {
+      "preferred_label": "Dynamic EQ",
+      "explanation_zh": "动态均衡"
+    },
+    {
+      "preferred_label": "Analyzer",
+      "explanation_zh": "分析器"
+    },
+    {
+      "preferred_label": "Spectrum",
+      "explanation_zh": "频谱"
+    },
+    {
+      "preferred_label": "Pre",
+      "explanation_zh": "EQ 前频谱，UI 原名"
+    },
+    {
+      "preferred_label": "Post",
+      "explanation_zh": "EQ 后频谱，UI 原名"
+    },
+    {
+      "preferred_label": "SC/Ext",
+      "explanation_zh": "外部频谱选择，文档原名"
+    },
+    {
+      "preferred_label": "Show Collisions",
+      "explanation_zh": "潜在频率冲突提示"
+    },
+    {
+      "preferred_label": "Fundamental",
+      "explanation_zh": "基频"
+    },
+    {
+      "preferred_label": "Harmonics",
+      "explanation_zh": "谐波"
+    },
+    {
+      "preferred_label": "Reverb",
+      "explanation_zh": "混响"
+    },
+    {
+      "preferred_label": "Send",
+      "explanation_zh": "发送"
+    },
+    {
+      "preferred_label": "Return",
+      "explanation_zh": "返回通道"
+    },
+    {
+      "preferred_label": "Dry",
+      "explanation_zh": "未经过该支路处理的信号"
+    },
+    {
+      "preferred_label": "Wet",
+      "explanation_zh": "经过该支路处理的信号"
+    },
+    {
+      "preferred_label": "Mono",
+      "explanation_zh": "单声道"
+    },
+    {
+      "preferred_label": "Bypass",
+      "explanation_zh": "旁通"
+    },
+    {
+      "preferred_label": "FabFilter Pro-Q 4",
+      "explanation_zh": "产品标准名"
+    }
+  ],
+  "guards": [
+    "Phase ≠ Polarity",
+    "EQ curve ≠ Spectrum",
+    "dB gain ≠ dBFS meter reading",
+    "SC screenshot label preserved; manual SC/Ext does not replace actual screenshot text",
+    "Delay formal label retained",
+    "Harmonic n*f0 only for harmonic components; acoustic drums can be inharmonic"
+  ]
+}

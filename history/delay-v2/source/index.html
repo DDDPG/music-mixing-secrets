@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="ink-classic">
+<head>
+  <meta charset="utf-8">
+  <title>给人声一点空间 · 低 Wet Ping Pong Delay</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  
+  
+  <style>
+    /* =========================================================
+       Editorial Magazine × E-ink — Social Card Seed Template
+       ---------------------------------------------------------
+       Three boards built in one HTML:
+         .poster.xhs      1080×1440  (3:4   小红书)
+         .poster.square   1080×1080  (1:1   微信方封面)
+         .poster.wide     2100× 900  (21:9  微信主封面)
+         .pair-preview                       21:9 + 1:1 配对预览
+
+       Theme switching via <html data-theme="…">:
+         ink-classic | indigo-porcelain | forest-ink | kraft-paper | dune | midnight-ink
+
+       Fill posters where marked <!-- POSTERS_HERE -->.
+       Each poster carries one Layout Recipe (M01-M15) from
+       references/layout-recipes.md.
+       ========================================================= */
+
+    /* ---------- 1. Theme tokens ---------- */
+    :root,
+    [data-theme="ink-classic"] {
+      --paper:     #f3f0e8;
+      --paper-2:   #ebe6da;
+      --ink:       #0a0a0b;
+      --muted:     #68625a;
+      --line:      rgba(10,10,11,.22);
+      --accent:    #111111;
+      --accent-soft: #d8d2c6;
+      --ink-rgb: 10,10,11;
+      --paper-rgb: 243,240,232;
+      --accent-rgb: 17,17,17;
+    }
+    [data-theme="indigo-porcelain"] {
+      --paper:     #f2f4f5;
+      --paper-2:   #e5ebef;
+      --ink:       #0a1f3d;
+      --muted:     #5f6d78;
+      --line:      rgba(10,31,61,.20);
+      --accent:    #315d93;
+      --accent-soft: #d7e1ec;
+      --ink-rgb: 10,31,61;
+      --paper-rgb: 242,244,245;
+      --accent-rgb: 49,93,147;
+    }
+    [data-theme="forest-ink"] {
+      --paper:     #f5f1e8;
+      --paper-2:   #e8dfcf;
+      --ink:       #16251b;
+      --muted:     #5d665d;
+      --line:      rgba(22,37,27,.22);
+      --accent:    #2e6b4f;
+      --accent-soft: #d4dfd2;
+      --ink-rgb: 22,37,27;
+      --paper-rgb: 245,241,232;
+      --accent-rgb: 46,107,79;
+    }
+    [data-theme="kraft-paper"] {
+      --paper:     #eedfc7;
+      --paper-2:   #dfc9a8;
+      --ink:       #2a1e13;
+      --muted:     #755f49;
+      --line:      rgba(42,30,19,.24);
+      --accent:    #9b5a2e;
+      --accent-soft: #d5b58f;
+      --ink-rgb: 42,30,19;
+      --paper-rgb: 238,223,199;
+      --accent-rgb: 155,90,46;
+    }
+    [data-theme="dune"] {
+      --paper:     #f0e6d2;
+      --paper-2:   #ded0b7;
+      --ink:       #1f1a14;
+      --muted:     #6f6557;
+      --line:      rgba(31,26,20,.22);
+      --accent:    #8f7650;
+      --accent-soft: #d4c2a4;
+      --ink-rgb: 31,26,20;
+      --paper-rgb: 240,230,210;
+      --accent-rgb: 143,118,80;
+    }
+    /* Midnight Ink — the ONLY official dark Editorial palette.
+       Use for game key art, night scenes, dark photography, cinematic covers.
+       Do not improvise other dark backgrounds. */
+    [data-theme="midnight-ink"] {
+      --paper:     #0e0d0c;
+      --paper-2:   #1a1714;
+      --ink:       #ece2cf;
+      --muted:     #9a8c75;
+      --line:      rgba(236,226,207,.22);
+      --accent:    #d4a04a;
+      --accent-soft: #3a2a14;
+      --ink-rgb: 236,226,207;
+      --paper-rgb: 14,13,12;
+      --accent-rgb: 212,160,74;
+    }
+
+    /* ---------- 2. Typography stack ---------- */
+    :root {
+      --serif-zh: "Noto Serif SC", "Songti SC", "STSong", serif;
+      --serif-en: "Playfair Display", "Noto Serif SC", serif;
+      --sans-zh: "Noto Sans SC", -apple-system, "PingFang SC", "Microsoft YaHei UI", sans-serif;
+      --sans-en: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Consolas, monospace;
+    }
+
+    /* ---------- 3. Reset & sheet ---------- */
+    *,*::before,*::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #1a1a1a;
+      font-family: var(--sans-zh);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 64px 32px;
+    }
+    .sheet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+
+    /* ---------- 4. Poster boards (fixed export sizes) ---------- */
+    .poster {
+      position: relative;
+      background: var(--paper);
+      color: var(--ink);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .poster.xhs    { width: 1080px; height: 1440px; }
+    .poster.square { width: 1080px; height: 1080px; }
+    .poster.wide   { width: 2100px; height:  900px; }
+    .poster figure { margin: 0; }
+
+    /* Default content padding by board */
+    .poster.xhs    .content { padding: 96px 88px; }
+    .poster.square .content { padding: 88px 88px; }
+    .poster.wide   .content { padding: 88px 120px; }
+    .content { position: relative; width: 100%; height: 100%; z-index: 2; }
+
+    /* ---------- 5. Background layers (paper grain + WebGL) ---------- */
+    .mag-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .grain {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: .35;
+      mix-blend-mode: multiply;
+      background-image: radial-gradient(rgba(0,0,0,.045) 1px, transparent 1px);
+      background-size: 3px 3px;
+    }
+    .paper-wash {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background:
+        linear-gradient(180deg, rgba(var(--ink-rgb),.02), rgba(var(--ink-rgb),.05) 60%, rgba(var(--ink-rgb),.08));
+    }
+    /* Midnight Ink — flip grain to screen-mode warm specks, paper-wash to
+       gilt + shadow vignette. Light-paper math doesn't carry over. */
+    [data-theme="midnight-ink"] .grain {
+      opacity: .26;
+      mix-blend-mode: screen;
+      background-image: radial-gradient(rgba(255,244,214,.10) 1px, transparent 1px);
+    }
+    [data-theme="midnight-ink"] .paper-wash {
+      background:
+        radial-gradient(80% 50% at 28% 16%, rgba(212,160,74,.12), transparent 64%),
+        radial-gradient(70% 60% at 80% 86%, rgba(60,40,20,.20), transparent 72%),
+        linear-gradient(180deg, rgba(236,226,207,.02), rgba(0,0,0,.32));
+    }
+
+    /* ---------- 6. Typography roles ----------
+       Editorial Magazine values restored from demo-showcase/editorial.html:
+       light weights (500 not 900), serif body italic-tolerant, wide tracking
+       on kicker/meta (.20-.22em), positive tracking on display (+.04em).
+       Each card should still INLINE-tune font-size for the specific recipe;
+       these defaults are intentionally restrained, not maximal. */
+    .kicker {
+      font-family: var(--mono);
+      font-size: 21px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(var(--ink-rgb), .55);
+      margin: 0 0 18px;
+    }
+    .h-display {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 124px;
+      line-height: 1.06;
+      letter-spacing: .04em;
+      margin: 0 0 24px;
+      color: var(--ink);
+    }
+    .h-xl {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 88px;
+      line-height: 1.10;
+      letter-spacing: .03em;
+      margin: 0 0 24px;
+      color: var(--ink);
+    }
+    .h-md {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 1.18;
+      letter-spacing: .02em;
+      margin: 0 0 18px;
+      color: var(--ink);
+    }
+    .h-sub {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 36px;
+      color: var(--muted);
+      margin: 0 0 24px;
+    }
+    .lead {
+      font-family: var(--serif-zh);
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.55;
+      color: rgba(var(--ink-rgb), .82);
+      margin: 0 0 24px;
+    }
+    .body {
+      font-family: var(--serif-zh);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.65;
+      color: rgba(var(--ink-rgb), .80);
+      margin: 0 0 18px;
+    }
+    .meta {
+      font-family: var(--mono);
+      font-size: 18px;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+      color: rgba(var(--ink-rgb), .55);
+    }
+    .label {
+      font-family: var(--mono);
+      font-size: 18px;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+      color: rgba(var(--ink-rgb), .55);
+    }
+    .pullquote {
+      font-family: var(--serif-zh);
+      font-style: italic;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 1.28;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    /* Square boards usually need tighter scales */
+    .poster.square .h-display { font-size: 116px; }
+    .poster.square .h-xl      { font-size: 78px; }
+    .poster.square .h-md      { font-size: 48px; }
+    .poster.square .lead      { font-size: 28px; }
+    .poster.square .body      { font-size: 26px; }
+
+    /* Wide boards have horizontal headlines */
+    .poster.wide .h-display   { font-size: 128px; }
+    .poster.wide .h-xl        { font-size: 96px; }
+    .poster.wide .lead        { font-size: 34px; }
+
+    /* ---------- 7. Issue label + page metadata ---------- */
+    .issue-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .issue-row .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .issue-strip {
+      position: absolute;
+      left: 88px;
+      right: 88px;
+      bottom: 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      font-family: var(--mono);
+      font-size: 18px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+    .poster.wide .issue-strip { left: 120px; right: 120px; }
+    .issue-strip span { white-space: nowrap; }
+
+    /* ---------- 8. Layout primitives ---------- */
+    .stack    { display: flex; flex-direction: column; }
+    .gap-1    { gap: 12px; }
+    .gap-2    { gap: 24px; }
+    .gap-3    { gap: 36px; }
+    .gap-4    { gap: 48px; }
+    .gap-5    { gap: 64px; }
+    .row      { display: flex; flex-direction: row; }
+    .col-2    { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .col-3    { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
+    .col-2-7-5 { display: grid; grid-template-columns: 7fr 5fr; gap: 48px; }
+    .col-2-8-4 { display: grid; grid-template-columns: 8fr 4fr; gap: 48px; }
+    .center   { text-align: center; }
+    .grow     { flex: 1; }
+    .pad-y-md { padding-top: 36px; padding-bottom: 36px; }
+    .rule     { height: 1px; background: var(--line); border: 0; margin: 24px 0; }
+    .rule-accent { height: 2px; background: var(--accent); border: 0; margin: 24px 0; width: 96px; }
+
+    /* ---------- 9. Image containers (standard ratios) ---------- */
+    .frame-img {
+      position: relative;
+      overflow: hidden;
+      background: var(--paper-2);
+      display: block;
+      margin: 0;
+    }
+    .frame-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 50%;
+      display: block;
+    }
+    .frame-img.fit-contain img { object-fit: contain; }
+    [data-theme="midnight-ink"] .frame-img {
+      background: #18120f;
+      box-shadow: 0 0 0 1px rgba(236,226,207,.10);
+    }
+    .frame-img.r-3x4   { aspect-ratio: 3 / 4; }
+    .frame-img.r-1x1   { aspect-ratio: 1 / 1; }
+    .frame-img.r-4x3   { aspect-ratio: 4 / 3; }
+    .frame-img.r-16x9  { aspect-ratio: 16 / 9; }
+    .frame-img.r-16x10 { aspect-ratio: 16 / 10; }
+    .frame-img.r-21x9  { aspect-ratio: 21 / 9; }
+    .frame-img.r-3x2   { aspect-ratio: 3 / 2; }
+    .img-cap {
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 14px;
+    }
+
+    /* ---------- 9b. Screenshot treatment (.frame-shot) ---------- */
+    /* Use for UI screenshots / web captures / code shots. Replaces .frame-img
+       when you need rounded corners, soft shadow, padded inset, or device chrome.
+       Stack: .frame-shot.r-{ratio}.bg-{tone}.inset-{none|sub|bal}.shadow-{none|soft|ed} */
+    .frame-shot {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      margin: 0;
+      background: var(--paper-2);
+      /* default corners — Editorial leans slight rounding to feel like a magazine cutout */
+      border-radius: 6px;
+    }
+    .frame-shot.corners-sq { border-radius: 0; }
+    .frame-shot.corners-sm { border-radius: 6px; }
+    .frame-shot.corners-md { border-radius: 14px; }
+
+    /* shadows — Editorial uses warm low-contrast drop */
+    .frame-shot.shadow-soft { box-shadow: 0 18px 36px -18px rgba(20,18,14,.22), 0 2px 6px rgba(20,18,14,.06); }
+    .frame-shot.shadow-ed   { box-shadow: 0 28px 60px -24px rgba(20,18,14,.32), 0 6px 14px rgba(20,18,14,.08); }
+
+    /* background tones — programmatic, no asset deps */
+    .frame-shot.bg-paper    { background: var(--paper); }
+    .frame-shot.bg-paper-2  { background: var(--paper-2); }
+    .frame-shot.bg-ink      { background: var(--ink); }
+    .frame-shot.bg-grid     {
+      background:
+        linear-gradient(var(--paper-2), var(--paper-2)),
+        repeating-linear-gradient(0deg, var(--line) 0 1px, transparent 1px 48px),
+        repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px 48px);
+      background-blend-mode: multiply;
+    }
+    .frame-shot.bg-dot {
+      background-color: var(--paper-2);
+      background-image: radial-gradient(var(--line) 1px, transparent 1px);
+      background-size: 18px 18px;
+    }
+
+    /* asset backgrounds — ported from PPT skill, real texture for screenshot wells */
+    /* path is relative to the deck's index.html — keep seed and final deck in same dir, or override */
+    .frame-shot.bg-asset-dune             { background: #d8c9a8 url("../assets/screenshot-backgrounds/style-a/dune.webp")             center/cover no-repeat; }
+    .frame-shot.bg-asset-forest-ink       { background: #1f2a24 url("../assets/screenshot-backgrounds/style-a/forest-ink.webp")       center/cover no-repeat; }
+    .frame-shot.bg-asset-indigo-porcelain { background: #cfd6dd url("../assets/screenshot-backgrounds/style-a/indigo-porcelain.webp") center/cover no-repeat; }
+    .frame-shot.bg-asset-kraft-paper      { background: #c9a983 url("../assets/screenshot-backgrounds/style-a/kraft-paper.webp")      center/cover no-repeat; }
+    .frame-shot.bg-asset-monocle-classic  { background: #e8e1d4 url("../assets/screenshot-backgrounds/style-a/monocle-classic.webp")  center/cover no-repeat; }
+
+    /* padding wraps the inner shot — content gets to "float" on the bg tone */
+    .frame-shot.inset-none > img,
+    .frame-shot.inset-none > .shot-body { padding: 0; }
+    .frame-shot.inset-sub  { padding: 24px; }
+    .frame-shot.inset-bal  { padding: 56px; }
+
+    /* aspect-ratio reused from .frame-img */
+    .frame-shot.r-3x4   { aspect-ratio: 3 / 4; }
+    .frame-shot.r-1x1   { aspect-ratio: 1 / 1; }
+    .frame-shot.r-4x3   { aspect-ratio: 4 / 3; }
+    .frame-shot.r-16x9  { aspect-ratio: 16 / 9; }
+    .frame-shot.r-16x10 { aspect-ratio: 16 / 10; }
+    .frame-shot.r-21x9  { aspect-ratio: 21 / 9; }
+    .frame-shot.r-3x2   { aspect-ratio: 3 / 2; }
+
+    /* inner img defaults to contain (screenshots must not crop UI) */
+    .frame-shot > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      border-radius: inherit;
+    }
+    .frame-shot.fit-cover > img { object-fit: cover; }
+
+    /* device-frame variants (CSS-only chrome, no SVG / images) */
+    .device-browser {
+      position: relative;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .device-browser::before {
+      content: '';
+      display: block;
+      height: 36px;
+      background: var(--paper-2);
+      border-bottom: 1px solid var(--line);
+      background-image:
+        radial-gradient(circle at 18px 18px, #f08080 5px, transparent 5.5px),
+        radial-gradient(circle at 38px 18px, #f5c450 5px, transparent 5.5px),
+        radial-gradient(circle at 58px 18px, #7ec98f 5px, transparent 5.5px);
+    }
+    .device-browser > .frame-shot,
+    .device-browser > img {
+      border-radius: 0;
+      display: block;
+      width: 100%;
+    }
+    .device-phone {
+      position: relative;
+      background: var(--ink);
+      border-radius: 36px;
+      padding: 14px;
+      box-shadow: 0 24px 48px -20px rgba(20,18,14,.42);
+    }
+    .device-phone > .frame-shot,
+    .device-phone > img {
+      border-radius: 24px;
+      display: block;
+      width: 100%;
+    }
+
+    /* ---------- 9c. Map block (.map-block) ---------- */
+    /* Static map container — pure CSS frame, content is either an <img> from
+       Mapbox Static API or an SVG schematic. Pins overlay as absolute children. */
+    .map-block {
+      position: relative;
+      background: var(--paper-2);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      width: 100%;
+    }
+    .map-block.r-16x10 { aspect-ratio: 16 / 10; }
+    .map-block.r-16x9  { aspect-ratio: 16 / 9; }
+    .map-block.r-1x1   { aspect-ratio: 1 / 1; }
+    .map-block.r-3x4   { aspect-ratio: 3 / 4; }
+    .map-block > img,
+    .map-block > svg {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      display: block;
+    }
+    .map-block > img { object-fit: cover; }
+    /* tint mapbox / OSM tiles to fit editorial paper tone */
+    .map-block.tone-paper > img { filter: saturate(.36) contrast(.92) brightness(1.04); mix-blend-mode: multiply; }
+    .map-block.tone-ink > img   { filter: saturate(.18) brightness(.62); }
+    /* schematic mode: SVG drawn at viewBox 0 0 100 100, lon/lat pre-mapped to 0-100 */
+    .map-block > svg .map-coast { fill: none; stroke: var(--line); stroke-width: .4; }
+    .map-block > svg .map-road  { fill: none; stroke: var(--muted); stroke-width: .28; stroke-dasharray: 1.2 .8; opacity: .65; }
+    .map-block > svg .map-water { fill: var(--paper-2); }
+    .map-block > svg .map-grid  { stroke: var(--line); stroke-width: .15; opacity: .55; }
+
+    /* pins overlay — positioned by % coordinates */
+    .map-pin {
+      position: absolute;
+      width: 0; height: 0;
+      transform: translate(-50%, -50%);
+    }
+    .map-pin .dot {
+      position: absolute;
+      left: -7px; top: -7px;
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--ink);
+      border: 2px solid var(--paper);
+      box-shadow: 0 1px 4px rgba(20,18,14,.32);
+    }
+    .map-pin.accent .dot { background: var(--accent); }
+    .map-pin .line {
+      position: absolute;
+      left: 8px; top: 0;
+      width: 32px; height: 1px;
+      background: var(--ink);
+      opacity: .5;
+    }
+    .map-pin.left .line { left: auto; right: 8px; }
+    .map-pin .card {
+      position: absolute;
+      left: 44px; top: -22px;
+      min-width: 86px;
+      padding: 8px 10px;
+      background: rgba(245,241,232,.94);
+      box-shadow: 0 0 0 1px var(--line);
+      border-radius: 2px;
+      white-space: nowrap;
+    }
+    .map-pin.left .card { left: auto; right: 44px; }
+    .map-pin .card .name {
+      font-family: var(--serif-zh);
+      font-size: 16px;
+      line-height: 1.1;
+      color: var(--ink);
+    }
+    .map-pin .card .meta {
+      display: block;
+      margin-top: 4px;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .map-pin.accent .card .name { color: var(--accent); }
+
+    .map-legend {
+      position: absolute;
+      left: 14px; bottom: 14px;
+      z-index: 3;
+      background: rgba(245,241,232,.92);
+      padding: 8px 12px;
+      box-shadow: 0 0 0 1px var(--line);
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .map-legend.tr { left: auto; right: 14px; top: 14px; bottom: auto; }
+
+    /* ---------- 10. Editorial components ---------- */
+    .callout {
+      border-left: 3px solid var(--accent);
+      padding: 18px 28px;
+      font-family: var(--serif-zh);
+      font-style: italic;
+      font-size: 36px;
+      line-height: 1.35;
+      color: var(--ink);
+      background: var(--paper-2);
+    }
+    .callout .callout-src {
+      display: block;
+      margin-top: 18px;
+      font-style: normal;
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .12em;
+      color: var(--muted);
+    }
+
+    .ledger { display: flex; flex-direction: column; }
+    .ledger-row {
+      display: grid;
+      grid-template-columns: 96px 1fr auto;
+      gap: 24px;
+      align-items: baseline;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .ledger-row .ledger-nb {
+      font-family: var(--mono);
+      font-size: 28px;
+      color: var(--accent);
+      letter-spacing: .08em;
+    }
+    .ledger-row .ledger-title {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 42px;
+      letter-spacing: .02em;
+      color: var(--ink);
+    }
+    .ledger-row .ledger-note {
+      font-family: var(--serif-zh);
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.55;
+      color: rgba(var(--ink-rgb), .72);
+    }
+
+    .marginalia {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 48px;
+    }
+    .marginalia .mg-col {
+      border-left: 1px solid var(--line);
+      padding-left: 24px;
+    }
+    .marginalia .mg-col p {
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .04em;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+
+    .pipeline-v { display: flex; flex-direction: column; gap: 28px; }
+    .pipeline-v .step {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 28px;
+      align-items: baseline;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .pipeline-v .step:last-child { border-bottom: 0; }
+    .pipeline-v .step-nb {
+      font-family: var(--mono);
+      font-size: 32px;
+      color: var(--accent);
+    }
+    .pipeline-v .step-title {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 40px;
+      letter-spacing: .02em;
+      margin: 0 0 8px;
+    }
+    .pipeline-v .step-desc {
+      font-family: var(--serif-zh);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.6;
+      color: rgba(var(--ink-rgb), .72);
+      margin: 0;
+    }
+
+    .beforeafter {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 32px;
+      height: 100%;
+    }
+    .beforeafter .ba-block {
+      padding: 32px;
+      background: var(--paper-2);
+      border-left: 3px solid var(--accent);
+    }
+    .beforeafter .ba-block.before { opacity: .68; }
+
+    /* ---------- 11. Pair preview frame ---------- */
+    .pair-preview {
+      width: 2400px;
+      min-height: 1180px;
+      background: var(--paper-2);
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 2100px 1080px;
+      grid-template-rows: 900px 1080px;
+      gap: 48px;
+      align-content: center;
+      justify-content: center;
+    }
+    .pair-preview .preview-wide   { grid-column: 1; grid-row: 1 / span 2; align-self: center; }
+    .pair-preview .preview-square { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+    .pair-preview .preview-label {
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    /* ---------- 12. Per-poster mounting helpers ---------- */
+    .poster .corner-tl,
+    .poster .corner-tr,
+    .poster .corner-bl,
+    .poster .corner-br {
+      position: absolute;
+      font-family: var(--mono);
+      font-size: 18px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      z-index: 3;
+    }
+    .poster.xhs .corner-tl,
+    .poster.square .corner-tl { left: 88px; top: 56px; }
+    .poster.xhs .corner-tr,
+    .poster.square .corner-tr { right: 88px; top: 56px; }
+    .poster.xhs .corner-bl,
+    .poster.square .corner-bl { left: 88px; bottom: 56px; }
+    .poster.xhs .corner-br,
+    .poster.square .corner-br { right: 88px; bottom: 56px; }
+    .poster.wide .corner-tl { left: 120px; top: 56px; }
+    .poster.wide .corner-tr { right: 120px; top: 56px; }
+    .poster.wide .corner-bl { left: 120px; bottom: 56px; }
+    .poster.wide .corner-br { right: 120px; bottom: 56px; }
+  </style>
+<style>
+/* Vocal-delay v2: independent approved content-specific layout. This task block intentionally overrides template typography, palette and recipes. */
+@font-face {font-family:"Noto Sans SC";src:url("assets/fonts/NotoSansSC-400.ttf");font-weight:100 499}
+@font-face {font-family:"Noto Sans SC";src:url("assets/fonts/NotoSansSC-600.ttf");font-weight:500 649}
+@font-face {font-family:"Noto Sans SC";src:url("assets/fonts/NotoSansSC-700.ttf");font-weight:650 900}
+@page {size:1080px 1440px;margin:0}
+html,body {margin:0;padding:0;background:#F7F4EE;color:#263335;font-family:"Noto Sans SC",sans-serif}
+*,*:before,*:after {box-sizing:border-box}
+.sheet {display:block;margin:0;padding:0}
+.poster,.poster.xhs {width:1080px;height:1440px;display:block;position:relative;overflow:hidden;border:0;border-radius:0;box-shadow:none;background:#F7F4EE;break-after:page;break-inside:avoid;margin:0;padding:0}
+.poster:last-child {break-after:auto}
+.poster:before,.poster:after,.grain {display:none}
+.poster.xhs .content {display:flex;flex-direction:column;position:relative;width:1080px;height:1440px;padding:0;margin:0;z-index:1}
+.copy {position:absolute;margin:0;padding:0;letter-spacing:0;white-space:nowrap;font-family:"Noto Sans SC",sans-serif}
+.headline {letter-spacing:0}
+.diagram {position:absolute;left:0;top:0;width:1080px;height:1440px;overflow:visible}
+.hero {position:absolute;left:0;top:390px;width:1080px;height:720px;object-fit:contain;display:block}
+.foot {position:relative;flex-shrink:0;display:flex;justify-content:space-between;margin:1360px 72px 0;padding:0;width:936px;height:35px;font-family:"Noto Sans SC",sans-serif;font-size:24px;line-height:1.3;letter-spacing:0;color:#596762;border:0}
+.foot span:last-child {margin-left:auto}
+figure {margin:0}
+@media screen {body {padding:40px;background:#e8e7e3}.sheet {display:flex;flex-direction:column;gap:40px;align-items:center}.poster{flex-shrink:0}}
+</style></head>
+<body>
+  <!-- THEME_OVERRIDE
+       Change <html data-theme="…"> above to:
+       ink-classic | indigo-porcelain | forest-ink | kraft-paper | dune | midnight-ink
+  -->
+  <main class="sheet">
+<!-- POSTERS_HERE -->
+<section class="poster xhs v2-cover" id="xhs-01" data-recipe="custom-independent-cover"><div class="content"><div class="copy kicker" style="left:72px;top:76px;width:936px;font-size:24px;font-weight:400;color:#596762;line-height:1.45;text-align:left">人声混音 · 延迟</div><div class="copy headline" style="left:72px;top:130px;width:936px;font-size:82px;font-weight:700;color:#263335;line-height:1.22;text-align:left">给人声<br>一点空间</div><div class="copy body" style="left:72px;top:326px;width:936px;font-size:36px;font-weight:400;color:#263335;line-height:1.45;text-align:left">低 Wet · Ping Pong Delay</div><!-- Subject map: microphone centered; speaker cabinets at both lateral edges; the image is fully contained, and no content overlays the hardware. -->
+<img class="hero" src="assets/hero.png" alt="麦克风与左右音箱的空间概念插画" style="object-position:center 50%"><div class="copy body" style="left:72px;top:1110px;width:936px;font-size:26px;font-weight:400;color:#596762;line-height:1.45;text-align:left">空间与左右位置的概念插画</div><div class="copy body" style="left:72px;top:1152px;width:936px;font-size:34px;font-weight:600;color:#263335;line-height:1.45;text-align:left">先选时间，再收尾巴，最后调音色。</div><div class="copy body" style="left:72px;top:1210px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">从一组可试听的参数讲起。</div><div class="copy body" style="left:72px;top:1280px;width:936px;font-size:30px;font-weight:400;color:#263335;line-height:1.45;text-align:left">让回声补空间，保留歌词的清楚程度。</div><footer class="foot"><span>概念插画 · 非实测</span><span>01 / 08</span></footer></div></section><section class="poster xhs v2-routing" id="xhs-02" data-recipe="custom-independent-routing"><div class="content"><div class="copy kicker" style="left:72px;top:76px;width:936px;font-size:24px;font-weight:400;color:#596762;line-height:1.45;text-align:left">人声延迟 / 路由</div><div class="copy headline" style="left:72px;top:124px;width:936px;font-size:62px;font-weight:700;color:#263335;line-height:1.22;text-align:left">回声，在哪里混入？</div><div class="copy body" style="left:72px;top:218px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">先分清插入与发送。</div><div class="copy body" style="left:72px;top:302px;width:936px;font-size:34px;font-weight:600;color:#263335;line-height:1.45;text-align:left">插入：在插件里调 Dry/Wet</div><svg class="diagram" xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#263335" stroke-width="1.6"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#177D78" stroke-width="1.6"/></marker><marker id="coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#C86451" stroke-width="1.6"/></marker><linearGradient id="low-fade"><stop offset="0" stop-color="#177D78" stop-opacity=".14"/><stop offset="1" stop-color="#177D78" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0" stop-color="#C86451" stop-opacity="0"/><stop offset="1" stop-color="#C86451" stop-opacity=".14"/></linearGradient></defs><rect x="276" y="374" width="550" height="250" fill="none" stroke="#D6DAD1" stroke-width="2"/><text x="295" y="408" font-family="Noto Sans SC, sans-serif" font-size="26" font-weight="400" fill="#596762" text-anchor="start">延迟插件内部</text><text x="72" y="503" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="400" fill="#263335" text-anchor="start">人声</text><line x1="152" y1="491" x2="296" y2="491" stroke="#263335" stroke-width="3" stroke-linecap="round" marker-end="url(#ink)"/><circle cx="302" cy="491" r="5" fill="#263335"/><path d="M302 491 V442 H732 V491" fill="none" stroke="#263335" stroke-width="3" stroke-linejoin="round"/><path d="M302 491 V549 H732 V491" fill="none" stroke="#177D78" stroke-width="3" stroke-linejoin="round"/><text x="480" y="432" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="400" fill="#263335" text-anchor="start">干声</text><text x="443" y="593" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="400" fill="#177D78" text-anchor="start">延迟回声</text><circle cx="744" cy="491" r="16" fill="#F7F4EE" stroke="#263335" stroke-width="2"/><text x="744" y="502" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#263335" text-anchor="middle">+</text><text x="744" y="606" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#263335" text-anchor="middle">Dry/Wet</text><line x1="761" y1="491" x2="930" y2="491" stroke="#263335" stroke-width="3" stroke-linecap="round" marker-end="url(#ink)"/><text x="944" y="503" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="400" fill="#263335" text-anchor="start">混音</text><text x="72" y="867" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="400" fill="#263335" text-anchor="start">人声</text><line x1="152" y1="855" x2="908" y2="855" stroke="#263335" stroke-width="3" stroke-linecap="round" marker-end="url(#ink)"/><circle cx="250" cy="855" r="5" fill="#263335"/><text x="500" y="842" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="start">原声直通</text><circle cx="924" cy="855" r="14" fill="#F7F4EE" stroke="#263335" stroke-width="2"/><text x="924" y="865" font-family="Noto Sans SC, sans-serif" font-size="26" font-weight="400" fill="#263335" text-anchor="middle">+</text><line x1="938" y1="855" x2="944" y2="855" stroke="#263335" stroke-width="3" stroke-linecap="round"/><text x="944" y="902" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="400" fill="#263335" text-anchor="start">混音</text><path d="M250 855 V998 H333" fill="none" stroke="#177D78" stroke-width="3" stroke-linejoin="round" marker-end="url(#teal)"/><text x="287" y="973" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#177D78" text-anchor="middle">发送量</text><line x1="342" y1="998" x2="420" y2="998" stroke="#177D78" stroke-width="3" stroke-linecap="round" marker-end="url(#teal)"/><text x="539" y="970" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#177D78" text-anchor="middle">效果轨</text><text x="539" y="1035" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#177D78" text-anchor="middle">100% Wet</text><line x1="650" y1="998" x2="704" y2="998" stroke="#177D78" stroke-width="3" stroke-linecap="round" marker-end="url(#teal)"/><text x="772" y="970" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#177D78" text-anchor="middle">返回推子</text><path d="M833 998 H924 V871" fill="none" stroke="#177D78" stroke-width="3" stroke-linejoin="round" marker-end="url(#teal)"/></svg><div class="copy body" style="left:72px;top:680px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">干声与回声混合后，再进入混音。</div><div class="copy body" style="left:72px;top:765px;width:936px;font-size:34px;font-weight:600;color:#263335;line-height:1.45;text-align:left">发送：效果轨只返回回声</div><div class="copy body" style="left:72px;top:1124px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">单声道人声选 M&gt;S；立体声轨选 Stereo。<br>发送路由用发送量或返回推子控制多少。</div><div class="copy body" style="left:72px;top:1252px;width:936px;font-size:26px;font-weight:400;color:#596762;line-height:1.45;text-align:left">功能路由示意，不代表插件内部的精确 DSP 电路。</div><footer class="foot"><span>Waves H-Delay 手册 · 原理示意</span><span>02 / 08</span></footer></div></section><section class="poster xhs v2-time" id="xhs-03" data-recipe="custom-independent-time"><div class="content"><div class="copy kicker" style="left:72px;top:76px;width:936px;font-size:24px;font-weight:400;color:#596762;line-height:1.45;text-align:left">人声延迟 / 时间</div><div class="copy headline" style="left:72px;top:120px;width:936px;font-size:62px;font-weight:700;color:#263335;line-height:1.22;text-align:left">同一个 1/8<br>换首歌就变了</div><div class="copy body" style="left:72px;top:302px;width:936px;font-size:28px;font-weight:400;color:#596762;line-height:1.45;text-align:left">四分音符为一拍 · 固定速度</div><svg class="diagram" xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#263335" stroke-width="1.6"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#177D78" stroke-width="1.6"/></marker><marker id="coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#C86451" stroke-width="1.6"/></marker><linearGradient id="low-fade"><stop offset="0" stop-color="#177D78" stop-opacity=".14"/><stop offset="1" stop-color="#177D78" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0" stop-color="#C86451" stop-opacity="0"/><stop offset="1" stop-color="#C86451" stop-opacity=".14"/></linearGradient></defs><line x1="236.0" y1="383" x2="236.0" y2="806" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><line x1="236.0" y1="844" x2="236.0" y2="859" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="236.0" y="894" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">0</text><line x1="362.0" y1="383" x2="362.0" y2="806" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><line x1="362.0" y1="844" x2="362.0" y2="859" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="362.0" y="894" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">50</text><line x1="488.0" y1="383" x2="488.0" y2="806" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><line x1="488.0" y1="844" x2="488.0" y2="859" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="488.0" y="894" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">100</text><line x1="614.0" y1="383" x2="614.0" y2="806" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><line x1="614.0" y1="844" x2="614.0" y2="859" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="614.0" y="894" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">150</text><line x1="740.0" y1="383" x2="740.0" y2="806" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><line x1="740.0" y1="844" x2="740.0" y2="859" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="740.0" y="894" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">200</text><line x1="866.0" y1="383" x2="866.0" y2="806" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><line x1="866.0" y1="844" x2="866.0" y2="859" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="866.0" y="894" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">250</text><line x1="236" y1="852" x2="866" y2="852" stroke="#596762" stroke-width="2" stroke-linecap="round"/><text x="956" y="894" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="end">ms</text><text x="72" y="456" font-family="Noto Sans SC, sans-serif" font-size="38" font-weight="600" fill="#263335" text-anchor="start">120</text><text x="72" y="492" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="start">BPM</text><text x="72" y="706" font-family="Noto Sans SC, sans-serif" font-size="38" font-weight="600" fill="#263335" text-anchor="start">160</text><text x="72" y="742" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="start">BPM</text><text x="218" y="424" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#177D78" text-anchor="end">1/8</text><line x1="236" y1="414" x2="866.0" y2="414" stroke="#177D78" stroke-width="10" stroke-linecap="round"/><circle cx="866.0" cy="414" r="6" fill="#177D78"/><text x="882.0" y="426" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#177D78" text-anchor="start">250 ms</text><text x="218" y="530" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#C86451" text-anchor="end">1/16</text><line x1="236" y1="520" x2="551.0" y2="520" stroke="#C86451" stroke-width="10" stroke-linecap="round"/><circle cx="551.0" cy="520" r="6" fill="#C86451"/><text x="567.0" y="532" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#C86451" text-anchor="start">125 ms</text><text x="218" y="674" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#177D78" text-anchor="end">1/8</text><line x1="236" y1="664" x2="708.5" y2="664" stroke="#177D78" stroke-width="10" stroke-linecap="round"/><circle cx="708.5" cy="664" r="6" fill="#177D78"/><text x="724.5" y="676" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#177D78" text-anchor="start">187.5 ms</text><text x="218" y="780" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#C86451" text-anchor="end">1/16</text><line x1="236" y1="770" x2="472.25" y2="770" stroke="#C86451" stroke-width="10" stroke-linecap="round"/><circle cx="472.25" cy="770" r="6" fill="#C86451"/><text x="488.25" y="782" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#C86451" text-anchor="start">93.75 ms</text></svg><div class="copy body" style="left:72px;top:943px;width:936px;font-size:38px;font-weight:600;color:#263335;line-height:1.45;text-align:left">120 → 160 BPM，同一音符缩短 25%。</div><div class="copy body" style="left:72px;top:1020px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">1/8 = 60,000 ÷ BPM ÷ 2<br>1/16 = 60,000 ÷ BPM ÷ 4</div><div class="copy body" style="left:72px;top:1142px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">HOST 会跟随工程速度。<br>对比 1/8 与 1/16，听回声是否挤住下一字。</div><div class="copy body" style="left:72px;top:1270px;width:936px;font-size:26px;font-weight:400;color:#596762;line-height:1.45;text-align:left">缩短间隔后，仍要重新听反馈与咬字。</div><footer class="foot"><span>Ableton 节拍定义 · 时长为计算值</span><span>03 / 08</span></footer></div></section><section class="poster xhs v2-pingpong" id="xhs-04" data-recipe="custom-independent-pingpong"><div class="content"><div class="copy kicker" style="left:72px;top:76px;width:936px;font-size:24px;font-weight:400;color:#596762;line-height:1.45;text-align:left">人声延迟 / 左右</div><div class="copy headline" style="left:72px;top:124px;width:936px;font-size:62px;font-weight:700;color:#263335;line-height:1.22;text-align:left">回声怎样左右交替？</div><div class="copy body" style="left:72px;top:231px;width:936px;font-size:30px;font-weight:400;color:#263335;line-height:1.45;text-align:left">160 BPM · 普通 1/8<br>从左开始的单次输入示意</div><svg class="diagram" xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#263335" stroke-width="1.6"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#177D78" stroke-width="1.6"/></marker><marker id="coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#C86451" stroke-width="1.6"/></marker><linearGradient id="low-fade"><stop offset="0" stop-color="#177D78" stop-opacity=".14"/><stop offset="1" stop-color="#177D78" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0" stop-color="#C86451" stop-opacity="0"/><stop offset="1" stop-color="#C86451" stop-opacity=".14"/></linearGradient></defs><text x="565" y="385" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="600" fill="#263335" text-anchor="middle">同侧两次：375 ms</text><path d="M372.5 420 V403 H757.5 V420" fill="none" stroke="#177D78" stroke-width="2" stroke-linejoin="round"/><line x1="180" y1="520" x2="980" y2="520" stroke="#D6DAD1" stroke-width="2" stroke-linecap="round"/><line x1="180" y1="780" x2="980" y2="780" stroke="#D6DAD1" stroke-width="2" stroke-linecap="round"/><text x="72" y="532" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="600" fill="#177D78" text-anchor="start">L 左</text><text x="72" y="792" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="600" fill="#C86451" text-anchor="start">R 右</text><circle cx="180" cy="650" r="9" fill="#263335"/><text x="208" y="662" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#263335" text-anchor="start">干声</text><line x1="372.5" y1="536" x2="372.5" y2="885" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 7"/><circle cx="372.5" cy="520" r="12" fill="#177D78"/><text x="372.5" y="485" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="600" fill="#177D78" text-anchor="middle">第 1 次</text><line x1="565.0" y1="796" x2="565.0" y2="885" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 7"/><circle cx="565.0" cy="780" r="12" fill="#C86451"/><text x="565.0" y="745" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="600" fill="#C86451" text-anchor="middle">第 2 次</text><line x1="757.5" y1="536" x2="757.5" y2="885" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 7"/><circle cx="757.5" cy="520" r="12" fill="#177D78"/><text x="757.5" y="485" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="600" fill="#177D78" text-anchor="middle">第 3 次</text><line x1="950.0" y1="796" x2="950.0" y2="885" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 7"/><circle cx="950.0" cy="780" r="12" fill="#C86451"/><text x="950.0" y="745" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="600" fill="#C86451" text-anchor="middle">第 4 次</text><line x1="180" y1="650" x2="180" y2="885" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 7"/><line x1="180" y1="890" x2="950" y2="890" stroke="#596762" stroke-width="2" stroke-linecap="round"/><line x1="180.0" y1="883" x2="180.0" y2="898" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="180.0" y="933" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">0</text><line x1="372.5" y1="883" x2="372.5" y2="898" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="372.5" y="933" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">187.5</text><line x1="565.0" y1="883" x2="565.0" y2="898" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="565.0" y="933" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">375</text><line x1="757.5" y1="883" x2="757.5" y2="898" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="757.5" y="933" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">562.5</text><line x1="950.0" y1="883" x2="950.0" y2="898" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="950.0" y="933" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">750</text><text x="950" y="975" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="end">时间 / ms</text></svg><div class="copy body" style="left:72px;top:985px;width:936px;font-size:34px;font-weight:600;color:#263335;line-height:1.45;text-align:left">相邻回声，每隔 187.5 ms 出现一次。</div><div class="copy body" style="left:72px;top:1085px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">H-Delay：打开 Ping Pong，<br>还要让 Feedback 显示值 &gt; 1。</div><div class="copy body" style="left:72px;top:1190px;width:936px;font-size:30px;font-weight:400;color:#263335;line-height:1.45;text-align:left">可暂时提高 Mix 确认交替，再收回低 Wet。</div><div class="copy body" style="left:72px;top:1270px;width:936px;font-size:26px;font-weight:400;color:#596762;line-height:1.45;text-align:left">单次输入、等间隔时序示意，非音频实测。<br>左右起点可以互换。</div><footer class="foot"><span>Waves H-Delay 手册 · 时间为计算值</span><span>04 / 08</span></footer></div></section><section class="poster xhs v2-feedback" id="xhs-05" data-recipe="custom-independent-feedback"><div class="content"><div class="copy kicker" style="left:72px;top:76px;width:936px;font-size:24px;font-weight:400;color:#596762;line-height:1.45;text-align:left">人声延迟 / 反馈</div><div class="copy headline" style="left:72px;top:120px;width:936px;font-size:62px;font-weight:700;color:#263335;line-height:1.22;text-align:left">Feedback 越高<br>尾巴越难收</div><div class="copy body" style="left:72px;top:302px;width:936px;font-size:28px;font-weight:400;color:#596762;line-height:1.45;text-align:left">理想线性模型 · 相对振幅 · 第 1 次 = 100</div><svg class="diagram" xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#263335" stroke-width="1.6"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#177D78" stroke-width="1.6"/></marker><marker id="coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#C86451" stroke-width="1.6"/></marker><linearGradient id="low-fade"><stop offset="0" stop-color="#177D78" stop-opacity=".14"/><stop offset="1" stop-color="#177D78" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0" stop-color="#C86451" stop-opacity="0"/><stop offset="1" stop-color="#C86451" stop-opacity=".14"/></linearGradient></defs><text x="86" y="412" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="600" fill="#177D78" text-anchor="start">每次回送 30% 振幅</text><text x="599" y="412" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="600" fill="#C86451" text-anchor="start">每次回送 60% 振幅</text><line x1="132" y1="870.0" x2="484" y2="870.0" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><text x="120" y="880.0" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="end">0</text><line x1="132" y1="680.0" x2="484" y2="680.0" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><text x="120" y="690.0" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="end">50</text><line x1="132" y1="490.0" x2="484" y2="490.0" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><text x="120" y="500.0" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="end">100</text><line x1="643" y1="870.0" x2="995" y2="870.0" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><text x="631" y="880.0" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="end">0</text><line x1="643" y1="680.0" x2="995" y2="680.0" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><text x="631" y="690.0" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="end">50</text><line x1="643" y1="490.0" x2="995" y2="490.0" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><text x="631" y="500.0" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="end">100</text><line x1="150" y1="870" x2="150" y2="490.0" stroke="#177D78" stroke-width="8" stroke-linecap="round"/><circle cx="150" cy="490.0" r="5" fill="#177D78"/><text x="150" y="472.0" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#177D78" text-anchor="middle">100</text><text x="150" y="923" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">第1次</text><line x1="253" y1="870" x2="253" y2="756.0" stroke="#177D78" stroke-width="8" stroke-linecap="round"/><circle cx="253" cy="756.0" r="5" fill="#177D78"/><text x="253" y="738.0" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#177D78" text-anchor="middle">30</text><text x="253" y="923" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">第2次</text><line x1="356" y1="870" x2="356" y2="835.8" stroke="#177D78" stroke-width="8" stroke-linecap="round"/><circle cx="356" cy="835.8" r="5" fill="#177D78"/><text x="356" y="817.8" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#177D78" text-anchor="middle">9</text><text x="356" y="923" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">第3次</text><line x1="459" y1="870" x2="459" y2="859.74" stroke="#177D78" stroke-width="8" stroke-linecap="round"/><circle cx="459" cy="859.74" r="5" fill="#177D78"/><text x="459" y="841.74" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#177D78" text-anchor="middle">2.7</text><text x="459" y="923" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">第4次</text><line x1="661" y1="870" x2="661" y2="490.0" stroke="#C86451" stroke-width="8" stroke-linecap="round"/><circle cx="661" cy="490.0" r="5" fill="#C86451"/><text x="661" y="472.0" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#C86451" text-anchor="middle">100</text><text x="661" y="923" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">第1次</text><line x1="764" y1="870" x2="764" y2="642.0" stroke="#C86451" stroke-width="8" stroke-linecap="round"/><circle cx="764" cy="642.0" r="5" fill="#C86451"/><text x="764" y="624.0" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#C86451" text-anchor="middle">60</text><text x="764" y="923" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">第2次</text><line x1="867" y1="870" x2="867" y2="733.2" stroke="#C86451" stroke-width="8" stroke-linecap="round"/><circle cx="867" cy="733.2" r="5" fill="#C86451"/><text x="867" y="715.2" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#C86451" text-anchor="middle">36</text><text x="867" y="923" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">第3次</text><line x1="970" y1="870" x2="970" y2="787.92" stroke="#C86451" stroke-width="8" stroke-linecap="round"/><circle cx="970" cy="787.92" r="5" fill="#C86451"/><text x="970" y="769.92" font-family="Noto Sans SC, sans-serif" font-size="34" font-weight="600" fill="#C86451" text-anchor="middle">21.6</text><text x="970" y="923" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">第4次</text></svg><div class="copy body" style="left:72px;top:968px;width:936px;font-size:36px;font-weight:600;color:#263335;line-height:1.45;text-align:left">第 4 次：21.6 ÷ 2.7 = 8 倍振幅</div><div class="copy body" style="left:72px;top:1050px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">整片回声太抢耳 → 先减 Mix</div><div class="copy body" style="left:72px;top:1120px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">第一下合适、后面拖太久 → 先减 Feedback</div><div class="copy body" style="left:72px;top:1226px;width:936px;font-size:26px;font-weight:400;color:#596762;line-height:1.45;text-align:left">第 n 次 = 100 × g^(n−1)，假设回送比例固定。<br>这里是相对振幅，不代表听感响度，<br>也不是 H-Delay 某旋钮值的实测。</div><footer class="foot"><span>FabFilter / Ableton 反馈定义 · 理想模型</span><span>05 / 08</span></footer></div></section><section class="poster xhs v2-filter" id="xhs-06" data-recipe="custom-independent-filter"><div class="content"><div class="copy kicker" style="left:72px;top:76px;width:936px;font-size:24px;font-weight:400;color:#596762;line-height:1.45;text-align:left">人声延迟 / 滤波</div><div class="copy headline" style="left:72px;top:120px;width:936px;font-size:62px;font-weight:700;color:#263335;line-height:1.22;text-align:left">回声也要<br>修低频、收高频</div><div class="copy body" style="left:72px;top:302px;width:936px;font-size:28px;font-weight:400;color:#596762;line-height:1.45;text-align:left">试听起点 · 对数频率刻度</div><svg class="diagram" xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#263335" stroke-width="1.6"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#177D78" stroke-width="1.6"/></marker><marker id="coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#C86451" stroke-width="1.6"/></marker><linearGradient id="low-fade"><stop offset="0" stop-color="#177D78" stop-opacity=".14"/><stop offset="1" stop-color="#177D78" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0" stop-color="#C86451" stop-opacity="0"/><stop offset="1" stop-color="#C86451" stop-opacity=".14"/></linearGradient></defs><rect x="104" y="506" width="290.6666666666667" height="144" fill="url(#low-fade)" stroke="none" stroke-width="0"/><rect x="824.0165780385154" y="506" width="151.98342196148462" height="144" fill="url(#high-fade)" stroke="none" stroke-width="0"/><line x1="104" y1="650" x2="976" y2="650" stroke="#596762" stroke-width="2" stroke-linecap="round"/><line x1="394.6666666666667" y1="563" x2="394.6666666666667" y2="650" stroke="#177D78" stroke-width="4" stroke-linecap="round"/><line x1="824.0165780385154" y1="563" x2="824.0165780385154" y2="650" stroke="#C86451" stroke-width="4" stroke-linecap="round"/><text x="394.6666666666667" y="403" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="600" fill="#177D78" text-anchor="middle">HP 高通</text><text x="394.6666666666667" y="460" font-family="Noto Sans SC, sans-serif" font-size="42" font-weight="600" fill="#177D78" text-anchor="middle">200 Hz</text><text x="824.0165780385154" y="403" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="600" fill="#C86451" text-anchor="middle">LP 低通</text><text x="824.0165780385154" y="460" font-family="Noto Sans SC, sans-serif" font-size="42" font-weight="600" fill="#C86451" text-anchor="middle">6 kHz</text><text x="104" y="520" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="400" fill="#177D78" text-anchor="start">减少低频累积</text><text x="690" y="520" font-family="Noto Sans SC, sans-serif" font-size="32" font-weight="400" fill="#C86451" text-anchor="start">收暗高频重复</text><line x1="230" y1="541" x2="230" y2="574" stroke="#177D78" stroke-width="2" stroke-linecap="round"/><line x1="865" y1="541" x2="865" y2="574" stroke="#C86451" stroke-width="2" stroke-linecap="round"/><line x1="104.0" y1="644" x2="104.0" y2="662" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="104.0" y="713" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">20</text><line x1="307.16728126033615" y1="644" x2="307.16728126033615" y2="662" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="307.16728126033615" y="713" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">100</text><line x1="394.6666666666667" y1="644" x2="394.6666666666667" y2="662" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="394.6666666666667" y="713" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">200</text><line x1="597.8339479270028" y1="644" x2="597.8339479270028" y2="662" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="597.8339479270028" y="713" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">1k</text><line x1="824.0165780385154" y1="644" x2="824.0165780385154" y2="662" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="824.0165780385154" y="713" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">6k</text><line x1="976.0" y1="644" x2="976.0" y2="662" stroke="#596762" stroke-width="1.5" stroke-linecap="round"/><text x="976.0" y="713" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="middle">20k</text><text x="976" y="750" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#596762" text-anchor="end">Hz</text><line x1="394.6666666666667" y1="779" x2="445.85052596551805" y2="779" stroke="#177D78" stroke-width="3" stroke-linecap="round" marker-end="url(#teal)"/><text x="394.6666666666667" y="821" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#177D78" text-anchor="middle">200 → 300</text><line x1="824.0165780385154" y1="779" x2="772.8327187396638" y2="779" stroke="#C86451" stroke-width="3" stroke-linecap="round" marker-end="url(#coral)"/><text x="824.0165780385154" y="821" font-family="Noto Sans SC, sans-serif" font-size="28" font-weight="400" fill="#C86451" text-anchor="middle">6k → 4k</text></svg><div class="copy body" style="left:72px;top:868px;width:936px;font-size:34px;font-weight:600;color:#263335;line-height:1.45;text-align:left">低频仍浑</div><div class="copy body" style="left:72px;top:918px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">HP：200 → 300 Hz，试着再减一点低频</div><div class="copy body" style="left:72px;top:1014px;width:936px;font-size:34px;font-weight:600;color:#263335;line-height:1.45;text-align:left">齿音跟着重复</div><div class="copy body" style="left:72px;top:1064px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">LP：6 → 4 kHz，试着收暗一点</div><div class="copy body" style="left:72px;top:1170px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">一次只改一项；回声太薄或太暗，就往回调。</div><div class="copy body" style="left:72px;top:1254px;width:936px;font-size:26px;font-weight:400;color:#596762;line-height:1.45;text-align:left">仅示意滤波方向，不是完整频响或实测曲线。<br>截止点外逐渐衰减；实际坡度取决于滤波器。</div><footer class="foot"><span>Waves / Soundtoys · 参数为试听建议</span><span>06 / 08</span></footer></div></section><section class="poster xhs v2-audition" id="xhs-07" data-recipe="custom-independent-audition"><div class="content"><div class="copy kicker" style="left:72px;top:76px;width:936px;font-size:24px;font-weight:400;color:#596762;line-height:1.45;text-align:left">人声延迟 / 试听</div><div class="copy headline" style="left:72px;top:124px;width:936px;font-size:60px;font-weight:700;color:#263335;line-height:1.22;text-align:left">打开工程，从这组开始试</div><div class="copy body" style="left:72px;top:224px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">带伴奏，循环同一段。</div><div class="copy body" style="left:72px;top:296px;width:936px;font-size:30px;font-weight:400;color:#263335;line-height:1.45;text-align:left">H-Delay · 单声道选 M&gt;S，立体声选 Stereo</div><svg class="diagram" xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#263335" stroke-width="1.6"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#177D78" stroke-width="1.6"/></marker><marker id="coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#C86451" stroke-width="1.6"/></marker><linearGradient id="low-fade"><stop offset="0" stop-color="#177D78" stop-opacity=".14"/><stop offset="1" stop-color="#177D78" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0" stop-color="#C86451" stop-opacity="0"/><stop offset="1" stop-color="#C86451" stop-opacity=".14"/></linearGradient></defs><line x1="72" y1="348" x2="1008" y2="348" stroke="#D6DAD1" stroke-width="2" stroke-linecap="round"/><line x1="72" y1="540" x2="1008" y2="540" stroke="#D6DAD1" stroke-width="2" stroke-linecap="round"/><circle cx="174" cy="800" r="47" fill="#F7F4EE" stroke="#177D78" stroke-width="2"/><text x="174" y="818" font-family="Noto Sans SC, sans-serif" font-size="46" font-weight="600" fill="#177D78" text-anchor="middle">0</text><text x="174" y="895" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#263335" text-anchor="middle">先听原声</text><circle cx="418" cy="800" r="47" fill="#F7F4EE" stroke="#177D78" stroke-width="2"/><text x="418" y="818" font-family="Noto Sans SC, sans-serif" font-size="46" font-weight="600" fill="#177D78" text-anchor="middle">3</text><text x="418" y="895" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#263335" text-anchor="middle">少量加入</text><circle cx="662" cy="800" r="47" fill="#F7F4EE" stroke="#177D78" stroke-width="2"/><text x="662" y="818" font-family="Noto Sans SC, sans-serif" font-size="46" font-weight="600" fill="#177D78" text-anchor="middle">5</text><text x="662" y="895" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#263335" text-anchor="middle">继续对比</text><circle cx="906" cy="800" r="47" fill="#F7F4EE" stroke="#177D78" stroke-width="2"/><text x="906" y="818" font-family="Noto Sans SC, sans-serif" font-size="46" font-weight="600" fill="#177D78" text-anchor="middle">8</text><text x="906" y="895" font-family="Noto Sans SC, sans-serif" font-size="30" font-weight="400" fill="#263335" text-anchor="middle">再多一点</text><line x1="229" y1="800" x2="363" y2="800" stroke="#596762" stroke-width="2" stroke-linecap="round" marker-end="url(#ink)"/><line x1="473" y1="800" x2="607" y2="800" stroke="#596762" stroke-width="2" stroke-linecap="round" marker-end="url(#ink)"/><line x1="717" y1="800" x2="851" y2="800" stroke="#596762" stroke-width="2" stroke-linecap="round" marker-end="url(#ink)"/></svg><div class="copy body" style="left:72px;top:357px;width:220px;font-size:30px;font-weight:400;color:#263335;line-height:1.45;text-align:left">Ping Pong</div><div class="copy body" style="left:335px;top:353px;width:170px;font-size:36px;font-weight:600;color:#177D78;line-height:1.45;text-align:left">On</div><div class="copy body" style="left:564px;top:357px;width:230px;font-size:30px;font-weight:400;color:#263335;line-height:1.45;text-align:left">HOST</div><div class="copy body" style="left:827px;top:353px;width:181px;font-size:36px;font-weight:600;color:#177D78;line-height:1.45;text-align:left">1/8</div><div class="copy body" style="left:72px;top:419px;width:220px;font-size:30px;font-weight:400;color:#263335;line-height:1.45;text-align:left">Dry/Wet</div><div class="copy body" style="left:335px;top:415px;width:170px;font-size:36px;font-weight:600;color:#177D78;line-height:1.45;text-align:left">5</div><div class="copy body" style="left:564px;top:419px;width:230px;font-size:30px;font-weight:400;color:#263335;line-height:1.45;text-align:left">Feedback</div><div class="copy body" style="left:827px;top:415px;width:181px;font-size:36px;font-weight:600;color:#177D78;line-height:1.45;text-align:left">20</div><div class="copy body" style="left:72px;top:481px;width:220px;font-size:30px;font-weight:400;color:#263335;line-height:1.45;text-align:left">HP</div><div class="copy body" style="left:335px;top:477px;width:170px;font-size:36px;font-weight:600;color:#177D78;line-height:1.45;text-align:left">200 Hz</div><div class="copy body" style="left:564px;top:481px;width:230px;font-size:30px;font-weight:400;color:#263335;line-height:1.45;text-align:left">LP</div><div class="copy body" style="left:827px;top:477px;width:181px;font-size:36px;font-weight:600;color:#177D78;line-height:1.45;text-align:left">6 kHz</div><div class="copy body" style="left:72px;top:555px;width:936px;font-size:26px;font-weight:400;color:#596762;line-height:1.45;text-align:left">Analog / LoFi：Off · Modulation Depth：0<br>Phase Reverse：Off</div><div class="copy body" style="left:72px;top:675px;width:936px;font-size:36px;font-weight:600;color:#263335;line-height:1.45;text-align:left">1  先选回声的量</div><div class="copy body" style="left:72px;top:956px;width:936px;font-size:34px;font-weight:600;color:#263335;line-height:1.45;text-align:left">2  选好量，再比较 1/8 与 1/16</div><div class="copy body" style="left:72px;top:1062px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">3  后面拖太久，Feedback 从 20 往下收。<br>    想多一点延续，再小幅增加。</div><div class="copy body" style="left:72px;top:1220px;width:936px;font-size:26px;font-weight:400;color:#596762;line-height:1.45;text-align:left">整组为试听起点，不是官方预设。<br>Mix 按 0–100 刻度；Feedback 20 是显示值。<br>固定其他参数，每次回放同一段，先确认输出不削波。</div><footer class="foot"><span>Waves H-Delay 手册 · 本页为试听起点</span><span>07 / 08</span></footer></div></section><section class="poster xhs v2-check" id="xhs-08" data-recipe="custom-independent-check"><div class="content"><div class="copy kicker" style="left:72px;top:76px;width:936px;font-size:24px;font-weight:400;color:#596762;line-height:1.45;text-align:left">人声延迟 / 判断</div><div class="copy headline" style="left:72px;top:124px;width:936px;font-size:60px;font-weight:700;color:#263335;line-height:1.22;text-align:left">回到伴奏里，决定留多少</div><div class="copy body" style="left:72px;top:224px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">听到什么，就先动对应的控制。</div><div class="copy body" style="left:72px;top:333px;width:450px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">回声整体太明显</div><div class="copy body" style="left:548px;top:333px;width:64px;font-size:34px;font-weight:400;color:#596762;line-height:1.45;text-align:left">→</div><div class="copy body" style="left:628px;top:333px;width:380px;font-size:34px;font-weight:600;color:#177D78;line-height:1.45;text-align:left">先减 Mix</div><div class="copy body" style="left:72px;top:455px;width:450px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">后面重复拖太长</div><div class="copy body" style="left:548px;top:455px;width:64px;font-size:34px;font-weight:400;color:#596762;line-height:1.45;text-align:left">→</div><div class="copy body" style="left:628px;top:455px;width:380px;font-size:34px;font-weight:600;color:#177D78;line-height:1.45;text-align:left">再减 Feedback</div><div class="copy body" style="left:72px;top:577px;width:450px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">歌词被回声挤住</div><div class="copy body" style="left:548px;top:577px;width:64px;font-size:34px;font-weight:400;color:#596762;line-height:1.45;text-align:left">→</div><div class="copy body" style="left:628px;top:577px;width:380px;font-size:34px;font-weight:600;color:#177D78;line-height:1.45;text-align:left">比 1/8 与 1/16</div><div class="copy body" style="left:628px;top:624px;width:380px;font-size:28px;font-weight:400;color:#596762;line-height:1.45;text-align:left">再重新听反馈</div><div class="copy body" style="left:72px;top:716px;width:450px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">回声又浑又亮</div><div class="copy body" style="left:548px;top:716px;width:64px;font-size:34px;font-weight:400;color:#596762;line-height:1.45;text-align:left">→</div><div class="copy body" style="left:628px;top:716px;width:380px;font-size:34px;font-weight:600;color:#177D78;line-height:1.45;text-align:left">分别检查 HP / LP</div><svg class="diagram" xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#263335" stroke-width="1.6"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#177D78" stroke-width="1.6"/></marker><marker id="coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#C86451" stroke-width="1.6"/></marker><linearGradient id="low-fade"><stop offset="0" stop-color="#177D78" stop-opacity=".14"/><stop offset="1" stop-color="#177D78" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0" stop-color="#C86451" stop-opacity="0"/><stop offset="1" stop-color="#C86451" stop-opacity=".14"/></linearGradient></defs><line x1="72" y1="424" x2="1008" y2="424" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><line x1="72" y1="546" x2="1008" y2="546" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><line x1="72" y1="685" x2="1008" y2="685" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/><line x1="72" y1="797" x2="1008" y2="797" stroke="#D6DAD1" stroke-width="1.5" stroke-linecap="round"/></svg><div class="copy body" style="left:72px;top:850px;width:936px;font-size:36px;font-weight:600;color:#263335;line-height:1.45;text-align:left">最后，做三次检查</div><div class="copy body" style="left:72px;top:919px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">带伴奏：歌词和下一句还清楚吗？</div><div class="copy body" style="left:72px;top:986px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">开关对比：先尽量匹配响度。</div><div class="copy body" style="left:72px;top:1053px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">切单声道：音色、音量、歌词<br>是否异常改变？</div><div class="copy body" style="left:72px;top:1190px;width:936px;font-size:36px;font-weight:600;color:#263335;line-height:1.45;text-align:left">选让这首歌更舒服的设置。</div><div class="copy body" style="left:72px;top:1250px;width:936px;font-size:32px;font-weight:400;color:#263335;line-height:1.45;text-align:left">人声已有足够空间，也可以不加。</div><footer class="foot"><span>最终以完整混音与单声道回放判断</span><span>08 / 08</span></footer></div></section></main>
+
+  <!-- Magazine WebGL background (deterministic ink-flow) -->
+  
+  
+</body>
+</html>

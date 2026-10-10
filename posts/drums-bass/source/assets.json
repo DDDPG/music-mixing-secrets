@@ -1,0 +1,319 @@
+{
+  "publication_blocker": "Third-party image publishing scope requires decision or permission. Diagrams are original and cleared. Do not silently replace a required object photograph with fake UI.",
+  "assets": [
+    {
+      "asset_id": "A01",
+      "file": "assets/source/press-kit/FabFilter Pro-Q 4 Screen Shot@2x.jpg",
+      "entity": "FabFilter Pro-Q 4",
+      "version": "Pro-Q 4; exact screenshot build not stated",
+      "component": "Stereo shown in press screenshot; manual analyzer image component not verified",
+      "source_page": "https://www.fabfilter.com/press",
+      "asset_url": "https://www.fabfilter.com/downloads/press/fabfilter-pro-q.zip",
+      "retrieved_at": "2026-10-09",
+      "dimensions": [
+        2298,
+        1380
+      ],
+      "sha256": "bc26b05318ce93d10ac795479088b56080addbccf3422f57453fe67f0d8173d9",
+      "rights_status": "editorial_press_basis_scope_unconfirmed",
+      "rights_basis": "Official media kit is supplied for press; no explicit general social/commercial redistribution or crop license found.",
+      "attribution": "Image © FabFilter. Official product image; no endorsement implied.",
+      "modifications": "None; original downloaded bytes.",
+      "crop_box_original_px": null,
+      "used_on_pages": [
+        4
+      ],
+      "state_warning": "Press screenshot: Equalize 4 preset, Guitar instance, Natural Phase, High, Analyzer: Pre+Post+SC; not drum/bass settings. Manual analyzer UI says SC; do not relabel it SC/Ext."
+    },
+    {
+      "asset_id": "A02",
+      "file": "assets/derived/proq-controls-context.png",
+      "entity": "FabFilter Pro-Q 4",
+      "version": "Pro-Q 4; exact screenshot build not stated",
+      "component": "Stereo shown in press screenshot; manual analyzer image component not verified",
+      "source_page": "https://www.fabfilter.com/press",
+      "asset_url": "https://www.fabfilter.com/downloads/press/fabfilter-pro-q.zip",
+      "retrieved_at": "2026-10-09",
+      "dimensions": [
+        2298,
+        387
+      ],
+      "sha256": "0969c0eafcd90d7d9d41c29aeb2b4925d23151350a07740c4467c3503cb00715",
+      "rights_status": "editorial_press_basis_scope_unconfirmed",
+      "rights_basis": "Official media kit is supplied for press; no explicit general social/commercial redistribution or crop license found.",
+      "attribution": "Image © FabFilter. Official product image; no endorsement implied.",
+      "modifications": "Literal crop, no retouching, no recoloring, no text replacement",
+      "crop_box_original_px": [
+        0,
+        993,
+        2298,
+        1380
+      ],
+      "used_on_pages": [
+        4
+      ],
+      "state_warning": "Press screenshot: Equalize 4 preset, Guitar instance, Natural Phase, High, Analyzer: Pre+Post+SC; not drum/bass settings. Manual analyzer UI says SC; do not relabel it SC/Ext."
+    },
+    {
+      "asset_id": "A03",
+      "file": "assets/derived/proq-band-controls.png",
+      "entity": "FabFilter Pro-Q 4",
+      "version": "Pro-Q 4; exact screenshot build not stated",
+      "component": "Stereo shown in press screenshot; manual analyzer image component not verified",
+      "source_page": "https://www.fabfilter.com/press",
+      "asset_url": "https://www.fabfilter.com/downloads/press/fabfilter-pro-q.zip",
+      "retrieved_at": "2026-10-09",
+      "dimensions": [
+        1057,
+        318
+      ],
+      "sha256": "8758bac75267e1155412e703c9913764f24bd063176f653653147d3f6890517a",
+      "rights_status": "editorial_press_basis_scope_unconfirmed",
+      "rights_basis": "Official media kit is supplied for press; no explicit general social/commercial redistribution or crop license found.",
+      "attribution": "Image © FabFilter. Official product image; no endorsement implied.",
+      "modifications": "Literal crop, no retouching, no recoloring, no text replacement",
+      "crop_box_original_px": [
+        643,
+        979,
+        1700,
+        1297
+      ],
+      "used_on_pages": [
+        4
+      ],
+      "state_warning": "Press screenshot: Equalize 4 preset, Guitar instance, Natural Phase, High, Analyzer: Pre+Post+SC; not drum/bass settings. Manual analyzer UI says SC; do not relabel it SC/Ext."
+    },
+    {
+      "asset_id": "REF_analyzer",
+      "file": "assets/source/analyzer.jpg",
+      "entity": "FabFilter Pro-Q 4",
+      "version": "Pro-Q 4; exact screenshot build not stated",
+      "component": "Stereo shown in press screenshot; manual analyzer image component not verified",
+      "source_page": "https://www.fabfilter.com/help/pro-q/using/analyzer",
+      "asset_url": "https://www.fabfilter.com/help_pages/pro-q/images/analyzer@2x.jpg",
+      "retrieved_at": "2026-10-09",
+      "dimensions": [
+        1200,
+        618
+      ],
+      "sha256": "54851d4d953252b1abde4073cf47af165631734158baff577371e7b9b066a4fc",
+      "rights_status": "unknown_reference_only",
+      "rights_basis": "Official manual illustration, no reuse license found.",
+      "attribution": "Image © FabFilter. Official product image; no endorsement implied.",
+      "modifications": "None; original downloaded bytes.",
+      "crop_box_original_px": null,
+      "used_on_pages": [],
+      "state_warning": "Press screenshot: Equalize 4 preset, Guitar instance, Natural Phase, High, Analyzer: Pre+Post+SC; not drum/bass settings. Manual analyzer UI says SC; do not relabel it SC/Ext.",
+      "public_archive_note": "Not bundled: unused research reference. Retained provenance metadata and public source URL only; no final page depends on this file."
+    },
+    {
+      "asset_id": "REF_analyzersettings",
+      "file": "assets/source/analyzersettings.jpg",
+      "entity": "FabFilter Pro-Q 4",
+      "version": "Pro-Q 4; exact screenshot build not stated",
+      "component": "Stereo shown in press screenshot; manual analyzer image component not verified",
+      "source_page": "https://www.fabfilter.com/help/pro-q/using/analyzer",
+      "asset_url": "https://www.fabfilter.com/help_pages/pro-q/images/analyzersettings@2x.jpg",
+      "retrieved_at": "2026-10-09",
+      "dimensions": [
+        762,
+        602
+      ],
+      "sha256": "315488e890cb5a880053bc8de48a8170534668053849db7b26f840765a1f3916",
+      "rights_status": "unknown_reference_only",
+      "rights_basis": "Official manual illustration, no reuse license found.",
+      "attribution": "Image © FabFilter. Official product image; no endorsement implied.",
+      "modifications": "None; original downloaded bytes.",
+      "crop_box_original_px": null,
+      "used_on_pages": [],
+      "state_warning": "Press screenshot: Equalize 4 preset, Guitar instance, Natural Phase, High, Analyzer: Pre+Post+SC; not drum/bass settings. Manual analyzer UI says SC; do not relabel it SC/Ext.",
+      "public_archive_note": "Not bundled: unused research reference. Retained provenance metadata and public source URL only; no final page depends on this file."
+    },
+    {
+      "asset_id": "D_harmonic-ladder",
+      "file": "assets/diagrams/harmonic-ladder.svg",
+      "preview_file": "assets/diagrams/harmonic-ladder.png",
+      "entity": "Original explanatory diagram",
+      "version": "1",
+      "component": "Not product UI",
+      "source_page": null,
+      "asset_url": null,
+      "retrieved_at": null,
+      "dimensions": [
+        960,
+        620
+      ],
+      "sha256": "73117277a12de5aea8a272027e054692a5c6c80de913fd9d9022dfa44d081683",
+      "rights_status": "original_created_for_user",
+      "rights_basis": "Original geometry and code; no third-party imagery",
+      "attribution": "Calculation / conceptual illustration, not measured audio",
+      "modifications": "Editable SVG generated by build_diagrams.py",
+      "used_on_pages": [
+        5
+      ],
+      "data_source": "diagram-data.json"
+    },
+    {
+      "asset_id": "D_polarity-time",
+      "file": "assets/diagrams/polarity-time.svg",
+      "preview_file": "assets/diagrams/polarity-time.png",
+      "entity": "Original explanatory diagram",
+      "version": "1",
+      "component": "Not product UI",
+      "source_page": null,
+      "asset_url": null,
+      "retrieved_at": null,
+      "dimensions": [
+        960,
+        620
+      ],
+      "sha256": "480e99332c0091ec35ba837d9e264b5a4e4bc629397c2c8223b01bcfe5e22e9c",
+      "rights_status": "original_created_for_user",
+      "rights_basis": "Original geometry and code; no third-party imagery",
+      "attribution": "Calculation / conceptual illustration, not measured audio",
+      "modifications": "Editable SVG generated by build_diagrams.py",
+      "used_on_pages": [
+        3
+      ],
+      "data_source": "diagram-data.json"
+    },
+    {
+      "asset_id": "D_foundation-timeline",
+      "file": "assets/diagrams/foundation-timeline.svg",
+      "preview_file": "assets/diagrams/foundation-timeline.png",
+      "entity": "Original explanatory diagram",
+      "version": "1",
+      "component": "Not product UI",
+      "source_page": null,
+      "asset_url": null,
+      "retrieved_at": null,
+      "dimensions": [
+        960,
+        620
+      ],
+      "sha256": "8cad050de02f433c56374d5d74079e1268286f1f2c5638923bfcddbda8b163b6",
+      "rights_status": "original_created_for_user",
+      "rights_basis": "Original geometry and code; no third-party imagery",
+      "attribution": "Calculation / conceptual illustration, not measured audio",
+      "modifications": "Editable SVG generated by build_diagrams.py",
+      "used_on_pages": [
+        1
+      ],
+      "data_source": "diagram-data.json"
+    },
+    {
+      "asset_id": "D_headroom-sum",
+      "file": "assets/diagrams/headroom-sum.svg",
+      "preview_file": "assets/diagrams/headroom-sum.png",
+      "entity": "Original explanatory diagram",
+      "version": "1",
+      "component": "Not product UI",
+      "source_page": null,
+      "asset_url": null,
+      "retrieved_at": null,
+      "dimensions": [
+        960,
+        620
+      ],
+      "sha256": "1db2f1698b1dda52e439cda9292bab7ddcf47f3e446f916348a64e854023362d",
+      "rights_status": "original_created_for_user",
+      "rights_basis": "Original geometry and code; no third-party imagery",
+      "attribution": "Calculation / conceptual illustration, not measured audio",
+      "modifications": "Editable SVG generated by build_diagrams.py",
+      "used_on_pages": [
+        2
+      ],
+      "data_source": "diagram-data.json"
+    },
+    {
+      "asset_id": "D_snare-routing",
+      "file": "assets/diagrams/snare-routing.svg",
+      "preview_file": "assets/diagrams/snare-routing.png",
+      "entity": "Original explanatory diagram",
+      "version": "1",
+      "component": "Not product UI",
+      "source_page": null,
+      "asset_url": null,
+      "retrieved_at": null,
+      "dimensions": [
+        960,
+        620
+      ],
+      "sha256": "416f7f604d551648d5bb28488733fdfc7ed0475b13be415faedf4aeef8dc2233",
+      "rights_status": "original_created_for_user",
+      "rights_basis": "Original geometry and code; no third-party imagery",
+      "attribution": "Calculation / conceptual illustration, not measured audio",
+      "modifications": "Editable SVG generated by build_diagrams.py",
+      "used_on_pages": [
+        6
+      ],
+      "data_source": "diagram-data.json"
+    },
+    {
+      "asset_id": "D_role-hierarchy",
+      "file": "assets/diagrams/role-hierarchy.svg",
+      "preview_file": "assets/diagrams/role-hierarchy.png",
+      "entity": "Original explanatory diagram",
+      "version": "1",
+      "component": "Not product UI",
+      "source_page": null,
+      "asset_url": null,
+      "retrieved_at": null,
+      "dimensions": [
+        960,
+        620
+      ],
+      "sha256": "14251d3f507dfc5e39079be109e32675a94c3228cf7fe0007856734f20715281",
+      "rights_status": "original_created_for_user",
+      "rights_basis": "Original geometry and code; no third-party imagery",
+      "attribution": "Calculation / conceptual illustration, not measured audio",
+      "modifications": "Editable SVG generated by build_diagrams.py",
+      "used_on_pages": [
+        7
+      ],
+      "data_source": "diagram-data.json"
+    },
+    {
+      "asset_id": "D_verification-path",
+      "file": "assets/diagrams/verification-path.svg",
+      "preview_file": "assets/diagrams/verification-path.png",
+      "entity": "Original explanatory diagram",
+      "version": "1",
+      "component": "Not product UI",
+      "source_page": null,
+      "asset_url": null,
+      "retrieved_at": null,
+      "dimensions": [
+        960,
+        620
+      ],
+      "sha256": "c877666b8cb9fdbc286d07aeee2253370147947686b88e8ff7acb8c521c5d8a7",
+      "rights_status": "original_created_for_user",
+      "rights_basis": "Original geometry and code; no third-party imagery",
+      "attribution": "Calculation / conceptual illustration, not measured audio",
+      "modifications": "Editable SVG generated by build_diagrams.py",
+      "used_on_pages": [
+        8
+      ],
+      "data_source": "diagram-data.json"
+    },
+    {
+      "asset_id": "AI01",
+      "file": "assets/concept/kick_bass_ai_concept.png",
+      "entity": "Kick and Bass conceptual illustration",
+      "source": "Generated illustration, 2026-10-09",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ed9d4deee41cbd8a86309d043074877684d36f126c7761c7cc8e5cf68bdceee1",
+      "rights_status": "ai_generated",
+      "attribution": "AI 概念插画",
+      "used_on_pages": [
+        1
+      ],
+      "modifications": "None",
+      "limitation": "Not photography, real hardware evidence, or measured audio."
+    }
+  ]
+}

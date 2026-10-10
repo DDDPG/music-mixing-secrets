@@ -1,0 +1,21 @@
+标题首选：人声一加混响就糊？先查返回轨
+标题备选：
+1. 人声中频臃肿，M/S EQ 应该削哪里？
+2. Side 收一点，空间不一定要全关
+3. 别急着削干声：先听效果返回
+
+发布正文：
+人声加上 Reverb / Delay 后，中频突然变厚、变糊？先静音效果返回，确认问题是不是随湿声出现。
+
+我的检查顺序：
+① 先降一点 Return 电平，排除“湿声整体太多”。
+② Mid / Side 辅助定位，回到整段混音判断。
+③ 只有 Side 中频铺得太满时，才在效果器后用 Side EQ 小幅衰减。
+
+Pro-Q 4 可建立 Bell，stereo placement 选 Side。400 Hz、−2 dB、Q 1.0 只是试听起点，频点和幅度都要按素材调整。
+
+削 Side 是减少某段左右差分成分，不是万能去糊，也不能换算成固定宽度百分比。最后做旁路、Stereo / Mono 和整段检查，空间变干、字头没改善就撤回。
+
+封面为 AI 概念插画，不是声场测量。图中插件画面来自 FabFilter 官方资料，仅用于功能定位；原图参数并非教程设置或实测。资料来源：FabFilter Pro-Q 4 在线帮助（Stereo options、Band controls、Processing mode）与 Ableton Live 12 手册（Return Tracks）。
+
+#混音 #人声混音 #MS处理 #EQ #音乐制作 #混响 #FabFilter

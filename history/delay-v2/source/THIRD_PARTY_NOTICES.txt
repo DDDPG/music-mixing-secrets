@@ -1,0 +1,12 @@
+Third-party notices
+
+Guizang social-card skill
+Upstream: https://github.com/op7418/guizang-social-card-skill
+Pinned source version: cf4b810
+The editorial HTML seed in seed-editorial.html is copied from guizang-social-card-skill. The final index.html is an adaptation with project-specific content, colors, typography, SVG diagrams, and page geometry. Its derivative HTML/CSS source is supplied in this package under the same GNU Affero General Public License v3.0 terms. The complete license is LICENSE-AGPL-3.0.txt. No upstream skill file was modified.
+
+Noto Sans SC
+Font files and subsets are distributed under the SIL Open Font License 1.1. See assets/fonts/OFL.txt for the full license and copyright notice. Static subsets were generated at weights 400, 600, and 700 for this deck; the original variable font is included for rebuilding.
+
+Illustrations and data diagrams
+The cover is an AI-generated conceptual illustration for this tutorial. It is not a product photograph, audio measurement or physical model. The explanatory diagrams were constructed for this tutorial from the data in diagram_data.json and the official references listed in sources.txt. This package contains no third-party tutorial screenshots or copied manual pages.

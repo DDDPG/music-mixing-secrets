@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">回声高低通滤波试听起点</title>
+<desc id="desc">对数频率标尺标注高通 200 Hz、低通 6 kHz 试听起点。低频仍浑时把高通往 300 Hz 试；齿音重复时把低通往 4 kHz 试。不提供滤波响应曲线或分贝数据。</desc>
+<rect width="1200" height="675" fill="#F7F4EE"/>
+<defs><marker id="arrow-teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#177D78" stroke-width="1.4"/></marker><marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#263335" stroke-width="1.4"/></marker><marker id="arrow-coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#C86451" stroke-width="1.4"/></marker><marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#506FB0" stroke-width="1.4"/></marker><linearGradient id="low-fade"><stop offset="0%" stop-color="#C86451" stop-opacity=".12"/><stop offset="100%" stop-color="#C86451" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0%" stop-color="#506FB0" stop-opacity="0"/><stop offset="100%" stop-color="#506FB0" stop-opacity=".12"/></linearGradient></defs>
+<text x="60" y="62" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" text-anchor="start" >回声滤波：先听 200 Hz / 6 kHz</text>
+<text x="60" y="106" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="start" >试听起点 · 对数频率标尺 · 只表示处理方向</text>
+<rect x="92" y="218" width="338.66666666666663" height="182" rx="0" fill="url(#low-fade)"/>
+<rect x="930.9183982650591" y="218" width="177.08160173494093" height="182" rx="0" fill="url(#high-fade)"/>
+<text x="92" y="184" fill="#C86451" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="600" text-anchor="start" >减少低频累积</text>
+<text x="1108" y="184" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="600" text-anchor="end" >收暗高频重复</text>
+<line x1="92" y1="358" x2="1108" y2="358" stroke="#263335" stroke-width="3" stroke-linecap="round"/>
+<line x1="92.0" y1="350" x2="92.0" y2="367" stroke="#263335" stroke-width="2" stroke-linecap="round"/>
+<text x="92.0" y="406" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle" >20</text>
+<line x1="328.717841468465" y1="350" x2="328.717841468465" y2="367" stroke="#263335" stroke-width="2" stroke-linecap="round"/>
+<text x="328.717841468465" y="406" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle" >100</text>
+<line x1="667.3845081351317" y1="350" x2="667.3845081351317" y2="367" stroke="#263335" stroke-width="2" stroke-linecap="round"/>
+<text x="667.3845081351317" y="406" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle" >1k</text>
+<line x1="1006.0511748017984" y1="350" x2="1006.0511748017984" y2="367" stroke="#263335" stroke-width="2" stroke-linecap="round"/>
+<text x="1006.0511748017984" y="406" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle" >10k</text>
+<line x1="1108.0" y1="350" x2="1108.0" y2="367" stroke="#263335" stroke-width="2" stroke-linecap="round"/>
+<text x="1108.0" y="406" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle" >20k</text>
+<line x1="430.66666666666663" y1="315" x2="430.66666666666663" y2="358" stroke="#C86451" stroke-width="3" stroke-linecap="round"/>
+<circle cx="430.66666666666663" cy="358" r="7" fill="#C86451"/>
+<text x="430.66666666666663" y="234" fill="#C86451" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="600" text-anchor="middle" >HP 高通</text>
+<text x="430.66666666666663" y="298" fill="#C86451" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" text-anchor="middle" >200 Hz</text>
+<line x1="930.9183982650591" y1="315" x2="930.9183982650591" y2="358" stroke="#506FB0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="930.9183982650591" cy="358" r="7" fill="#506FB0"/>
+<text x="930.9183982650591" y="234" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="600" text-anchor="middle" >LP 低通</text>
+<text x="930.9183982650591" y="298" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" text-anchor="middle" >6 kHz</text>
+<text x="1108" y="450" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="end" >频率 / Hz</text>
+<line x1="430.66666666666663" y1="465" x2="490.30290640019075" y2="465" stroke="#C86451" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-coral)"/>
+<text x="345.66666666666663" y="510" fill="#C86451" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="600" text-anchor="middle" >低频仍浑：200 → 300 Hz</text>
+<line x1="930.9183982650591" y1="465" x2="871.2821585315351" y2="465" stroke="#506FB0" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+<text x="930.9183982650591" y="510" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="26" font-weight="600" text-anchor="middle" >齿音重复：6 → 4 kHz</text>
+<text x="60" y="579" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="29" font-weight="600" text-anchor="start" >一次只改一项；回声太薄或太暗，就往回调。</text>
+<text x="60" y="625" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="start" >截止点外会逐渐衰减，实际坡度取决于滤波器。</text>
+<text x="60" y="659" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="start" >区域与箭头仅示意方向，不是完整频响或实测曲线。</text>
+</svg>

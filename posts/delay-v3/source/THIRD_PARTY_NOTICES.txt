@@ -1,0 +1,18 @@
+Third-party notices
+
+Guizang social-card skill
+Upstream: https://github.com/op7418/guizang-social-card-skill
+Pinned source version: cf4b810
+seed-editorial.html is the unmodified upstream export seed. index.html uses this export shell with independent content, Apple-reference project CSS and page geometry. Its derivative HTML/CSS is supplied under GNU Affero General Public License v3.0; see LICENSE-AGPL-3.0.txt. No installed upstream skill file was modified. This is not the default editorial design.
+
+Noto Sans SC
+The original NotoSansSC-Variable.ttf is supplied with its SIL Open Font License 1.1. prepare_fonts.py instantiates weights 400/600 and subsets every V3 character. The earlier inherited subsets were insufficient for V3 and were rebuilt. See assets/fonts/OFL.txt. The small set of superscript symbols unavailable in Noto Sans SC uses packaged NotoSans-Regular.ttf; its separate copyright and SIL OFL text are in assets/fonts/NotoSans-OFL-copyright.txt. No proprietary Apple font is supplied.
+
+Waves product imagery
+Original official image and six documented source/crop entries are tracked in assets.json. Genuine UI source pixels are unchanged. The image states and their limitations are explained adjacent to each use. Permission for public republication has not been verified. See RIGHTS_AND_SOURCES.txt. The source package is for reproducibility and educational review, not unrestricted stock-image redistribution.
+
+Design reference
+Apple, IBM and Linear guides were read from VoltAgent/awesome-design-md at commit 13be5c05c63be24b57581162364167028020f043. Selected Apple guide and comparison references are included under the repository's MIT license, in design-references/. This is a third-party design analysis, not an official brand guide or endorsement.
+
+Diagrams
+Diagrams are independent educational constructions from the cited function descriptions and deterministic arithmetic. No audio measurements were performed. The source diagrams are factual references; final geometry was rebuilt at full 1080px canvas coordinates rather than downsizing landscape diagrams.

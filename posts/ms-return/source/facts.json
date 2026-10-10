@@ -1,0 +1,142 @@
+[
+  {
+    "id": "F01",
+    "type": "diagnostic_advice",
+    "claim": "静音返回后臃肿感减轻，提示湿声可能参与问题；不是唯一病因。",
+    "sources": [],
+    "pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "F02",
+    "type": "diagnostic_advice",
+    "claim": "Wet 总量、频率平衡与立体声差分需分别判断，收窄不是通用去糊。",
+    "sources": [],
+    "pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "F03",
+    "type": "diagnostic_advice",
+    "claim": "分开听 Mid/Side 仅作定位，回到整段混音决定；不要把 Pro-Q Band Solo 当作全频 M/S Solo。",
+    "sources": [
+      "S07"
+    ],
+    "pages": [
+      2
+    ]
+  },
+  {
+    "id": "F04",
+    "type": "official_fact",
+    "claim": "Return 可接收多轨 Send；处理共享 Return 会影响其中所有声源。",
+    "sources": [
+      "S04"
+    ],
+    "pages": [
+      3
+    ]
+  },
+  {
+    "id": "F05",
+    "type": "routing_advice",
+    "claim": "常规并行效果链用 100% Wet，后置 EQ 处理生成后的湿声；前置不保证等效。",
+    "sources": [
+      "S04",
+      "S08"
+    ],
+    "pages": [
+      3
+    ]
+  },
+  {
+    "id": "F06",
+    "type": "mathematical_definition",
+    "claim": "本文约定 M=(L+R)/2，S=(L−R)/2；解码 L=M+S，R=M−S。不是对插件内部缩放作声明。",
+    "sources": [
+      "S05"
+    ],
+    "pages": [
+      4
+    ]
+  },
+  {
+    "id": "F07",
+    "type": "mathematical_inference",
+    "claim": "保持 Mid，衰减目标频率 Side，可降低该频率差分幅度；听感宽度并无一一线性换算。",
+    "sources": [
+      "F06"
+    ],
+    "pages": [
+      4
+    ]
+  },
+  {
+    "id": "F08",
+    "type": "official_fact",
+    "claim": "Pro-Q 4 每频段可设 Side；stereo placement 在 band controls 右侧；Mono 实例无此选项。",
+    "sources": [
+      "S01",
+      "S02"
+    ],
+    "pages": [
+      5
+    ]
+  },
+  {
+    "id": "F09",
+    "type": "observed_asset_state",
+    "claim": "官方菜单原图选中 Right，不是 Side。Press kit 全图显示示例 EQ，非本文设置。",
+    "sources": [
+      "S06",
+      "S01"
+    ],
+    "pages": [
+      5
+    ]
+  },
+  {
+    "id": "F10",
+    "type": "audition_starting_point",
+    "claim": "Side Bell 400 Hz −2 dB Q1.0 为自拟试听起点，未测量、非官方推荐。",
+    "sources": [],
+    "pages": [
+      6
+    ]
+  },
+  {
+    "id": "F11",
+    "type": "calculation",
+    "claim": "10^(−3/20)=0.7079457844；幅度70.8%，不是宽度或响度百分比。",
+    "sources": [],
+    "pages": [
+      6
+    ]
+  },
+  {
+    "id": "F12",
+    "type": "mathematical_inference",
+    "claim": "L′=M+H(S)，R′=M−H(S)，故平均合并为 M；限理想纯Side处理且无额外增益、非线性、后级变化。",
+    "sources": [
+      "F06"
+    ],
+    "pages": [
+      7
+    ]
+  },
+  {
+    "id": "F13",
+    "type": "official_fact",
+    "claim": "Linear Phase 可引入延迟和前振铃，不是所有 M/S EQ 都必须采用。",
+    "sources": [
+      "S03"
+    ],
+    "pages": [
+      7
+    ]
+  }
+]

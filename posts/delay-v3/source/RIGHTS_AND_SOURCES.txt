@@ -1,0 +1,23 @@
+图片与来源说明
+
+本套为可审阅的 H-Delay 教学图文稿。界面图及其局部来自 Waves 官方产品页：
+https://www.waves.com/plugins/h-delay-hybrid-delay
+原图：https://media.wavescdn.com/images/products/plugins/max/h-delay-hybrid-delay.png
+版权人：Waves Audio Ltd. © Waves Audio Ltd.
+具体插件版本未标注；原图显示 DUAL / BPM、120 BPM、L 1/8D、R 1/2。
+所有局部均为原图的准确裁切，没有重绘、修改参数、补字、改色或伪造界面。
+截图仅用于定位控件，截图状态和参数不是本教程的 Ping Pong / HOST 设置。
+
+重要：公开可见和注明来源不等于获得转载许可。未核实这些图片的公开再发布许可。
+本包用于产品特定的教学评论和审阅，不表示已获得公开发布或商业再利用授权。
+对外发布前，请确认所需图片权利；没有自动发布至任何平台。
+原图或局部不得作为已获无限制许可的素材图库分发。
+
+计算图由明确数据和条件重建：共用时间轴、等时距 Ping Pong 示意、理想反馈振幅模型、对数频率方向尺。
+图表并非音频实测；未伪造波形、频响、相关性、宽度或响度测量。
+试听参数不是官方预设或最优值，声音结果应在实际伴奏里判断。
+具体事实来源、手册章节及图片权属记录见 sources.md；可编辑包另含 assets.json。
+
+字体：Noto Sans SC 与 Noto Sans，SIL Open Font License 1.1。
+设计参考：VoltAgent/awesome-design-md 的 Apple 分析；固定提交 13be5c05c63be24b57581162364167028020f043。
+该资料是第三方网站分析，不是 Apple 官方规范；未使用 Apple 标志或暗示其背书。

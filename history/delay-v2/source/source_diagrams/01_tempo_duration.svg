@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<title id="title">同一音符在两种速度中的实际时长</title>
+<desc id="desc">120 BPM 的八分音符为 250 ms，十六分音符为 125 ms。160 BPM 分别为 187.5 ms 和 93.75 ms。四根时长线使用共同的零点与毫秒横轴。</desc>
+<rect width="1200" height="660" fill="#F7F4EE"/>
+<defs><marker id="arrow-teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#177D78" stroke-width="1.4"/></marker><marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#263335" stroke-width="1.4"/></marker><marker id="arrow-coral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#C86451" stroke-width="1.4"/></marker><marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#506FB0" stroke-width="1.4"/></marker><linearGradient id="low-fade"><stop offset="0%" stop-color="#C86451" stop-opacity=".12"/><stop offset="100%" stop-color="#C86451" stop-opacity="0"/></linearGradient><linearGradient id="high-fade"><stop offset="0%" stop-color="#506FB0" stop-opacity="0"/><stop offset="100%" stop-color="#506FB0" stop-opacity=".12"/></linearGradient></defs>
+<text x="60" y="62" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" text-anchor="start" >音符时值 → 毫秒</text>
+<text x="60" y="106" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="start" >四分音符为一拍 · 固定速度 · 共用毫秒刻度</text>
+<line x1="280.0" y1="157" x2="280.0" y2="495" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="280.0" y="542" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="middle" >0</text>
+<line x1="425.0" y1="157" x2="425.0" y2="495" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="425.0" y="542" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="middle" >50</text>
+<line x1="570.0" y1="157" x2="570.0" y2="495" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="570.0" y="542" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="middle" >100</text>
+<line x1="715.0" y1="157" x2="715.0" y2="495" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="715.0" y="542" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="middle" >150</text>
+<line x1="860.0" y1="157" x2="860.0" y2="495" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="860.0" y="542" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="middle" >200</text>
+<line x1="1005.0" y1="157" x2="1005.0" y2="495" stroke="#DCDDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1005.0" y="542" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="middle" >250</text>
+<text x="1138" y="542" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="end" >ms</text>
+<text x="60" y="231.0" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" text-anchor="start" >120</text>
+<text x="61" y="265.0" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="start" >BPM</text>
+<text x="238" y="209" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="end" >1/8</text>
+<line x1="280.0" y1="200" x2="1005.0" y2="200" stroke="#177D78" stroke-width="16" stroke-linecap="round"/>
+<circle cx="280.0" cy="200" r="6" fill="#F7F4EE"/>
+<circle cx="1005.0" cy="200" r="7" fill="#177D78"/>
+<text x="1027.0" y="210" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="29" font-weight="600" text-anchor="start" >250 ms</text>
+<text x="238" y="279" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="end" >1/16</text>
+<line x1="280.0" y1="270" x2="642.5" y2="270" stroke="#506FB0" stroke-width="16" stroke-linecap="round"/>
+<circle cx="280.0" cy="270" r="6" fill="#F7F4EE"/>
+<circle cx="642.5" cy="270" r="7" fill="#506FB0"/>
+<text x="664.5" y="280" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="29" font-weight="600" text-anchor="start" >125 ms</text>
+<text x="60" y="421.0" fill="#263335" font-family="Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" text-anchor="start" >160</text>
+<text x="61" y="455.0" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="start" >BPM</text>
+<text x="238" y="399" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="end" >1/8</text>
+<line x1="280.0" y1="390" x2="823.75" y2="390" stroke="#177D78" stroke-width="16" stroke-linecap="round"/>
+<circle cx="280.0" cy="390" r="6" fill="#F7F4EE"/>
+<circle cx="823.75" cy="390" r="7" fill="#177D78"/>
+<text x="845.75" y="400" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="29" font-weight="600" text-anchor="start" >187.5 ms</text>
+<text x="238" y="469" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="600" text-anchor="end" >1/16</text>
+<line x1="280.0" y1="460" x2="551.875" y2="460" stroke="#506FB0" stroke-width="16" stroke-linecap="round"/>
+<circle cx="280.0" cy="460" r="6" fill="#F7F4EE"/>
+<circle cx="551.875" cy="460" r="7" fill="#506FB0"/>
+<text x="573.875" y="470" fill="#506FB0" font-family="Noto Sans CJK SC, sans-serif" font-size="29" font-weight="600" text-anchor="start" >93.75 ms</text>
+<text x="60" y="603" fill="#177D78" font-family="Noto Sans CJK SC, sans-serif" font-size="29" font-weight="600" text-anchor="start" >120 → 160 BPM：同一音符时长缩短 25%</text>
+<text x="60" y="641" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start" >1/8 = 60,000 ÷ BPM ÷ 2</text>
+<text x="620" y="641" fill="#65716E" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start" >1/16 = 60,000 ÷ BPM ÷ 4</text>
+</svg>

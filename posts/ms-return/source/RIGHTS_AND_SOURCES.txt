@@ -1,0 +1,11 @@
+用途：产品特定的教学说明与评论草稿。未外部发布。
+FabFilter Pro-Q 4 官方产品截图与帮助页菜单图 © FabFilter。
+https://www.fabfilter.com/press
+https://www.fabfilter.com/help/pro-q/using/stereo
+公开再发布许可未获明确完整确认；署名不能代替许可。若拟公开发布，需复核许可或替换有权使用的实际截图。
+菜单图 Right 当前选中；Side 指示线仅指出操作目标，图片没有被改成已选 Side。
+图片原色、比例与控件状态未改变；控制区为原图精确裁切。
+所有路线、矩阵、幅度与检查图为原创教学示意，不是音频测量。
+Noto Sans SC / Noto Sans：SIL Open Font License，许可随包。
+Guizang HTML 导出骨架：AGPL-3.0，许可随包；本项目保留可编辑代码。
+详见 sources.md、assets.json、facts.json、term-map.json。
