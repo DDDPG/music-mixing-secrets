@@ -1,61 +1,48 @@
 # Music Mixing Secrets
 
-**Kangdi Wang · 2026**
+**用图解拆开混音问题，用试听做出判断。**
 
-中文混音教学图文、详细图解研究报告与可编辑源码。每帖独立归档，包含公开证据、推导、素材、设计方案、发布文案和最终导出；以可复核的原理和有条件的试听建议替代固定配方。
+写给正在学习人声处理与节奏组混音的音乐人。这里收录中文图文教程、详细研究报告与可编辑源码，从信号路由和参数含义出发，理解每一步在改变什么。
 
-## 帖子索引
+## 图文教程
 
-### 1. [低 Wet 人声 Ping Pong Delay](posts/delay-v3/)
+点击封面进入专题，或从下方直接阅读报告与完整图文。
 
-[![低 Wet 人声 Ping Pong Delay 缩略总览](posts/delay-v3/source/output/vocal-delay-v3-contact-sheet.png)](posts/delay-v3/)
+<p>
+  <a href="posts/delay-v3/"><img src="posts/delay-v3/source/output/xhs-01-cover.png" alt="低 Wet 人声 Ping Pong Delay：给人声一点空间" width="280"></a>
+  <a href="posts/ms-return/"><img src="posts/ms-return/source/output/xhs-01-cover.png" alt="人声空间与 Side EQ：先查效果返回，再决定要不要收窄" width="280"></a>
+  <a href="posts/drums-bass/"><img src="posts/drums-bass/source/output/xhs-01-cover.png" alt="鼓与 Bass：先把地基搭稳" width="280"></a>
+</p>
 
-8 页 · [研究报告](posts/delay-v3/RESEARCH_REPORT.md) · [PDF](posts/delay-v3/source/output/vocal-delay-v3.pdf) · [PNG](posts/delay-v3/source/output/) · [文案](posts/delay-v3/source/public_caption.txt)
+### 01 · 给人声一点空间
 
-### 2. [人声空间与 Side EQ](posts/ms-return/)
+低 Wet 的 Ping Pong Delay：把延迟时间、反馈、干湿混合与滤波分开理解，控制重复声的节奏与存在感。
 
-[![人声空间与 Side EQ 缩略总览](posts/ms-return/source/output/vocal-side-eq-contact-sheet.png)](posts/ms-return/)
+[研究报告](posts/delay-v3/RESEARCH_REPORT.md) · [完整图文 PDF](posts/delay-v3/source/output/vocal-delay-v3.pdf) · [逐页图片](posts/delay-v3/source/output/) · [HTML 源码](posts/delay-v3/source/index.html)
 
-7 页 · [研究报告](posts/ms-return/RESEARCH_REPORT.md) · [PDF](posts/ms-return/source/output/vocal-side-eq.pdf) · [PNG](posts/ms-return/source/output/) · [文案](posts/ms-return/source/publish-caption.txt)
+### 02 · 人声空间与 Side EQ
 
-### 3. [鼓与 Bass：先把地基搭稳](posts/drums-bass/)
+加上空间后中频变糊？从效果返回查起，理解 M/S 的和差关系，以及何时值得尝试局部 Side EQ。
 
-[![鼓与 Bass：先把地基搭稳 缩略总览](posts/drums-bass/source/output/drums-bass-contact-sheet.png)](posts/drums-bass/)
+[研究报告](posts/ms-return/RESEARCH_REPORT.md) · [完整图文 PDF](posts/ms-return/source/output/vocal-side-eq.pdf) · [逐页图片](posts/ms-return/source/output/) · [HTML 源码](posts/ms-return/source/index.html)
 
-8 页 · [研究报告](posts/drums-bass/RESEARCH_REPORT.md) · [PDF](posts/drums-bass/source/output/drums-bass.pdf) · [PNG](posts/drums-bass/source/output/) · [文案](posts/drums-bass/source/caption.txt)
+### 03 · 鼓与 Bass，先把地基搭稳
 
-## 历史迭代
+从 Kick、Bass 与 Snare 的关系出发，依次检查音量平衡、时间与极性、频率分工和前后层次。
 
-Delay 的早期版本也单独保留：[V1 · 7 页](history/delay-v1/) · [V2 · 8 页](history/delay-v2/)。它们用于回看制作演进，当前版本仍为 V3。原始 HTML、PNG、PDF 与文案均保留；未找到的独立历史研究报告明确列入各版本说明。
+[研究报告](posts/drums-bass/RESEARCH_REPORT.md) · [完整图文 PDF](posts/drums-bass/source/output/drums-bass.pdf) · [逐页图片](posts/drums-bass/source/output/) · [HTML 源码](posts/drums-bass/source/index.html)
 
-## 档案结构
+## 怎么使用
 
-- posts/<topic>/README.md：单帖入口
-- posts/<topic>/RESEARCH_REPORT.md：详细、带图的研究与创作论证
-- posts/<topic>/source/：原始内容稿、设计稿、HTML、JSON、SVG、字体、脚本、导出文件
-- history/：已找回的历史迭代，与主索引的现行版本分开
-- [工作流程](WORKFLOW.md)：面向后续新增帖子的公开制作检查表
-- [版本记录](CHANGELOG.md) · [档案范围](ARCHIVE_NOTES.md) · [权利说明](RIGHTS.md)
+- **先看图文**：用 PDF 或逐页图片了解主题，再带着具体问题阅读研究报告。
+- **再查原理**：报告附有图解、计算与来源，区分产品功能、数学示意和试听建议。参数只作为尝试的起点，请放回自己的歌曲中比较。
+- **需要编辑**：下载仓库，保留各专题的 `source/` 目录结构，在浏览器中打开 `index.html`；修改与导出方法见各专题说明。
 
-## 使用说明
-
-可直接阅读研究报告与 PDF，或下载源码离线查看 HTML。数学图和参数起点不是真实音频测量。产品原图仅用于说明实际界面，不声称截图已应用教程参数。每帖来源与素材记录说明适用范围及限制。
-
-本仓库是混合权利档案，没有对全部文件作统一的宽松授权。衍生 HTML/CSS 保留 AGPL-3.0，Noto 字体保留 SIL OFL，设计参考保留其 MIT 许可；产品界面、商标与未特别授权的原创作品保留各自权利。请先阅读 [RIGHTS.md](RIGHTS.md)。
-
-## 完整性检查
-
-运行 python scripts/verify_archive.py 可离线检查保留成品的 SHA-256、研究报告配图和 Python 语法。当前三帖在临时副本中通过构建与渲染检查（8 / 7 / 8 页，1080 × 1440）；这不等于跨平台像素一致性保证。
-
-## 增量整理约定
-
-新增帖子使用独立稳定目录，更新本索引与 CHANGELOG，不覆盖已批准的最终版本。已有帖子的实质修订进入带版本标识的目录，并注明变更理由和替代关系。不要把旧版本误标为当前推荐版本。
-
-## 引用 / Citation
+## 引用
 
 ```bibtex
 @misc{wang2026musicmixingsecrets,
-  author = {Wang, Kangdi},
+  author = {Kangdi, Wang},
   title = {Music Mixing Secrets},
   year = {2026},
   howpublished = {GitHub repository},
@@ -64,4 +51,13 @@ Delay 的早期版本也单独保留：[V1 · 7 页](history/delay-v1/) · [V2 �
 }
 ```
 
-独立文件：[CITATION.bib](CITATION.bib)。引用具体结论时，也请标明对应帖子和其中的一手资料。
+[下载 BibTeX](CITATION.bib) · 引用具体结论时，请同时注明对应专题及其原始来源。
+
+<details>
+<summary>更多文档与历史版本</summary>
+
+[历史版本](history/) · [制作流程](WORKFLOW.md) · [版本记录](CHANGELOG.md) · [档案说明](ARCHIVE_NOTES.md)
+
+</details>
+
+素材与源码适用不同的授权条款，转载或修改前请阅读[版权与许可说明](RIGHTS.md)。
