@@ -1,0 +1,58 @@
+{
+  "description": "Deliberately simplified first-order smoothing of gain reduction in the dB domain. Not a FabFilter emulation or audio measurement. τ values are model constants, not calibrated plugin knob values.",
+  "attack": {
+    "formula": "GR(t)=6*(1-exp(-t/tau)) dB",
+    "target_step_dB": [
+      0,
+      6
+    ],
+    "tau_ms": [
+      5,
+      30
+    ],
+    "sample_t_ms": 10,
+    "sample_GR_dB": [
+      5.187988300580324,
+      1.7008121365572644
+    ],
+    "assumptions": "Constant target after t=0; no lookahead, hold, knee or detector smoothing modelled."
+  },
+  "release": {
+    "formula": "GR(t)=6*exp(-t/tau) dB",
+    "initial_GR_dB": 6,
+    "tau_ms": [
+      100,
+      300
+    ],
+    "sample_t_ms": 180,
+    "sample_GR_dB": [
+      0.9917933293295191,
+      3.292869816564158
+    ],
+    "assumptions": "Target steps to zero and stays there, no retrigger or hold; 180 ms is the assumed recovery window after release starts, not necessarily onset-to-onset spacing."
+  },
+  "tempo": {
+    "formula": "quarter_ms=60000/BPM; sixteenth_ms=quarter_ms/4",
+    "examples": [
+      {
+        "bpm": 80,
+        "division": "1/16",
+        "ms": 187.5
+      },
+      {
+        "bpm": 140,
+        "division": "1/4",
+        "ms": 428.57142857142856
+      }
+    ],
+    "limitation": "Onset intervals are timing references, not release settings; articulation and sustained signal shorten actual recovery window."
+  },
+  "static_ratio": {
+    "threshold_dBFS": -18,
+    "input_dBFS": -10,
+    "ratio": 4,
+    "output_dBFS": -16,
+    "GR_dB": 6,
+    "assumptions": "Steady state hard-knee downward compression with no makeup gain; not transient response."
+  }
+}

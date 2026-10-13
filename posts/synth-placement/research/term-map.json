@@ -1,0 +1,15 @@
+[
+ {"term":"Pan","zh":"声像位置","avoid":"不等同 Width 或距离","source":"S1"},
+ {"term":"Balance","zh":"左右声道电平平衡","avoid":"不保证把完整立体声场搬到一侧","source":"S3"},
+ {"term":"Stereo Width","zh":"立体声宽度","avoid":"百分比含义不可跨插件照搬","source":"S2,S4"},
+ {"term":"Depth","zh":"前后层次","avoid":"普通双声道听感不是可直接换算的物理距离","source":"S6,S8"},
+ {"term":"Early Reflections","zh":"早期反射","avoid":"不是单一的远近控制","source":"S4,S5"},
+ {"term":"Pre-Delay","ui_variant":"PREDELAY / Predelay","zh":"预延时","avoid":"不是 Decay 或声源距离","source":"S4,S5"},
+ {"term":"Decay","zh":"衰减时长","avoid":"不是 Pre-Delay；算法实现须核对","source":"S4,S5"},
+ {"term":"DRR","zh":"直达声与混响能量比","avoid":"Dry/Wet 旋钮不是 DRR 表","source":"S8"},
+ {"term":"RMS","zh":"均方根幅度","avoid":"数字电平例子不等同听感比例；同标尺同时间窗","source":"disclosed algebra"},
+ {"term":"Send / Return","zh":"发送与返回","avoid":"确认 Pre/Post Fader 取点","source":"S1"},
+ {"term":"Mid/Side","zh":"和差信号","avoid":"Side 不等于两侧乐器","source":"S9"},
+ {"term":"Mono Compatibility","zh":"单声道兼容性","avoid":"合并 L+R，不是只听左声道","source":"S10"},
+ {"term":"Delay","zh":"延迟处理","avoid":"不擅改成回声作为控件名","source":"terminology baseline"}
+]

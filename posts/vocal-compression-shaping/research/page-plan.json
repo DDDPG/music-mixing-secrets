@@ -1,0 +1,64 @@
+{
+  "canvas": [
+    1080,
+    1440
+  ],
+  "status": "Independent nine-page design approved for implementation",
+  "copy": "research/STORY.md",
+  "pages": [
+    {
+      "page": 1,
+      "title": "人声压缩\n怎样塑形？",
+      "composition": "Cover with a large unmeasured envelope and focused listening zones.",
+      "spec": "design/production_spec.json"
+    },
+    {
+      "page": 2,
+      "title": "先认清真正的控件",
+      "composition": "Large complete genuine screenshot; state note outside original pixels.",
+      "spec": "design/production_spec.json"
+    },
+    {
+      "page": 3,
+      "title": "“压多少”和“变多快”，分开",
+      "composition": "One broad authentic control crop, then editorial definition grid; GR convention given separately.",
+      "spec": "design/production_spec.json"
+    },
+    {
+      "page": 4,
+      "title": "Attack 不会先等着不动",
+      "composition": "Large shared GR/time axes rebuilt from verified data, numeric readout and adjacent model boundary.",
+      "spec": "design/production_spec.json"
+    },
+    {
+      "page": 5,
+      "title": "下一字来了，还压着多少？",
+      "composition": "Large shared GR/time axes rebuilt from verified data, numeric readout and adjacent model boundary.",
+      "spec": "design/production_spec.json"
+    },
+    {
+      "page": 6,
+      "title": "慢歌，也可能唱得很密",
+      "composition": "Two durations on a single time scale, with exact visible values; not a fake sequencer.",
+      "spec": "design/production_spec.json"
+    },
+    {
+      "page": 7,
+      "title": "一句人声，一次只改一项",
+      "composition": "Four broad listening steps, then one real gain crop next to loudness-matching explanation.",
+      "spec": "design/production_spec.json"
+    },
+    {
+      "page": 8,
+      "title": "用听到的问题，决定下一步",
+      "composition": "Single editorial diagnostic column with fine rules; no repeated cards.",
+      "spec": "design/production_spec.json"
+    },
+    {
+      "page": 9,
+      "title": "完整图文与可编辑源码",
+      "composition": "Theme-adapted citation ending; exact BibTeX in real HTML text; repository link retained.",
+      "spec": "design/production_spec.json"
+    }
+  ]
+}

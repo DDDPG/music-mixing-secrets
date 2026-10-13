@@ -1,0 +1,72 @@
+[
+  {
+    "term": "Snare",
+    "zh": "军鼓",
+    "scope": "本文讨论独立军鼓信号；有串音的实录轨还要监听串音。"
+  },
+  {
+    "term": "ADT",
+    "zh": "Artificial Double Tracking，人工双轨效果",
+    "scope": "由单一信号生成略有时间与音高差异的声部；不是另录一遍。"
+  },
+  {
+    "term": "Waves Abbey Road Reel ADT",
+    "zh": "产品准确名称",
+    "scope": "Reel，不是 Real。"
+  },
+  {
+    "term": "SRC",
+    "zh": "未调制的源声部",
+    "scope": "插件内部源声部可带磁带建模处理，不等于外部完全未处理干声。"
+  },
+  {
+    "term": "ADT Position",
+    "zh": "ADT 声部的基准相对时间位置",
+    "scope": "相对 SRC，ms；不是混响 Predelay。"
+  },
+  {
+    "term": "Varispeed",
+    "zh": "改变 ADT 时间位置的变速控制",
+    "scope": "会造成时间与音高变化。"
+  },
+  {
+    "term": "LFO",
+    "zh": "低频振荡器",
+    "scope": "自动调制；Range 单位 ms，Rate 可为 Hz 或 Bars。"
+  },
+  {
+    "term": "Pan",
+    "zh": "声像位置",
+    "scope": "Pan 决定声部位置，不等于整体 Stereo Width。"
+  },
+  {
+    "term": "Stereo Width",
+    "zh": "立体声宽度",
+    "scope": "具体实现依插件而异。"
+  },
+  {
+    "term": "Predelay",
+    "zh": "混响前延时",
+    "scope": "定义原声到混响开始之间的时间；与 ADT 相对偏移不同。"
+  },
+  {
+    "term": "Send / Bus / Return",
+    "zh": "发送 / 总线 / 返回",
+    "scope": "本文并联路径：独立干声直达总线，Send 进入效果返回。"
+  },
+  {
+    "term": "Wet",
+    "zh": "效果信号",
+    "scope": "混响返回设全 Wet，避免重复叠加不需要的直达声。"
+  },
+  {
+    "term": "Mono",
+    "zh": "单声道",
+    "scope": "监听 L+R 合并结果，不是只听左声道。"
+  },
+  {
+    "term": "Phase / Polarity",
+    "zh": "相位 / 极性",
+    "scope": "保留 UI 的 Phase 标签；极性翻转不是任意频率的时间对齐。"
+  }
+]

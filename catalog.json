@@ -32,7 +32,29 @@
       "current": "posts/drums-bass",
       "pages": 8,
       "history": []
+    },
+    {
+      "id": "snare-adt-before-reverb",
+      "current": "posts/snare-adt-before-reverb",
+      "pages": 8,
+      "research_report_pages": 6,
+      "history": []
+    },
+    {
+      "id": "vocal-compression-shaping",
+      "current": "posts/vocal-compression-shaping",
+      "pages": 9,
+      "research_report_pages": 7,
+      "history": []
+    },
+    {
+      "id": "synth-placement",
+      "current": "posts/synth-placement",
+      "pages": 12,
+      "research_report_pages": 9,
+      "history": []
     }
   ],
-  "research_report_status": "Current reports reconstructed from retained production artifacts; historical missing reports are disclosed separately."
+  "research_report_status": "The first three reports were reconstructed from retained production artifacts; the three new tutorials include reports prepared alongside the illustrated posts. Historical missing reports are disclosed separately.",
+  "updated_date": "2026-10-13"
 }

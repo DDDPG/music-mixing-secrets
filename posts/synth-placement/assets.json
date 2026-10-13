@@ -1,0 +1,216 @@
+[
+  {
+    "asset_id": "ableton-utility-official",
+    "file": "assets/source/ableton-utility-official.png",
+    "sha256": "7e85e99c1dca0210df63058cfd6788c63183c812c935b7be41959bb3f1f6eaf6",
+    "entity": "Ableton Utility",
+    "version": "Live 12 manual; exact build not specified",
+    "component": "stereo-capable Utility",
+    "source_page": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#utility",
+    "asset_url": "https://ableton-production.imgix.net/live-manual/12/UtilityL12.png",
+    "retrieved_at": "2026-10-13",
+    "rights_status": "limited_educational_commentary_no_general_republication_license",
+    "rights_basis": "Necessary visual quotation to explain identified controls; no explicit general redistribution license obtained",
+    "attribution": "Ableton AG official Live 12 manual",
+    "modifications": "None",
+    "state": "Stereo input; Width 100%; Gain 0.00 dB; Balance C; Mono and Bass Mono not highlighted; 120 Hz is displayed but not proof enabled",
+    "used_on_pages": [
+      3
+    ],
+    "limitations": "Official documentation image, not our software run or recommended settings; general public republication clearance unverified",
+    "dimensions": [
+      286,
+      384
+    ]
+  },
+  {
+    "asset_id": "fabfilter-pro-r-2-maincontrols-official",
+    "file": "assets/source/fabfilter-pro-r-2-maincontrols-official.jpg",
+    "sha256": "93d3e6d0bcda46f6bde3ba21cc5e3c390e993b37b3d1f64b70792d72b1fe3968",
+    "entity": "FabFilter Pro-R 2",
+    "version": "Pro-R 2 help, exact build not specified",
+    "component": "main control strip; stereo/surround instance not established",
+    "source_page": "https://www.fabfilter.com/help/pro-r/using/maincontrols",
+    "asset_url": "https://www.fabfilter.com/help_pages/pro-r/images/maincontrols%402x.jpg",
+    "retrieved_at": "2026-10-13",
+    "rights_status": "limited_educational_commentary_no_general_republication_license",
+    "rights_basis": "Necessary visual quotation to explain identified controls; no explicit general redistribution license obtained",
+    "attribution": "FabFilter Software Instruments official help",
+    "modifications": "None",
+    "state": "Vintage; preset Vintage Hall; Space 3.20 s; Mix lock icon visible; other numerical values not readable",
+    "used_on_pages": [
+      6,
+      7
+    ],
+    "limitations": "State not recommended; cannot infer unseen knob values; general public republication clearance unverified",
+    "dimensions": [
+      1300,
+      262
+    ]
+  },
+  {
+    "asset_id": "utility-width-balance",
+    "file": "assets/derived/utility-width-balance.png",
+    "sha256": "5245cf79d72057e8425695496b042f88f41753bfefdaad145e68e8945f7ed7c1",
+    "entity": "Exact crop of ableton-utility-official.png",
+    "source_file": "assets/source/ableton-utility-official.png",
+    "crop_xyxy": [
+      7,
+      142,
+      270,
+      319
+    ],
+    "rights_status": "same_as_source",
+    "rights_basis": "inherits source restrictions",
+    "attribution": "See source",
+    "modifications": "Axis-aligned crop only; no redraw or parameter edit",
+    "used_on_pages": [
+      3
+    ],
+    "dimensions": [
+      263,
+      177
+    ]
+  },
+  {
+    "asset_id": "pro-r-predelay-distance",
+    "file": "assets/derived/pro-r-predelay-distance.png",
+    "sha256": "7615502bcea75274f72c7d656a87c0e3e9d8617b81c7a030dc1281d879b9ebcf",
+    "entity": "Exact crop of fabfilter-pro-r-2-maincontrols-official.jpg",
+    "source_file": "assets/source/fabfilter-pro-r-2-maincontrols-official.jpg",
+    "crop_xyxy": [
+      27,
+      43,
+      520,
+      205
+    ],
+    "rights_status": "same_as_source",
+    "rights_basis": "inherits source restrictions",
+    "attribution": "See source",
+    "modifications": "Axis-aligned crop only; no redraw or parameter edit",
+    "used_on_pages": [
+      6
+    ],
+    "dimensions": [
+      493,
+      162
+    ]
+  },
+  {
+    "asset_id": "pro-r-brightness-width-mix",
+    "file": "assets/derived/pro-r-brightness-width-mix.png",
+    "sha256": "d987b527fcf4cc539092b8c9ec6dd6c8c87a1b40427890406c17d15083b2c7b9",
+    "entity": "Exact crop of fabfilter-pro-r-2-maincontrols-official.jpg",
+    "source_file": "assets/source/fabfilter-pro-r-2-maincontrols-official.jpg",
+    "crop_xyxy": [
+      775,
+      43,
+      1270,
+      205
+    ],
+    "rights_status": "same_as_source",
+    "rights_basis": "inherits source restrictions",
+    "attribution": "See source",
+    "modifications": "Axis-aligned crop only; no redraw or parameter edit",
+    "used_on_pages": [
+      7
+    ],
+    "dimensions": [
+      495,
+      162
+    ]
+  },
+  {
+    "asset_id": "depth-concept-ai",
+    "file": "assets/derived/depth-concept-ai.png",
+    "sha256": "db51138648805a9de1d42236ddd26312b206e9f8c9eee47b1b84d33ce337ee39",
+    "entity": "Depth visual metaphor",
+    "version": "original generated illustration",
+    "component": "conceptual",
+    "source_page": null,
+    "asset_url": null,
+    "retrieved_at": "2026-10-13",
+    "rights_status": "ai_generated_conceptual",
+    "rights_basis": "Created for this educational project; no third-party reference image supplied",
+    "attribution": "AI-generated conceptual illustration",
+    "modifications": "None",
+    "used_on_pages": [
+      1
+    ],
+    "limitations": "Not audio evidence, waveform, room simulation or product imagery",
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "asset_id": "dry-wet-example",
+    "file": "assets/diagrams/dry-wet-example.svg",
+    "sha256": "d76267921bbc4247cce492610dc02c64caf4815d55502c42d87c782779d4e9b3",
+    "entity": "Original educational diagram",
+    "rights_status": "original_explanation",
+    "rights_basis": "Independent geometry and original text based on cited facts and disclosed arithmetic",
+    "attribution": "Kangdi Wang",
+    "modifications": "Editable SVG",
+    "used_on_pages": [
+      4
+    ],
+    "limitations": "No measured audio"
+  },
+  {
+    "asset_id": "mono-fold",
+    "file": "assets/diagrams/mono-fold.svg",
+    "sha256": "dd2291977563008db9656817064aef96cdd310659473ad0769bd59cff339bcba",
+    "entity": "Original educational diagram",
+    "rights_status": "original_explanation",
+    "rights_basis": "Independent geometry and original text based on cited facts and disclosed arithmetic",
+    "attribution": "Kangdi Wang",
+    "modifications": "Editable SVG",
+    "used_on_pages": [
+      10
+    ],
+    "limitations": "No measured audio"
+  },
+  {
+    "asset_id": "predelay-timeline",
+    "file": "assets/diagrams/predelay-timeline.svg",
+    "sha256": "94f5fac811b0b1e2a9d3fb6353722f24ba0fa8baf753cd18946c62d57baad973",
+    "entity": "Original educational diagram",
+    "rights_status": "original_explanation",
+    "rights_basis": "Independent geometry and original text based on cited facts and disclosed arithmetic",
+    "attribution": "Kangdi Wang",
+    "modifications": "Editable SVG",
+    "used_on_pages": [
+      5
+    ],
+    "limitations": "No measured audio"
+  },
+  {
+    "asset_id": "send-routing",
+    "file": "assets/diagrams/send-routing.svg",
+    "sha256": "aedfba96ce182ab90de73a073511f96a4e0f4e29a8584fb9645d74d4c00f27a5",
+    "entity": "Original educational diagram",
+    "rights_status": "original_explanation",
+    "rights_basis": "Independent geometry and original text based on cited facts and disclosed arithmetic",
+    "attribution": "Kangdi Wang",
+    "modifications": "Editable SVG",
+    "used_on_pages": [
+      8
+    ],
+    "limitations": "No measured audio"
+  },
+  {
+    "asset_id": "three-decisions",
+    "file": "assets/diagrams/three-decisions.svg",
+    "sha256": "aa40768820cefbaee209e828c32fd79201e4001d8e1a15f18a04fa46bfcf7cb1",
+    "entity": "Original educational diagram",
+    "rights_status": "original_explanation",
+    "rights_basis": "Independent geometry and original text based on cited facts and disclosed arithmetic",
+    "attribution": "Kangdi Wang",
+    "modifications": "Editable SVG",
+    "used_on_pages": [
+      2
+    ],
+    "limitations": "No measured audio"
+  }
+]

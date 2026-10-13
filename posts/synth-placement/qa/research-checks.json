@@ -1,0 +1,23 @@
+{
+  "source_scope": "ordinary two-channel perceptual mix placement, not physical room geometry or binaural object coordinates",
+  "numeric_checks": {
+    "12_dB_ratio": 0.2511886432,
+    "6_dB_ratio": 0.5011872336,
+    "wet_gain_ratio": 1.995262315,
+    "10_ms_at_48k": 480,
+    "40_ms_at_48k": 1920,
+    "difference_samples": 1440
+  },
+  "mono_equation": "M=(L+R)/2; S=(L-R)/2; (L+R)/2=M",
+  "dry_wet_total_RMS": "not asserted; correlation caveat retained",
+  "post_fader_conditions": "linear static processing and tail transition caveat retained",
+  "UI_visual_inspection": {
+    "Utility": "Stereo, Width100%, Gain0.00dB, BalanceC; Mono/BassMono not highlighted;120Hz shown only",
+    "Pro_R_2": "Vintage, VintageHall, Space3.20s, Mixlock visible; other numeric values not inferred"
+  },
+  "crop_pixel_equality": "all three PNG crops exactly equal source decoded crop pixels",
+  "evidence_boundary": "no audio input, audio measurement, actual software test or listening result claimed",
+  "terminology_pre_render": "Pre-Delay generic; PREDELAY actual UI; Pan/Balance/Width/Depth separated",
+  "report_visual_review": "9 complete A4 rendered pages reviewed, with exact genuine UI crop appendix; no overlap, missing glyph or figure-caption separation; route arrows and Depth cue groups re-rendered and inspected",
+  "unresolved_rights": "vendor general public republication license not verified; limited educational-commentary basis explicit"
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "F1",
+    "type": "product",
+    "claim": "正式名称为 Waves Abbey Road Reel ADT，ADT 指 Artificial Double Tracking。",
+    "source": "S1",
+    "locator": "p3,p7"
+  },
+  {
+    "id": "F2",
+    "type": "product",
+    "claim": "SRC 与 ADT 分别是未调制声部与效果声部，可独立调整 Pan 和 Level。",
+    "source": "S1",
+    "locator": "p7,p12–13"
+  },
+  {
+    "id": "F3",
+    "type": "product",
+    "claim": "普通版本能相对 SRC 提前或滞后；Live 版本只提供滞后。",
+    "source": "S1",
+    "locator": "p8,p11"
+  },
+  {
+    "id": "F4",
+    "type": "product",
+    "claim": "Stereo 组件通过 Left、Right 或 L+R 选择输入；L+R 为左右相加后除以2。",
+    "source": "S1",
+    "locator": "p8,p11"
+  },
+  {
+    "id": "F5",
+    "type": "scope",
+    "claim": "手册第9页约±10–15 ms及LFO 3–8 ms为人声 Quick Start，不能宣称为军鼓标准参数。",
+    "source": "S1",
+    "locator": "p9"
+  },
+  {
+    "id": "F6",
+    "type": "product",
+    "claim": "Monitor 可切 Mono；LFO Range 选3表示±3 ms。",
+    "source": "S1",
+    "locator": "p11"
+  },
+  {
+    "id": "F7",
+    "type": "product",
+    "claim": "Pro-R 2 Stereo Width 涉及交叉馈送；50%时单边输入在两侧形成等量混响，100%时两侧独立。",
+    "source": "S3",
+    "locator": "Stereo Width"
+  },
+  {
+    "id": "F8",
+    "type": "product",
+    "claim": "Pro-R 2 作为 Send 效果时官方要求 Mix 100%。",
+    "source": "S3",
+    "locator": "Mix"
+  },
+  {
+    "id": "F9",
+    "type": "inference",
+    "claim": "把 ADT 放在独立混响返回的前端，可让直达军鼓绕开 ADT；效果是否更合适必须在编曲内检验。",
+    "source": "original",
+    "locator": "routing"
+  },
+  {
+    "id": "F10",
+    "type": "calculation",
+    "claim": "假设 ADT 固定晚12 ms、混响Predelay20 ms：两路送入相同混响的理想起始参考分别为20和32 ms。",
+    "source": "original",
+    "locator": "time model"
+  },
+  {
+    "id": "F11",
+    "type": "calculation",
+    "claim": "等幅同极性的原声与延迟副本相加时，梳状陷波为(2k+1)/(2τ)；τ=12 ms时首个为41.67 Hz，间隔83.33 Hz。",
+    "source": "original",
+    "locator": "linear fixed-delay model"
+  },
+  {
+    "id": "F12",
+    "type": "limitation",
+    "claim": "本项目没有运行音频实测，没有客观宽度提升值、推荐预设或保证单声道兼容的参数。",
+    "source": "original",
+    "locator": "scope"
+  }
+]

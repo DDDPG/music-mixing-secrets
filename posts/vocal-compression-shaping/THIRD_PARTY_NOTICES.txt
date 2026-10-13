@@ -1,0 +1,15 @@
+Third-party notices
+
+Guizang social-card scaffold
+Upstream: https://github.com/op7418/guizang-social-card-skill
+Pinned source version: cf4b810
+source/seed-editorial.html retains the upstream export seed. The generated index.html uses its export shell with independently designed content, project CSS and geometry. Corresponding editable HTML, design specification, data and rendering scripts are provided under GNU Affero General Public License v3.0; see LICENSE-AGPL-3.0.txt. The template is not a license for third-party images or fonts.
+
+Noto fonts
+The full original NotoSansSC-Variable.ttf is retained under SIL Open Font License 1.1. source/prepare_fonts.py instantiates weights 400/600 and rebuilds subsets from the current project text rather than relying on old subsets. NotoSans-Regular.ttf provides Latin and supplementary mathematical glyphs. Keep assets/fonts/OFL.txt and assets/fonts/NotoSans-OFL-copyright.txt. No proprietary system fonts are distributed.
+
+FabFilter product imagery
+The official Pro-C 3 image and exact rectangular crops remain © FabFilter. Genuine pixels, proportions and colors are unchanged. Source links, checksums, crop coordinates, screenshot state and limited editorial-use rationale are in assets.json. Neither a public screenshot nor press-kit availability is treated as a blanket license. No general commercial reuse, redistribution or sublicensing clearance is asserted. Vendor pixels are not licensed under AGPL. See RIGHTS_AND_SOURCES.md.
+
+Diagrams and visual design
+The diagrams are original educational constructions or explicit mathematical models, not audio measurements or a simulation of the proprietary Pro-C 3 algorithm. The final graphs are rebuilt at page coordinates rather than shrinking the report figures. The white/gray/blue project design is an adaptation of the approved project baseline, not an official brand guideline or endorsement. No third-party design-analysis files are redistributed here.

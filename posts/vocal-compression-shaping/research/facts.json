@@ -1,0 +1,73 @@
+[
+  {
+    "id": "F01",
+    "claim": "Attack and Release specify speed of gain changes, not a waiting period.",
+    "sources": [
+      "S2",
+      "S5"
+    ],
+    "conditions": "General compressor principle; exact definition differs by algorithm."
+  },
+  {
+    "id": "F02",
+    "claim": "Slower attack may preserve more relative onset emphasis; faster attack may attenuate transients.",
+    "sources": [
+      "S4",
+      "S6"
+    ],
+    "conditions": "Conditional on actual onset, signal history, amount of GR, detector, lookahead and goal."
+  },
+  {
+    "id": "F03",
+    "claim": "Release depends on rhythm, tempo, signal and intended effect.",
+    "sources": [
+      "S5",
+      "S6"
+    ],
+    "conditions": "No absolute fast-song / slow-song prohibition."
+  },
+  {
+    "id": "F04",
+    "claim": "Pro-C 3 compression styles have program-dependent attack and release.",
+    "sources": [
+      "S2"
+    ],
+    "conditions": "No fixed tau curve may be labeled measured Pro-C 3 behavior."
+  },
+  {
+    "id": "F05",
+    "claim": "Pro-C 3 Auto Gain estimates gain rather than measuring loudness for exact matching.",
+    "sources": [
+      "S2"
+    ],
+    "conditions": "Manual output adjustment may still be needed."
+  },
+  {
+    "id": "F06",
+    "claim": "Screenshot shows Nice Pumping / Pumping, Auto Release and Auto Gain.",
+    "sources": [
+      "S1"
+    ],
+    "conditions": "Source state is not a recommended vocal preset."
+  },
+  {
+    "id": "F07",
+    "claim": "Hard-knee steady-state 4:1 example yields 6 dB GR from 8 dB over threshold.",
+    "sources": [
+      "S3"
+    ],
+    "conditions": "No makeup; steady target, not transient behavior."
+  },
+  {
+    "id": "F08",
+    "claim": "180 ms release model leaves 0.9918 or 3.2929 dB for tau 100 or 300 ms.",
+    "sources": [],
+    "conditions": "Original analytic example: target=0 after t=0, initial GR6dB, no retrigger or hold, dB-domain smoothing."
+  },
+  {
+    "id": "F09",
+    "claim": "80 BPM sixteenth 187.5 ms; 140 BPM quarter 428.5714 ms.",
+    "sources": [],
+    "conditions": "Arithmetic of onset spacing; not available recovery window or release value."
+  }
+]

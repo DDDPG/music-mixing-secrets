@@ -1,0 +1,9089 @@
+{
+  "schema_version": "3.1",
+  "status": "final_render_and_visual_qa_pass",
+  "topic": "vocal_compression_shape",
+  "canvas": {
+    "width": 1080,
+    "height": 1440,
+    "preview_width": 360,
+    "text_safe_x": [
+      72,
+      1008
+    ],
+    "footer_bottom": 1426
+  },
+  "tokens": {
+    "colors": {
+      "canvas": "#ffffff",
+      "surface": "#f5f5f7",
+      "ink": "#1d1d1f",
+      "secondary": "#515154",
+      "accent": "#0066cc",
+      "comparison": "#697887",
+      "hairline": "#d2d2d7",
+      "grid": "#e5e5ea"
+    },
+    "font_family": "Noto Sans SC",
+    "latin_font": "Noto Sans",
+    "font_files": {
+      "variable": "assets/fonts/NotoSansSC-Variable.ttf",
+      "latin": "assets/fonts/NotoSans-Regular.ttf"
+    },
+    "body": 36,
+    "diagram_min": 30,
+    "caveat_min": 28,
+    "source_min": 26,
+    "letter_spacing_cjk": 0,
+    "shadow": "none",
+    "gradient": "none"
+  },
+  "coordinate_convention": {
+    "box": "[left,top,width,height] CSS pixels; text top is linebox top",
+    "text": "Explicit line breaks, preserve minimum size; reflow instead of shrinking",
+    "images": "Keep aspect ratio and original color/pixels, labels outside image",
+    "layers": "Shapes first, images second, text last; no arrow may cross essential text."
+  },
+  "source_inputs": [
+    "RESEARCH_REPORT.md",
+    "research/STORY.md",
+    "assets.json",
+    "research/diagram_data.json"
+  ],
+  "design_reference": {
+    "primary": "immutable V3 actual HTML/spec/output; read-only",
+    "supplementary": "No new external style selected; independent story compositions"
+  },
+  "rights": {
+    "status": "genuine_fabfilter_editorial_reference_not_blanket_cleared",
+    "preserve": "assets.json source/state/rights records",
+    "note": "No blanket redistribution rights inferred from citation."
+  },
+  "qa_requirements": [
+    "Read every full page and 360px preview.",
+    "Recompute all model points and verify shared axes.",
+    "Keep positive GR convention and tau/UI distinction.",
+    "Keep official Nice Pumping/Pumping/AUTO states adjacent to screenshot.",
+    "Check exact BibTeX author and PDF repository link.",
+    "No automated font shrinking or synthetic plugin pixels."
+  ],
+  "author": "Kangdi Wang",
+  "pages": [
+    {
+      "page": 1,
+      "title": "人声压缩\n怎样塑形？",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声塑形 · Pro-C 3",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "01 / 09",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "人声压缩\n怎样塑形？",
+          "box": [
+            72,
+            116,
+            936,
+            170
+          ],
+          "font_size": 62,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "原理：FabFilter / iZotope / Ableton · 图为概念示意",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "subtitle",
+          "type": "text",
+          "text": "从字头、字身，到下一句。",
+          "box": [
+            72,
+            310,
+            936,
+            64
+          ],
+          "font_size": 42,
+          "font_weight": 600,
+          "line_height": 60,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "lead",
+          "type": "text",
+          "text": "想更有棱角，试着保留起音的相对突出；\n想更平顺，试着更早控制起音。",
+          "box": [
+            72,
+            420,
+            936,
+            120
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "concept_label",
+          "type": "text",
+          "text": "音节力度轮廓 · 概念示意，非录音测量",
+          "box": [
+            72,
+            596,
+            936,
+            50
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "baseline",
+          "type": "line",
+          "points": [
+            [
+              96,
+              936
+            ],
+            [
+              984,
+              936
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "envelope",
+          "type": "line",
+          "points": [
+            [
+              96,
+              936
+            ],
+            [
+              122,
+              924
+            ],
+            [
+              158,
+              704
+            ],
+            [
+              192,
+              790
+            ],
+            [
+              266,
+              818
+            ],
+            [
+              346,
+              832
+            ],
+            [
+              410,
+              870
+            ],
+            [
+              446,
+              932
+            ],
+            [
+              554,
+              936
+            ],
+            [
+              610,
+              924
+            ],
+            [
+              652,
+              730
+            ],
+            [
+              690,
+              802
+            ],
+            [
+              752,
+              840
+            ],
+            [
+              838,
+              852
+            ],
+            [
+              904,
+              890
+            ],
+            [
+              954,
+              936
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 5,
+          "end_arrow": false
+        },
+        {
+          "id": "event0",
+          "type": "text",
+          "text": "字头",
+          "box": [
+            90,
+            978,
+            160,
+            56
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "event1",
+          "type": "text",
+          "text": "字身",
+          "box": [
+            244,
+            978,
+            188,
+            56
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "event2",
+          "type": "text",
+          "text": "间隙",
+          "box": [
+            446,
+            978,
+            168,
+            56
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "event3",
+          "type": "text",
+          "text": "下一字",
+          "box": [
+            642,
+            978,
+            270,
+            56
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "key",
+          "type": "text",
+          "text": "Attack：建立衰减的速度\nRelease：从衰减恢复的速度",
+          "box": [
+            72,
+            1100,
+            936,
+            128
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 58,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "听感还取决于演唱、压缩量和伴奏。",
+          "box": [
+            72,
+            1288,
+            936,
+            54
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Cover with a large unmeasured envelope and focused listening zones.",
+      "diagram_references": [
+        "assets/diagrams/syllable-concept.svg"
+      ],
+      "must_not": [
+        "No numeric amplitude or time axes on conceptual envelope."
+      ]
+    },
+    {
+      "page": 2,
+      "title": "先认清真正的控件",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声塑形 · Pro-C 3",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "02 / 09",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "先认清真正的控件",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "FabFilter Pro-C 3 官方产品截图 · © FabFilter",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "示例对象：FabFilter Pro-C 3。\n官方图用于认控件，不是本篇的人声设置。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "official",
+          "type": "image",
+          "path": "assets/source/fabfilter-pro-c-3-official.jpg",
+          "box": [
+            126,
+            380,
+            828,
+            710.7
+          ],
+          "fit": "contain",
+          "alt": "FabFilter Pro-C 3 完整官方截图，Nice Pumping 预设与 Pumping 风格",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "state_head",
+          "type": "text",
+          "text": "图中状态",
+          "box": [
+            72,
+            1130,
+            936,
+            56
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "state",
+          "type": "text",
+          "text": "Nice Pumping 预设 · Pumping 风格\n可见 AUTO RELEASE / AUTO GAIN 控件",
+          "box": [
+            72,
+            1198,
+            936,
+            96
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "disclaimer",
+          "type": "text",
+          "text": "屏幕曲线是厂商展示内容，非本篇音频测量。",
+          "box": [
+            72,
+            1330,
+            936,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Large complete genuine screenshot; state note outside original pixels.",
+      "must_not": [
+        "Do not replace official display data or treat the screenshot as recommended vocal settings."
+      ]
+    },
+    {
+      "page": 3,
+      "title": "“压多少”和“变多快”，分开",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声塑形 · Pro-C 3",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "03 / 09",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "“压多少”和“变多快”，分开",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "控件定义：FabFilter Pro-C 3 Help · 图片 © FabFilter",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "先固定压缩风格与其他条件，再听时间参数。",
+          "box": [
+            72,
+            230,
+            936,
+            62
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "controls",
+          "type": "image",
+          "path": "assets/derived/compressor-controls.png",
+          "box": [
+            72,
+            338,
+            936,
+            269.6
+          ],
+          "fit": "contain",
+          "alt": "真实 THRESHOLD、RATIO、ATTACK、RELEASE 等控件区域",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "image_note",
+          "type": "text",
+          "text": "官方局部；Pumping / AUTO 状态不是本篇练习设置。",
+          "box": [
+            72,
+            636,
+            936,
+            48
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "threshold_head",
+          "type": "text",
+          "text": "THRESHOLD",
+          "box": [
+            72,
+            724,
+            436,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "threshold",
+          "type": "text",
+          "text": "阈值：压缩参考电平。",
+          "box": [
+            72,
+            786,
+            436,
+            96
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "ratio_head",
+          "type": "text",
+          "text": "RATIO",
+          "box": [
+            570,
+            724,
+            438,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "ratio",
+          "type": "text",
+          "text": "压缩比：阈值以上的\n稳态输入输出关系。",
+          "box": [
+            570,
+            786,
+            438,
+            96
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "attack_head",
+          "type": "text",
+          "text": "ATTACK",
+          "box": [
+            72,
+            938,
+            436,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "attack",
+          "type": "text",
+          "text": "建立衰减的速度。",
+          "box": [
+            72,
+            1000,
+            436,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "release_head",
+          "type": "text",
+          "text": "RELEASE",
+          "box": [
+            570,
+            938,
+            438,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "release",
+          "type": "text",
+          "text": "从衰减恢复的速度。",
+          "box": [
+            570,
+            1000,
+            438,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gr_panel",
+          "type": "rect",
+          "box": [
+            72,
+            1142,
+            936,
+            166
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "gr_title",
+          "type": "text",
+          "text": "GR = Gain Reduction",
+          "box": [
+            100,
+            1160,
+            880,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gr",
+          "type": "text",
+          "text": "本篇用正数表示衰减量：GR 6 dB = 增益降低 6 dB。",
+          "box": [
+            100,
+            1230,
+            880,
+            64
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gr_boundary",
+          "type": "text",
+          "text": "GR 不是输出电平，也不直接等于主观响度。",
+          "box": [
+            72,
+            1330,
+            936,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "One broad authentic control crop, then editorial definition grid; GR convention given separately.",
+      "must_not": [
+        "Do not call AUTO GAIN Wet Gain on the image itself.",
+        "Do not claim Threshold alone determines total compression amount."
+      ]
+    },
+    {
+      "page": 4,
+      "title": "Attack 不会先等着不动",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声塑形 · Pro-C 3",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "04 / 09",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "Attack 不会先等着不动",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "模型公式与数据：本篇独立计算 · 产品行为：FabFilter Help",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "较慢响应常让快速字头相对多保留一些。\n较快响应常让起音更收敛，但仍要看素材。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "model_label",
+          "type": "text",
+          "text": "理想模型：目标 GR 从 0 跳至 6 dB 后保持。",
+          "box": [
+            72,
+            380,
+            936,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gr_axis",
+          "type": "text",
+          "text": "GR / dB",
+          "box": [
+            72,
+            462,
+            210,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "legend_fast",
+          "type": "text",
+          "text": "τ = 5 ms",
+          "box": [
+            486,
+            452,
+            226,
+            50
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 45,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "legend_slow",
+          "type": "text",
+          "text": "τ = 30 ms",
+          "box": [
+            750,
+            452,
+            258,
+            50
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 45,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gridy0",
+          "type": "line",
+          "points": [
+            [
+              172,
+              906
+            ],
+            [
+              964,
+              906
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            88,
+            884,
+            64,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gridy2",
+          "type": "line",
+          "points": [
+            [
+              172,
+              778
+            ],
+            [
+              964,
+              778
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y2",
+          "type": "text",
+          "text": "2",
+          "box": [
+            88,
+            756,
+            64,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gridy4",
+          "type": "line",
+          "points": [
+            [
+              172,
+              650
+            ],
+            [
+              964,
+              650
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y4",
+          "type": "text",
+          "text": "4",
+          "box": [
+            88,
+            628,
+            64,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gridy6",
+          "type": "line",
+          "points": [
+            [
+              172,
+              522
+            ],
+            [
+              964,
+              522
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y6",
+          "type": "text",
+          "text": "6",
+          "box": [
+            88,
+            500,
+            64,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "x0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            126.0,
+            922,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "x10",
+          "type": "text",
+          "text": "10",
+          "box": [
+            214.0,
+            922,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "x30",
+          "type": "text",
+          "text": "30",
+          "box": [
+            390.0,
+            922,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "x60",
+          "type": "text",
+          "text": "60",
+          "box": [
+            654.0,
+            922,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "x90",
+          "type": "text",
+          "text": "90",
+          "box": [
+            918.0,
+            922,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "curve0",
+          "type": "line",
+          "points": [
+            [
+              172.0,
+              906.0
+            ],
+            [
+              174.2,
+              887.272
+            ],
+            [
+              176.4,
+              869.458
+            ],
+            [
+              178.6,
+              852.512
+            ],
+            [
+              180.8,
+              836.393
+            ],
+            [
+              183.0,
+              821.06
+            ],
+            [
+              185.2,
+              806.474
+            ],
+            [
+              187.4,
+              792.6
+            ],
+            [
+              189.6,
+              779.403
+            ],
+            [
+              191.8,
+              766.849
+            ],
+            [
+              194.0,
+              754.908
+            ],
+            [
+              196.2,
+              743.549
+            ],
+            [
+              198.4,
+              732.744
+            ],
+            [
+              200.6,
+              722.466
+            ],
+            [
+              202.8,
+              712.689
+            ],
+            [
+              205.0,
+              703.389
+            ],
+            [
+              207.2,
+              694.542
+            ],
+            [
+              209.4,
+              686.127
+            ],
+            [
+              211.6,
+              678.123
+            ],
+            [
+              213.8,
+              670.509
+            ],
+            [
+              216.0,
+              663.266
+            ],
+            [
+              218.2,
+              656.376
+            ],
+            [
+              220.4,
+              649.822
+            ],
+            [
+              222.6,
+              643.589
+            ],
+            [
+              224.8,
+              637.659
+            ],
+            [
+              227.0,
+              632.018
+            ],
+            [
+              229.2,
+              626.652
+            ],
+            [
+              231.4,
+              621.548
+            ],
+            [
+              233.6,
+              616.693
+            ],
+            [
+              235.8,
+              612.075
+            ],
+            [
+              238.0,
+              607.682
+            ],
+            [
+              240.2,
+              603.503
+            ],
+            [
+              242.4,
+              599.528
+            ],
+            [
+              244.6,
+              595.747
+            ],
+            [
+              246.8,
+              592.15
+            ],
+            [
+              249.0,
+              588.729
+            ],
+            [
+              251.2,
+              585.475
+            ],
+            [
+              253.4,
+              582.379
+            ],
+            [
+              255.6,
+              579.434
+            ],
+            [
+              257.8,
+              576.633
+            ],
+            [
+              260.0,
+              573.969
+            ],
+            [
+              262.2,
+              571.434
+            ],
+            [
+              264.4,
+              569.023
+            ],
+            [
+              266.6,
+              566.73
+            ],
+            [
+              268.8,
+              564.548
+            ],
+            [
+              271.0,
+              562.473
+            ],
+            [
+              273.2,
+              560.499
+            ],
+            [
+              275.4,
+              558.622
+            ],
+            [
+              277.6,
+              556.836
+            ],
+            [
+              279.8,
+              555.137
+            ],
+            [
+              282.0,
+              553.521
+            ],
+            [
+              284.2,
+              551.983
+            ],
+            [
+              286.4,
+              550.521
+            ],
+            [
+              288.6,
+              549.13
+            ],
+            [
+              290.8,
+              547.807
+            ],
+            [
+              293.0,
+              546.548
+            ],
+            [
+              295.2,
+              545.351
+            ],
+            [
+              297.4,
+              544.212
+            ],
+            [
+              299.6,
+              543.129
+            ],
+            [
+              301.8,
+              542.098
+            ],
+            [
+              304.0,
+              541.118
+            ],
+            [
+              306.2,
+              540.186
+            ],
+            [
+              308.4,
+              539.299
+            ],
+            [
+              310.6,
+              538.455
+            ],
+            [
+              312.8,
+              537.653
+            ],
+            [
+              315.0,
+              536.889
+            ],
+            [
+              317.2,
+              536.163
+            ],
+            [
+              319.4,
+              535.472
+            ],
+            [
+              321.6,
+              534.815
+            ],
+            [
+              323.8,
+              534.19
+            ],
+            [
+              326.0,
+              533.596
+            ],
+            [
+              328.2,
+              533.03
+            ],
+            [
+              330.4,
+              532.492
+            ],
+            [
+              332.6,
+              531.981
+            ],
+            [
+              334.8,
+              531.494
+            ],
+            [
+              337.0,
+              531.031
+            ],
+            [
+              339.2,
+              530.59
+            ],
+            [
+              341.4,
+              530.171
+            ],
+            [
+              343.6,
+              529.773
+            ],
+            [
+              345.8,
+              529.394
+            ],
+            [
+              348.0,
+              529.033
+            ],
+            [
+              350.2,
+              528.69
+            ],
+            [
+              352.4,
+              528.364
+            ],
+            [
+              354.6,
+              528.054
+            ],
+            [
+              356.8,
+              527.758
+            ],
+            [
+              359.0,
+              527.477
+            ],
+            [
+              361.2,
+              527.21
+            ],
+            [
+              363.4,
+              526.956
+            ],
+            [
+              365.6,
+              526.714
+            ],
+            [
+              367.8,
+              526.485
+            ],
+            [
+              370.0,
+              526.266
+            ],
+            [
+              372.2,
+              526.058
+            ],
+            [
+              374.4,
+              525.86
+            ],
+            [
+              376.6,
+              525.672
+            ],
+            [
+              378.8,
+              525.493
+            ],
+            [
+              381.0,
+              525.322
+            ],
+            [
+              383.2,
+              525.16
+            ],
+            [
+              385.4,
+              525.006
+            ],
+            [
+              387.6,
+              524.859
+            ],
+            [
+              389.8,
+              524.72
+            ],
+            [
+              392.0,
+              524.587
+            ],
+            [
+              394.2,
+              524.461
+            ],
+            [
+              396.4,
+              524.341
+            ],
+            [
+              398.6,
+              524.227
+            ],
+            [
+              400.8,
+              524.118
+            ],
+            [
+              403.0,
+              524.015
+            ],
+            [
+              405.2,
+              523.917
+            ],
+            [
+              407.4,
+              523.823
+            ],
+            [
+              409.6,
+              523.734
+            ],
+            [
+              411.8,
+              523.65
+            ],
+            [
+              414.0,
+              523.569
+            ],
+            [
+              416.2,
+              523.493
+            ],
+            [
+              418.4,
+              523.42
+            ],
+            [
+              420.6,
+              523.351
+            ],
+            [
+              422.8,
+              523.285
+            ],
+            [
+              425.0,
+              523.222
+            ],
+            [
+              427.2,
+              523.163
+            ],
+            [
+              429.4,
+              523.106
+            ],
+            [
+              431.6,
+              523.052
+            ],
+            [
+              433.8,
+              523.001
+            ],
+            [
+              436.0,
+              522.952
+            ],
+            [
+              438.2,
+              522.905
+            ],
+            [
+              440.4,
+              522.861
+            ],
+            [
+              442.6,
+              522.819
+            ],
+            [
+              444.8,
+              522.779
+            ],
+            [
+              447.0,
+              522.741
+            ],
+            [
+              449.2,
+              522.705
+            ],
+            [
+              451.4,
+              522.671
+            ],
+            [
+              453.6,
+              522.638
+            ],
+            [
+              455.8,
+              522.607
+            ],
+            [
+              458.0,
+              522.577
+            ],
+            [
+              460.2,
+              522.549
+            ],
+            [
+              462.4,
+              522.522
+            ],
+            [
+              464.6,
+              522.497
+            ],
+            [
+              466.8,
+              522.473
+            ],
+            [
+              469.0,
+              522.45
+            ],
+            [
+              471.2,
+              522.428
+            ],
+            [
+              473.4,
+              522.407
+            ],
+            [
+              475.6,
+              522.387
+            ],
+            [
+              477.8,
+              522.368
+            ],
+            [
+              480.0,
+              522.35
+            ],
+            [
+              482.2,
+              522.333
+            ],
+            [
+              484.4,
+              522.317
+            ],
+            [
+              486.6,
+              522.301
+            ],
+            [
+              488.8,
+              522.287
+            ],
+            [
+              491.0,
+              522.273
+            ],
+            [
+              493.2,
+              522.259
+            ],
+            [
+              495.4,
+              522.247
+            ],
+            [
+              497.6,
+              522.235
+            ],
+            [
+              499.8,
+              522.223
+            ],
+            [
+              502.0,
+              522.212
+            ],
+            [
+              504.2,
+              522.202
+            ],
+            [
+              506.4,
+              522.192
+            ],
+            [
+              508.6,
+              522.183
+            ],
+            [
+              510.8,
+              522.174
+            ],
+            [
+              513.0,
+              522.165
+            ],
+            [
+              515.2,
+              522.157
+            ],
+            [
+              517.4,
+              522.15
+            ],
+            [
+              519.6,
+              522.142
+            ],
+            [
+              521.8,
+              522.135
+            ],
+            [
+              524.0,
+              522.129
+            ],
+            [
+              526.2,
+              522.123
+            ],
+            [
+              528.4,
+              522.117
+            ],
+            [
+              530.6,
+              522.111
+            ],
+            [
+              532.8,
+              522.105
+            ],
+            [
+              535.0,
+              522.1
+            ],
+            [
+              537.2,
+              522.095
+            ],
+            [
+              539.4,
+              522.091
+            ],
+            [
+              541.6,
+              522.086
+            ],
+            [
+              543.8,
+              522.082
+            ],
+            [
+              546.0,
+              522.078
+            ],
+            [
+              548.2,
+              522.074
+            ],
+            [
+              550.4,
+              522.071
+            ],
+            [
+              552.6,
+              522.067
+            ],
+            [
+              554.8,
+              522.064
+            ],
+            [
+              557.0,
+              522.061
+            ],
+            [
+              559.2,
+              522.058
+            ],
+            [
+              561.4,
+              522.055
+            ],
+            [
+              563.6,
+              522.052
+            ],
+            [
+              565.8,
+              522.05
+            ],
+            [
+              568.0,
+              522.047
+            ],
+            [
+              570.2,
+              522.045
+            ],
+            [
+              572.4,
+              522.043
+            ],
+            [
+              574.6,
+              522.041
+            ],
+            [
+              576.8,
+              522.039
+            ],
+            [
+              579.0,
+              522.037
+            ],
+            [
+              581.2,
+              522.035
+            ],
+            [
+              583.4,
+              522.033
+            ],
+            [
+              585.6,
+              522.032
+            ],
+            [
+              587.8,
+              522.03
+            ],
+            [
+              590.0,
+              522.029
+            ],
+            [
+              592.2,
+              522.027
+            ],
+            [
+              594.4,
+              522.026
+            ],
+            [
+              596.6,
+              522.025
+            ],
+            [
+              598.8,
+              522.024
+            ],
+            [
+              601.0,
+              522.022
+            ],
+            [
+              603.2,
+              522.021
+            ],
+            [
+              605.4,
+              522.02
+            ],
+            [
+              607.6,
+              522.019
+            ],
+            [
+              609.8,
+              522.018
+            ],
+            [
+              612.0,
+              522.017
+            ],
+            [
+              614.2,
+              522.017
+            ],
+            [
+              616.4,
+              522.016
+            ],
+            [
+              618.6,
+              522.015
+            ],
+            [
+              620.8,
+              522.014
+            ],
+            [
+              623.0,
+              522.014
+            ],
+            [
+              625.2,
+              522.013
+            ],
+            [
+              627.4,
+              522.012
+            ],
+            [
+              629.6,
+              522.012
+            ],
+            [
+              631.8,
+              522.011
+            ],
+            [
+              634.0,
+              522.011
+            ],
+            [
+              636.2,
+              522.01
+            ],
+            [
+              638.4,
+              522.01
+            ],
+            [
+              640.6,
+              522.009
+            ],
+            [
+              642.8,
+              522.009
+            ],
+            [
+              645.0,
+              522.008
+            ],
+            [
+              647.2,
+              522.008
+            ],
+            [
+              649.4,
+              522.007
+            ],
+            [
+              651.6,
+              522.007
+            ],
+            [
+              653.8,
+              522.007
+            ],
+            [
+              656.0,
+              522.006
+            ],
+            [
+              658.2,
+              522.006
+            ],
+            [
+              660.4,
+              522.006
+            ],
+            [
+              662.6,
+              522.006
+            ],
+            [
+              664.8,
+              522.005
+            ],
+            [
+              667.0,
+              522.005
+            ],
+            [
+              669.2,
+              522.005
+            ],
+            [
+              671.4,
+              522.005
+            ],
+            [
+              673.6,
+              522.004
+            ],
+            [
+              675.8,
+              522.004
+            ],
+            [
+              678.0,
+              522.004
+            ],
+            [
+              680.2,
+              522.004
+            ],
+            [
+              682.4,
+              522.004
+            ],
+            [
+              684.6,
+              522.003
+            ],
+            [
+              686.8,
+              522.003
+            ],
+            [
+              689.0,
+              522.003
+            ],
+            [
+              691.2,
+              522.003
+            ],
+            [
+              693.4,
+              522.003
+            ],
+            [
+              695.6,
+              522.003
+            ],
+            [
+              697.8,
+              522.002
+            ],
+            [
+              700.0,
+              522.002
+            ],
+            [
+              702.2,
+              522.002
+            ],
+            [
+              704.4,
+              522.002
+            ],
+            [
+              706.6,
+              522.002
+            ],
+            [
+              708.8,
+              522.002
+            ],
+            [
+              711.0,
+              522.002
+            ],
+            [
+              713.2,
+              522.002
+            ],
+            [
+              715.4,
+              522.002
+            ],
+            [
+              717.6,
+              522.002
+            ],
+            [
+              719.8,
+              522.002
+            ],
+            [
+              722.0,
+              522.001
+            ],
+            [
+              724.2,
+              522.001
+            ],
+            [
+              726.4,
+              522.001
+            ],
+            [
+              728.6,
+              522.001
+            ],
+            [
+              730.8,
+              522.001
+            ],
+            [
+              733.0,
+              522.001
+            ],
+            [
+              735.2,
+              522.001
+            ],
+            [
+              737.4,
+              522.001
+            ],
+            [
+              739.6,
+              522.001
+            ],
+            [
+              741.8,
+              522.001
+            ],
+            [
+              744.0,
+              522.001
+            ],
+            [
+              746.2,
+              522.001
+            ],
+            [
+              748.4,
+              522.001
+            ],
+            [
+              750.6,
+              522.001
+            ],
+            [
+              752.8,
+              522.001
+            ],
+            [
+              755.0,
+              522.001
+            ],
+            [
+              757.2,
+              522.001
+            ],
+            [
+              759.4,
+              522.001
+            ],
+            [
+              761.6,
+              522.001
+            ],
+            [
+              763.8,
+              522.001
+            ],
+            [
+              766.0,
+              522.001
+            ],
+            [
+              768.2,
+              522.001
+            ],
+            [
+              770.4,
+              522.0
+            ],
+            [
+              772.6,
+              522.0
+            ],
+            [
+              774.8,
+              522.0
+            ],
+            [
+              777.0,
+              522.0
+            ],
+            [
+              779.2,
+              522.0
+            ],
+            [
+              781.4,
+              522.0
+            ],
+            [
+              783.6,
+              522.0
+            ],
+            [
+              785.8,
+              522.0
+            ],
+            [
+              788.0,
+              522.0
+            ],
+            [
+              790.2,
+              522.0
+            ],
+            [
+              792.4,
+              522.0
+            ],
+            [
+              794.6,
+              522.0
+            ],
+            [
+              796.8,
+              522.0
+            ],
+            [
+              799.0,
+              522.0
+            ],
+            [
+              801.2,
+              522.0
+            ],
+            [
+              803.4,
+              522.0
+            ],
+            [
+              805.6,
+              522.0
+            ],
+            [
+              807.8,
+              522.0
+            ],
+            [
+              810.0,
+              522.0
+            ],
+            [
+              812.2,
+              522.0
+            ],
+            [
+              814.4,
+              522.0
+            ],
+            [
+              816.6,
+              522.0
+            ],
+            [
+              818.8,
+              522.0
+            ],
+            [
+              821.0,
+              522.0
+            ],
+            [
+              823.2,
+              522.0
+            ],
+            [
+              825.4,
+              522.0
+            ],
+            [
+              827.6,
+              522.0
+            ],
+            [
+              829.8,
+              522.0
+            ],
+            [
+              832.0,
+              522.0
+            ],
+            [
+              834.2,
+              522.0
+            ],
+            [
+              836.4,
+              522.0
+            ],
+            [
+              838.6,
+              522.0
+            ],
+            [
+              840.8,
+              522.0
+            ],
+            [
+              843.0,
+              522.0
+            ],
+            [
+              845.2,
+              522.0
+            ],
+            [
+              847.4,
+              522.0
+            ],
+            [
+              849.6,
+              522.0
+            ],
+            [
+              851.8,
+              522.0
+            ],
+            [
+              854.0,
+              522.0
+            ],
+            [
+              856.2,
+              522.0
+            ],
+            [
+              858.4,
+              522.0
+            ],
+            [
+              860.6,
+              522.0
+            ],
+            [
+              862.8,
+              522.0
+            ],
+            [
+              865.0,
+              522.0
+            ],
+            [
+              867.2,
+              522.0
+            ],
+            [
+              869.4,
+              522.0
+            ],
+            [
+              871.6,
+              522.0
+            ],
+            [
+              873.8,
+              522.0
+            ],
+            [
+              876.0,
+              522.0
+            ],
+            [
+              878.2,
+              522.0
+            ],
+            [
+              880.4,
+              522.0
+            ],
+            [
+              882.6,
+              522.0
+            ],
+            [
+              884.8,
+              522.0
+            ],
+            [
+              887.0,
+              522.0
+            ],
+            [
+              889.2,
+              522.0
+            ],
+            [
+              891.4,
+              522.0
+            ],
+            [
+              893.6,
+              522.0
+            ],
+            [
+              895.8,
+              522.0
+            ],
+            [
+              898.0,
+              522.0
+            ],
+            [
+              900.2,
+              522.0
+            ],
+            [
+              902.4,
+              522.0
+            ],
+            [
+              904.6,
+              522.0
+            ],
+            [
+              906.8,
+              522.0
+            ],
+            [
+              909.0,
+              522.0
+            ],
+            [
+              911.2,
+              522.0
+            ],
+            [
+              913.4,
+              522.0
+            ],
+            [
+              915.6,
+              522.0
+            ],
+            [
+              917.8,
+              522.0
+            ],
+            [
+              920.0,
+              522.0
+            ],
+            [
+              922.2,
+              522.0
+            ],
+            [
+              924.4,
+              522.0
+            ],
+            [
+              926.6,
+              522.0
+            ],
+            [
+              928.8,
+              522.0
+            ],
+            [
+              931.0,
+              522.0
+            ],
+            [
+              933.2,
+              522.0
+            ],
+            [
+              935.4,
+              522.0
+            ],
+            [
+              937.6,
+              522.0
+            ],
+            [
+              939.8,
+              522.0
+            ],
+            [
+              942.0,
+              522.0
+            ],
+            [
+              944.2,
+              522.0
+            ],
+            [
+              946.4,
+              522.0
+            ],
+            [
+              948.6,
+              522.0
+            ],
+            [
+              950.8,
+              522.0
+            ],
+            [
+              953.0,
+              522.0
+            ],
+            [
+              955.2,
+              522.0
+            ],
+            [
+              957.4,
+              522.0
+            ],
+            [
+              959.6,
+              522.0
+            ],
+            [
+              961.8,
+              522.0
+            ],
+            [
+              964.0,
+              522.0
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 5,
+          "end_arrow": false
+        },
+        {
+          "id": "sample0",
+          "type": "circle",
+          "center": [
+            260.0,
+            573.9687487628593
+          ],
+          "radius": 7,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "curve1",
+          "type": "line",
+          "points": [
+            [
+              172.0,
+              906.0
+            ],
+            [
+              174.2,
+              902.813
+            ],
+            [
+              176.4,
+              899.653
+            ],
+            [
+              178.6,
+              896.519
+            ],
+            [
+              180.8,
+              893.411
+            ],
+            [
+              183.0,
+              890.329
+            ],
+            [
+              185.2,
+              887.272
+            ],
+            [
+              187.4,
+              884.241
+            ],
+            [
+              189.6,
+              881.235
+            ],
+            [
+              191.8,
+              878.253
+            ],
+            [
+              194.0,
+              875.297
+            ],
+            [
+              196.2,
+              872.365
+            ],
+            [
+              198.4,
+              869.458
+            ],
+            [
+              200.6,
+              866.574
+            ],
+            [
+              202.8,
+              863.715
+            ],
+            [
+              205.0,
+              860.879
+            ],
+            [
+              207.2,
+              858.067
+            ],
+            [
+              209.4,
+              855.278
+            ],
+            [
+              211.6,
+              852.512
+            ],
+            [
+              213.8,
+              849.769
+            ],
+            [
+              216.0,
+              847.049
+            ],
+            [
+              218.2,
+              844.351
+            ],
+            [
+              220.4,
+              841.676
+            ],
+            [
+              222.6,
+              839.023
+            ],
+            [
+              224.8,
+              836.393
+            ],
+            [
+              227.0,
+              833.784
+            ],
+            [
+              229.2,
+              831.196
+            ],
+            [
+              231.4,
+              828.63
+            ],
+            [
+              233.6,
+              826.086
+            ],
+            [
+              235.8,
+              823.562
+            ],
+            [
+              238.0,
+              821.06
+            ],
+            [
+              240.2,
+              818.578
+            ],
+            [
+              242.4,
+              816.116
+            ],
+            [
+              244.6,
+              813.676
+            ],
+            [
+              246.8,
+              811.255
+            ],
+            [
+              249.0,
+              808.855
+            ],
+            [
+              251.2,
+              806.474
+            ],
+            [
+              253.4,
+              804.113
+            ],
+            [
+              255.6,
+              801.772
+            ],
+            [
+              257.8,
+              799.451
+            ],
+            [
+              260.0,
+              797.148
+            ],
+            [
+              262.2,
+              794.865
+            ],
+            [
+              264.4,
+              792.6
+            ],
+            [
+              266.6,
+              790.355
+            ],
+            [
+              268.8,
+              788.128
+            ],
+            [
+              271.0,
+              785.919
+            ],
+            [
+              273.2,
+              783.729
+            ],
+            [
+              275.4,
+              781.557
+            ],
+            [
+              277.6,
+              779.403
+            ],
+            [
+              279.8,
+              777.267
+            ],
+            [
+              282.0,
+              775.148
+            ],
+            [
+              284.2,
+              773.048
+            ],
+            [
+              286.4,
+              770.964
+            ],
+            [
+              288.6,
+              768.898
+            ],
+            [
+              290.8,
+              766.849
+            ],
+            [
+              293.0,
+              764.817
+            ],
+            [
+              295.2,
+              762.802
+            ],
+            [
+              297.4,
+              760.804
+            ],
+            [
+              299.6,
+              758.822
+            ],
+            [
+              301.8,
+              756.857
+            ],
+            [
+              304.0,
+              754.908
+            ],
+            [
+              306.2,
+              752.975
+            ],
+            [
+              308.4,
+              751.058
+            ],
+            [
+              310.6,
+              749.157
+            ],
+            [
+              312.8,
+              747.272
+            ],
+            [
+              315.0,
+              745.403
+            ],
+            [
+              317.2,
+              743.549
+            ],
+            [
+              319.4,
+              741.71
+            ],
+            [
+              321.6,
+              739.887
+            ],
+            [
+              323.8,
+              738.079
+            ],
+            [
+              326.0,
+              736.285
+            ],
+            [
+              328.2,
+              734.507
+            ],
+            [
+              330.4,
+              732.744
+            ],
+            [
+              332.6,
+              730.995
+            ],
+            [
+              334.8,
+              729.26
+            ],
+            [
+              337.0,
+              727.54
+            ],
+            [
+              339.2,
+              725.835
+            ],
+            [
+              341.4,
+              724.143
+            ],
+            [
+              343.6,
+              722.466
+            ],
+            [
+              345.8,
+              720.802
+            ],
+            [
+              348.0,
+              719.152
+            ],
+            [
+              350.2,
+              717.516
+            ],
+            [
+              352.4,
+              715.894
+            ],
+            [
+              354.6,
+              714.284
+            ],
+            [
+              356.8,
+              712.689
+            ],
+            [
+              359.0,
+              711.106
+            ],
+            [
+              361.2,
+              709.537
+            ],
+            [
+              363.4,
+              707.981
+            ],
+            [
+              365.6,
+              706.437
+            ],
+            [
+              367.8,
+              704.907
+            ],
+            [
+              370.0,
+              703.389
+            ],
+            [
+              372.2,
+              701.883
+            ],
+            [
+              374.4,
+              700.391
+            ],
+            [
+              376.6,
+              698.91
+            ],
+            [
+              378.8,
+              697.442
+            ],
+            [
+              381.0,
+              695.986
+            ],
+            [
+              383.2,
+              694.542
+            ],
+            [
+              385.4,
+              693.11
+            ],
+            [
+              387.6,
+              691.69
+            ],
+            [
+              389.8,
+              690.282
+            ],
+            [
+              392.0,
+              688.886
+            ],
+            [
+              394.2,
+              687.501
+            ],
+            [
+              396.4,
+              686.127
+            ],
+            [
+              398.6,
+              684.765
+            ],
+            [
+              400.8,
+              683.415
+            ],
+            [
+              403.0,
+              682.075
+            ],
+            [
+              405.2,
+              680.747
+            ],
+            [
+              407.4,
+              679.429
+            ],
+            [
+              409.6,
+              678.123
+            ],
+            [
+              411.8,
+              676.827
+            ],
+            [
+              414.0,
+              675.542
+            ],
+            [
+              416.2,
+              674.268
+            ],
+            [
+              418.4,
+              673.004
+            ],
+            [
+              420.6,
+              671.751
+            ],
+            [
+              422.8,
+              670.509
+            ],
+            [
+              425.0,
+              669.276
+            ],
+            [
+              427.2,
+              668.054
+            ],
+            [
+              429.4,
+              666.842
+            ],
+            [
+              431.6,
+              665.64
+            ],
+            [
+              433.8,
+              664.448
+            ],
+            [
+              436.0,
+              663.266
+            ],
+            [
+              438.2,
+              662.093
+            ],
+            [
+              440.4,
+              660.931
+            ],
+            [
+              442.6,
+              659.778
+            ],
+            [
+              444.8,
+              658.634
+            ],
+            [
+              447.0,
+              657.501
+            ],
+            [
+              449.2,
+              656.376
+            ],
+            [
+              451.4,
+              655.261
+            ],
+            [
+              453.6,
+              654.155
+            ],
+            [
+              455.8,
+              653.058
+            ],
+            [
+              458.0,
+              651.971
+            ],
+            [
+              460.2,
+              650.892
+            ],
+            [
+              462.4,
+              649.822
+            ],
+            [
+              464.6,
+              648.762
+            ],
+            [
+              466.8,
+              647.71
+            ],
+            [
+              469.0,
+              646.667
+            ],
+            [
+              471.2,
+              645.632
+            ],
+            [
+              473.4,
+              644.606
+            ],
+            [
+              475.6,
+              643.589
+            ],
+            [
+              477.8,
+              642.579
+            ],
+            [
+              480.0,
+              641.579
+            ],
+            [
+              482.2,
+              640.586
+            ],
+            [
+              484.4,
+              639.602
+            ],
+            [
+              486.6,
+              638.626
+            ],
+            [
+              488.8,
+              637.659
+            ],
+            [
+              491.0,
+              636.699
+            ],
+            [
+              493.2,
+              635.747
+            ],
+            [
+              495.4,
+              634.803
+            ],
+            [
+              497.6,
+              633.867
+            ],
+            [
+              499.8,
+              632.938
+            ],
+            [
+              502.0,
+              632.018
+            ],
+            [
+              504.2,
+              631.105
+            ],
+            [
+              506.4,
+              630.199
+            ],
+            [
+              508.6,
+              629.301
+            ],
+            [
+              510.8,
+              628.411
+            ],
+            [
+              513.0,
+              627.528
+            ],
+            [
+              515.2,
+              626.652
+            ],
+            [
+              517.4,
+              625.784
+            ],
+            [
+              519.6,
+              624.922
+            ],
+            [
+              521.8,
+              624.068
+            ],
+            [
+              524.0,
+              623.221
+            ],
+            [
+              526.2,
+              622.381
+            ],
+            [
+              528.4,
+              621.548
+            ],
+            [
+              530.6,
+              620.722
+            ],
+            [
+              532.8,
+              619.903
+            ],
+            [
+              535.0,
+              619.09
+            ],
+            [
+              537.2,
+              618.285
+            ],
+            [
+              539.4,
+              617.486
+            ],
+            [
+              541.6,
+              616.693
+            ],
+            [
+              543.8,
+              615.907
+            ],
+            [
+              546.0,
+              615.128
+            ],
+            [
+              548.2,
+              614.355
+            ],
+            [
+              550.4,
+              613.589
+            ],
+            [
+              552.6,
+              612.829
+            ],
+            [
+              554.8,
+              612.075
+            ],
+            [
+              557.0,
+              611.327
+            ],
+            [
+              559.2,
+              610.586
+            ],
+            [
+              561.4,
+              609.851
+            ],
+            [
+              563.6,
+              609.122
+            ],
+            [
+              565.8,
+              608.399
+            ],
+            [
+              568.0,
+              607.682
+            ],
+            [
+              570.2,
+              606.971
+            ],
+            [
+              572.4,
+              606.266
+            ],
+            [
+              574.6,
+              605.566
+            ],
+            [
+              576.8,
+              604.873
+            ],
+            [
+              579.0,
+              604.185
+            ],
+            [
+              581.2,
+              603.503
+            ],
+            [
+              583.4,
+              602.827
+            ],
+            [
+              585.6,
+              602.156
+            ],
+            [
+              587.8,
+              601.491
+            ],
+            [
+              590.0,
+              600.831
+            ],
+            [
+              592.2,
+              600.177
+            ],
+            [
+              594.4,
+              599.528
+            ],
+            [
+              596.6,
+              598.885
+            ],
+            [
+              598.8,
+              598.247
+            ],
+            [
+              601.0,
+              597.614
+            ],
+            [
+              603.2,
+              596.987
+            ],
+            [
+              605.4,
+              596.364
+            ],
+            [
+              607.6,
+              595.747
+            ],
+            [
+              609.8,
+              595.135
+            ],
+            [
+              612.0,
+              594.528
+            ],
+            [
+              614.2,
+              593.926
+            ],
+            [
+              616.4,
+              593.329
+            ],
+            [
+              618.6,
+              592.738
+            ],
+            [
+              620.8,
+              592.15
+            ],
+            [
+              623.0,
+              591.568
+            ],
+            [
+              625.2,
+              590.991
+            ],
+            [
+              627.4,
+              590.418
+            ],
+            [
+              629.6,
+              589.851
+            ],
+            [
+              631.8,
+              589.288
+            ],
+            [
+              634.0,
+              588.729
+            ],
+            [
+              636.2,
+              588.175
+            ],
+            [
+              638.4,
+              587.626
+            ],
+            [
+              640.6,
+              587.082
+            ],
+            [
+              642.8,
+              586.542
+            ],
+            [
+              645.0,
+              586.006
+            ],
+            [
+              647.2,
+              585.475
+            ],
+            [
+              649.4,
+              584.948
+            ],
+            [
+              651.6,
+              584.426
+            ],
+            [
+              653.8,
+              583.908
+            ],
+            [
+              656.0,
+              583.394
+            ],
+            [
+              658.2,
+              582.884
+            ],
+            [
+              660.4,
+              582.379
+            ],
+            [
+              662.6,
+              581.878
+            ],
+            [
+              664.8,
+              581.381
+            ],
+            [
+              667.0,
+              580.888
+            ],
+            [
+              669.2,
+              580.4
+            ],
+            [
+              671.4,
+              579.915
+            ],
+            [
+              673.6,
+              579.434
+            ],
+            [
+              675.8,
+              578.958
+            ],
+            [
+              678.0,
+              578.485
+            ],
+            [
+              680.2,
+              578.016
+            ],
+            [
+              682.4,
+              577.551
+            ],
+            [
+              684.6,
+              577.09
+            ],
+            [
+              686.8,
+              576.633
+            ],
+            [
+              689.0,
+              576.18
+            ],
+            [
+              691.2,
+              575.73
+            ],
+            [
+              693.4,
+              575.284
+            ],
+            [
+              695.6,
+              574.842
+            ],
+            [
+              697.8,
+              574.404
+            ],
+            [
+              700.0,
+              573.969
+            ],
+            [
+              702.2,
+              573.537
+            ],
+            [
+              704.4,
+              573.11
+            ],
+            [
+              706.6,
+              572.686
+            ],
+            [
+              708.8,
+              572.265
+            ],
+            [
+              711.0,
+              571.848
+            ],
+            [
+              713.2,
+              571.434
+            ],
+            [
+              715.4,
+              571.024
+            ],
+            [
+              717.6,
+              570.617
+            ],
+            [
+              719.8,
+              570.214
+            ],
+            [
+              722.0,
+              569.814
+            ],
+            [
+              724.2,
+              569.417
+            ],
+            [
+              726.4,
+              569.023
+            ],
+            [
+              728.6,
+              568.633
+            ],
+            [
+              730.8,
+              568.246
+            ],
+            [
+              733.0,
+              567.862
+            ],
+            [
+              735.2,
+              567.482
+            ],
+            [
+              737.4,
+              567.104
+            ],
+            [
+              739.6,
+              566.73
+            ],
+            [
+              741.8,
+              566.359
+            ],
+            [
+              744.0,
+              565.991
+            ],
+            [
+              746.2,
+              565.626
+            ],
+            [
+              748.4,
+              565.263
+            ],
+            [
+              750.6,
+              564.904
+            ],
+            [
+              752.8,
+              564.548
+            ],
+            [
+              755.0,
+              564.195
+            ],
+            [
+              757.2,
+              563.845
+            ],
+            [
+              759.4,
+              563.498
+            ],
+            [
+              761.6,
+              563.154
+            ],
+            [
+              763.8,
+              562.812
+            ],
+            [
+              766.0,
+              562.473
+            ],
+            [
+              768.2,
+              562.137
+            ],
+            [
+              770.4,
+              561.804
+            ],
+            [
+              772.6,
+              561.474
+            ],
+            [
+              774.8,
+              561.146
+            ],
+            [
+              777.0,
+              560.822
+            ],
+            [
+              779.2,
+              560.499
+            ],
+            [
+              781.4,
+              560.18
+            ],
+            [
+              783.6,
+              559.863
+            ],
+            [
+              785.8,
+              559.549
+            ],
+            [
+              788.0,
+              559.237
+            ],
+            [
+              790.2,
+              558.928
+            ],
+            [
+              792.4,
+              558.622
+            ],
+            [
+              794.6,
+              558.318
+            ],
+            [
+              796.8,
+              558.016
+            ],
+            [
+              799.0,
+              557.718
+            ],
+            [
+              801.2,
+              557.421
+            ],
+            [
+              803.4,
+              557.127
+            ],
+            [
+              805.6,
+              556.836
+            ],
+            [
+              807.8,
+              556.547
+            ],
+            [
+              810.0,
+              556.26
+            ],
+            [
+              812.2,
+              555.976
+            ],
+            [
+              814.4,
+              555.694
+            ],
+            [
+              816.6,
+              555.414
+            ],
+            [
+              818.8,
+              555.137
+            ],
+            [
+              821.0,
+              554.862
+            ],
+            [
+              823.2,
+              554.589
+            ],
+            [
+              825.4,
+              554.319
+            ],
+            [
+              827.6,
+              554.05
+            ],
+            [
+              829.8,
+              553.784
+            ],
+            [
+              832.0,
+              553.521
+            ],
+            [
+              834.2,
+              553.259
+            ],
+            [
+              836.4,
+              553.0
+            ],
+            [
+              838.6,
+              552.742
+            ],
+            [
+              840.8,
+              552.487
+            ],
+            [
+              843.0,
+              552.234
+            ],
+            [
+              845.2,
+              551.983
+            ],
+            [
+              847.4,
+              551.735
+            ],
+            [
+              849.6,
+              551.488
+            ],
+            [
+              851.8,
+              551.243
+            ],
+            [
+              854.0,
+              551.0
+            ],
+            [
+              856.2,
+              550.76
+            ],
+            [
+              858.4,
+              550.521
+            ],
+            [
+              860.6,
+              550.284
+            ],
+            [
+              862.8,
+              550.05
+            ],
+            [
+              865.0,
+              549.817
+            ],
+            [
+              867.2,
+              549.586
+            ],
+            [
+              869.4,
+              549.357
+            ],
+            [
+              871.6,
+              549.13
+            ],
+            [
+              873.8,
+              548.905
+            ],
+            [
+              876.0,
+              548.682
+            ],
+            [
+              878.2,
+              548.46
+            ],
+            [
+              880.4,
+              548.241
+            ],
+            [
+              882.6,
+              548.023
+            ],
+            [
+              884.8,
+              547.807
+            ],
+            [
+              887.0,
+              547.593
+            ],
+            [
+              889.2,
+              547.38
+            ],
+            [
+              891.4,
+              547.17
+            ],
+            [
+              893.6,
+              546.961
+            ],
+            [
+              895.8,
+              546.754
+            ],
+            [
+              898.0,
+              546.548
+            ],
+            [
+              900.2,
+              546.345
+            ],
+            [
+              902.4,
+              546.143
+            ],
+            [
+              904.6,
+              545.942
+            ],
+            [
+              906.8,
+              545.744
+            ],
+            [
+              909.0,
+              545.546
+            ],
+            [
+              911.2,
+              545.351
+            ],
+            [
+              913.4,
+              545.157
+            ],
+            [
+              915.6,
+              544.965
+            ],
+            [
+              917.8,
+              544.775
+            ],
+            [
+              920.0,
+              544.586
+            ],
+            [
+              922.2,
+              544.398
+            ],
+            [
+              924.4,
+              544.212
+            ],
+            [
+              926.6,
+              544.028
+            ],
+            [
+              928.8,
+              543.845
+            ],
+            [
+              931.0,
+              543.664
+            ],
+            [
+              933.2,
+              543.484
+            ],
+            [
+              935.4,
+              543.306
+            ],
+            [
+              937.6,
+              543.129
+            ],
+            [
+              939.8,
+              542.954
+            ],
+            [
+              942.0,
+              542.78
+            ],
+            [
+              944.2,
+              542.607
+            ],
+            [
+              946.4,
+              542.436
+            ],
+            [
+              948.6,
+              542.267
+            ],
+            [
+              950.8,
+              542.098
+            ],
+            [
+              953.0,
+              541.932
+            ],
+            [
+              955.2,
+              541.766
+            ],
+            [
+              957.4,
+              541.602
+            ],
+            [
+              959.6,
+              541.44
+            ],
+            [
+              961.8,
+              541.278
+            ],
+            [
+              964.0,
+              541.118
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 5,
+          "end_arrow": false
+        },
+        {
+          "id": "sample1",
+          "type": "circle",
+          "center": [
+            260.0,
+            797.1480232603351
+          ],
+          "radius": 7,
+          "fill": "#697887",
+          "stroke": "none"
+        },
+        {
+          "id": "sample_line",
+          "type": "line",
+          "points": [
+            [
+              260.0,
+              522
+            ],
+            [
+              260.0,
+              906
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_unit",
+          "type": "text",
+          "text": "经过时间 / ms",
+          "box": [
+            752,
+            980,
+            256,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "compare",
+          "type": "text",
+          "text": "同在 10 ms：5.19 dB 与 1.70 dB GR",
+          "box": [
+            72,
+            1050,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "point",
+          "type": "text",
+          "text": "两条线一直在变，没有先等 5 / 30 ms 的空档。",
+          "box": [
+            72,
+            1126,
+            936,
+            60
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "formula",
+          "type": "text",
+          "text": "GR(t) = 6 × [1 − exp(−t/τ)]",
+          "box": [
+            72,
+            1210,
+            936,
+            52
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "τ 是模型时间常数，不是插件旋钮值；非音频实测。\n模型无 Lookahead / Hold；不复刻具体风格或检测器。",
+          "box": [
+            72,
+            1290,
+            936,
+            86
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Large shared GR/time axes rebuilt from verified data, numeric readout and adjacent model boundary.",
+      "diagram_references": [
+        "assets/diagrams/attack-model.svg"
+      ],
+      "must_not": [
+        "Do not equate model tau with plugin UI milliseconds.",
+        "Do not present these as measured Pro-C 3 curves."
+      ]
+    },
+    {
+      "page": 5,
+      "title": "下一字来了，还压着多少？",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声塑形 · Pro-C 3",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "05 / 09",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "下一字来了，还压着多少？",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "模型公式与数据：本篇独立计算 · 产品行为：FabFilter Help",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "快恢复可能更灵活，也可能忽大忽小；\n慢恢复可能更连贯，也可能压住下一字。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "model_label",
+          "type": "text",
+          "text": "理想模型：6 dB 起，目标归零，无再触发 / Hold。",
+          "box": [
+            72,
+            380,
+            936,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gr_axis",
+          "type": "text",
+          "text": "GR / dB",
+          "box": [
+            72,
+            462,
+            210,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "legend_fast",
+          "type": "text",
+          "text": "τ = 100 ms",
+          "box": [
+            486,
+            452,
+            226,
+            50
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 45,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "legend_slow",
+          "type": "text",
+          "text": "τ = 300 ms",
+          "box": [
+            750,
+            452,
+            258,
+            50
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 45,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gridy0",
+          "type": "line",
+          "points": [
+            [
+              172,
+              906
+            ],
+            [
+              964,
+              906
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            88,
+            884,
+            64,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gridy2",
+          "type": "line",
+          "points": [
+            [
+              172,
+              778
+            ],
+            [
+              964,
+              778
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y2",
+          "type": "text",
+          "text": "2",
+          "box": [
+            88,
+            756,
+            64,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gridy4",
+          "type": "line",
+          "points": [
+            [
+              172,
+              650
+            ],
+            [
+              964,
+              650
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y4",
+          "type": "text",
+          "text": "4",
+          "box": [
+            88,
+            628,
+            64,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gridy6",
+          "type": "line",
+          "points": [
+            [
+              172,
+              522
+            ],
+            [
+              964,
+              522
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "y6",
+          "type": "text",
+          "text": "6",
+          "box": [
+            88,
+            500,
+            64,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "x0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            126.0,
+            922,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "x100",
+          "type": "text",
+          "text": "100",
+          "box": [
+            324.0,
+            922,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "x180",
+          "type": "text",
+          "text": "180",
+          "box": [
+            482.4000000000001,
+            922,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "x300",
+          "type": "text",
+          "text": "300",
+          "box": [
+            720.0,
+            922,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "x400",
+          "type": "text",
+          "text": "400",
+          "box": [
+            918.0,
+            922,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "curve0",
+          "type": "line",
+          "points": [
+            [
+              172.0,
+              522.0
+            ],
+            [
+              174.2,
+              526.243
+            ],
+            [
+              176.4,
+              530.439
+            ],
+            [
+              178.6,
+              534.589
+            ],
+            [
+              180.8,
+              538.693
+            ],
+            [
+              183.0,
+              542.752
+            ],
+            [
+              185.2,
+              546.765
+            ],
+            [
+              187.4,
+              550.735
+            ],
+            [
+              189.6,
+              554.66
+            ],
+            [
+              191.8,
+              558.542
+            ],
+            [
+              194.0,
+              562.382
+            ],
+            [
+              196.2,
+              566.179
+            ],
+            [
+              198.4,
+              569.933
+            ],
+            [
+              200.6,
+              573.647
+            ],
+            [
+              202.8,
+              577.319
+            ],
+            [
+              205.0,
+              580.951
+            ],
+            [
+              207.2,
+              584.543
+            ],
+            [
+              209.4,
+              588.095
+            ],
+            [
+              211.6,
+              591.607
+            ],
+            [
+              213.8,
+              595.081
+            ],
+            [
+              216.0,
+              598.517
+            ],
+            [
+              218.2,
+              601.914
+            ],
+            [
+              220.4,
+              605.274
+            ],
+            [
+              222.6,
+              608.597
+            ],
+            [
+              224.8,
+              611.884
+            ],
+            [
+              227.0,
+              615.133
+            ],
+            [
+              229.2,
+              618.347
+            ],
+            [
+              231.4,
+              621.526
+            ],
+            [
+              233.6,
+              624.669
+            ],
+            [
+              235.8,
+              627.778
+            ],
+            [
+              238.0,
+              630.852
+            ],
+            [
+              240.2,
+              633.892
+            ],
+            [
+              242.4,
+              636.899
+            ],
+            [
+              244.6,
+              639.872
+            ],
+            [
+              246.8,
+              642.813
+            ],
+            [
+              249.0,
+              645.721
+            ],
+            [
+              251.2,
+              648.597
+            ],
+            [
+              253.4,
+              651.441
+            ],
+            [
+              255.6,
+              654.254
+            ],
+            [
+              257.8,
+              657.036
+            ],
+            [
+              260.0,
+              659.787
+            ],
+            [
+              262.2,
+              662.507
+            ],
+            [
+              264.4,
+              665.198
+            ],
+            [
+              266.6,
+              667.859
+            ],
+            [
+              268.8,
+              670.49
+            ],
+            [
+              271.0,
+              673.092
+            ],
+            [
+              273.2,
+              675.666
+            ],
+            [
+              275.4,
+              678.211
+            ],
+            [
+              277.6,
+              680.728
+            ],
+            [
+              279.8,
+              683.217
+            ],
+            [
+              282.0,
+              685.679
+            ],
+            [
+              284.2,
+              688.113
+            ],
+            [
+              286.4,
+              690.521
+            ],
+            [
+              288.6,
+              692.902
+            ],
+            [
+              290.8,
+              695.256
+            ],
+            [
+              293.0,
+              697.585
+            ],
+            [
+              295.2,
+              699.888
+            ],
+            [
+              297.4,
+              702.165
+            ],
+            [
+              299.6,
+              704.418
+            ],
+            [
+              301.8,
+              706.645
+            ],
+            [
+              304.0,
+              708.848
+            ],
+            [
+              306.2,
+              711.026
+            ],
+            [
+              308.4,
+              713.181
+            ],
+            [
+              310.6,
+              715.311
+            ],
+            [
+              312.8,
+              717.418
+            ],
+            [
+              315.0,
+              719.502
+            ],
+            [
+              317.2,
+              721.563
+            ],
+            [
+              319.4,
+              723.601
+            ],
+            [
+              321.6,
+              725.616
+            ],
+            [
+              323.8,
+              727.609
+            ],
+            [
+              326.0,
+              729.58
+            ],
+            [
+              328.2,
+              731.53
+            ],
+            [
+              330.4,
+              733.458
+            ],
+            [
+              332.6,
+              735.364
+            ],
+            [
+              334.8,
+              737.25
+            ],
+            [
+              337.0,
+              739.114
+            ],
+            [
+              339.2,
+              740.958
+            ],
+            [
+              341.4,
+              742.782
+            ],
+            [
+              343.6,
+              744.585
+            ],
+            [
+              345.8,
+              746.369
+            ],
+            [
+              348.0,
+              748.133
+            ],
+            [
+              350.2,
+              749.877
+            ],
+            [
+              352.4,
+              751.602
+            ],
+            [
+              354.6,
+              753.308
+            ],
+            [
+              356.8,
+              754.996
+            ],
+            [
+              359.0,
+              756.664
+            ],
+            [
+              361.2,
+              758.314
+            ],
+            [
+              363.4,
+              759.946
+            ],
+            [
+              365.6,
+              761.56
+            ],
+            [
+              367.8,
+              763.156
+            ],
+            [
+              370.0,
+              764.734
+            ],
+            [
+              372.2,
+              766.295
+            ],
+            [
+              374.4,
+              767.839
+            ],
+            [
+              376.6,
+              769.366
+            ],
+            [
+              378.8,
+              770.875
+            ],
+            [
+              381.0,
+              772.368
+            ],
+            [
+              383.2,
+              773.845
+            ],
+            [
+              385.4,
+              775.305
+            ],
+            [
+              387.6,
+              776.749
+            ],
+            [
+              389.8,
+              778.178
+            ],
+            [
+              392.0,
+              779.59
+            ],
+            [
+              394.2,
+              780.987
+            ],
+            [
+              396.4,
+              782.368
+            ],
+            [
+              398.6,
+              783.734
+            ],
+            [
+              400.8,
+              785.085
+            ],
+            [
+              403.0,
+              786.421
+            ],
+            [
+              405.2,
+              787.742
+            ],
+            [
+              407.4,
+              789.049
+            ],
+            [
+              409.6,
+              790.341
+            ],
+            [
+              411.8,
+              791.619
+            ],
+            [
+              414.0,
+              792.883
+            ],
+            [
+              416.2,
+              794.133
+            ],
+            [
+              418.4,
+              795.369
+            ],
+            [
+              420.6,
+              796.592
+            ],
+            [
+              422.8,
+              797.801
+            ],
+            [
+              425.0,
+              798.996
+            ],
+            [
+              427.2,
+              800.179
+            ],
+            [
+              429.4,
+              801.348
+            ],
+            [
+              431.6,
+              802.504
+            ],
+            [
+              433.8,
+              803.648
+            ],
+            [
+              436.0,
+              804.779
+            ],
+            [
+              438.2,
+              805.897
+            ],
+            [
+              440.4,
+              807.003
+            ],
+            [
+              442.6,
+              808.097
+            ],
+            [
+              444.8,
+              809.179
+            ],
+            [
+              447.0,
+              810.249
+            ],
+            [
+              449.2,
+              811.307
+            ],
+            [
+              451.4,
+              812.353
+            ],
+            [
+              453.6,
+              813.388
+            ],
+            [
+              455.8,
+              814.411
+            ],
+            [
+              458.0,
+              815.423
+            ],
+            [
+              460.2,
+              816.424
+            ],
+            [
+              462.4,
+              817.414
+            ],
+            [
+              464.6,
+              818.393
+            ],
+            [
+              466.8,
+              819.361
+            ],
+            [
+              469.0,
+              820.318
+            ],
+            [
+              471.2,
+              821.265
+            ],
+            [
+              473.4,
+              822.201
+            ],
+            [
+              475.6,
+              823.127
+            ],
+            [
+              477.8,
+              824.043
+            ],
+            [
+              480.0,
+              824.948
+            ],
+            [
+              482.2,
+              825.844
+            ],
+            [
+              484.4,
+              826.73
+            ],
+            [
+              486.6,
+              827.606
+            ],
+            [
+              488.8,
+              828.472
+            ],
+            [
+              491.0,
+              829.328
+            ],
+            [
+              493.2,
+              830.176
+            ],
+            [
+              495.4,
+              831.013
+            ],
+            [
+              497.6,
+              831.842
+            ],
+            [
+              499.8,
+              832.661
+            ],
+            [
+              502.0,
+              833.472
+            ],
+            [
+              504.2,
+              834.273
+            ],
+            [
+              506.4,
+              835.066
+            ],
+            [
+              508.6,
+              835.85
+            ],
+            [
+              510.8,
+              836.625
+            ],
+            [
+              513.0,
+              837.391
+            ],
+            [
+              515.2,
+              838.149
+            ],
+            [
+              517.4,
+              838.899
+            ],
+            [
+              519.6,
+              839.64
+            ],
+            [
+              521.8,
+              840.374
+            ],
+            [
+              524.0,
+              841.099
+            ],
+            [
+              526.2,
+              841.816
+            ],
+            [
+              528.4,
+              842.525
+            ],
+            [
+              530.6,
+              843.227
+            ],
+            [
+              532.8,
+              843.92
+            ],
+            [
+              535.0,
+              844.606
+            ],
+            [
+              537.2,
+              845.285
+            ],
+            [
+              539.4,
+              845.955
+            ],
+            [
+              541.6,
+              846.619
+            ],
+            [
+              543.8,
+              847.275
+            ],
+            [
+              546.0,
+              847.924
+            ],
+            [
+              548.2,
+              848.566
+            ],
+            [
+              550.4,
+              849.2
+            ],
+            [
+              552.6,
+              849.828
+            ],
+            [
+              554.8,
+              850.449
+            ],
+            [
+              557.0,
+              851.062
+            ],
+            [
+              559.2,
+              851.669
+            ],
+            [
+              561.4,
+              852.27
+            ],
+            [
+              563.6,
+              852.863
+            ],
+            [
+              565.8,
+              853.451
+            ],
+            [
+              568.0,
+              854.031
+            ],
+            [
+              570.2,
+              854.605
+            ],
+            [
+              572.4,
+              855.173
+            ],
+            [
+              574.6,
+              855.735
+            ],
+            [
+              576.8,
+              856.29
+            ],
+            [
+              579.0,
+              856.84
+            ],
+            [
+              581.2,
+              857.383
+            ],
+            [
+              583.4,
+              857.92
+            ],
+            [
+              585.6,
+              858.451
+            ],
+            [
+              587.8,
+              858.977
+            ],
+            [
+              590.0,
+              859.496
+            ],
+            [
+              592.2,
+              860.01
+            ],
+            [
+              594.4,
+              860.518
+            ],
+            [
+              596.6,
+              861.021
+            ],
+            [
+              598.8,
+              861.518
+            ],
+            [
+              601.0,
+              862.009
+            ],
+            [
+              603.2,
+              862.495
+            ],
+            [
+              605.4,
+              862.976
+            ],
+            [
+              607.6,
+              863.452
+            ],
+            [
+              609.8,
+              863.922
+            ],
+            [
+              612.0,
+              864.387
+            ],
+            [
+              614.2,
+              864.846
+            ],
+            [
+              616.4,
+              865.301
+            ],
+            [
+              618.6,
+              865.751
+            ],
+            [
+              620.8,
+              866.196
+            ],
+            [
+              623.0,
+              866.635
+            ],
+            [
+              625.2,
+              867.07
+            ],
+            [
+              627.4,
+              867.501
+            ],
+            [
+              629.6,
+              867.926
+            ],
+            [
+              631.8,
+              868.347
+            ],
+            [
+              634.0,
+              868.763
+            ],
+            [
+              636.2,
+              869.174
+            ],
+            [
+              638.4,
+              869.581
+            ],
+            [
+              640.6,
+              869.984
+            ],
+            [
+              642.8,
+              870.382
+            ],
+            [
+              645.0,
+              870.775
+            ],
+            [
+              647.2,
+              871.164
+            ],
+            [
+              649.4,
+              871.549
+            ],
+            [
+              651.6,
+              871.93
+            ],
+            [
+              653.8,
+              872.306
+            ],
+            [
+              656.0,
+              872.679
+            ],
+            [
+              658.2,
+              873.047
+            ],
+            [
+              660.4,
+              873.411
+            ],
+            [
+              662.6,
+              873.771
+            ],
+            [
+              664.8,
+              874.127
+            ],
+            [
+              667.0,
+              874.479
+            ],
+            [
+              669.2,
+              874.828
+            ],
+            [
+              671.4,
+              875.172
+            ],
+            [
+              673.6,
+              875.513
+            ],
+            [
+              675.8,
+              875.85
+            ],
+            [
+              678.0,
+              876.183
+            ],
+            [
+              680.2,
+              876.512
+            ],
+            [
+              682.4,
+              876.838
+            ],
+            [
+              684.6,
+              877.16
+            ],
+            [
+              686.8,
+              877.479
+            ],
+            [
+              689.0,
+              877.794
+            ],
+            [
+              691.2,
+              878.106
+            ],
+            [
+              693.4,
+              878.414
+            ],
+            [
+              695.6,
+              878.719
+            ],
+            [
+              697.8,
+              879.02
+            ],
+            [
+              700.0,
+              879.318
+            ],
+            [
+              702.2,
+              879.613
+            ],
+            [
+              704.4,
+              879.905
+            ],
+            [
+              706.6,
+              880.193
+            ],
+            [
+              708.8,
+              880.478
+            ],
+            [
+              711.0,
+              880.76
+            ],
+            [
+              713.2,
+              881.039
+            ],
+            [
+              715.4,
+              881.315
+            ],
+            [
+              717.6,
+              881.588
+            ],
+            [
+              719.8,
+              881.857
+            ],
+            [
+              722.0,
+              882.124
+            ],
+            [
+              724.2,
+              882.388
+            ],
+            [
+              726.4,
+              882.649
+            ],
+            [
+              728.6,
+              882.907
+            ],
+            [
+              730.8,
+              883.162
+            ],
+            [
+              733.0,
+              883.414
+            ],
+            [
+              735.2,
+              883.664
+            ],
+            [
+              737.4,
+              883.911
+            ],
+            [
+              739.6,
+              884.155
+            ],
+            [
+              741.8,
+              884.396
+            ],
+            [
+              744.0,
+              884.635
+            ],
+            [
+              746.2,
+              884.871
+            ],
+            [
+              748.4,
+              885.105
+            ],
+            [
+              750.6,
+              885.335
+            ],
+            [
+              752.8,
+              885.564
+            ],
+            [
+              755.0,
+              885.79
+            ],
+            [
+              757.2,
+              886.013
+            ],
+            [
+              759.4,
+              886.234
+            ],
+            [
+              761.6,
+              886.452
+            ],
+            [
+              763.8,
+              886.668
+            ],
+            [
+              766.0,
+              886.882
+            ],
+            [
+              768.2,
+              887.093
+            ],
+            [
+              770.4,
+              887.302
+            ],
+            [
+              772.6,
+              887.509
+            ],
+            [
+              774.8,
+              887.713
+            ],
+            [
+              777.0,
+              887.915
+            ],
+            [
+              779.2,
+              888.115
+            ],
+            [
+              781.4,
+              888.312
+            ],
+            [
+              783.6,
+              888.508
+            ],
+            [
+              785.8,
+              888.701
+            ],
+            [
+              788.0,
+              888.892
+            ],
+            [
+              790.2,
+              889.081
+            ],
+            [
+              792.4,
+              889.268
+            ],
+            [
+              794.6,
+              889.453
+            ],
+            [
+              796.8,
+              889.636
+            ],
+            [
+              799.0,
+              889.817
+            ],
+            [
+              801.2,
+              889.996
+            ],
+            [
+              803.4,
+              890.172
+            ],
+            [
+              805.6,
+              890.347
+            ],
+            [
+              807.8,
+              890.52
+            ],
+            [
+              810.0,
+              890.691
+            ],
+            [
+              812.2,
+              890.86
+            ],
+            [
+              814.4,
+              891.028
+            ],
+            [
+              816.6,
+              891.193
+            ],
+            [
+              818.8,
+              891.357
+            ],
+            [
+              821.0,
+              891.519
+            ],
+            [
+              823.2,
+              891.679
+            ],
+            [
+              825.4,
+              891.837
+            ],
+            [
+              827.6,
+              891.993
+            ],
+            [
+              829.8,
+              892.148
+            ],
+            [
+              832.0,
+              892.301
+            ],
+            [
+              834.2,
+              892.453
+            ],
+            [
+              836.4,
+              892.602
+            ],
+            [
+              838.6,
+              892.75
+            ],
+            [
+              840.8,
+              892.897
+            ],
+            [
+              843.0,
+              893.041
+            ],
+            [
+              845.2,
+              893.185
+            ],
+            [
+              847.4,
+              893.326
+            ],
+            [
+              849.6,
+              893.466
+            ],
+            [
+              851.8,
+              893.605
+            ],
+            [
+              854.0,
+              893.742
+            ],
+            [
+              856.2,
+              893.877
+            ],
+            [
+              858.4,
+              894.011
+            ],
+            [
+              860.6,
+              894.144
+            ],
+            [
+              862.8,
+              894.275
+            ],
+            [
+              865.0,
+              894.404
+            ],
+            [
+              867.2,
+              894.532
+            ],
+            [
+              869.4,
+              894.659
+            ],
+            [
+              871.6,
+              894.784
+            ],
+            [
+              873.8,
+              894.908
+            ],
+            [
+              876.0,
+              895.031
+            ],
+            [
+              878.2,
+              895.152
+            ],
+            [
+              880.4,
+              895.272
+            ],
+            [
+              882.6,
+              895.39
+            ],
+            [
+              884.8,
+              895.508
+            ],
+            [
+              887.0,
+              895.624
+            ],
+            [
+              889.2,
+              895.738
+            ],
+            [
+              891.4,
+              895.852
+            ],
+            [
+              893.6,
+              895.964
+            ],
+            [
+              895.8,
+              896.075
+            ],
+            [
+              898.0,
+              896.184
+            ],
+            [
+              900.2,
+              896.293
+            ],
+            [
+              902.4,
+              896.4
+            ],
+            [
+              904.6,
+              896.506
+            ],
+            [
+              906.8,
+              896.611
+            ],
+            [
+              909.0,
+              896.715
+            ],
+            [
+              911.2,
+              896.817
+            ],
+            [
+              913.4,
+              896.919
+            ],
+            [
+              915.6,
+              897.019
+            ],
+            [
+              917.8,
+              897.118
+            ],
+            [
+              920.0,
+              897.217
+            ],
+            [
+              922.2,
+              897.314
+            ],
+            [
+              924.4,
+              897.41
+            ],
+            [
+              926.6,
+              897.505
+            ],
+            [
+              928.8,
+              897.598
+            ],
+            [
+              931.0,
+              897.691
+            ],
+            [
+              933.2,
+              897.783
+            ],
+            [
+              935.4,
+              897.874
+            ],
+            [
+              937.6,
+              897.964
+            ],
+            [
+              939.8,
+              898.052
+            ],
+            [
+              942.0,
+              898.14
+            ],
+            [
+              944.2,
+              898.227
+            ],
+            [
+              946.4,
+              898.313
+            ],
+            [
+              948.6,
+              898.398
+            ],
+            [
+              950.8,
+              898.482
+            ],
+            [
+              953.0,
+              898.565
+            ],
+            [
+              955.2,
+              898.647
+            ],
+            [
+              957.4,
+              898.728
+            ],
+            [
+              959.6,
+              898.809
+            ],
+            [
+              961.8,
+              898.888
+            ],
+            [
+              964.0,
+              898.967
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 5,
+          "end_arrow": false
+        },
+        {
+          "id": "sample0",
+          "type": "circle",
+          "center": [
+            528.4000000000001,
+            842.5252269229107
+          ],
+          "radius": 7,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "curve1",
+          "type": "line",
+          "points": [
+            [
+              172.0,
+              522.0
+            ],
+            [
+              174.2,
+              523.42
+            ],
+            [
+              176.4,
+              524.834
+            ],
+            [
+              178.6,
+              526.243
+            ],
+            [
+              180.8,
+              527.647
+            ],
+            [
+              183.0,
+              529.046
+            ],
+            [
+              185.2,
+              530.439
+            ],
+            [
+              187.4,
+              531.828
+            ],
+            [
+              189.6,
+              533.211
+            ],
+            [
+              191.8,
+              534.589
+            ],
+            [
+              194.0,
+              535.962
+            ],
+            [
+              196.2,
+              537.33
+            ],
+            [
+              198.4,
+              538.693
+            ],
+            [
+              200.6,
+              540.051
+            ],
+            [
+              202.8,
+              541.404
+            ],
+            [
+              205.0,
+              542.752
+            ],
+            [
+              207.2,
+              544.094
+            ],
+            [
+              209.4,
+              545.432
+            ],
+            [
+              211.6,
+              546.765
+            ],
+            [
+              213.8,
+              548.093
+            ],
+            [
+              216.0,
+              549.416
+            ],
+            [
+              218.2,
+              550.735
+            ],
+            [
+              220.4,
+              552.048
+            ],
+            [
+              222.6,
+              553.357
+            ],
+            [
+              224.8,
+              554.66
+            ],
+            [
+              227.0,
+              555.959
+            ],
+            [
+              229.2,
+              557.253
+            ],
+            [
+              231.4,
+              558.542
+            ],
+            [
+              233.6,
+              559.827
+            ],
+            [
+              235.8,
+              561.107
+            ],
+            [
+              238.0,
+              562.382
+            ],
+            [
+              240.2,
+              563.652
+            ],
+            [
+              242.4,
+              564.918
+            ],
+            [
+              244.6,
+              566.179
+            ],
+            [
+              246.8,
+              567.435
+            ],
+            [
+              249.0,
+              568.686
+            ],
+            [
+              251.2,
+              569.933
+            ],
+            [
+              253.4,
+              571.176
+            ],
+            [
+              255.6,
+              572.414
+            ],
+            [
+              257.8,
+              573.647
+            ],
+            [
+              260.0,
+              574.876
+            ],
+            [
+              262.2,
+              576.1
+            ],
+            [
+              264.4,
+              577.319
+            ],
+            [
+              266.6,
+              578.534
+            ],
+            [
+              268.8,
+              579.745
+            ],
+            [
+              271.0,
+              580.951
+            ],
+            [
+              273.2,
+              582.153
+            ],
+            [
+              275.4,
+              583.35
+            ],
+            [
+              277.6,
+              584.543
+            ],
+            [
+              279.8,
+              585.731
+            ],
+            [
+              282.0,
+              586.915
+            ],
+            [
+              284.2,
+              588.095
+            ],
+            [
+              286.4,
+              589.27
+            ],
+            [
+              288.6,
+              590.441
+            ],
+            [
+              290.8,
+              591.607
+            ],
+            [
+              293.0,
+              592.77
+            ],
+            [
+              295.2,
+              593.928
+            ],
+            [
+              297.4,
+              595.081
+            ],
+            [
+              299.6,
+              596.231
+            ],
+            [
+              301.8,
+              597.376
+            ],
+            [
+              304.0,
+              598.517
+            ],
+            [
+              306.2,
+              599.654
+            ],
+            [
+              308.4,
+              600.786
+            ],
+            [
+              310.6,
+              601.914
+            ],
+            [
+              312.8,
+              603.039
+            ],
+            [
+              315.0,
+              604.159
+            ],
+            [
+              317.2,
+              605.274
+            ],
+            [
+              319.4,
+              606.386
+            ],
+            [
+              321.6,
+              607.494
+            ],
+            [
+              323.8,
+              608.597
+            ],
+            [
+              326.0,
+              609.697
+            ],
+            [
+              328.2,
+              610.792
+            ],
+            [
+              330.4,
+              611.884
+            ],
+            [
+              332.6,
+              612.971
+            ],
+            [
+              334.8,
+              614.054
+            ],
+            [
+              337.0,
+              615.133
+            ],
+            [
+              339.2,
+              616.209
+            ],
+            [
+              341.4,
+              617.28
+            ],
+            [
+              343.6,
+              618.347
+            ],
+            [
+              345.8,
+              619.411
+            ],
+            [
+              348.0,
+              620.47
+            ],
+            [
+              350.2,
+              621.526
+            ],
+            [
+              352.4,
+              622.577
+            ],
+            [
+              354.6,
+              623.625
+            ],
+            [
+              356.8,
+              624.669
+            ],
+            [
+              359.0,
+              625.709
+            ],
+            [
+              361.2,
+              626.745
+            ],
+            [
+              363.4,
+              627.778
+            ],
+            [
+              365.6,
+              628.806
+            ],
+            [
+              367.8,
+              629.831
+            ],
+            [
+              370.0,
+              630.852
+            ],
+            [
+              372.2,
+              631.869
+            ],
+            [
+              374.4,
+              632.883
+            ],
+            [
+              376.6,
+              633.892
+            ],
+            [
+              378.8,
+              634.898
+            ],
+            [
+              381.0,
+              635.9
+            ],
+            [
+              383.2,
+              636.899
+            ],
+            [
+              385.4,
+              637.894
+            ],
+            [
+              387.6,
+              638.885
+            ],
+            [
+              389.8,
+              639.872
+            ],
+            [
+              392.0,
+              640.856
+            ],
+            [
+              394.2,
+              641.836
+            ],
+            [
+              396.4,
+              642.813
+            ],
+            [
+              398.6,
+              643.786
+            ],
+            [
+              400.8,
+              644.755
+            ],
+            [
+              403.0,
+              645.721
+            ],
+            [
+              405.2,
+              646.683
+            ],
+            [
+              407.4,
+              647.642
+            ],
+            [
+              409.6,
+              648.597
+            ],
+            [
+              411.8,
+              649.549
+            ],
+            [
+              414.0,
+              650.497
+            ],
+            [
+              416.2,
+              651.441
+            ],
+            [
+              418.4,
+              652.382
+            ],
+            [
+              420.6,
+              653.32
+            ],
+            [
+              422.8,
+              654.254
+            ],
+            [
+              425.0,
+              655.185
+            ],
+            [
+              427.2,
+              656.112
+            ],
+            [
+              429.4,
+              657.036
+            ],
+            [
+              431.6,
+              657.956
+            ],
+            [
+              433.8,
+              658.873
+            ],
+            [
+              436.0,
+              659.787
+            ],
+            [
+              438.2,
+              660.697
+            ],
+            [
+              440.4,
+              661.604
+            ],
+            [
+              442.6,
+              662.507
+            ],
+            [
+              444.8,
+              663.407
+            ],
+            [
+              447.0,
+              664.304
+            ],
+            [
+              449.2,
+              665.198
+            ],
+            [
+              451.4,
+              666.088
+            ],
+            [
+              453.6,
+              666.975
+            ],
+            [
+              455.8,
+              667.859
+            ],
+            [
+              458.0,
+              668.739
+            ],
+            [
+              460.2,
+              669.616
+            ],
+            [
+              462.4,
+              670.49
+            ],
+            [
+              464.6,
+              671.361
+            ],
+            [
+              466.8,
+              672.228
+            ],
+            [
+              469.0,
+              673.092
+            ],
+            [
+              471.2,
+              673.953
+            ],
+            [
+              473.4,
+              674.811
+            ],
+            [
+              475.6,
+              675.666
+            ],
+            [
+              477.8,
+              676.517
+            ],
+            [
+              480.0,
+              677.366
+            ],
+            [
+              482.2,
+              678.211
+            ],
+            [
+              484.4,
+              679.053
+            ],
+            [
+              486.6,
+              679.892
+            ],
+            [
+              488.8,
+              680.728
+            ],
+            [
+              491.0,
+              681.561
+            ],
+            [
+              493.2,
+              682.39
+            ],
+            [
+              495.4,
+              683.217
+            ],
+            [
+              497.6,
+              684.041
+            ],
+            [
+              499.8,
+              684.861
+            ],
+            [
+              502.0,
+              685.679
+            ],
+            [
+              504.2,
+              686.493
+            ],
+            [
+              506.4,
+              687.305
+            ],
+            [
+              508.6,
+              688.113
+            ],
+            [
+              510.8,
+              688.919
+            ],
+            [
+              513.0,
+              689.721
+            ],
+            [
+              515.2,
+              690.521
+            ],
+            [
+              517.4,
+              691.317
+            ],
+            [
+              519.6,
+              692.111
+            ],
+            [
+              521.8,
+              692.902
+            ],
+            [
+              524.0,
+              693.689
+            ],
+            [
+              526.2,
+              694.474
+            ],
+            [
+              528.4,
+              695.256
+            ],
+            [
+              530.6,
+              696.035
+            ],
+            [
+              532.8,
+              696.812
+            ],
+            [
+              535.0,
+              697.585
+            ],
+            [
+              537.2,
+              698.355
+            ],
+            [
+              539.4,
+              699.123
+            ],
+            [
+              541.6,
+              699.888
+            ],
+            [
+              543.8,
+              700.65
+            ],
+            [
+              546.0,
+              701.409
+            ],
+            [
+              548.2,
+              702.165
+            ],
+            [
+              550.4,
+              702.919
+            ],
+            [
+              552.6,
+              703.67
+            ],
+            [
+              554.8,
+              704.418
+            ],
+            [
+              557.0,
+              705.163
+            ],
+            [
+              559.2,
+              705.905
+            ],
+            [
+              561.4,
+              706.645
+            ],
+            [
+              563.6,
+              707.382
+            ],
+            [
+              565.8,
+              708.116
+            ],
+            [
+              568.0,
+              708.848
+            ],
+            [
+              570.2,
+              709.577
+            ],
+            [
+              572.4,
+              710.303
+            ],
+            [
+              574.6,
+              711.026
+            ],
+            [
+              576.8,
+              711.747
+            ],
+            [
+              579.0,
+              712.465
+            ],
+            [
+              581.2,
+              713.181
+            ],
+            [
+              583.4,
+              713.893
+            ],
+            [
+              585.6,
+              714.604
+            ],
+            [
+              587.8,
+              715.311
+            ],
+            [
+              590.0,
+              716.016
+            ],
+            [
+              592.2,
+              716.719
+            ],
+            [
+              594.4,
+              717.418
+            ],
+            [
+              596.6,
+              718.115
+            ],
+            [
+              598.8,
+              718.81
+            ],
+            [
+              601.0,
+              719.502
+            ],
+            [
+              603.2,
+              720.191
+            ],
+            [
+              605.4,
+              720.878
+            ],
+            [
+              607.6,
+              721.563
+            ],
+            [
+              609.8,
+              722.245
+            ],
+            [
+              612.0,
+              722.924
+            ],
+            [
+              614.2,
+              723.601
+            ],
+            [
+              616.4,
+              724.275
+            ],
+            [
+              618.6,
+              724.947
+            ],
+            [
+              620.8,
+              725.616
+            ],
+            [
+              623.0,
+              726.283
+            ],
+            [
+              625.2,
+              726.947
+            ],
+            [
+              627.4,
+              727.609
+            ],
+            [
+              629.6,
+              728.269
+            ],
+            [
+              631.8,
+              728.926
+            ],
+            [
+              634.0,
+              729.58
+            ],
+            [
+              636.2,
+              730.233
+            ],
+            [
+              638.4,
+              730.882
+            ],
+            [
+              640.6,
+              731.53
+            ],
+            [
+              642.8,
+              732.175
+            ],
+            [
+              645.0,
+              732.817
+            ],
+            [
+              647.2,
+              733.458
+            ],
+            [
+              649.4,
+              734.096
+            ],
+            [
+              651.6,
+              734.731
+            ],
+            [
+              653.8,
+              735.364
+            ],
+            [
+              656.0,
+              735.995
+            ],
+            [
+              658.2,
+              736.624
+            ],
+            [
+              660.4,
+              737.25
+            ],
+            [
+              662.6,
+              737.874
+            ],
+            [
+              664.8,
+              738.495
+            ],
+            [
+              667.0,
+              739.114
+            ],
+            [
+              669.2,
+              739.731
+            ],
+            [
+              671.4,
+              740.346
+            ],
+            [
+              673.6,
+              740.958
+            ],
+            [
+              675.8,
+              741.568
+            ],
+            [
+              678.0,
+              742.176
+            ],
+            [
+              680.2,
+              742.782
+            ],
+            [
+              682.4,
+              743.385
+            ],
+            [
+              684.6,
+              743.987
+            ],
+            [
+              686.8,
+              744.585
+            ],
+            [
+              689.0,
+              745.182
+            ],
+            [
+              691.2,
+              745.777
+            ],
+            [
+              693.4,
+              746.369
+            ],
+            [
+              695.6,
+              746.959
+            ],
+            [
+              697.8,
+              747.547
+            ],
+            [
+              700.0,
+              748.133
+            ],
+            [
+              702.2,
+              748.716
+            ],
+            [
+              704.4,
+              749.298
+            ],
+            [
+              706.6,
+              749.877
+            ],
+            [
+              708.8,
+              750.454
+            ],
+            [
+              711.0,
+              751.029
+            ],
+            [
+              713.2,
+              751.602
+            ],
+            [
+              715.4,
+              752.173
+            ],
+            [
+              717.6,
+              752.742
+            ],
+            [
+              719.8,
+              753.308
+            ],
+            [
+              722.0,
+              753.873
+            ],
+            [
+              724.2,
+              754.435
+            ],
+            [
+              726.4,
+              754.996
+            ],
+            [
+              728.6,
+              755.554
+            ],
+            [
+              730.8,
+              756.11
+            ],
+            [
+              733.0,
+              756.664
+            ],
+            [
+              735.2,
+              757.216
+            ],
+            [
+              737.4,
+              757.766
+            ],
+            [
+              739.6,
+              758.314
+            ],
+            [
+              741.8,
+              758.86
+            ],
+            [
+              744.0,
+              759.404
+            ],
+            [
+              746.2,
+              759.946
+            ],
+            [
+              748.4,
+              760.486
+            ],
+            [
+              750.6,
+              761.024
+            ],
+            [
+              752.8,
+              761.56
+            ],
+            [
+              755.0,
+              762.094
+            ],
+            [
+              757.2,
+              762.626
+            ],
+            [
+              759.4,
+              763.156
+            ],
+            [
+              761.6,
+              763.684
+            ],
+            [
+              763.8,
+              764.21
+            ],
+            [
+              766.0,
+              764.734
+            ],
+            [
+              768.2,
+              765.257
+            ],
+            [
+              770.4,
+              765.777
+            ],
+            [
+              772.6,
+              766.295
+            ],
+            [
+              774.8,
+              766.812
+            ],
+            [
+              777.0,
+              767.326
+            ],
+            [
+              779.2,
+              767.839
+            ],
+            [
+              781.4,
+              768.35
+            ],
+            [
+              783.6,
+              768.859
+            ],
+            [
+              785.8,
+              769.366
+            ],
+            [
+              788.0,
+              769.871
+            ],
+            [
+              790.2,
+              770.374
+            ],
+            [
+              792.4,
+              770.875
+            ],
+            [
+              794.6,
+              771.375
+            ],
+            [
+              796.8,
+              771.873
+            ],
+            [
+              799.0,
+              772.368
+            ],
+            [
+              801.2,
+              772.862
+            ],
+            [
+              803.4,
+              773.355
+            ],
+            [
+              805.6,
+              773.845
+            ],
+            [
+              807.8,
+              774.334
+            ],
+            [
+              810.0,
+              774.82
+            ],
+            [
+              812.2,
+              775.305
+            ],
+            [
+              814.4,
+              775.788
+            ],
+            [
+              816.6,
+              776.27
+            ],
+            [
+              818.8,
+              776.749
+            ],
+            [
+              821.0,
+              777.227
+            ],
+            [
+              823.2,
+              777.703
+            ],
+            [
+              825.4,
+              778.178
+            ],
+            [
+              827.6,
+              778.65
+            ],
+            [
+              829.8,
+              779.121
+            ],
+            [
+              832.0,
+              779.59
+            ],
+            [
+              834.2,
+              780.057
+            ],
+            [
+              836.4,
+              780.523
+            ],
+            [
+              838.6,
+              780.987
+            ],
+            [
+              840.8,
+              781.449
+            ],
+            [
+              843.0,
+              781.909
+            ],
+            [
+              845.2,
+              782.368
+            ],
+            [
+              847.4,
+              782.825
+            ],
+            [
+              849.6,
+              783.28
+            ],
+            [
+              851.8,
+              783.734
+            ],
+            [
+              854.0,
+              784.186
+            ],
+            [
+              856.2,
+              784.636
+            ],
+            [
+              858.4,
+              785.085
+            ],
+            [
+              860.6,
+              785.532
+            ],
+            [
+              862.8,
+              785.977
+            ],
+            [
+              865.0,
+              786.421
+            ],
+            [
+              867.2,
+              786.863
+            ],
+            [
+              869.4,
+              787.304
+            ],
+            [
+              871.6,
+              787.742
+            ],
+            [
+              873.8,
+              788.18
+            ],
+            [
+              876.0,
+              788.615
+            ],
+            [
+              878.2,
+              789.049
+            ],
+            [
+              880.4,
+              789.482
+            ],
+            [
+              882.6,
+              789.912
+            ],
+            [
+              884.8,
+              790.341
+            ],
+            [
+              887.0,
+              790.769
+            ],
+            [
+              889.2,
+              791.195
+            ],
+            [
+              891.4,
+              791.619
+            ],
+            [
+              893.6,
+              792.042
+            ],
+            [
+              895.8,
+              792.464
+            ],
+            [
+              898.0,
+              792.883
+            ],
+            [
+              900.2,
+              793.301
+            ],
+            [
+              902.4,
+              793.718
+            ],
+            [
+              904.6,
+              794.133
+            ],
+            [
+              906.8,
+              794.547
+            ],
+            [
+              909.0,
+              794.959
+            ],
+            [
+              911.2,
+              795.369
+            ],
+            [
+              913.4,
+              795.778
+            ],
+            [
+              915.6,
+              796.186
+            ],
+            [
+              917.8,
+              796.592
+            ],
+            [
+              920.0,
+              796.996
+            ],
+            [
+              922.2,
+              797.399
+            ],
+            [
+              924.4,
+              797.801
+            ],
+            [
+              926.6,
+              798.201
+            ],
+            [
+              928.8,
+              798.599
+            ],
+            [
+              931.0,
+              798.996
+            ],
+            [
+              933.2,
+              799.392
+            ],
+            [
+              935.4,
+              799.786
+            ],
+            [
+              937.6,
+              800.179
+            ],
+            [
+              939.8,
+              800.57
+            ],
+            [
+              942.0,
+              800.959
+            ],
+            [
+              944.2,
+              801.348
+            ],
+            [
+              946.4,
+              801.735
+            ],
+            [
+              948.6,
+              802.12
+            ],
+            [
+              950.8,
+              802.504
+            ],
+            [
+              953.0,
+              802.887
+            ],
+            [
+              955.2,
+              803.268
+            ],
+            [
+              957.4,
+              803.648
+            ],
+            [
+              959.6,
+              804.026
+            ],
+            [
+              961.8,
+              804.403
+            ],
+            [
+              964.0,
+              804.779
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 5,
+          "end_arrow": false
+        },
+        {
+          "id": "sample1",
+          "type": "circle",
+          "center": [
+            528.4000000000001,
+            695.2563317398939
+          ],
+          "radius": 7,
+          "fill": "#697887",
+          "stroke": "none"
+        },
+        {
+          "id": "sample_line",
+          "type": "line",
+          "points": [
+            [
+              528.4000000000001,
+              522
+            ],
+            [
+              528.4000000000001,
+              906
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_unit",
+          "type": "text",
+          "text": "经过时间 / ms",
+          "box": [
+            752,
+            980,
+            256,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "compare",
+          "type": "text",
+          "text": "同在 180 ms：剩余 0.99 dB 与 3.29 dB GR",
+          "box": [
+            72,
+            1050,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "point",
+          "type": "text",
+          "text": "180 ms 从恢复开始计，不是默认的字头间隔。",
+          "box": [
+            72,
+            1126,
+            936,
+            60
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "formula",
+          "type": "text",
+          "text": "GR(t) = 6 × exp(−t/τ)",
+          "box": [
+            72,
+            1210,
+            936,
+            52
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "τ 是模型时间常数，不是插件标称时间；非实测。\n实际风格 / Auto Release 随素材变化，GR 不必每次归零。",
+          "box": [
+            72,
+            1290,
+            936,
+            86
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Large shared GR/time axes rebuilt from verified data, numeric readout and adjacent model boundary.",
+      "diagram_references": [
+        "assets/diagrams/release-model.svg"
+      ],
+      "must_not": [
+        "Do not equate model tau with plugin UI milliseconds.",
+        "Do not present these as measured Pro-C 3 curves."
+      ]
+    },
+    {
+      "page": 6,
+      "title": "慢歌，也可能唱得很密",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声塑形 · Pro-C 3",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "06 / 09",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "慢歌，也可能唱得很密",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "时值公式：60,000 ÷ BPM · 图示起音间隔，非 Release 设置",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "Release 要看音节密度、持续时长与目标。\n不能只凭歌曲快慢决定。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "axis_note",
+          "type": "text",
+          "text": "同一线性毫秒轴 · 假设音节按网格起音",
+          "box": [
+            72,
+            390,
+            936,
+            50
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "time_grid0",
+          "type": "line",
+          "points": [
+            [
+              188.0,
+              468
+            ],
+            [
+              188.0,
+              876
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_grid100",
+          "type": "line",
+          "points": [
+            [
+              340.0,
+              468
+            ],
+            [
+              340.0,
+              876
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_grid200",
+          "type": "line",
+          "points": [
+            [
+              492.0,
+              468
+            ],
+            [
+              492.0,
+              876
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_grid300",
+          "type": "line",
+          "points": [
+            [
+              644.0,
+              468
+            ],
+            [
+              644.0,
+              876
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_grid400",
+          "type": "line",
+          "points": [
+            [
+              796.0,
+              468
+            ],
+            [
+              796.0,
+              876
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "time_grid500",
+          "type": "line",
+          "points": [
+            [
+              948.0,
+              468
+            ],
+            [
+              948.0,
+              876
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "slow",
+          "type": "text",
+          "text": "80 BPM · 十六分音符",
+          "box": [
+            72,
+            472,
+            936,
+            54
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "slow_bar",
+          "type": "line",
+          "points": [
+            [
+              188,
+              580
+            ],
+            [
+              473,
+              580
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 12,
+          "end_arrow": false
+        },
+        {
+          "id": "slow_start",
+          "type": "circle",
+          "center": [
+            188,
+            580
+          ],
+          "radius": 7,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "slow_value",
+          "type": "text",
+          "text": "187.5 ms",
+          "box": [
+            494,
+            550,
+            460,
+            60
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "fast",
+          "type": "text",
+          "text": "140 BPM · 四分音符",
+          "box": [
+            72,
+            674,
+            936,
+            54
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "fast_bar",
+          "type": "line",
+          "points": [
+            [
+              188,
+              788
+            ],
+            [
+              839.429,
+              788
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 12,
+          "end_arrow": false
+        },
+        {
+          "id": "fast_start",
+          "type": "circle",
+          "center": [
+            188,
+            788
+          ],
+          "radius": 7,
+          "fill": "#697887",
+          "stroke": "none"
+        },
+        {
+          "id": "fast_value",
+          "type": "text",
+          "text": "428.6 ms",
+          "box": [
+            722,
+            810,
+            286,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            142.0,
+            910,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick100",
+          "type": "text",
+          "text": "100",
+          "box": [
+            294.0,
+            910,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick200",
+          "type": "text",
+          "text": "200",
+          "box": [
+            446.0,
+            910,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick300",
+          "type": "text",
+          "text": "300",
+          "box": [
+            598.0,
+            910,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick400",
+          "type": "text",
+          "text": "400",
+          "box": [
+            750.0,
+            910,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick500",
+          "type": "text",
+          "text": "500",
+          "box": [
+            902.0,
+            910,
+            92,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "formula",
+          "type": "text",
+          "text": "四分音符时长 = 60,000 ÷ BPM（ms）\n80 BPM 的 1/16 = 60,000 ÷ 80 ÷ 4",
+          "box": [
+            72,
+            1000,
+            936,
+            112
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "key",
+          "type": "text",
+          "text": "起音隔多久 ≠ 留给恢复的时间。",
+          "box": [
+            72,
+            1160,
+            936,
+            62
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "长元音持续触发时，可恢复窗口会更短。\n这些是起音间隔计算，不是 Release 建议值。",
+          "box": [
+            72,
+            1272,
+            936,
+            92
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Two durations on a single time scale, with exact visible values; not a fake sequencer.",
+      "diagram_references": [
+        "assets/diagrams/tempo-spacing.svg"
+      ]
+    },
+    {
+      "page": 7,
+      "title": "一句人声，一次只改一项",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声塑形 · Pro-C 3",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "07 / 09",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "一句人声，一次只改一项",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "试听练习 · 产品功能：FabFilter Pro-C 3 Help · 图片 © FabFilter",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "s1",
+          "type": "text",
+          "text": "1  循环一句，带伴奏确认问题",
+          "box": [
+            72,
+            248,
+            936,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "d1",
+          "type": "text",
+          "text": "包含强弱、连续字头与句尾，先知道自己要听哪里。",
+          "box": [
+            72,
+            318,
+            936,
+            54
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "s2",
+          "type": "text",
+          "text": "2  固定条件，让比较可听懂",
+          "box": [
+            72,
+            418,
+            936,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "d2",
+          "type": "text",
+          "text": "同一风格，固定 Knee / Lookahead / Hold；\n学习时暂关 Auto Release / Auto Gain，先不叠 DRY。",
+          "box": [
+            72,
+            488,
+            936,
+            106
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "s3",
+          "type": "text",
+          "text": "3  先听 Attack",
+          "box": [
+            72,
+            642,
+            936,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "d3",
+          "type": "text",
+          "text": "例如比较 5 与 30 ms，听字头是否变钝或过尖。",
+          "box": [
+            72,
+            710,
+            936,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "s4",
+          "type": "text",
+          "text": "4  再听 Release",
+          "box": [
+            72,
+            810,
+            936,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "d4",
+          "type": "text",
+          "text": "例如比较 80 与 250 ms，听句尾起伏与下一字。",
+          "box": [
+            72,
+            878,
+            936,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "gain_crop",
+          "type": "image",
+          "path": "assets/derived/gain-controls.png",
+          "box": [
+            72,
+            998,
+            156,
+            290
+          ],
+          "fit": "contain",
+          "alt": "真实 AUTO GAIN / DRY 区域，截图状态不是练习设置",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "match_head",
+          "type": "text",
+          "text": "每次 A/B，手动匹配响度",
+          "box": [
+            282,
+            1000,
+            726,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "match_copy",
+          "type": "text",
+          "text": "Auto Gain 不保证严格响度匹配。\n尽量排除“变响了”的影响，\n再放回伴奏判断。",
+          "box": [
+            282,
+            1080,
+            726,
+            160
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "数值是练习对照点，不是预设，也不是前页的模型 τ。\n官方局部仅定位控件；不要照抄截图状态。",
+          "box": [
+            72,
+            1310,
+            936,
+            72
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 36,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Four broad listening steps, then one real gain crop next to loudness-matching explanation.",
+      "must_not": [
+        "Do not claim Auto Gain is a measured loudness match.",
+        "Do not equate the practice milliseconds with model tau."
+      ]
+    },
+    {
+      "page": 8,
+      "title": "用听到的问题，决定下一步",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声塑形 · Pro-C 3",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "08 / 09",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "用听到的问题，决定下一步",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "试听方向：FabFilter / iZotope / Ableton · 详见研究报告",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "听现象，再选变量；没有必须达到的 GR 数字。",
+          "box": [
+            72,
+            230,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "p1",
+          "type": "text",
+          "text": "字头变钝",
+          "box": [
+            72,
+            340,
+            936,
+            58
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "a1",
+          "type": "text",
+          "text": "试慢一点的 Attack；也查持续 GR 是否太深。",
+          "box": [
+            72,
+            410,
+            936,
+            62
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "r1",
+          "type": "line",
+          "points": [
+            [
+              72,
+              508
+            ],
+            [
+              1008,
+              508
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "p2",
+          "type": "text",
+          "text": "起音尖、爆破突出",
+          "box": [
+            72,
+            548,
+            936,
+            58
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "a2",
+          "type": "text",
+          "text": "试快一点的 Attack，或先做局部电平整理。",
+          "box": [
+            72,
+            618,
+            936,
+            62
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "r2",
+          "type": "line",
+          "points": [
+            [
+              72,
+              716
+            ],
+            [
+              1008,
+              716
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "p3",
+          "type": "text",
+          "text": "呼吸或音量细碎起伏",
+          "box": [
+            72,
+            756,
+            936,
+            58
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "a3",
+          "type": "text",
+          "text": "试慢一点的 Release，或减少压缩量。",
+          "box": [
+            72,
+            826,
+            936,
+            62
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "r3",
+          "type": "line",
+          "points": [
+            [
+              72,
+              924
+            ],
+            [
+              1008,
+              924
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "p4",
+          "type": "text",
+          "text": "下一字发闷",
+          "box": [
+            72,
+            964,
+            936,
+            58
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "a4",
+          "type": "text",
+          "text": "看剩余 GR；试快一点的 Release 或较浅压缩。",
+          "box": [
+            72,
+            1034,
+            936,
+            62
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "stop",
+          "type": "text",
+          "text": "停在：字头合适、字身稳定、下一句自然。",
+          "box": [
+            72,
+            1186,
+            936,
+            64
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "这些是试听方向，不是保证。\n连贯控制可以保留一些衰减，GR 不必每次归零。",
+          "box": [
+            72,
+            1284,
+            936,
+            92
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Single editorial diagnostic column with fine rules; no repeated cards."
+    },
+    {
+      "page": 9,
+      "title": "完整图文与可编辑源码",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "人声塑形 · Pro-C 3",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "09 / 09",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "完整图文与可编辑源码",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "Kangdi Wang · 阅读 · 核对 · 复用",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "summary",
+          "type": "text",
+          "text": "人声压缩塑形：公式、图解与研究报告。",
+          "box": [
+            72,
+            234,
+            936,
+            60
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "repo_accent",
+          "type": "line",
+          "points": [
+            [
+              72,
+              338
+            ],
+            [
+              72,
+              454
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 5,
+          "end_arrow": false
+        },
+        {
+          "id": "host",
+          "type": "text",
+          "text": "github.com / DDDPG",
+          "box": [
+            98,
+            334,
+            910,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "href": "https://github.com/DDDPG/music-mixing-secrets"
+        },
+        {
+          "id": "repo",
+          "type": "text",
+          "text": "music-mixing-secrets ↗",
+          "box": [
+            98,
+            390,
+            910,
+            60
+          ],
+          "font_size": 40,
+          "font_weight": 400,
+          "line_height": 57,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "href": "https://github.com/DDDPG/music-mixing-secrets"
+        },
+        {
+          "id": "citation_panel",
+          "type": "rect",
+          "box": [
+            72,
+            514,
+            936,
+            620
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 20
+        },
+        {
+          "id": "bib_label",
+          "type": "text",
+          "text": "BIBTEX",
+          "box": [
+            108,
+            546,
+            760,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "year_label",
+          "type": "text",
+          "text": "2026",
+          "box": [
+            864,
+            546,
+            108,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#0066cc",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "bib_rule",
+          "type": "line",
+          "points": [
+            [
+              108,
+              610
+            ],
+            [
+              972,
+              610
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "bibtex",
+          "type": "text",
+          "text": "@misc{wang2026musicmixingsecrets,\n  author = {Kangdi, Wang},\n  title = {Music Mixing Secrets},\n  year = {2026},\n  url = {https://github.com/DDDPG/}\n      # {music-mixing-secrets}\n}",
+          "box": [
+            108,
+            640,
+            864,
+            470
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 64,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_note",
+          "type": "text",
+          "text": "具体原理请同时核对 FabFilter 等一手资料。\n仓库引用不代替原始来源或图片许可。",
+          "box": [
+            72,
+            1180,
+            936,
+            100
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "scope_note",
+          "type": "text",
+          "text": "完整资料与源文件以仓库实际内容为准。",
+          "box": [
+            72,
+            1304,
+            936,
+            48
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Theme-adapted citation ending; exact BibTeX in real HTML text; repository link retained.",
+      "links": [
+        {
+          "box": [
+            98,
+            334,
+            910,
+            118
+          ],
+          "url": "https://github.com/DDDPG/music-mixing-secrets"
+        }
+      ],
+      "must_not": [
+        "Do not invent topic URLs or QR codes before publication.",
+        "Scope citation h1/pre styles; no global selectors spilling over."
+      ]
+    }
+  ]
+}

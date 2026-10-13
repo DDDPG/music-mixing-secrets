@@ -1,0 +1,77 @@
+[
+  {
+    "term": "Attack",
+    "meaning": "建立增益衰减的响应速度",
+    "caution": "Not a dead-time or literal waiting period"
+  },
+  {
+    "term": "Release",
+    "meaning": "从增益衰减恢复的响应速度",
+    "caution": "Not the audio tail duration; knob definition varies"
+  },
+  {
+    "term": "Gain Reduction (GR)",
+    "meaning": "增益衰减量",
+    "caution": "Positive GR in this post denotes attenuation depth"
+  },
+  {
+    "term": "Threshold",
+    "meaning": "阈值",
+    "caution": "Not an output ceiling"
+  },
+  {
+    "term": "Ratio",
+    "meaning": "压缩比",
+    "caution": "Steady-state above-threshold relation, not dividing total volume"
+  },
+  {
+    "term": "Knee",
+    "meaning": "阈值附近压缩过渡形状或范围",
+    "caution": "Soft Knee is not slow Attack"
+  },
+  {
+    "term": "Lookahead",
+    "meaning": "预读",
+    "caution": "May change timing and latency; keep fixed during comparison"
+  },
+  {
+    "term": "Hold",
+    "meaning": "延长增益衰减峰值的保持时间",
+    "caution": "Not interchangeable with Release"
+  },
+  {
+    "term": "Auto Release",
+    "meaning": "自动释放",
+    "caution": "Pro-C 3 Release knob still influences overall behavior"
+  },
+  {
+    "term": "Wet Gain",
+    "meaning": "压缩后增益",
+    "caution": "Actual official image label AUTO GAIN; AUTO appears yellow"
+  },
+  {
+    "term": "Dry Gain",
+    "meaning": "加入未压缩输入的增益",
+    "caution": "Actual official image label DRY"
+  },
+  {
+    "term": "Program-dependent",
+    "meaning": "随输入素材变化的响应",
+    "caution": "Not a fixed time-constant formula"
+  },
+  {
+    "term": "Clip Gain",
+    "meaning": "片段增益",
+    "caution": "Used as optional local level preparation"
+  },
+  {
+    "term": "Make-Up Gain",
+    "meaning": "补偿增益",
+    "caution": "Does not restore the original dynamics"
+  },
+  {
+    "term": "τ",
+    "meaning": "模型时间常数",
+    "caution": "Not a plugin knob value or measurement"
+  }
+]

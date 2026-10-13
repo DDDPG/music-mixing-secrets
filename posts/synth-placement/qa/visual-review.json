@@ -1,0 +1,10 @@
+{
+ "status":"passed",
+ "carousel_full_pages_reviewed":[1,2,3,4,5,6,7,8,9,10,11,12],
+ "carousel_360px_pages_reviewed":[1,2,3,4,5,6,7,8,9,10,11,12],
+ "report_A4_pages_reviewed":[1,2,3,4,5,6,7,8,9],
+ "independent_design_review":"design/visual-qa.md",
+ "corrections":["Moved Post-Fader Send left of vertical branch; measured right edge671.584px versus branch710px","Expanded RMS, DRR, Dry/Wet terminology; retained28px caveats","Chinese role names precede Lead/Pad/Arp definitions","Replaced queried Utility rendering with native official286x384asset, preserving UI state","Changed report Depth illustration from ambiguous band to cue groups","Added report real-UI crop appendix and kept references together"],
+ "remaining_layout_issues":[],
+ "important_boundaries":["No audio measurement or listening result claimed","Depth not calibrated in metres","Vendor media have explicit limited-commentary rights basis, not blanket clearance"]
+}

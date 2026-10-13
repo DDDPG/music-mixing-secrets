@@ -1,0 +1,33 @@
+{
+  "dry_wet_examples": [
+    {
+      "name": "A",
+      "dry_dBFS_RMS": -18,
+      "wet_dBFS_RMS": -30,
+      "difference_dB": 12,
+      "wet_to_dry_RMS_amplitude": 0.251188643150958
+    },
+    {
+      "name": "B",
+      "dry_dBFS_RMS": -18,
+      "wet_dBFS_RMS": -24,
+      "difference_dB": 6,
+      "wet_to_dry_RMS_amplitude": 0.5011872336272722
+    }
+  ],
+  "measurement_status": "constructed examples, not measured audio",
+  "predelay_examples_ms": [
+    10,
+    40
+  ],
+  "sample_rate_Hz": 48000,
+  "predelay_samples": [
+    480,
+    1920
+  ],
+  "sample_difference": 1440,
+  "chart_axis_dBFS_RMS": [
+    -36,
+    0
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "S1",
+    "title": "FabFilter Pro-C 3 product",
+    "url": "https://www.fabfilter.com/products/pro-c-3-compressor-plug-in",
+    "section": "Product identity and official screenshot, Press section",
+    "accessed": "2026-10-13",
+    "kind": "primary official manufacturer documentation"
+  },
+  {
+    "id": "S2",
+    "title": "FabFilter Pro-C 3 Time controls",
+    "url": "https://www.fabfilter.com/help/pro-c/using/timecontrols",
+    "section": "Time controls and Program-dependency sections",
+    "accessed": "2026-10-13",
+    "kind": "primary official manufacturer documentation"
+  },
+  {
+    "id": "S3",
+    "title": "FabFilter Pro-C 3 Dynamics controls",
+    "url": "https://www.fabfilter.com/help/pro-c/using/dynamicscontrols",
+    "section": "Threshold, Ratio, Knee, Range",
+    "accessed": "2026-10-13",
+    "kind": "primary official manufacturer documentation"
+  },
+  {
+    "id": "S4",
+    "title": "FabFilter Learn Basic compressor controls",
+    "url": "https://prod.fabfilter.com/learn/compression/basic-compressor-controls",
+    "section": "Attack and release; general principles, historical Pro-C 2 example only",
+    "accessed": "2026-10-13",
+    "kind": "primary official manufacturer documentation"
+  },
+  {
+    "id": "S5",
+    "title": "iZotope What Is Audio Compression",
+    "url": "https://www.izotope.com/community/blog/what-is-audio-compression",
+    "section": "Attack, Release; not waiting; tempo, signal and goal",
+    "accessed": "2026-10-13",
+    "kind": "primary official manufacturer documentation"
+  },
+  {
+    "id": "S6",
+    "title": "Ableton Live 12 Compressor",
+    "url": "https://www.ableton.com/en/manual/live-audio-effect-reference/#compressor",
+    "section": "Compressor attack/release; side effects and envelope modes",
+    "accessed": "2026-10-13",
+    "kind": "primary official manufacturer documentation"
+  },
+  {
+    "id": "S7",
+    "title": "FabFilter Press Area",
+    "url": "https://www.fabfilter.com/press",
+    "section": "Press kit availability; no blanket license statement found",
+    "accessed": "2026-10-13",
+    "kind": "primary official manufacturer documentation"
+  }
+]

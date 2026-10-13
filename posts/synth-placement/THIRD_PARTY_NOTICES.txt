@@ -1,0 +1,7 @@
+The editable HTML/CSS export structure follows the Music Mixing Secrets V3 workflow and Guizang-derived scaffold, pinned upstream cf4b810. Corresponding code is supplied under AGPL-3.0. Preserve LICENSE-AGPL-3.0.txt and all editable source.
+
+Noto Sans SC and Noto Sans are bundled under SIL Open Font License 1.1. Retain assets/fonts/OFL.txt and assets/fonts/NotoSans-OFL-copyright.txt. Full source fonts are retained. No proprietary Apple typeface is bundled.
+
+Ableton Utility and FabFilter Pro-R 2 images are genuine official documentation excerpts. Rights remain with Ableton AG and FabFilter Software Instruments. They are included narrowly for educational commentary about visible controls; no general public-republication or commercial sublicensing permission is asserted. See RIGHTS.md and assets.json. Code licensing does not extend to these images or trademarks.
+
+Original diagrams are independent teaching constructions, not audio measurements. The conceptual depth illustration is AI-generated, labelled as such, and is not an authentic interface or a physical simulation.

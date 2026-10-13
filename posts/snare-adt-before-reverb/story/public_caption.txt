@@ -1,0 +1,18 @@
+标题：军鼓混响前加 ADT，宽的是哪一层？
+
+想让军鼓周围的空间多一点左右差异，可以试一条支路：
+Snare Send → Waves Abbey Road Reel ADT → Stereo Reverb。
+
+直达军鼓仍居中，最后的混响用全 Wet，空间大小用发送/返回量控制。Reel ADT 内部的 SRC 与 ADT 可以一起送入混响。
+
+关键不在照抄毫秒数，而在三件事：
+• 先静态比较，再加调制；ADT 偏移与混响 Predelay 是两个任务
+• 确认混响如何处理左右输入，Stereo 输出不保证输入声像原样保留
+• 匹配响度后，听返回 Solo、全曲 Stereo 和全曲 Mono
+
+图中算术是教学示例，没有做音频实测；官方界面数值不是推荐预设。手册的人声 Quick Start 也不应变成军鼓标准参数。
+
+资料：Waves Reel ADT 官方手册与产品页、FabFilter Pro-R 2 官方帮助。
+源码仓库：https://github.com/DDDPG/music-mixing-secrets
+
+#混音 #军鼓 #Snare #ReelADT #混响 #音乐制作

@@ -1,0 +1,13 @@
+[
+ {"id":"F1","claim":"Pan、Width 与感知深度应分开解释","type":"synthesis","sources":["S1","S2","S6"],"condition":"ordinary stereo mix"},
+ {"id":"F2","claim":"立体声 Balance 不等同对两个输入分别 Pan","type":"product_fact","sources":["S1","S3"],"condition":"specific DAW mode varies"},
+ {"id":"F3","claim":"Utility Width 0% yields mono; >100% widens","type":"product_fact","sources":["S2"],"condition":"Ableton Live 12 Utility"},
+ {"id":"F4","claim":"低电平、频谱变化和相对空间成分可用作创作深度线索","type":"audition_strategy","sources":["S6","S8"],"condition":"not guaranteed; not physical-distance calibration"},
+ {"id":"F5","claim":"Pro-R 2 low Distance has brighter, more pronounced early reflections","type":"product_fact","sources":["S4"],"condition":"Pro-R 2 algorithm; not all reverbs"},
+ {"id":"F6","claim":"Pre-Delay changes initial interval, not decay length","type":"product_fact","sources":["S4","S5"],"condition":"which components are delayed varies"},
+ {"id":"F7","claim":"Wet -30 to -24 dBFS RMS doubles its RMS amplitude approximately","type":"calculation","sources":["research/data.json"],"condition":"constructed equal-reference same-window example; not room DRR"},
+ {"id":"F8","claim":"10 and 40 ms at 48 kHz equal 480 and 1920 samples","type":"calculation","sources":["research/data.json"],"condition":"no measured audio"},
+ {"id":"F9","claim":"Post-Fader decrease scales dry and wet feed together","type":"conditional_derivation","sources":["S1"],"condition":"linear static downstream processing; tail transition excluded"},
+ {"id":"F10","claim":"M=(L+R)/2, S=(L-R)/2 yields fold-down M","type":"algebra","sources":["S9"],"condition":"stated scaling convention"},
+ {"id":"F11","claim":"Brief negative correlation need not be a fault","type":"documentation_fact","sources":["S10"],"condition":"Ozone 8 documentation; audition required"}
+]

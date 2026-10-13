@@ -1,0 +1,316 @@
+{
+  "assets": [
+    {
+      "entity": "FabFilter Pro-C 3",
+      "version": "Pro-C 3; exact point version is not stated on official image",
+      "component": "Official desktop product screenshot; channel format not identifiable",
+      "source_page": "https://www.fabfilter.com/products/pro-c-3-compressor-plug-in",
+      "asset_url": "https://cdn-b.fabfilter.com/img/products/pro-c-3-screenshot.jpg?v=1768467508",
+      "retrieved_at": "2026-10-13",
+      "rights_holder": "FabFilter",
+      "rights_status": "limited_editorial_reference_not_blanket_cleared",
+      "rights_basis": "Official product page links this image under Press and View screenshot; official Press Area supplies press kits with screenshots. This supports genuine editorial source provenance but provides no explicit broad reuse, commercial, sublicensing, or repository redistribution license. Included only as limited product-specific educational reference; rights retained by FabFilter. Publication rights assessment remains required.",
+      "attribution": "FabFilter Pro-C 3 official screenshot © FabFilter",
+      "limitations": "Official promotional image shows Nice Pumping preset and Pumping style. AUTO beside RELEASE is gray; AUTO beside GAIN is yellow. The two AUTO labels must not both be described as enabled. These settings and the displayed curves are not this tutorial’s vocal settings, and are not measurements of this tutorial. No permission to relicense vendor pixels under AGPL is asserted.",
+      "asset_id": "A01",
+      "path": "assets/source/fabfilter-pro-c-3-official.jpg",
+      "dimensions": [
+        1680,
+        1442
+      ],
+      "sha256": "f96bb0f69e525af35470aba1a764b5d51c4a678f3318cf52b406fc83f6b1fa0c",
+      "modifications": "Unmodified official downloaded JPEG.",
+      "used_on_pages": [
+        2,
+        "report"
+      ]
+    },
+    {
+      "entity": "FabFilter Pro-C 3",
+      "version": "Pro-C 3; exact point version is not stated on official image",
+      "component": "Official desktop product screenshot; channel format not identifiable",
+      "source_page": "https://www.fabfilter.com/products/pro-c-3-compressor-plug-in",
+      "asset_url": "https://cdn-b.fabfilter.com/img/products/pro-c-3-screenshot.jpg?v=1768467508",
+      "retrieved_at": "2026-10-13",
+      "rights_holder": "FabFilter",
+      "rights_status": "limited_editorial_reference_not_blanket_cleared",
+      "rights_basis": "Official product page links this image under Press and View screenshot; official Press Area supplies press kits with screenshots. This supports genuine editorial source provenance but provides no explicit broad reuse, commercial, sublicensing, or repository redistribution license. Included only as limited product-specific educational reference; rights retained by FabFilter. Publication rights assessment remains required.",
+      "attribution": "FabFilter Pro-C 3 official screenshot © FabFilter",
+      "limitations": "Official promotional image shows Nice Pumping preset and Pumping style. AUTO beside RELEASE is gray; AUTO beside GAIN is yellow. The two AUTO labels must not both be described as enabled. These settings and the displayed curves are not this tutorial’s vocal settings, and are not measurements of this tutorial. No permission to relicense vendor pixels under AGPL is asserted.",
+      "asset_id": "A02",
+      "path": "assets/derived/compressor-controls.png",
+      "dimensions": [
+        1250,
+        360
+      ],
+      "sha256": "33425e1c0b545b262abb0d31dc6d5611f22ff41d8469495317b71b7e69e93b54",
+      "modifications": "Lossless rectangular crop of decoded original pixels; box (170, 680, 1420, 1040), no retouching, recoloring, labels or value changes.",
+      "used_on_pages": [
+        3,
+        "report"
+      ],
+      "crop_box": [
+        170,
+        680,
+        1420,
+        1040
+      ],
+      "parent_asset": "A01"
+    },
+    {
+      "entity": "FabFilter Pro-C 3",
+      "version": "Pro-C 3; exact point version is not stated on official image",
+      "component": "Official desktop product screenshot; channel format not identifiable",
+      "source_page": "https://www.fabfilter.com/products/pro-c-3-compressor-plug-in",
+      "asset_url": "https://cdn-b.fabfilter.com/img/products/pro-c-3-screenshot.jpg?v=1768467508",
+      "retrieved_at": "2026-10-13",
+      "rights_holder": "FabFilter",
+      "rights_status": "limited_editorial_reference_not_blanket_cleared",
+      "rights_basis": "Official product page links this image under Press and View screenshot; official Press Area supplies press kits with screenshots. This supports genuine editorial source provenance but provides no explicit broad reuse, commercial, sublicensing, or repository redistribution license. Included only as limited product-specific educational reference; rights retained by FabFilter. Publication rights assessment remains required.",
+      "attribution": "FabFilter Pro-C 3 official screenshot © FabFilter",
+      "limitations": "Official promotional image shows Nice Pumping preset and Pumping style. AUTO beside RELEASE is gray; AUTO beside GAIN is yellow. The two AUTO labels must not both be described as enabled. These settings and the displayed curves are not this tutorial’s vocal settings, and are not measurements of this tutorial. No permission to relicense vendor pixels under AGPL is asserted.",
+      "asset_id": "A03",
+      "path": "assets/derived/attack-release.png",
+      "dimensions": [
+        429,
+        230
+      ],
+      "sha256": "fd1b017272c77a8f42efe1254b46e424c755956ac161ea1413f42e94e642310e",
+      "modifications": "Lossless rectangular crop of decoded original pixels; box (806, 695, 1235, 925), no retouching, recoloring, labels or value changes.",
+      "used_on_pages": [],
+      "crop_box": [
+        806,
+        695,
+        1235,
+        925
+      ],
+      "parent_asset": "A01"
+    },
+    {
+      "entity": "FabFilter Pro-C 3",
+      "version": "Pro-C 3; exact point version is not stated on official image",
+      "component": "Official desktop product screenshot; channel format not identifiable",
+      "source_page": "https://www.fabfilter.com/products/pro-c-3-compressor-plug-in",
+      "asset_url": "https://cdn-b.fabfilter.com/img/products/pro-c-3-screenshot.jpg?v=1768467508",
+      "retrieved_at": "2026-10-13",
+      "rights_holder": "FabFilter",
+      "rights_status": "limited_editorial_reference_not_blanket_cleared",
+      "rights_basis": "Official product page links this image under Press and View screenshot; official Press Area supplies press kits with screenshots. This supports genuine editorial source provenance but provides no explicit broad reuse, commercial, sublicensing, or repository redistribution license. Included only as limited product-specific educational reference; rights retained by FabFilter. Publication rights assessment remains required.",
+      "attribution": "FabFilter Pro-C 3 official screenshot © FabFilter",
+      "limitations": "Official promotional image shows Nice Pumping preset and Pumping style. AUTO beside RELEASE is gray; AUTO beside GAIN is yellow. The two AUTO labels must not both be described as enabled. These settings and the displayed curves are not this tutorial’s vocal settings, and are not measurements of this tutorial. No permission to relicense vendor pixels under AGPL is asserted.",
+      "asset_id": "A04",
+      "path": "assets/derived/gain-controls.png",
+      "dimensions": [
+        170,
+        316
+      ],
+      "sha256": "ee9c81fcd55edf42f4bdd6ca1eabac3c91d872b7ab4051d7d9a3603cfb46a4ed",
+      "modifications": "Lossless rectangular crop of decoded original pixels; box (1240, 694, 1410, 1010), no retouching, recoloring, labels or value changes.",
+      "used_on_pages": [
+        7
+      ],
+      "crop_box": [
+        1240,
+        694,
+        1410,
+        1010
+      ],
+      "parent_asset": "A01"
+    },
+    {
+      "asset_id": "D_attack-model",
+      "path": "assets/diagrams/attack-model.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        936,
+        530
+      ],
+      "sha256": "1fce9a9cac504f0fb4aaee599a20df00543e5f4e8db750be2fa3baabb7aadc2d",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_page-01-geometry",
+      "path": "assets/diagrams/page-01-geometry.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "2d14ac835edb0a9be1a7e418511a637092a9a5c0f9f4b15d8824941962c74a65",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_page-02-geometry",
+      "path": "assets/diagrams/page-02-geometry.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "b0f8f2f233f63b81b14036acd604e7b155332bc2be3f602cca25d1c13d831869",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_page-03-geometry",
+      "path": "assets/diagrams/page-03-geometry.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "ff7fe9325ff7d5a3d878c45005302ff0ed51fc00a0f2ed7557310a7a9dcb94c3",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_page-04-geometry",
+      "path": "assets/diagrams/page-04-geometry.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "a9bb5964cd7bdb59606044e7005bc5fb05bb753a373204394f9ce7dfe614be2e",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_page-05-geometry",
+      "path": "assets/diagrams/page-05-geometry.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "2ee498be998e4b9e4a0554ddf72f5c893c5f021a8829cab8567e970066769de2",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_page-06-geometry",
+      "path": "assets/diagrams/page-06-geometry.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "f180d4173812d3f9fc585b3abc5ed829b177176245ee855348707b499a446d32",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_page-07-geometry",
+      "path": "assets/diagrams/page-07-geometry.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "b0f8f2f233f63b81b14036acd604e7b155332bc2be3f602cca25d1c13d831869",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_page-08-geometry",
+      "path": "assets/diagrams/page-08-geometry.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "687d723f920ddba19902a946595292312dca20ad408a40f8bdde062498d814be",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_page-09-geometry",
+      "path": "assets/diagrams/page-09-geometry.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "a4f10ba112c9b8255ec5d17620d1775cc604557b8854b084d4dcd9f1225278b1",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_release-model",
+      "path": "assets/diagrams/release-model.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        936,
+        530
+      ],
+      "sha256": "555d75fb214564972b889a44fb03794e099023d1a7655b15f5299f908485fa0b",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_syllable-concept",
+      "path": "assets/diagrams/syllable-concept.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        936,
+        320
+      ],
+      "sha256": "67154929f204641569b74174b96e70e5a5548cb36b85ded636e80085e73b4a62",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    },
+    {
+      "asset_id": "D_tempo-spacing",
+      "path": "assets/diagrams/tempo-spacing.svg",
+      "entity": "Original explanatory diagram",
+      "dimensions": [
+        936,
+        460
+      ],
+      "sha256": "5a333c0b7d6d9a319bc982ea378f0c4797c5827f7af58787f1da93c670a2b1cc",
+      "rights_status": "original_educational_diagram",
+      "rights_basis": "Original deterministic drawing from explicitly documented assumptions and calculations; no third-party UI is recreated.",
+      "limitations": "Conceptual illustration or simplified calculation; not an audio measurement or a Pro-C 3 algorithm emulation.",
+      "data_source": "research/diagram_data.json",
+      "used_on_pages": "Report or page-specific carousel geometry as indicated by file name"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "page": 1,
+    "title": "合成器的前后左右",
+    "images": [
+      "assets/derived/depth-concept-ai.png"
+    ],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-01"
+  },
+  {
+    "page": 2,
+    "title": "宽，也可以很靠前",
+    "images": [],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-02"
+  },
+  {
+    "page": 3,
+    "title": "偏左，不一定是整声部左移",
+    "images": [
+      "assets/source/ableton-utility-official.png",
+      "assets/derived/utility-width-balance.png"
+    ],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-03"
+  },
+  {
+    "page": 4,
+    "title": "前后，先听干声与空间的对比",
+    "images": [],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-04"
+  },
+  {
+    "page": 5,
+    "title": "Pre-Delay 不是距离尺",
+    "images": [],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-05"
+  },
+  {
+    "page": 6,
+    "title": "开始间隔与空间线索，分开调",
+    "images": [
+      "assets/source/fabfilter-pro-r-2-maincontrols-official.jpg",
+      "assets/derived/pro-r-predelay-distance.png"
+    ],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-06"
+  },
+  {
+    "page": 7,
+    "title": "混响明暗与干湿关系，分开调",
+    "images": [
+      "assets/derived/pro-r-brightness-width-mix.png"
+    ],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-07"
+  },
+  {
+    "page": 8,
+    "title": "降推子之前，先检查发送点",
+    "images": [],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-08"
+  },
+  {
+    "page": 9,
+    "title": "给每个声部一个任务",
+    "images": [],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-09"
+  },
+  {
+    "page": 10,
+    "title": "最后，听一次真正的 Mono",
+    "images": [],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-10"
+  },
+  {
+    "page": 11,
+    "title": "别只在 Solo 里决定",
+    "images": [],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-11"
+  },
+  {
+    "page": 12,
+    "title": "完整图文与可编辑源码",
+    "images": [],
+    "composition_source": "design/production_spec.json",
+    "html_id": "page-12"
+  }
+]

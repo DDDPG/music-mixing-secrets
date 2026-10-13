@@ -1,0 +1,4 @@
+Guizang social-card export scaffold: https://github.com/op7418/guizang-social-card-skill, pinned cf4b810. seed-editorial.html retained; derivative HTML/CSS supplied under AGPL-3.0 with corresponding source.
+Noto Sans SC and Noto Sans: SIL OFL 1.1; complete original font and licenses supplied under assets/fonts.
+Waves UI: genuine official product pixels and official manual excerpt; copyright and trademarks remain with relevant rights holders. No blanket republication license has been verified. See RIGHTS.md and assets/assets.json.
+Original diagrams: conceptual signal flow and deterministic arithmetic, not measured evidence.

@@ -1,0 +1,23 @@
+{
+  "asset_hash_and_crop_integrity": "pass",
+  "font_coverage": "pass",
+  "font_metrics": "pass",
+  "pdf_text_canvas_bounds": "pass",
+  "citation_pdf_target": "pass",
+  "citation_author": "pass",
+  "math": "pass",
+  "image_dimensions": "pass",
+  "stale_state_claim_scan": "pass",
+  "model_page_coordinates": {
+    "result": "pass",
+    "maximum_error_px": 0.000499300580486306,
+    "rounding_tolerance_px": 0.01
+  },
+  "bibtex_0_99d_parse": "pass",
+  "independent_visual_review": "pass",
+  "source_zip_unpack_render": {
+    "result": "pass",
+    "pages": 9,
+    "comparison": "all nine PNGs pixel-identical to final"
+  }
+}

@@ -1,0 +1,2950 @@
+{
+  "schema_version": "3.1",
+  "status": "implementation_ready_independent_design",
+  "topic": "snare_adt_before_reverb",
+  "canvas": {
+    "width": 1080,
+    "height": 1440,
+    "preview_width": 360,
+    "text_safe_x": [
+      72,
+      1008
+    ],
+    "footer_bottom": 1426
+  },
+  "tokens": {
+    "colors": {
+      "canvas": "#ffffff",
+      "surface": "#f5f5f7",
+      "ink": "#1d1d1f",
+      "secondary": "#515154",
+      "accent": "#0066cc",
+      "comparison": "#697887",
+      "hairline": "#d2d2d7",
+      "grid": "#e5e5ea"
+    },
+    "font_family": "Noto Sans SC",
+    "latin_font": "Noto Sans",
+    "font_files": {
+      "variable": "assets/fonts/NotoSansSC-Variable.ttf",
+      "latin": "assets/fonts/NotoSans-Regular.ttf"
+    },
+    "body": 36,
+    "diagram_min": 30,
+    "caveat_min": 28,
+    "source_min": 26,
+    "letter_spacing_cjk": 0,
+    "shadow": "none",
+    "gradient": "none"
+  },
+  "coordinate_convention": {
+    "box": "[left,top,width,height] CSS pixels; text top is linebox top",
+    "text": "Explicit line breaks, preserve minimum size; reflow instead of shrinking",
+    "images": "Keep aspect ratio and original color/pixels, labels outside image",
+    "layers": "Shapes first, images second, text last; no arrow may cross essential text."
+  },
+  "source_inputs": [
+    "story/ARTICLE.md",
+    "research/RESEARCH_REPORT.md",
+    "assets/assets.json",
+    "assets/diagram_data.json"
+  ],
+  "design_reference": {
+    "primary": "immutable V3 actual HTML/spec/output; read-only",
+    "supplementary": "No new external style selected; independent story compositions"
+  },
+  "rights": {
+    "status": "genuine_vendor_images_public_republication_clearance_unverified",
+    "preserve": "assets/assets.json source/state/rights records",
+    "note": "No blanket redistribution rights inferred from citation."
+  },
+  "pages": [
+    {
+      "page": 1,
+      "title": "军鼓的空间想更宽\n先试混响前的 ADT",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "军鼓空间 · Reel ADT",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "01 / 08",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "军鼓的空间想更宽\n先试混响前的 ADT",
+          "box": [
+            72,
+            116,
+            936,
+            170
+          ],
+          "font_size": 62,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "对象：Waves 官方产品图 · © Waves Audio Ltd.",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "lead",
+          "type": "text",
+          "text": "让直达军鼓留在中心，单独调整空间支路。",
+          "box": [
+            72,
+            306,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "official_full",
+          "type": "image",
+          "path": "assets/source/reel-adt-official-product.png",
+          "box": [
+            152,
+            400,
+            776,
+            667.6
+          ],
+          "fit": "contain",
+          "alt": "Waves Abbey Road Reel ADT 官方完整界面，参数仅为展示状态",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "image_note",
+          "type": "text",
+          "text": "官方 Stereo 界面，版本未标注。\n19.98 ms、L+R、LFO 等均为展示状态，非本文设置。",
+          "box": [
+            72,
+            1094,
+            936,
+            86
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "route",
+          "type": "text",
+          "text": "Send → Reel ADT → Stereo Reverb",
+          "box": [
+            72,
+            1210,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "boundary",
+          "type": "text",
+          "text": "在独立混响返回上试；不是每条军鼓都必须加。\n路由与试听建议，未经音频实测。",
+          "box": [
+            72,
+            1290,
+            936,
+            82
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Full genuine object with a two-line purpose; no fake settings.",
+      "must_not": [
+        "Do not label the screenshot as the tutorial settings.",
+        "Do not imply the direct snare itself passes through ADT."
+      ]
+    },
+    {
+      "page": 2,
+      "title": "干声居中，空间走支路",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "军鼓空间 · Reel ADT",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "02 / 08",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "干声居中，空间走支路",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "路由示意 · 功能依据：Reel ADT User Guide / Pro-R 2 Help",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "原军鼓直达 Mix Bus；另一条 Send\n先经 Reel ADT，再进全 Wet 混响。",
+          "box": [
+            72,
+            228,
+            936,
+            112
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "snare_box",
+          "type": "rect",
+          "box": [
+            422,
+            374,
+            236,
+            88
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "snare",
+          "type": "text",
+          "text": "Snare",
+          "box": [
+            422,
+            388,
+            236,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "split_stem",
+          "type": "line",
+          "points": [
+            [
+              540,
+              462
+            ],
+            [
+              540,
+              510
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": false
+        },
+        {
+          "id": "split",
+          "type": "circle",
+          "center": [
+            540,
+            510
+          ],
+          "radius": 6,
+          "fill": "#1d1d1f",
+          "stroke": "none"
+        },
+        {
+          "id": "dry_branch",
+          "type": "line",
+          "points": [
+            [
+              540,
+              510
+            ],
+            [
+              228,
+              510
+            ],
+            [
+              228,
+              982
+            ],
+            [
+              540,
+              982
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "send_branch",
+          "type": "line",
+          "points": [
+            [
+              540,
+              510
+            ],
+            [
+              768,
+              510
+            ],
+            [
+              768,
+              586
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "dry_label",
+          "type": "text",
+          "text": "直达路径",
+          "box": [
+            270,
+            638,
+            286,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "dry_note",
+          "type": "text",
+          "text": "Dry · 居中",
+          "box": [
+            270,
+            702,
+            286,
+            54
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "send_label",
+          "type": "text",
+          "text": "Send",
+          "box": [
+            818,
+            518,
+            176,
+            54
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "adt_box",
+          "type": "rect",
+          "box": [
+            564,
+            586,
+            408,
+            138
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "adt",
+          "type": "text",
+          "text": "Reel ADT",
+          "box": [
+            588,
+            607,
+            360,
+            60
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "adt_material",
+          "type": "text",
+          "text": "SRC + ADT",
+          "box": [
+            588,
+            663,
+            360,
+            50
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "into_reverb",
+          "type": "line",
+          "points": [
+            [
+              768,
+              724
+            ],
+            [
+              768,
+              792
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "reverb_box",
+          "type": "rect",
+          "box": [
+            564,
+            792,
+            408,
+            140
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "reverb",
+          "type": "text",
+          "text": "Stereo Reverb",
+          "box": [
+            578,
+            812,
+            380,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "wet",
+          "type": "text",
+          "text": "100% Wet",
+          "box": [
+            588,
+            872,
+            360,
+            48
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "wet_return",
+          "type": "line",
+          "points": [
+            [
+              768,
+              932
+            ],
+            [
+              768,
+              982
+            ],
+            [
+              540,
+              982
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "sum_to_mix",
+          "type": "line",
+          "points": [
+            [
+              540,
+              982
+            ],
+            [
+              540,
+              1014
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "mix_box",
+          "type": "rect",
+          "box": [
+            402,
+            1014,
+            276,
+            82
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "mix",
+          "type": "text",
+          "text": "Mix Bus",
+          "box": [
+            402,
+            1028,
+            276,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "explanation",
+          "type": "rect",
+          "box": [
+            72,
+            1132,
+            936,
+            182
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 18
+        },
+        {
+          "id": "why_src",
+          "type": "text",
+          "text": "为什么还能保留 SRC？",
+          "box": [
+            104,
+            1148,
+            872,
+            56
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "src_answer",
+          "type": "text",
+          "text": "SRC 与 ADT 都是混响的输入材料。\n后面的全 Wet 混响负责只返回空间。",
+          "box": [
+            104,
+            1210,
+            872,
+            94
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "核对发送位置、声像跟随、立体声通道与延迟补偿。",
+          "box": [
+            72,
+            1334,
+            936,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Large descending dry/wet routing with separate return. Dry path ink, space path blue.",
+      "diagram_references": [
+        "assets/diagrams/parallel-routing.svg"
+      ],
+      "must_not": [
+        "SRC must not be drawn bypassing the reverb.",
+        "Do not mute SRC as a mandatory parallel-send rule."
+      ]
+    },
+    {
+      "page": 3,
+      "title": "先静态比较，再加调制",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "军鼓空间 · Reel ADT",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "03 / 08",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "先静态比较，再加调制",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "控件：Reel ADT User Guide pp.11–12 · 图片 © Waves Audio Ltd.",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "先看相对时间，再听随时间的变化。",
+          "box": [
+            72,
+            230,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "time_head",
+          "type": "text",
+          "text": "01  ADT Position",
+          "box": [
+            72,
+            300,
+            936,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "position",
+          "type": "image",
+          "path": "assets/derived/reel-adt-position.png",
+          "box": [
+            72,
+            374,
+            936,
+            212.3
+          ],
+          "fit": "contain",
+          "alt": "官方 ADT Position 时间区原像素裁切，19.98 ms 不是教程设置",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "position_caption",
+          "type": "text",
+          "text": "SRC 是时间参照；ADT Position 给出基准相对位置。\n普通组件可提前或滞后，Live 组件只能滞后。",
+          "box": [
+            72,
+            608,
+            936,
+            96
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "lfo_head",
+          "type": "text",
+          "text": "02  LFO",
+          "box": [
+            72,
+            748,
+            936,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "lfo",
+          "type": "image",
+          "path": "assets/derived/reel-adt-lfo.png",
+          "box": [
+            72,
+            824,
+            620,
+            216
+          ],
+          "fit": "contain",
+          "alt": "官方 LFO 区原像素裁切，显示±05与2 Bars",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "lfo_units",
+          "type": "text",
+          "text": "Range：ms\nRate：Hz\nSync 后：Bars",
+          "box": [
+            736,
+            834,
+            272,
+            174
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "method",
+          "type": "text",
+          "text": "先关 LFO 比较静态关系，再加少量调制。\n一次只动一个变量；Drive 也会改变音色。",
+          "box": [
+            72,
+            1080,
+            936,
+            110
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "not_recipe",
+          "type": "text",
+          "text": "截图数值仅用于认控件，非本文设置。\n手册 Quick Start 面向人声，不能当军鼓标准预设。",
+          "box": [
+            72,
+            1244,
+            936,
+            86
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Two broad genuine crops separated by numbered editorial captions; crop pixels untouched.",
+      "must_not": [
+        "Do not call 2 Bars two seconds.",
+        "Do not transfer the vocal quick-start numeric ranges into snare recommendations."
+      ]
+    },
+    {
+      "page": 4,
+      "title": "Pan 与 Level，分开听",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "军鼓空间 · Reel ADT",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "04 / 08",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "Pan 与 Level，分开听",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "功能：Reel ADT User Guide pp.7、12–13 · 图片 © Waves Audio Ltd.",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "左右位置与声部电平，是两个不同决定。",
+          "box": [
+            72,
+            230,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "src_strip",
+          "type": "image",
+          "path": "assets/derived/reel-adt-src.png",
+          "box": [
+            92,
+            352,
+            216,
+            741.7
+          ],
+          "fit": "contain",
+          "alt": "真实 SRC 控件区，包含 Pan、Drive、Mute、Level 推子",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "adt_strip",
+          "type": "image",
+          "path": "assets/derived/reel-adt-adt.png",
+          "box": [
+            368,
+            352,
+            200.8,
+            741.7
+          ],
+          "fit": "contain",
+          "alt": "真实 ADT 控件区，包含 Pan、Drive、Mute、Level 推子",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "pan_head",
+          "type": "text",
+          "text": "Pan",
+          "box": [
+            632,
+            360,
+            376,
+            60
+          ],
+          "font_size": 42,
+          "font_weight": 600,
+          "line_height": 60,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "pan_copy",
+          "type": "text",
+          "text": "摆两份材料\n在左右的位置。",
+          "box": [
+            632,
+            426,
+            376,
+            116
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "level_head",
+          "type": "text",
+          "text": "Level",
+          "box": [
+            632,
+            610,
+            376,
+            60
+          ],
+          "font_size": 42,
+          "font_weight": 600,
+          "line_height": 60,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "level_copy",
+          "type": "text",
+          "text": "下方推子决定\n两声部的平衡。",
+          "box": [
+            632,
+            676,
+            376,
+            116
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "src_head",
+          "type": "text",
+          "text": "SRC ≠ 外部 Dry",
+          "box": [
+            632,
+            860,
+            376,
+            54
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 45,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "src_copy",
+          "type": "text",
+          "text": "它未被 ADT 调制，\n但仍在插件的\n建模路径里。",
+          "box": [
+            632,
+            920,
+            376,
+            160
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caption",
+          "type": "text",
+          "text": "官方原图裁切；旋钮与推子位置不是本文建议。",
+          "box": [
+            72,
+            1136,
+            936,
+            50
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "audition_panel",
+          "type": "rect",
+          "box": [
+            72,
+            1214,
+            936,
+            128
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "audition",
+          "type": "text",
+          "text": "先只改 Pan，再只改 Level。\n带伴奏听，避免把“更大声”误判成“更宽”。",
+          "box": [
+            100,
+            1230,
+            880,
+            106
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Two long genuine channel strips plus a clean explanatory right rail; no simulated controls.",
+      "must_not": [
+        "Do not relabel Drive as Level. Level refers to the actual vertical faders.",
+        "Do not describe SRC as completely unprocessed input."
+      ]
+    },
+    {
+      "page": 5,
+      "title": "两种时间，两个任务",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "军鼓空间 · Reel ADT",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "05 / 08",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "两种时间，两个任务",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "计算示意 · ADT：Waves 手册 · Predelay：Pro-R 2 Help",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "ADT 改两份材料的相对关系；\nPredelay 改混响相对输入的起始位置。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "assumption_box",
+          "type": "rect",
+          "box": [
+            72,
+            372,
+            936,
+            94
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "assumption",
+          "type": "text",
+          "text": "计算例：ADT +12 ms · Predelay 20 ms",
+          "box": [
+            96,
+            394,
+            888,
+            56
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "time_note",
+          "type": "text",
+          "text": "共用线性时间轴；标记是理想起始参考。",
+          "box": [
+            72,
+            500,
+            936,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "dry",
+          "type": "text",
+          "text": "Dry",
+          "box": [
+            72,
+            614,
+            206,
+            52
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "src",
+          "type": "text",
+          "text": "SRC →\nReverb",
+          "box": [
+            72,
+            736,
+            206,
+            100
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "adt",
+          "type": "text",
+          "text": "ADT →\nReverb",
+          "box": [
+            72,
+            882,
+            206,
+            100
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "grid_0",
+          "type": "line",
+          "points": [
+            [
+              300,
+              594
+            ],
+            [
+              300,
+              1030
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid_10",
+          "type": "line",
+          "points": [
+            [
+              470,
+              594
+            ],
+            [
+              470,
+              1030
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid_20",
+          "type": "line",
+          "points": [
+            [
+              640,
+              594
+            ],
+            [
+              640,
+              1030
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid_30",
+          "type": "line",
+          "points": [
+            [
+              810,
+              594
+            ],
+            [
+              810,
+              1030
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid_40",
+          "type": "line",
+          "points": [
+            [
+              980,
+              594
+            ],
+            [
+              980,
+              1030
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "tick_0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            270,
+            1048,
+            60,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick_10",
+          "type": "text",
+          "text": "10",
+          "box": [
+            440,
+            1048,
+            60,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick_20",
+          "type": "text",
+          "text": "20",
+          "box": [
+            610,
+            1048,
+            60,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick_30",
+          "type": "text",
+          "text": "30",
+          "box": [
+            780,
+            1048,
+            60,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick_40",
+          "type": "text",
+          "text": "40",
+          "box": [
+            950,
+            1048,
+            60,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "lane_654",
+          "type": "line",
+          "points": [
+            [
+              300,
+              654
+            ],
+            [
+              980,
+              654
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "lane_798",
+          "type": "line",
+          "points": [
+            [
+              300,
+              798
+            ],
+            [
+              980,
+              798
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "lane_944",
+          "type": "line",
+          "points": [
+            [
+              300,
+              944
+            ],
+            [
+              980,
+              944
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "dry_event",
+          "type": "circle",
+          "center": [
+            300,
+            654
+          ],
+          "radius": 9,
+          "fill": "#1d1d1f",
+          "stroke": "none"
+        },
+        {
+          "id": "src_event",
+          "type": "circle",
+          "center": [
+            640,
+            798
+          ],
+          "radius": 9,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "adt_event",
+          "type": "circle",
+          "center": [
+            844,
+            944
+          ],
+          "radius": 9,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "dry_ms",
+          "type": "text",
+          "text": "0 ms",
+          "box": [
+            320,
+            602,
+            174,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "src_ms",
+          "type": "text",
+          "text": "20 ms",
+          "box": [
+            660,
+            746,
+            210,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "adt_ms",
+          "type": "text",
+          "text": "32 ms",
+          "box": [
+            798,
+            886,
+            210,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "axis",
+          "type": "text",
+          "text": "时间 / ms",
+          "box": [
+            800,
+            1106,
+            208,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "conclusion",
+          "type": "text",
+          "text": "20 ms 与 32 ms，间隔仍是 12 ms。",
+          "box": [
+            72,
+            1180,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "仅为算术模型，非实测或推荐参数；忽略 LFO、\n磁带建模、混响扩散及宿主延迟，不能预测首个可闻反射。",
+          "box": [
+            72,
+            1280,
+            936,
+            88
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Single large shared linear timeline; no synthetic waveforms or measured appearance.",
+      "diagram_references": [
+        "assets/diagrams/time-reference.svg"
+      ],
+      "must_not": [
+        "The 12 ms interval must remain proportional on the same axis.",
+        "Never label 20 and 32 ms as measured audio onset."
+      ]
+    },
+    {
+      "page": 6,
+      "title": "前置的左右差异，能留下吗？",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "军鼓空间 · Reel ADT",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "06 / 08",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "前置的左右差异，能留下吗？",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "依据：Reel ADT User Guide pp.8、11 / Pro-R 2 Main controls",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "Stereo 输出，不保证保留输入声像。\n先查混响怎样处理左右输入。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "a_label",
+          "type": "text",
+          "text": "A  保留输入差异的路径示意",
+          "box": [
+            72,
+            378,
+            936,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "a_l",
+          "type": "text",
+          "text": "L",
+          "box": [
+            88,
+            460,
+            64,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "a_r",
+          "type": "text",
+          "text": "R",
+          "box": [
+            88,
+            548,
+            64,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "a_left",
+          "type": "line",
+          "points": [
+            [
+              152,
+              488
+            ],
+            [
+              382,
+              488
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "a_right",
+          "type": "line",
+          "points": [
+            [
+              152,
+              576
+            ],
+            [
+              382,
+              576
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "a_proc",
+          "type": "rect",
+          "box": [
+            382,
+            450,
+            318,
+            162
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "a_algo",
+          "type": "text",
+          "text": "混响算法",
+          "box": [
+            396,
+            502,
+            290,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "a_outl",
+          "type": "line",
+          "points": [
+            [
+              700,
+              488
+            ],
+            [
+              952,
+              488
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "a_outr",
+          "type": "line",
+          "points": [
+            [
+              700,
+              576
+            ],
+            [
+              952,
+              576
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "b_label",
+          "type": "text",
+          "text": "B  先合并输入，再生成 Stereo",
+          "box": [
+            72,
+            670,
+            936,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "b_l",
+          "type": "text",
+          "text": "L",
+          "box": [
+            88,
+            746,
+            64,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "b_r",
+          "type": "text",
+          "text": "R",
+          "box": [
+            88,
+            834,
+            64,
+            50
+          ],
+          "font_size": 34,
+          "font_weight": 600,
+          "line_height": 48,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "b_left",
+          "type": "line",
+          "points": [
+            [
+              152,
+              774
+            ],
+            [
+              280,
+              774
+            ],
+            [
+              332,
+              818
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": false
+        },
+        {
+          "id": "b_right",
+          "type": "line",
+          "points": [
+            [
+              152,
+              862
+            ],
+            [
+              280,
+              862
+            ],
+            [
+              332,
+              818
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 4,
+          "end_arrow": false
+        },
+        {
+          "id": "b_sum",
+          "type": "circle",
+          "center": [
+            332,
+            818
+          ],
+          "radius": 10,
+          "fill": "#1d1d1f",
+          "stroke": "none"
+        },
+        {
+          "id": "b_in",
+          "type": "line",
+          "points": [
+            [
+              342,
+              818
+            ],
+            [
+              442,
+              818
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "b_proc",
+          "type": "rect",
+          "box": [
+            442,
+            744,
+            298,
+            154
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "b_algo",
+          "type": "text",
+          "text": "混响算法",
+          "box": [
+            452,
+            794,
+            278,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "b_out1",
+          "type": "line",
+          "points": [
+            [
+              740,
+              800
+            ],
+            [
+              952,
+              774
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "b_out2",
+          "type": "line",
+          "points": [
+            [
+              740,
+              840
+            ],
+            [
+              952,
+              862
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "b_note",
+          "type": "text",
+          "text": "后端仍可产生宽尾音；ADT 的时间与音色变化\n也可能影响结果，不能因此说它完全无效。",
+          "box": [
+            72,
+            952,
+            936,
+            104
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "specific",
+          "type": "text",
+          "text": "Pro-R 2 的 Stereo Width 会改变内部交叉馈送。\n不能把它的百分比套用到其他混响。",
+          "box": [
+            72,
+            1090,
+            936,
+            96
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "input_note",
+          "type": "rect",
+          "box": [
+            72,
+            1230,
+            936,
+            128
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "input_copy",
+          "type": "text",
+          "text": "已有 Stereo 鼓源？先核对 Reel ADT Input Source。\n它可选 L、R 或 (L+R)/2；本篇以单声道军鼓为起点。",
+          "box": [
+            98,
+            1248,
+            884,
+            100
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Two asymmetric conceptual routes at readable scale with source-specific input caveat.",
+      "must_not": [
+        "Do not claim every stereo reverb works like path A.",
+        "These are conceptual routing categories, not literal Pro-R 2 DSP diagrams.",
+        "Do not imply ADT becomes entirely ineffective if inputs are summed."
+      ]
+    },
+    {
+      "page": 7,
+      "title": "宽了之后，还要听 Mono",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "军鼓空间 · Reel ADT",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "07 / 08",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "宽了之后，还要听 Mono",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "风险为理想模型 · 监听流程为本文建议 · 非插件实测",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "先尽量匹配响度，再按这三步听。",
+          "box": [
+            72,
+            230,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "nbox1",
+          "type": "rect",
+          "box": [
+            72,
+            330,
+            72,
+            72
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 36
+        },
+        {
+          "id": "nbox2",
+          "type": "rect",
+          "box": [
+            72,
+            526,
+            72,
+            72
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 36
+        },
+        {
+          "id": "nbox3",
+          "type": "rect",
+          "box": [
+            72,
+            722,
+            72,
+            72
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 36
+        },
+        {
+          "id": "n1",
+          "type": "text",
+          "text": "1",
+          "box": [
+            72,
+            340,
+            72,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "s1",
+          "type": "text",
+          "text": "返回 Solo",
+          "box": [
+            184,
+            326,
+            824,
+            60
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "d1",
+          "type": "text",
+          "text": "听返回音色、调制晃动和串音。",
+          "box": [
+            184,
+            398,
+            824,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "n2",
+          "type": "text",
+          "text": "2",
+          "box": [
+            72,
+            536,
+            72,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "s2",
+          "type": "text",
+          "text": "整首歌 Stereo",
+          "box": [
+            184,
+            522,
+            824,
+            60
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "d2",
+          "type": "text",
+          "text": "听中心是否清楚，尾音是否遮住下一拍。",
+          "box": [
+            184,
+            594,
+            824,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "n3",
+          "type": "text",
+          "text": "3",
+          "box": [
+            72,
+            732,
+            72,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "s3",
+          "type": "text",
+          "text": "整首歌 Mono",
+          "box": [
+            184,
+            718,
+            824,
+            60
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "d3",
+          "type": "text",
+          "text": "在链路后级合并 L + R，听中心与平衡。\n只听左声道不算 Mono 检查。",
+          "box": [
+            184,
+            790,
+            824,
+            108
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "section_rule",
+          "type": "line",
+          "points": [
+            [
+              72,
+              950
+            ],
+            [
+              1008,
+              950
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "risk_head",
+          "type": "text",
+          "text": "为什么短时间差也要检查？",
+          "box": [
+            72,
+            982,
+            936,
+            58
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "risk",
+          "type": "text",
+          "text": "等幅、同极性、固定延迟 12 ms 的两路相加：\n理想首个陷波为 41.67 Hz，间隔 83.33 Hz。",
+          "box": [
+            72,
+            1056,
+            936,
+            100
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "model_scope",
+          "type": "text",
+          "text": "这不是 Reel ADT 实测，也不包含混响。真实调制、\n电平差与建模会改变结果；不能据此预测军鼓缺哪段频率。",
+          "box": [
+            72,
+            1172,
+            936,
+            86
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "stop",
+          "type": "text",
+          "text": "降低返回量或 ADT 声部；仍无收益，就回退。",
+          "box": [
+            72,
+            1300,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Dominant practical listening sequence; mathematical risk compressed into a grounded note, full curve stays in report.",
+      "diagram_references": [
+        "assets/diagrams/comb-response.svg"
+      ],
+      "must_not": [
+        "Do not call the comb example measured or a fixed 12 ms forbidden setting.",
+        "Reel ADT Monitor Mono alone is not a complete-chain mono check."
+      ]
+    },
+    {
+      "page": 8,
+      "title": "完整图文与可编辑源码",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "军鼓空间 · Reel ADT",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "08 / 08",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "完整图文与可编辑源码",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "Kangdi Wang · 阅读 · 核对 · 复用",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "summary",
+          "type": "text",
+          "text": "中心清楚，空间合适；只保留能听出价值的处理。",
+          "box": [
+            72,
+            234,
+            936,
+            60
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "repo_accent",
+          "type": "line",
+          "points": [
+            [
+              72,
+              338
+            ],
+            [
+              72,
+              454
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 5,
+          "end_arrow": false
+        },
+        {
+          "id": "host",
+          "type": "text",
+          "text": "github.com / DDDPG",
+          "box": [
+            98,
+            334,
+            910,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "href": "https://github.com/DDDPG/music-mixing-secrets"
+        },
+        {
+          "id": "repo",
+          "type": "text",
+          "text": "music-mixing-secrets ↗",
+          "box": [
+            98,
+            390,
+            910,
+            60
+          ],
+          "font_size": 40,
+          "font_weight": 400,
+          "line_height": 57,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "href": "https://github.com/DDDPG/music-mixing-secrets"
+        },
+        {
+          "id": "citation_panel",
+          "type": "rect",
+          "box": [
+            72,
+            514,
+            936,
+            620
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 20
+        },
+        {
+          "id": "bib_label",
+          "type": "text",
+          "text": "BIBTEX",
+          "box": [
+            108,
+            546,
+            760,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "year_label",
+          "type": "text",
+          "text": "2026",
+          "box": [
+            864,
+            546,
+            108,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#0066cc",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "bib_rule",
+          "type": "line",
+          "points": [
+            [
+              108,
+              610
+            ],
+            [
+              972,
+              610
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "bibtex",
+          "type": "text",
+          "text": "@misc{wang2026musicmixingsecrets,\n  author = {Kangdi, Wang},\n  title = {Music Mixing Secrets},\n  year = {2026},\n  url = {https://github.com/DDDPG/}\n      # {music-mixing-secrets}\n}",
+          "box": [
+            108,
+            640,
+            864,
+            470
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 64,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_note",
+          "type": "text",
+          "text": "具体技术结论请同时核对 Waves 与 FabFilter 原文。\n仓库引用不代替一手来源或图片许可。",
+          "box": [
+            72,
+            1180,
+            936,
+            100
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "scope_note",
+          "type": "text",
+          "text": "完整资料与源文件以仓库实际内容为准。",
+          "box": [
+            72,
+            1304,
+            936,
+            48
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Theme-adapted citation ending; exact BibTeX in real HTML text; repository link retained.",
+      "links": [
+        {
+          "box": [
+            98,
+            334,
+            910,
+            118
+          ],
+          "url": "https://github.com/DDDPG/music-mixing-secrets"
+        }
+      ],
+      "must_not": [
+        "Do not invent topic URLs or QR codes before publication.",
+        "Scope citation h1/pre styles; no global selectors spilling over."
+      ]
+    }
+  ],
+  "qa_requirements": [
+    "Read every 1080×1440 and 360×480 page.",
+    "Check all text exact metrics; no auto shrinking.",
+    "Confirm full screenshot and crops remain genuine.",
+    "Check dry/space routing, 0/20/32 ms coordinates, model caveat, Input Source caveat.",
+    "Verify exact author {Kangdi, Wang}, BibTeX syntax and PDF URL.",
+    "Keep source/reference/rights disclosures in package."
+  ],
+  "author": "Kangdi Wang"
+}

@@ -1,0 +1,4039 @@
+{
+  "schema_version": "3.1",
+  "status": "implementation_ready_independent_design",
+  "topic": "synth_stage_placement",
+  "canvas": {
+    "width": 1080,
+    "height": 1440,
+    "preview_width": 360,
+    "text_safe_x": [
+      72,
+      1008
+    ],
+    "footer_bottom": 1426
+  },
+  "tokens": {
+    "colors": {
+      "canvas": "#ffffff",
+      "surface": "#f5f5f7",
+      "ink": "#1d1d1f",
+      "secondary": "#515154",
+      "accent": "#0066cc",
+      "comparison": "#697887",
+      "hairline": "#d2d2d7",
+      "grid": "#e5e5ea"
+    },
+    "font_family": "Noto Sans SC",
+    "latin_font": "Noto Sans",
+    "font_files": {
+      "variable": "assets/fonts/NotoSansSC-Variable.ttf",
+      "latin": "assets/fonts/NotoSans-Regular.ttf"
+    },
+    "body": 36,
+    "diagram_min": 30,
+    "caveat_min": 28,
+    "source_min": 26,
+    "letter_spacing_cjk": 0,
+    "shadow": "none",
+    "gradient": "none"
+  },
+  "coordinate_convention": {
+    "box": "[left,top,width,height] CSS pixels; text top is linebox top",
+    "text": "Explicit line breaks, preserve minimum size; reflow instead of shrinking",
+    "images": "Keep aspect ratio and original color/pixels, labels outside image",
+    "layers": "Shapes first, images second, text last; no arrow may cross essential text."
+  },
+  "source_inputs": [
+    "RESEARCH_REPORT.md",
+    "research/story.md",
+    "assets.json",
+    "research/data.json"
+  ],
+  "design_reference": {
+    "primary": "immutable V3 actual HTML/spec/output; read-only",
+    "supplementary": "No new external style selected; independent story compositions"
+  },
+  "rights": {
+    "status": "genuine_vendor_educational_reference_no_general_public_license; AI_concept_labelled",
+    "preserve": "assets/assets.json source/state/rights records",
+    "note": "No blanket redistribution rights inferred from citation."
+  },
+  "qa_requirements": [
+    "Read all full pages and all 360px previews.",
+    "Check genuine crops preserve ratio/state/pixels and AI image is explicitly conceptual.",
+    "Check −36…0 dBFS axis, 12/6 dB differences and +6 dB amplitude doubling.",
+    "Check 10/40 ms shared scale and 480/1920 samples at48kHz.",
+    "Check split after fader and full wet return; no arrows cross text.",
+    "Check Mono algebra and labels, exact BibTeX author and PDF link.",
+    "No automatic shrinking; reflow any title or long label."
+  ],
+  "author": "Kangdi Wang",
+  "pages": [
+    {
+      "page": 1,
+      "title": "合成器的前后左右",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "01 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "合成器的前后左右",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 62,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "概念依据：Ableton / Apple / iZotope · 无音频实测",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "subtitle",
+          "type": "text",
+          "text": "先分清位置、宽度与深度",
+          "box": [
+            72,
+            228,
+            936,
+            64
+          ],
+          "font_size": 42,
+          "font_weight": 600,
+          "line_height": 60,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "lead",
+          "type": "text",
+          "text": "先安排音乐角色，再决定怎样摆空间。",
+          "box": [
+            72,
+            316,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "concept",
+          "type": "image",
+          "path": "assets/derived/depth-concept-ai.png",
+          "box": [
+            72,
+            424,
+            936,
+            624
+          ],
+          "fit": "contain",
+          "alt": "AI 概念插画：清晰蓝色前景与柔化灰色背景，非音频证据",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "caption",
+          "type": "text",
+          "text": "AI 概念插画，非音频、声波或物理声场。",
+          "box": [
+            72,
+            1074,
+            936,
+            48
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "roles",
+          "type": "text",
+          "text": "主旋律要清楚 · 铺底要支撑 · 琶音要有位置",
+          "box": [
+            72,
+            1156,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "boundary",
+          "type": "text",
+          "text": "分工可以随段落改变。\n不是让每个声部都最响、最亮、最宽。",
+          "box": [
+            72,
+            1260,
+            936,
+            104
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Concept image supports the depth metaphor; evidence label stays adjacent.",
+      "must_not": [
+        "AI art is not audio, waveform, measurement or physical sound-field rendering."
+      ]
+    },
+    {
+      "page": 2,
+      "title": "宽，也可以很靠前",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "02 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "宽，也可以很靠前",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "感知示意：Ableton / Apple / iZotope · 无距离或参数映射",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "居中不等于靠前，窄也不等于靠后。\n三个问题，分别做决定。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "pan_head",
+          "type": "text",
+          "text": "Pan",
+          "box": [
+            72,
+            404,
+            240,
+            60
+          ],
+          "font_size": 44,
+          "font_weight": 600,
+          "line_height": 62,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "pan_sub",
+          "type": "text",
+          "text": "横向位置",
+          "box": [
+            72,
+            472,
+            240,
+            54
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "pan_axis",
+          "type": "line",
+          "points": [
+            [
+              364,
+              448
+            ],
+            [
+              964,
+              448
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 3,
+          "end_arrow": false
+        },
+        {
+          "id": "pan_dot",
+          "type": "circle",
+          "center": [
+            532,
+            448
+          ],
+          "radius": 16,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "left",
+          "type": "text",
+          "text": "L",
+          "box": [
+            350,
+            490,
+            80,
+            50
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "right",
+          "type": "text",
+          "text": "R",
+          "box": [
+            916,
+            490,
+            80,
+            50
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "width_head",
+          "type": "text",
+          "text": "Width",
+          "box": [
+            72,
+            624,
+            240,
+            60
+          ],
+          "font_size": 44,
+          "font_weight": 600,
+          "line_height": 62,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "width_sub",
+          "type": "text",
+          "text": "展开范围",
+          "box": [
+            72,
+            692,
+            240,
+            54
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "narrow",
+          "type": "line",
+          "points": [
+            [
+              590,
+              660
+            ],
+            [
+              738,
+              660
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 10,
+          "end_arrow": false
+        },
+        {
+          "id": "wide",
+          "type": "line",
+          "points": [
+            [
+              388,
+              744
+            ],
+            [
+              940,
+              744
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 10,
+          "end_arrow": false
+        },
+        {
+          "id": "width_center",
+          "type": "line",
+          "points": [
+            [
+              664,
+              622
+            ],
+            [
+              664,
+              790
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "narrow_label",
+          "type": "text",
+          "text": "窄",
+          "box": [
+            790,
+            628,
+            190,
+            54
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "wide_label",
+          "type": "text",
+          "text": "宽",
+          "box": [
+            790,
+            762,
+            190,
+            54
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "depth_head",
+          "type": "text",
+          "text": "Depth",
+          "box": [
+            72,
+            884,
+            240,
+            60
+          ],
+          "font_size": 44,
+          "font_weight": 600,
+          "line_height": 62,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "depth_sub",
+          "type": "text",
+          "text": "前后层次",
+          "box": [
+            72,
+            952,
+            240,
+            54
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "cues",
+          "type": "text",
+          "text": "电平\n相对空间量\n频谱与起音",
+          "box": [
+            378,
+            876,
+            630,
+            186
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 62,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "takeaway",
+          "type": "rect",
+          "box": [
+            72,
+            1150,
+            936,
+            172
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "key",
+          "type": "text",
+          "text": "Depth 是多种线索形成的听感。\n这里没有米数，也没有通用的“远近坐标”。",
+          "box": [
+            100,
+            1174,
+            880,
+            126
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Pan position, width extent and depth cue list are deliberately different visual forms.",
+      "diagram_references": [
+        "assets/diagrams/three-decisions.svg"
+      ],
+      "must_not": [
+        "Do not draw Depth as a calibrated horizontal or physical distance axis."
+      ]
+    },
+    {
+      "page": 3,
+      "title": "偏左，不一定是整声部左移",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "03 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "偏左，不一定是整声部左移",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "控件：Ableton Live 12 Utility · Pan 模式：Ableton / Apple",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "Stereo 的 Balance 通常改 L/R 相对电平。\n右边独有的内容，可能只是变小了。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "utility_full",
+          "type": "image",
+          "path": "assets/source/ableton-utility-official.png",
+          "box": [
+            84,
+            398,
+            286,
+            384
+          ],
+          "fit": "contain",
+          "alt": "Ableton Live 12 官方 Utility 完整图，Width 100%、Balance C",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "utility_crop",
+          "type": "image",
+          "path": "assets/derived/utility-width-balance.png",
+          "box": [
+            450,
+            420,
+            526,
+            354
+          ],
+          "fit": "contain",
+          "alt": "Utility Width 与 Balance 真实原像素裁切，等比放大",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "ui_caption",
+          "type": "text",
+          "text": "官方手册图：Width 100%、Balance C；不是推荐设置。\n完整软件版本未显示，原图与裁切均未改参数。",
+          "box": [
+            72,
+            824,
+            936,
+            88
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "pan_rule",
+          "type": "text",
+          "text": "要移动两路输入的摆位",
+          "box": [
+            72,
+            960,
+            936,
+            58
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "pan_copy",
+          "type": "text",
+          "text": "先核对 DAW 的 Stereo Pan 或左右独立 Pan。\n不要把所有叫 Pan 的控件当成同一种算法。",
+          "box": [
+            72,
+            1030,
+            936,
+            108
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 50,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "width_note",
+          "type": "rect",
+          "box": [
+            72,
+            1200,
+            936,
+            150
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "width_copy",
+          "type": "text",
+          "text": "Utility：Width 0% 合为 Mono，100% 是原宽度参考。\n这个百分比定义，不能跨插件照抄。",
+          "box": [
+            98,
+            1220,
+            884,
+            112
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Native complete object beside a larger exact crop, then routing distinction in full-width prose.",
+      "must_not": [
+        "Do not imply Bass Mono is enabled because 120 Hz is displayed.",
+        "Do not relabel Balance as stereo source translation."
+      ]
+    },
+    {
+      "page": 4,
+      "title": "前后，先听干声与空间的对比",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "04 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "前后，先听干声与空间的对比",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "人为构造的 RMS 支路读数 · 代数可复核，非录音测量",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "湿声（Wet）相对更多，可能更退后，也可能更糊。\n还要听干声电平、频谱和起音。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "condition",
+          "type": "text",
+          "text": "同源、同窗、同一标尺；RMS = 均方根",
+          "box": [
+            72,
+            380,
+            936,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "grid-36",
+          "type": "line",
+          "points": [
+            [
+              328,
+              464
+            ],
+            [
+              328,
+              914
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid-30",
+          "type": "line",
+          "points": [
+            [
+              430,
+              464
+            ],
+            [
+              430,
+              914
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid-24",
+          "type": "line",
+          "points": [
+            [
+              532,
+              464
+            ],
+            [
+              532,
+              914
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid-18",
+          "type": "line",
+          "points": [
+            [
+              634,
+              464
+            ],
+            [
+              634,
+              914
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid-12",
+          "type": "line",
+          "points": [
+            [
+              736,
+              464
+            ],
+            [
+              736,
+              914
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid-6",
+          "type": "line",
+          "points": [
+            [
+              838,
+              464
+            ],
+            [
+              838,
+              914
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid0",
+          "type": "line",
+          "points": [
+            [
+              940,
+              464
+            ],
+            [
+              940,
+              914
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "A",
+          "type": "text",
+          "text": "A",
+          "box": [
+            72,
+            514,
+            64,
+            60
+          ],
+          "font_size": 42,
+          "font_weight": 600,
+          "line_height": 60,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "dryA",
+          "type": "text",
+          "text": "Dry 干声",
+          "box": [
+            164,
+            472,
+            154,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "wetA",
+          "type": "text",
+          "text": "Wet 湿声",
+          "box": [
+            164,
+            564,
+            154,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "dryAb",
+          "type": "line",
+          "points": [
+            [
+              328,
+              508
+            ],
+            [
+              634,
+              508
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 11,
+          "end_arrow": false
+        },
+        {
+          "id": "wetAb",
+          "type": "line",
+          "points": [
+            [
+              328,
+              600
+            ],
+            [
+              430,
+              600
+            ]
+          ],
+          "stroke": "#697887",
+          "stroke_width": 11,
+          "end_arrow": false
+        },
+        {
+          "id": "dryAv",
+          "type": "text",
+          "text": "−18",
+          "box": [
+            654,
+            476,
+            250,
+            56
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "wetAv",
+          "type": "text",
+          "text": "−30",
+          "box": [
+            450,
+            568,
+            250,
+            56
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "B",
+          "type": "text",
+          "text": "B",
+          "box": [
+            72,
+            756,
+            64,
+            60
+          ],
+          "font_size": 42,
+          "font_weight": 600,
+          "line_height": 60,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "dryB",
+          "type": "text",
+          "text": "Dry 干声",
+          "box": [
+            164,
+            714,
+            154,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "wetB",
+          "type": "text",
+          "text": "Wet 湿声",
+          "box": [
+            164,
+            806,
+            154,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "dryBb",
+          "type": "line",
+          "points": [
+            [
+              328,
+              750
+            ],
+            [
+              634,
+              750
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 11,
+          "end_arrow": false
+        },
+        {
+          "id": "wetBb",
+          "type": "line",
+          "points": [
+            [
+              328,
+              842
+            ],
+            [
+              532,
+              842
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 11,
+          "end_arrow": false
+        },
+        {
+          "id": "dryBv",
+          "type": "text",
+          "text": "−18",
+          "box": [
+            654,
+            718,
+            250,
+            56
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "wetBv",
+          "type": "text",
+          "text": "−24",
+          "box": [
+            552,
+            810,
+            250,
+            56
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick-36",
+          "type": "text",
+          "text": "−36",
+          "box": [
+            290,
+            932,
+            76,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick-30",
+          "type": "text",
+          "text": "−30",
+          "box": [
+            392,
+            932,
+            76,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick-24",
+          "type": "text",
+          "text": "−24",
+          "box": [
+            494,
+            932,
+            76,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick-18",
+          "type": "text",
+          "text": "−18",
+          "box": [
+            596,
+            932,
+            76,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick-12",
+          "type": "text",
+          "text": "−12",
+          "box": [
+            698,
+            932,
+            76,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick-6",
+          "type": "text",
+          "text": "−6",
+          "box": [
+            800,
+            932,
+            76,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            902,
+            932,
+            76,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "unit",
+          "type": "text",
+          "text": "dBFS RMS",
+          "box": [
+            782,
+            1000,
+            226,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "result",
+          "type": "text",
+          "text": "干湿差：12 dB → 6 dB\nWet 的 RMS 幅度约 ×2",
+          "box": [
+            72,
+            1060,
+            936,
+            124
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 58,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "非房间 DRR（直达/混响能量比），不能换算距离。\n也不能推断听感倍数；总 RMS 还受两路相关性影响。\n两个 dBFS 读数不能直接相加。",
+          "box": [
+            72,
+            1236,
+            936,
+            126
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Four horizontal readings on the same dBFS RMS axis; no invented meters or audio trace.",
+      "diagram_references": [
+        "assets/diagrams/dry-wet-example.svg"
+      ],
+      "must_not": [
+        "RMS amplitude ×2 does not mean distance ×2 or perceived loudness ×2."
+      ]
+    },
+    {
+      "page": 5,
+      "title": "Pre-Delay 不是距离尺",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "05 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "Pre-Delay 不是距离尺",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "定义：Ableton / FabFilter · 样本数为本文换算，非实测",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "主体可以先出现，空间随后跟上。\n拉长间隔可能更清楚，也可能出现分离感。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "plot_note",
+          "type": "text",
+          "text": "只标混响开始时间，不画衰减长度。",
+          "box": [
+            72,
+            382,
+            936,
+            50
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "grid0",
+          "type": "line",
+          "points": [
+            [
+              282.0,
+              464
+            ],
+            [
+              282.0,
+              892
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid10",
+          "type": "line",
+          "points": [
+            [
+              351.0,
+              464
+            ],
+            [
+              351.0,
+              892
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid25",
+          "type": "line",
+          "points": [
+            [
+              454.5,
+              464
+            ],
+            [
+              454.5,
+              892
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid40",
+          "type": "line",
+          "points": [
+            [
+              558.0,
+              464
+            ],
+            [
+              558.0,
+              892
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid60",
+          "type": "line",
+          "points": [
+            [
+              696.0,
+              464
+            ],
+            [
+              696.0,
+              892
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid80",
+          "type": "line",
+          "points": [
+            [
+              834.0,
+              464
+            ],
+            [
+              834.0,
+              892
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "grid100",
+          "type": "line",
+          "points": [
+            [
+              972.0,
+              464
+            ],
+            [
+              972.0,
+              892
+            ]
+          ],
+          "stroke": "#e5e5ea",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "a",
+          "type": "text",
+          "text": "10 ms",
+          "box": [
+            72,
+            504,
+            174,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "b",
+          "type": "text",
+          "text": "40 ms",
+          "box": [
+            72,
+            724,
+            174,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "lane_a",
+          "type": "line",
+          "points": [
+            [
+              282,
+              554
+            ],
+            [
+              972,
+              554
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "lane_b",
+          "type": "line",
+          "points": [
+            [
+              282,
+              774
+            ],
+            [
+              972,
+              774
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "dry1",
+          "type": "circle",
+          "center": [
+            282,
+            554
+          ],
+          "radius": 8,
+          "fill": "#1d1d1f",
+          "stroke": "none"
+        },
+        {
+          "id": "dry2",
+          "type": "circle",
+          "center": [
+            282,
+            774
+          ],
+          "radius": 8,
+          "fill": "#1d1d1f",
+          "stroke": "none"
+        },
+        {
+          "id": "wet1",
+          "type": "circle",
+          "center": [
+            351,
+            554
+          ],
+          "radius": 10,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "wet2",
+          "type": "circle",
+          "center": [
+            558,
+            774
+          ],
+          "radius": 10,
+          "fill": "#697887",
+          "stroke": "none"
+        },
+        {
+          "id": "dry1_label",
+          "type": "text",
+          "text": "Dry",
+          "box": [
+            250,
+            604,
+            108,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "dry2_label",
+          "type": "text",
+          "text": "Dry",
+          "box": [
+            250,
+            824,
+            108,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "wet1_label",
+          "type": "text",
+          "text": "Wet 开始",
+          "box": [
+            372,
+            500,
+            400,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "wet2_label",
+          "type": "text",
+          "text": "Wet 开始",
+          "box": [
+            580,
+            720,
+            400,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#697887",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick0",
+          "type": "text",
+          "text": "0",
+          "box": [
+            246.0,
+            920,
+            72,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick10",
+          "type": "text",
+          "text": "10",
+          "box": [
+            315.0,
+            920,
+            72,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick25",
+          "type": "text",
+          "text": "25",
+          "box": [
+            418.5,
+            920,
+            72,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick40",
+          "type": "text",
+          "text": "40",
+          "box": [
+            522.0,
+            920,
+            72,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick60",
+          "type": "text",
+          "text": "60",
+          "box": [
+            660.0,
+            920,
+            72,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick80",
+          "type": "text",
+          "text": "80",
+          "box": [
+            798.0,
+            920,
+            72,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "tick100",
+          "type": "text",
+          "text": "100",
+          "box": [
+            936.0,
+            920,
+            72,
+            46
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "unit",
+          "type": "text",
+          "text": "时间 / ms",
+          "box": [
+            808,
+            982,
+            200,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "conversion",
+          "type": "text",
+          "text": "48 kHz：10 ms = 480 samples\n               40 ms = 1920 samples",
+          "box": [
+            72,
+            1072,
+            936,
+            118
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "caveat",
+          "type": "text",
+          "text": "人工时间示意，非脉冲响应或远近配方。\n快速琶音 若出现松散的第二次起音，就尝试缩短。",
+          "box": [
+            72,
+            1260,
+            936,
+            100
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Two onset rows share one linear ms scale; markers show beginnings only, not fake reverb envelopes.",
+      "diagram_references": [
+        "assets/diagrams/predelay-timeline.svg"
+      ]
+    },
+    {
+      "page": 6,
+      "title": "开始间隔与空间线索，分开调",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "06 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "开始间隔与空间线索，分开调",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "FabFilter Pro-R 2 官方帮助图 · © FabFilter",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "先在真实界面定位 PREDELAY 与 DISTANCE。",
+          "box": [
+            72,
+            230,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "pro_r_overview",
+          "type": "image",
+          "path": "assets/source/fabfilter-pro-r-2-maincontrols-official.jpg",
+          "box": [
+            72,
+            338,
+            936,
+            188.6
+          ],
+          "fit": "contain",
+          "alt": "FabFilter Pro-R 2 官方主控条，Vintage Hall 预置",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "state",
+          "type": "text",
+          "text": "官方图：Vintage / Vintage Hall / 3.20 s。\n只找控件，不抄参数；未显示的数值不能从角度猜。",
+          "box": [
+            72,
+            560,
+            936,
+            92
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "time_distance_crop",
+          "type": "image",
+          "path": "assets/derived/pro-r-predelay-distance.png",
+          "box": [
+            72,
+            704,
+            936,
+            307.6
+          ],
+          "fit": "contain",
+          "alt": "真实 PREDELAY、CHARACTER、THICKNESS、DISTANCE 控件局部",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "predelay_head",
+          "type": "text",
+          "text": "PREDELAY",
+          "box": [
+            72,
+            1052,
+            432,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "predelay_body",
+          "type": "text",
+          "text": "调原声与混响\n开始的间隔。",
+          "box": [
+            72,
+            1116,
+            432,
+            104
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "distance_head",
+          "type": "text",
+          "text": "DISTANCE",
+          "box": [
+            560,
+            1052,
+            448,
+            54
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "distance_body",
+          "type": "text",
+          "text": "调该算法的空间线索，\n不是米数。",
+          "box": [
+            560,
+            1116,
+            448,
+            104
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "specific_warning",
+          "type": "text",
+          "text": "Pro-R 2 低 Distance 时，早期反射反而更突出、更亮。\n反射更响，不能通用地等于“更远”。",
+          "box": [
+            72,
+            1280,
+            936,
+            92
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Whole control strip for identity, then one much larger genuine crop with two readable definitions.",
+      "must_not": [
+        "Do not infer hidden knob values from angles.",
+        "Do not translate Distance to meters."
+      ]
+    },
+    {
+      "page": 7,
+      "title": "混响明暗与干湿关系，分开调",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "07 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "混响明暗与干湿关系，分开调",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "控件定义：FabFilter Pro-R 2 Help · 图片 © FabFilter",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "改混响的音色，不等于改合成器干声。",
+          "box": [
+            72,
+            230,
+            936,
+            62
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "brightness_mix_crop",
+          "type": "image",
+          "path": "assets/derived/pro-r-brightness-width-mix.png",
+          "box": [
+            72,
+            366,
+            936,
+            306.3
+          ],
+          "fit": "contain",
+          "alt": "真实 BRIGHTNESS、WIDTH、DUCKING、MIX 控件局部",
+          "preserve_original_pixels": true
+        },
+        {
+          "id": "state_note",
+          "type": "text",
+          "text": "官方图裁切，保留原色与状态；不是本篇试验工程。",
+          "box": [
+            72,
+            708,
+            936,
+            50
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "bright_head",
+          "type": "text",
+          "text": "BRIGHTNESS",
+          "box": [
+            72,
+            808,
+            936,
+            58
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "bright_copy",
+          "type": "text",
+          "text": "混响明暗平衡。干声是否太亮，要另外判断。",
+          "box": [
+            72,
+            878,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "mix_head",
+          "type": "text",
+          "text": "MIX",
+          "box": [
+            72,
+            998,
+            936,
+            58
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "mix_copy",
+          "type": "text",
+          "text": "最终干湿关系。常规并行 Return 上设 100%，\n再用 Send / Return 电平控制空间量。",
+          "box": [
+            72,
+            1068,
+            936,
+            110
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 52,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "width_panel",
+          "type": "rect",
+          "box": [
+            72,
+            1242,
+            936,
+            124
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#f5f5f7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "width_copy",
+          "type": "text",
+          "text": "图中 WIDTH 是这个混响的宽度控制，含内部声道联动。\n不要把它当成 Utility Width 的同一套百分比。",
+          "box": [
+            98,
+            1258,
+            884,
+            96
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "One broad genuine crop, two vertically spaced explanations, one product-specific Width note.",
+      "must_not": [
+        "Do not present DUCKING as adjusted or tested.",
+        "Do not apply Utility Width percentage semantics to Pro-R 2."
+      ]
+    },
+    {
+      "page": 8,
+      "title": "降推子之前，先检查发送点",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "08 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "降推子之前，先检查发送点",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "条件推导：Post-Fader、近似线性与静态处理 · 非音频测量",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "Post-Fader 发送时，推子变小，\n干声和送往混响的信号通常一起变小。",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "synth_box",
+          "type": "rect",
+          "box": [
+            72,
+            422,
+            190,
+            90
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "synth",
+          "type": "text",
+          "text": "Synth",
+          "box": [
+            72,
+            442,
+            190,
+            56
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "to_fader",
+          "type": "line",
+          "points": [
+            [
+              262,
+              467
+            ],
+            [
+              362,
+              467
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "fader_box",
+          "type": "rect",
+          "box": [
+            362,
+            422,
+            258,
+            90
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "fader",
+          "type": "text",
+          "text": "轨道推子",
+          "box": [
+            362,
+            442,
+            258,
+            56
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "after_fader",
+          "type": "line",
+          "points": [
+            [
+              620,
+              467
+            ],
+            [
+              710,
+              467
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": false
+        },
+        {
+          "id": "post_split",
+          "type": "circle",
+          "center": [
+            710,
+            467
+          ],
+          "radius": 7,
+          "fill": "#1d1d1f",
+          "stroke": "none"
+        },
+        {
+          "id": "dry_to_out",
+          "type": "line",
+          "points": [
+            [
+              710,
+              467
+            ],
+            [
+              806,
+              467
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "out_box",
+          "type": "rect",
+          "box": [
+            806,
+            422,
+            202,
+            90
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "out",
+          "type": "text",
+          "text": "总输出",
+          "box": [
+            806,
+            442,
+            202,
+            56
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "send_down",
+          "type": "line",
+          "points": [
+            [
+              710,
+              467
+            ],
+            [
+              710,
+              648
+            ],
+            [
+              426,
+              648
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "post_label",
+          "type": "text",
+          "text": "Post-Fader Send",
+          "box": [
+            420,
+            558,
+            270,
+            54
+          ],
+          "font_size": 32,
+          "font_weight": 600,
+          "line_height": 45,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "reverb_box",
+          "type": "rect",
+          "box": [
+            72,
+            600,
+            354,
+            132
+          ],
+          "fill": "#ffffff",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 16
+        },
+        {
+          "id": "reverb",
+          "type": "text",
+          "text": "Reverb",
+          "box": [
+            86,
+            610,
+            326,
+            54
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "wet",
+          "type": "text",
+          "text": "100% Wet",
+          "box": [
+            86,
+            670,
+            326,
+            50
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#0066cc",
+          "align": "center",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "return_out",
+          "type": "line",
+          "points": [
+            [
+              248,
+              732
+            ],
+            [
+              248,
+              826
+            ],
+            [
+              906,
+              826
+            ],
+            [
+              906,
+              512
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "return",
+          "type": "text",
+          "text": "Return",
+          "box": [
+            640,
+            838,
+            328,
+            50
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "minus6",
+          "type": "text",
+          "text": "推子 −6 dB",
+          "box": [
+            72,
+            940,
+            936,
+            60
+          ],
+          "font_size": 42,
+          "font_weight": 600,
+          "line_height": 60,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "both",
+          "type": "text",
+          "text": "→ 干声与混响输入通常一起下降约 6 dB。",
+          "box": [
+            72,
+            1014,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 51,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "key",
+          "type": "text",
+          "text": "要改相对 Wet，核对 Send / Return。",
+          "box": [
+            72,
+            1120,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "limits",
+          "type": "text",
+          "text": "比例推导限近似线性、静态处理；旧尾声有过渡。\nPre-Fader、Ducking、饱和等另看路由。\n也要确认发送是否跟随 Pan，以及取点在推子前后。",
+          "box": [
+            72,
+            1260,
+            936,
+            114
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 38,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Explicit split after fader, a lower reverb return loop, and a conditional −6 dB statement.",
+      "diagram_references": [
+        "assets/diagrams/send-routing.svg"
+      ],
+      "must_not": [
+        "Post send branch must be after the fader.",
+        "Do not claim instant exact scaling in nonlinear or time-varying paths."
+      ]
+    },
+    {
+      "page": 9,
+      "title": "给每个声部一个任务",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "09 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "给每个声部一个任务",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "本文试听方案 · 角色与空间依据：Ableton / iZotope",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "循环同一段，先单变量，再协调多个线索。",
+          "box": [
+            72,
+            230,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "lead_head",
+          "type": "text",
+          "text": "Lead",
+          "box": [
+            72,
+            346,
+            240,
+            64
+          ],
+          "font_size": 46,
+          "font_weight": 600,
+          "line_height": 65,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "lead_name",
+          "type": "text",
+          "text": "主旋律音色",
+          "box": [
+            352,
+            352,
+            656,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "lead_body",
+          "type": "text",
+          "text": "先保持旋律清楚，再加少量空间。\n不要用无目的加宽替代清楚的主体。",
+          "box": [
+            72,
+            428,
+            936,
+            118
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "r1",
+          "type": "line",
+          "points": [
+            [
+              72,
+              590
+            ],
+            [
+              1008,
+              590
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "pad_head",
+          "type": "text",
+          "text": "Pad",
+          "box": [
+            72,
+            636,
+            240,
+            64
+          ],
+          "font_size": 46,
+          "font_weight": 600,
+          "line_height": 65,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "pad_name",
+          "type": "text",
+          "text": "持续铺底音色",
+          "box": [
+            352,
+            642,
+            656,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "pad_body",
+          "type": "text",
+          "text": "先比基准降约 3 dB；必要时试高架 EQ −2 dB。\n每步单独听，再调整相对 Wet。",
+          "box": [
+            72,
+            718,
+            936,
+            118
+          ],
+          "font_size": 36,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "r2",
+          "type": "line",
+          "points": [
+            [
+              72,
+              880
+            ],
+            [
+              1008,
+              880
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "arp_head",
+          "type": "text",
+          "text": "Arp",
+          "box": [
+            72,
+            926,
+            240,
+            64
+          ],
+          "font_size": 46,
+          "font_weight": 600,
+          "line_height": 65,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "arp_name",
+          "type": "text",
+          "text": "琶音",
+          "box": [
+            352,
+            932,
+            656,
+            54
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "arp_body",
+          "type": "text",
+          "text": "先错开节奏或音域，再试左右位置。\nStereo 声源先认清当前 Pan 模式。",
+          "box": [
+            72,
+            1008,
+            936,
+            118
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "limits",
+          "type": "text",
+          "text": "3 dB 与 2 dB 是试听步长，非最佳参数或实测结论。\n每一步保存可退回状态；角色可随段落重新分工。",
+          "box": [
+            72,
+            1260,
+            936,
+            98
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 44,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Three editorial role sections; no rigid preset table or card stack."
+    },
+    {
+      "page": 10,
+      "title": "最后，听一次真正的 Mono",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "10 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "最后，听一次真正的 Mono",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "M/S 约定与代数：本文 · 参考 FabFilter / iZotope",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "合并 L + R；不要只听左声道。\n关键旋律与音色，折叠后还成立吗？",
+          "box": [
+            72,
+            230,
+            936,
+            112
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "define",
+          "type": "text",
+          "text": "约定 M = (L + R)/2，S = (L − R)/2",
+          "box": [
+            72,
+            392,
+            936,
+            56
+          ],
+          "font_size": 32,
+          "font_weight": 400,
+          "line_height": 45,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "left_formula",
+          "type": "text",
+          "text": "L = M + S\nR = M − S",
+          "box": [
+            72,
+            528,
+            416,
+            168
+          ],
+          "font_size": 46,
+          "font_weight": 600,
+          "line_height": 82,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "to_mono",
+          "type": "line",
+          "points": [
+            [
+              466,
+              616
+            ],
+            [
+              594,
+              616
+            ]
+          ],
+          "stroke": "#1d1d1f",
+          "stroke_width": 4,
+          "end_arrow": true
+        },
+        {
+          "id": "mono_formula",
+          "type": "text",
+          "text": "Mono = (L + R)/2\n= M",
+          "box": [
+            628,
+            528,
+            380,
+            168
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 82,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "side_meaning",
+          "type": "text",
+          "text": "Side 是左右差异项，不等于“两侧乐器”。",
+          "box": [
+            72,
+            772,
+            936,
+            60
+          ],
+          "font_size": 36,
+          "font_weight": 600,
+          "line_height": 51,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "check_head",
+          "type": "text",
+          "text": "怎么查",
+          "box": [
+            72,
+            890,
+            936,
+            56
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 57,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "steps",
+          "type": "text",
+          "text": "1  先核对折叠增益，排除单纯音量变化。\n2  听旋律是否变小、低频是否变空、Pad 是否遮挡。\n3  依次旁路 Unison / Chorus / Delay / 加宽。",
+          "box": [
+            72,
+            966,
+            936,
+            192
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 62,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "limit",
+          "type": "text",
+          "text": "短暂负相关不自动判错；M/S 编码本身可逆。\n要检查的是实际处理与目标播放方式下的结果。",
+          "box": [
+            72,
+            1262,
+            936,
+            104
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Large algebra before listening checklist; no phase meter or measured correlation trace.",
+      "diagram_references": [
+        "assets/diagrams/mono-fold.svg"
+      ],
+      "must_not": [
+        "Side is a difference term, not the instruments on the sides.",
+        "M/S encoding itself is not lossy."
+      ]
+    },
+    {
+      "page": 11,
+      "title": "别只在 Solo 里决定",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "11 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "别只在 Solo 里决定",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "综合试听建议 · 官方控件依据与完整原始资料见研究报告",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "intro",
+          "type": "text",
+          "text": "一次完整对照，从音乐角色走到播放检查。",
+          "box": [
+            72,
+            230,
+            936,
+            60
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "stepdot1",
+          "type": "circle",
+          "center": [
+            104,
+            382
+          ],
+          "radius": 24,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "stepdot2",
+          "type": "circle",
+          "center": [
+            104,
+            562
+          ],
+          "radius": 24,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "stepdot3",
+          "type": "circle",
+          "center": [
+            104,
+            742
+          ],
+          "radius": 24,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "stepdot4",
+          "type": "circle",
+          "center": [
+            104,
+            922
+          ],
+          "radius": 24,
+          "fill": "#0066cc",
+          "stroke": "none"
+        },
+        {
+          "id": "t1",
+          "type": "text",
+          "text": "关空间，定角色、电平、左右。",
+          "box": [
+            162,
+            350,
+            846,
+            62
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "t2",
+          "type": "text",
+          "text": "调宽度，再增加相对 Wet。",
+          "box": [
+            162,
+            530,
+            846,
+            62
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "t3",
+          "type": "text",
+          "text": "用 Pre-Delay 与频谱修整。",
+          "box": [
+            162,
+            710,
+            846,
+            62
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "t4",
+          "type": "text",
+          "text": "带伴奏、匹配响度、折叠单声道。",
+          "box": [
+            162,
+            890,
+            846,
+            62
+          ],
+          "font_size": 38,
+          "font_weight": 600,
+          "line_height": 54,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "end",
+          "type": "text",
+          "text": "旋律清楚 · 铺底有效\n左右平衡 · 关键内容折叠后可用",
+          "box": [
+            72,
+            1080,
+            936,
+            128
+          ],
+          "font_size": 40,
+          "font_weight": 600,
+          "line_height": 58,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "limits",
+          "type": "text",
+          "text": "本篇没有输入音频或插件实测，参数为示意 / 试听建议。\n听感策略参考 iZotope 与 AES；不把深度换算成米数。",
+          "box": [
+            72,
+            1270,
+            936,
+            96
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 42,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Sparse but purposeful four-step progression with a concrete musical stopping criterion."
+    },
+    {
+      "page": 12,
+      "title": "完整图文与可编辑源码",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "series",
+          "type": "text",
+          "text": "合成器空间 · 位置 / 宽度 / 深度",
+          "box": [
+            72,
+            52,
+            730,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "page",
+          "type": "text",
+          "text": "12 / 12",
+          "box": [
+            858,
+            52,
+            150,
+            40
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "完整图文与可编辑源码",
+          "box": [
+            72,
+            116,
+            936,
+            88
+          ],
+          "font_size": 58,
+          "font_weight": 600,
+          "line_height": 80,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_footer",
+          "type": "text",
+          "text": "Kangdi Wang · 阅读 · 核对 · 复用",
+          "box": [
+            72,
+            1386,
+            936,
+            38
+          ],
+          "font_size": 26,
+          "font_weight": 400,
+          "line_height": 34,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "summary",
+          "type": "text",
+          "text": "继续拆开合成器的空间：图解、计算与原始资料。",
+          "box": [
+            72,
+            234,
+            936,
+            60
+          ],
+          "font_size": 34,
+          "font_weight": 400,
+          "line_height": 48,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "repo_accent",
+          "type": "line",
+          "points": [
+            [
+              72,
+              338
+            ],
+            [
+              72,
+              454
+            ]
+          ],
+          "stroke": "#0066cc",
+          "stroke_width": 5,
+          "end_arrow": false
+        },
+        {
+          "id": "host",
+          "type": "text",
+          "text": "github.com / DDDPG",
+          "box": [
+            98,
+            334,
+            910,
+            48
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 43,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "href": "https://github.com/DDDPG/music-mixing-secrets"
+        },
+        {
+          "id": "repo",
+          "type": "text",
+          "text": "music-mixing-secrets ↗",
+          "box": [
+            98,
+            390,
+            910,
+            60
+          ],
+          "font_size": 40,
+          "font_weight": 400,
+          "line_height": 57,
+          "color": "#0066cc",
+          "align": "left",
+          "wrap": "explicit_newlines_only",
+          "href": "https://github.com/DDDPG/music-mixing-secrets"
+        },
+        {
+          "id": "citation_panel",
+          "type": "rect",
+          "box": [
+            72,
+            514,
+            936,
+            620
+          ],
+          "fill": "#f5f5f7",
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "radius": 20
+        },
+        {
+          "id": "bib_label",
+          "type": "text",
+          "text": "BIBTEX",
+          "box": [
+            108,
+            546,
+            760,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "year_label",
+          "type": "text",
+          "text": "2026",
+          "box": [
+            864,
+            546,
+            108,
+            44
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#0066cc",
+          "align": "right",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "bib_rule",
+          "type": "line",
+          "points": [
+            [
+              108,
+              610
+            ],
+            [
+              972,
+              610
+            ]
+          ],
+          "stroke": "#d2d2d7",
+          "stroke_width": 2,
+          "end_arrow": false
+        },
+        {
+          "id": "bibtex",
+          "type": "text",
+          "text": "@misc{wang2026musicmixingsecrets,\n  author = {Kangdi, Wang},\n  title = {Music Mixing Secrets},\n  year = {2026},\n  url = {https://github.com/DDDPG/}\n      # {music-mixing-secrets}\n}",
+          "box": [
+            108,
+            640,
+            864,
+            470
+          ],
+          "font_size": 38,
+          "font_weight": 400,
+          "line_height": 64,
+          "color": "#1d1d1f",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "source_note",
+          "type": "text",
+          "text": "具体结论请同时核对对应的一手资料。\n仓库引用不代替原始来源或图片许可。",
+          "box": [
+            72,
+            1180,
+            936,
+            100
+          ],
+          "font_size": 30,
+          "font_weight": 400,
+          "line_height": 46,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        },
+        {
+          "id": "scope_note",
+          "type": "text",
+          "text": "完整资料与源文件以仓库实际内容为准。",
+          "box": [
+            72,
+            1304,
+            936,
+            48
+          ],
+          "font_size": 28,
+          "font_weight": 400,
+          "line_height": 40,
+          "color": "#515154",
+          "align": "left",
+          "wrap": "explicit_newlines_only"
+        }
+      ],
+      "composition": "Theme-adapted citation ending; exact BibTeX in real HTML text; repository link retained.",
+      "links": [
+        {
+          "box": [
+            98,
+            334,
+            910,
+            118
+          ],
+          "url": "https://github.com/DDDPG/music-mixing-secrets"
+        }
+      ],
+      "must_not": [
+        "Do not invent topic URLs or QR codes before publication.",
+        "Scope citation h1/pre styles; no global selectors spilling over."
+      ]
+    }
+  ],
+  "qa_refinements": [
+    "P1 Chinese role labels before English definitions on P9",
+    "P4 defines Dry/Wet/RMS/DRR while keeping scale and numerical caveats",
+    "P5 first-use Arp replaced by Chinese 琶音",
+    "P8 Send label moved left of the vertical path; unchanged text size"
+  ]
+}

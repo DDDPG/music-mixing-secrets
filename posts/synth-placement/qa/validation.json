@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "carousel_pages": 12,
+  "report_pages": 9,
+  "full_and_phone_dimensions": "passed",
+  "safe_area": "passed",
+  "fonts_missing_chars": [],
+  "exact_crop_pixel_checks": [
+    "utility-width-balance.png",
+    "pro-r-predelay-distance.png",
+    "pro-r-brightness-width-mix.png"
+  ],
+  "all_asset_checksums": "passed",
+  "citation_parsed_fields": [
+    "Kangdi, Wang",
+    "Music Mixing Secrets",
+    "2026",
+    "https://github.com/DDDPG/music-mixing-secrets"
+  ],
+  "citation_pdf_link": "passed",
+  "send_label_right_edge_css_px": 671.5839436848959,
+  "private_source_content_scan": "passed",
+  "no_audio_measurement_claimed": true,
+  "vendor_general_republication_permission": "unverified; limited educational-commentary basis explicit"
+}

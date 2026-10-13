@@ -1,0 +1,27 @@
+{
+  "routing": {
+    "dry_path": "Snare -> Mix Bus",
+    "send_path": "Snare -> Reel ADT (SRC+ADT) -> Stereo Reverb 100% Wet -> Mix Bus",
+    "type": "conceptual"
+  },
+  "time_model": {
+    "type": "illustrative_not_measured",
+    "adt_relative_ms": 12,
+    "reverb_predelay_ms": 20,
+    "src_reverb_onset_ms": 20,
+    "adt_reverb_onset_ms": 32,
+    "assumptions": [
+      "fixed relative delay",
+      "LFO off for model",
+      "identical onset convention",
+      "not measured through actual plugin"
+    ]
+  },
+  "comb_model": {
+    "tau_s": 0.012,
+    "model": "abs(cos(pi*f*tau)), normalized equal-amplitude same-polarity sum",
+    "first_null_hz": 41.666666666666664,
+    "null_spacing_hz": 83.33333333333333,
+    "scope": "fixed delay without modulation, nonlinear saturation, filtering or reverb; not a Reel ADT response"
+  }
+}

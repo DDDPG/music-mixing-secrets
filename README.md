@@ -2,7 +2,7 @@
 
 **用图解拆开混音问题，用试听做出判断。**
 
-写给正在学习人声处理与节奏组混音的音乐人。这里收录中文图文教程、详细研究报告与可编辑源码，从信号路由和参数含义出发，理解每一步在改变什么。
+写给正在学习人声处理、节奏组混音与合成器空间安排的音乐人。这里收录中文图文教程、详细研究报告与可编辑源码，从信号路由和参数含义出发，理解每一步在改变什么。
 
 ## 图文教程
 
@@ -12,6 +12,11 @@
   <a href="posts/delay-v3/"><img src="posts/delay-v3/source/output/xhs-01-cover.png" alt="低 Wet 人声 Ping Pong Delay：给人声一点空间" width="280"></a>
   <a href="posts/ms-return/"><img src="posts/ms-return/source/output/xhs-01-cover.png" alt="人声空间与 Side EQ：先查效果返回，再决定要不要收窄" width="280"></a>
   <a href="posts/drums-bass/"><img src="posts/drums-bass/source/output/xhs-01-cover.png" alt="鼓与 Bass：先把地基搭稳" width="280"></a>
+</p>
+<p>
+  <a href="posts/snare-adt-before-reverb/"><img src="posts/snare-adt-before-reverb/output/xhs-01.png" alt="军鼓混响前的 ADT 拓宽" width="280"></a>
+  <a href="posts/vocal-compression-shaping/"><img src="posts/vocal-compression-shaping/output/xhs-01.png" alt="人声压缩怎样塑形：Attack 与 Release" width="280"></a>
+  <a href="posts/synth-placement/"><img src="posts/synth-placement/output/01.png" alt="合成器的前后左右" width="280"></a>
 </p>
 
 ### 01 · 给人声一点空间
@@ -32,11 +37,29 @@
 
 [研究报告](posts/drums-bass/RESEARCH_REPORT.md) · [完整图文 PDF](posts/drums-bass/source/output/drums-bass.pdf) · [逐页图片](posts/drums-bass/source/output/) · [HTML 源码](posts/drums-bass/source/index.html)
 
+### 04 · 军鼓混响前的 ADT 拓宽
+
+在独立空间支路中，把 ADT 放在混响前：分清 ADT 与 Predelay，检查立体声输入、干声保留和完整链路的单声道兼容性。
+
+[研究报告（6 页）](posts/snare-adt-before-reverb/research/RESEARCH_REPORT.pdf) · [完整图文 PDF（8 页）](posts/snare-adt-before-reverb/output/snare-adt-before-reverb.pdf) · [逐页图片](posts/snare-adt-before-reverb/output/) · [HTML 源码](posts/snare-adt-before-reverb/index.html)
+
+### 05 · 人声压缩怎样塑形
+
+从字头、字身到下一音节，拆开 Attack 与 Release 的作用；结合简化增益衰减模型和真实控件，建立响度匹配的比较方法。
+
+[研究报告（7 页）](posts/vocal-compression-shaping/output/RESEARCH_REPORT.pdf) · [完整图文 PDF（9 页）](posts/vocal-compression-shaping/output/vocal-compression-shaping.pdf) · [逐页图片](posts/vocal-compression-shaping/output/) · [HTML 源码](posts/vocal-compression-shaping/index.html)
+
+### 06 · 合成器的前后左右
+
+把 Pan、Stereo Width 与前后层次分开判断，理解混响、Predelay 与发送路由，并用单声道检查验证自己的空间安排。
+
+[研究报告（9 页）](posts/synth-placement/output/合成器的左右宽度与前后层次_研究报告.pdf) · [完整图文 PDF（12 页）](posts/synth-placement/output/合成器的前后左右_图文.pdf) · [逐页图片](posts/synth-placement/output/) · [HTML 源码](posts/synth-placement/index.html)
+
 ## 怎么使用
 
 - **先看图文**：用 PDF 或逐页图片了解主题，再带着具体问题阅读研究报告。
 - **再查原理**：报告附有图解、计算与来源，区分产品功能、数学示意和试听建议。参数只作为尝试的起点，请放回自己的歌曲中比较。
-- **需要编辑**：下载仓库，保留各专题的 `source/` 目录结构，在浏览器中打开 `index.html`；修改与导出方法见各专题说明。
+- **需要编辑**：下载仓库，保留各专题完整的文件结构，再按专题说明打开 `index.html`；修改与导出方法见各专题说明。
 
 ## 引用
 

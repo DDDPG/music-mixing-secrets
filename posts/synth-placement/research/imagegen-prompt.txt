@@ -1,0 +1,5 @@
+Built-in image generation; no image reference supplied.
+
+Use case: stylized-concept. Editorial conceptual illustration for an educational Chinese audio mixing carousel about synthesizer placement. Visualize perceptual foreground and background as a crisp narrow cobalt-blue luminous sound ribbon in the foreground and a broad soft translucent gray-blue haze of the same ribbon behind it. White seamless studio environment, restrained white/light-gray/cobalt palette (#0066cc). Airy sculptural composition, tactile frosted acrylic planes and delicate soft shadows. Abstract sonic ribbon, not a waveform measurement, audio plugin or equipment. Landscape 3:2, central subject with margins. No words, numbers, logos, scales, labels, axes, arrows, interface, brands, people, circles or ellipses. AI-created visual metaphor, not physical simulation. Distinct crisp foreground versus diffuse rear layer.
+
+Final image: assets/derived/depth-concept-ai.png. Original unchanged. Its explanatory role is marked beside the image in all user-facing layouts.

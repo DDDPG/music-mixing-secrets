@@ -1,0 +1,464 @@
+[
+  {
+    "entity": "Waves Abbey Road Reel ADT",
+    "version": "官方产品页图，具体版本未标注",
+    "component": "单 ADT 声部 Stereo 界面；有 Input Source Left/L+R/Right 与 Monitor",
+    "source_page": "https://www.waves.com/plugins/reel-adt",
+    "asset_url": "https://media.wavescdn.com/images/products/plugins/max/reel-adt.png",
+    "retrieved_at": "2026-10-13",
+    "copyright_owner": "Waves Audio Ltd. / relevant trademark owners",
+    "rights_status": "limited_educational_commentary_public_clearance_unverified",
+    "rights_basis": "真实界面用于对该产品控件的必要教学评论；未发现通用转载许可，不宣称已获厂商授权。公开再发布需另行核实权利或取得许可。",
+    "attribution": "Waves 官方产品图 © Waves Audio Ltd.；产品与商标归各自权利人。",
+    "limitations": "图中 19.98 ms、LFO ±05、2 Bars、L+R 等为厂商展示状态，非本文设置或实测。仅裁切或等比缩放；不改值、不补字、不仿制 UI。",
+    "asset_id": "reel-adt-official-product",
+    "path": "assets/source/reel-adt-official-product.png",
+    "dimensions": [
+      1940,
+      1669
+    ],
+    "sha256": "9eba5a896917a52cd124b0f70fef92a5078776130ac906ec5dd4edb8612b82a1",
+    "modifications": "none",
+    "used_on_pages": [
+      1,
+      "research"
+    ]
+  },
+  {
+    "entity": "Waves Abbey Road Reel ADT",
+    "version": "官方产品页图，具体版本未标注",
+    "component": "单 ADT 声部 Stereo 界面；有 Input Source Left/L+R/Right 与 Monitor",
+    "source_page": "https://www.waves.com/plugins/reel-adt",
+    "asset_url": "https://media.wavescdn.com/images/products/plugins/max/reel-adt.png",
+    "retrieved_at": "2026-10-13",
+    "copyright_owner": "Waves Audio Ltd. / relevant trademark owners",
+    "rights_status": "limited_educational_commentary_public_clearance_unverified",
+    "rights_basis": "真实界面用于对该产品控件的必要教学评论；未发现通用转载许可，不宣称已获厂商授权。公开再发布需另行核实权利或取得许可。",
+    "attribution": "Waves 官方产品图 © Waves Audio Ltd.；产品与商标归各自权利人。",
+    "limitations": "图中 19.98 ms、LFO ±05、2 Bars、L+R 等为厂商展示状态，非本文设置或实测。仅裁切或等比缩放；不改值、不补字、不仿制 UI。",
+    "asset_id": "reel-adt-position",
+    "path": "assets/derived/reel-adt-position.png",
+    "dimensions": [
+      1940,
+      440
+    ],
+    "sha256": "1f8bf459f6356d5235dc3e831ee086bacf19f3f77ab2cfcd6980fe21695d3ae2",
+    "modifications": {
+      "crop_px": [
+        0,
+        0,
+        1940,
+        440
+      ],
+      "from": "reel-adt-official-product"
+    },
+    "used_on_pages": [
+      3,
+      "research"
+    ]
+  },
+  {
+    "entity": "Waves Abbey Road Reel ADT",
+    "version": "官方产品页图，具体版本未标注",
+    "component": "单 ADT 声部 Stereo 界面；有 Input Source Left/L+R/Right 与 Monitor",
+    "source_page": "https://www.waves.com/plugins/reel-adt",
+    "asset_url": "https://media.wavescdn.com/images/products/plugins/max/reel-adt.png",
+    "retrieved_at": "2026-10-13",
+    "copyright_owner": "Waves Audio Ltd. / relevant trademark owners",
+    "rights_status": "limited_educational_commentary_public_clearance_unverified",
+    "rights_basis": "真实界面用于对该产品控件的必要教学评论；未发现通用转载许可，不宣称已获厂商授权。公开再发布需另行核实权利或取得许可。",
+    "attribution": "Waves 官方产品图 © Waves Audio Ltd.；产品与商标归各自权利人。",
+    "limitations": "图中 19.98 ms、LFO ±05、2 Bars、L+R 等为厂商展示状态，非本文设置或实测。仅裁切或等比缩放；不改值、不补字、不仿制 UI。",
+    "asset_id": "reel-adt-src",
+    "path": "assets/derived/reel-adt-src.png",
+    "dimensions": [
+      355,
+      1219
+    ],
+    "sha256": "807ca4326ad84edea8c6950b8e483b9ee74b0e24f2a34e99cb1c65b4e082bc17",
+    "modifications": {
+      "crop_px": [
+        250,
+        450,
+        605,
+        1669
+      ],
+      "from": "reel-adt-official-product"
+    },
+    "used_on_pages": [
+      4
+    ]
+  },
+  {
+    "entity": "Waves Abbey Road Reel ADT",
+    "version": "官方产品页图，具体版本未标注",
+    "component": "单 ADT 声部 Stereo 界面；有 Input Source Left/L+R/Right 与 Monitor",
+    "source_page": "https://www.waves.com/plugins/reel-adt",
+    "asset_url": "https://media.wavescdn.com/images/products/plugins/max/reel-adt.png",
+    "retrieved_at": "2026-10-13",
+    "copyright_owner": "Waves Audio Ltd. / relevant trademark owners",
+    "rights_status": "limited_educational_commentary_public_clearance_unverified",
+    "rights_basis": "真实界面用于对该产品控件的必要教学评论；未发现通用转载许可，不宣称已获厂商授权。公开再发布需另行核实权利或取得许可。",
+    "attribution": "Waves 官方产品图 © Waves Audio Ltd.；产品与商标归各自权利人。",
+    "limitations": "图中 19.98 ms、LFO ±05、2 Bars、L+R 等为厂商展示状态，非本文设置或实测。仅裁切或等比缩放；不改值、不补字、不仿制 UI。",
+    "asset_id": "reel-adt-adt",
+    "path": "assets/derived/reel-adt-adt.png",
+    "dimensions": [
+      330,
+      1219
+    ],
+    "sha256": "ca8822d4bcc529d4d2c31b514657e10da5688fc90ecc0a4ad52cd59a7695bc5b",
+    "modifications": {
+      "crop_px": [
+        1360,
+        450,
+        1690,
+        1669
+      ],
+      "from": "reel-adt-official-product"
+    },
+    "used_on_pages": [
+      4
+    ]
+  },
+  {
+    "entity": "Waves Abbey Road Reel ADT",
+    "version": "官方产品页图，具体版本未标注",
+    "component": "单 ADT 声部 Stereo 界面；有 Input Source Left/L+R/Right 与 Monitor",
+    "source_page": "https://www.waves.com/plugins/reel-adt",
+    "asset_url": "https://media.wavescdn.com/images/products/plugins/max/reel-adt.png",
+    "retrieved_at": "2026-10-13",
+    "copyright_owner": "Waves Audio Ltd. / relevant trademark owners",
+    "rights_status": "limited_educational_commentary_public_clearance_unverified",
+    "rights_basis": "真实界面用于对该产品控件的必要教学评论；未发现通用转载许可，不宣称已获厂商授权。公开再发布需另行核实权利或取得许可。",
+    "attribution": "Waves 官方产品图 © Waves Audio Ltd.；产品与商标归各自权利人。",
+    "limitations": "图中 19.98 ms、LFO ±05、2 Bars、L+R 等为厂商展示状态，非本文设置或实测。仅裁切或等比缩放；不改值、不补字、不仿制 UI。",
+    "asset_id": "reel-adt-lfo",
+    "path": "assets/derived/reel-adt-lfo.png",
+    "dimensions": [
+      775,
+      270
+    ],
+    "sha256": "206ad90d5f85ebd96e9d4912023fdd461d0d6396f51a79e4d50d808039a80a1d",
+    "modifications": {
+      "crop_px": [
+        605,
+        1350,
+        1380,
+        1620
+      ],
+      "from": "reel-adt-official-product"
+    },
+    "used_on_pages": [
+      3,
+      "research"
+    ]
+  },
+  {
+    "entity": "Waves Abbey Road Reel ADT",
+    "version": "官方产品页图，具体版本未标注",
+    "component": "单 ADT 声部 Stereo 界面；有 Input Source Left/L+R/Right 与 Monitor",
+    "source_page": "https://www.waves.com/plugins/reel-adt",
+    "asset_url": "https://media.wavescdn.com/images/products/plugins/max/reel-adt.png",
+    "retrieved_at": "2026-10-13",
+    "copyright_owner": "Waves Audio Ltd. / relevant trademark owners",
+    "rights_status": "limited_educational_commentary_public_clearance_unverified",
+    "rights_basis": "真实界面用于对该产品控件的必要教学评论；未发现通用转载许可，不宣称已获厂商授权。公开再发布需另行核实权利或取得许可。",
+    "attribution": "Waves 官方产品图 © Waves Audio Ltd.；产品与商标归各自权利人。",
+    "limitations": "图中 19.98 ms、LFO ±05、2 Bars、L+R 等为厂商展示状态，非本文设置或实测。仅裁切或等比缩放；不改值、不补字、不仿制 UI。",
+    "asset_id": "reel-adt-monitor",
+    "path": "assets/derived/reel-adt-monitor.png",
+    "dimensions": [
+      250,
+      329
+    ],
+    "sha256": "f6af4db1480235e8eb7167e9812bee2553a71a69a5b78f408e6b9f0bdf56fa66",
+    "modifications": {
+      "crop_px": [
+        1690,
+        1340,
+        1940,
+        1669
+      ],
+      "from": "reel-adt-official-product"
+    },
+    "used_on_pages": []
+  },
+  {
+    "entity": "Waves Abbey Road Reel ADT",
+    "version": "官方产品页图，具体版本未标注",
+    "component": "单 ADT 声部 Stereo 界面；有 Input Source Left/L+R/Right 与 Monitor",
+    "source_page": "https://assets.wavescdn.com/pdf/plugins/reel-adt.pdf#page=10",
+    "asset_url": "https://assets.wavescdn.com/pdf/plugins/reel-adt.pdf",
+    "retrieved_at": "2026-10-13",
+    "copyright_owner": "Waves Audio Ltd. / relevant trademark owners",
+    "rights_status": "limited_educational_commentary_public_clearance_unverified",
+    "rights_basis": "真实界面用于对该产品控件的必要教学评论；未发现通用转载许可，不宣称已获厂商授权。公开再发布需另行核实权利或取得许可。",
+    "attribution": "Waves 官方产品图 © Waves Audio Ltd.；产品与商标归各自权利人。",
+    "limitations": "图中 19.98 ms、LFO ±05、2 Bars、L+R 等为厂商展示状态，非本文设置或实测。仅裁切或等比缩放；不改值、不补字、不仿制 UI。",
+    "asset_id": "manual-interface",
+    "path": "assets/source/reel-adt-manual-interface.jpeg",
+    "dimensions": [
+      1483,
+      1059
+    ],
+    "sha256": "fc4499d8098b53a425d4ba10159ff47457df0c588571e203560f322e14110bb1",
+    "modifications": "从官方PDF第10页提取未重编码嵌入JPEG；原图已包含厂商蓝色箭头标注。",
+    "used_on_pages": [
+      "research verification"
+    ]
+  },
+  {
+    "asset_id": "comb-response",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/comb-response.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      936,
+      520
+    ],
+    "sha256": "df068fcacf8fb9535fef7cd277ab1f84d4f9b6e246e3d0b54178d275519162df",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      "research"
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  },
+  {
+    "asset_id": "page-01-geometry",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/page-01-geometry.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      1080,
+      1440
+    ],
+    "sha256": "a71a6041eb35db3530ed7c22f962ca24d77c8770c76fe1802917e5dc96636595",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      1
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  },
+  {
+    "asset_id": "page-02-geometry",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/page-02-geometry.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      1080,
+      1440
+    ],
+    "sha256": "bfa1b2f7033bf4f69e171796c98ca38c4ed4bdd3a2d94b350edce02c776b900c",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      2
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  },
+  {
+    "asset_id": "page-03-geometry",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/page-03-geometry.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      1080,
+      1440
+    ],
+    "sha256": "a71a6041eb35db3530ed7c22f962ca24d77c8770c76fe1802917e5dc96636595",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      3
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  },
+  {
+    "asset_id": "page-04-geometry",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/page-04-geometry.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      1080,
+      1440
+    ],
+    "sha256": "2fad29688c3714b8c2de7f8e2ce382a87631f68098f7f6ac9b9dd914f1411a2a",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      4
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  },
+  {
+    "asset_id": "page-05-geometry",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/page-05-geometry.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      1080,
+      1440
+    ],
+    "sha256": "69dbd7eaa3ab5e48acc55f24083f3b3de9b4e952ca89495b80ac2b8b84df8ef0",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      5
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  },
+  {
+    "asset_id": "page-06-geometry",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/page-06-geometry.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      1080,
+      1440
+    ],
+    "sha256": "c461bc20c27a3c49bc423ea7666937af08e9ad940d286ddb154306c7d1e582c5",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      6
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  },
+  {
+    "asset_id": "page-07-geometry",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/page-07-geometry.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      1080,
+      1440
+    ],
+    "sha256": "0461241a6612008fa57a6e422c3d7a19496fa54c6d627a615e558a27c3f689dd",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      7
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  },
+  {
+    "asset_id": "page-08-geometry",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/page-08-geometry.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      1080,
+      1440
+    ],
+    "sha256": "25a64bc84715b5a9b6298948b792c6c836c522c5b91f83b7fe2ef953c100560d",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      8
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  },
+  {
+    "asset_id": "parallel-routing",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/parallel-routing.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      936,
+      520
+    ],
+    "sha256": "09d596f8edb2709017b3782852696c21d36d19e5ae5bccd47e59104121761906",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      "research"
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  },
+  {
+    "asset_id": "time-reference",
+    "entity": "原创解释示意",
+    "version": "final",
+    "component": "conceptual diagram, not product UI",
+    "path": "assets/diagrams/time-reference.svg",
+    "source_page": "research/RESEARCH_REPORT.md",
+    "asset_url": null,
+    "retrieved_at": null,
+    "dimensions": [
+      936,
+      520
+    ],
+    "sha256": "3e4d64016fb75011ee8734dd42d781841f40696235ed1e0ab9a3bded8a917615",
+    "rights_status": "original_diagram_with_corresponding_source",
+    "rights_basis": "依据所引官方功能说明和独立计算制作的原创教学图形；不包含厂商像素。HTML/SVG导出骨架按AGPL-3.0提供。",
+    "attribution": "Kangdi Wang",
+    "modifications": "editable source",
+    "used_on_pages": [
+      "research"
+    ],
+    "limitations": "示意或明确假设下的数学模型，非音频实测。"
+  }
+]

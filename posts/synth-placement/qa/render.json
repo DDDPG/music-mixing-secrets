@@ -1,0 +1,99 @@
+{
+  "pages": 12,
+  "dimensions": [
+    1080,
+    1440
+  ],
+  "phone_dimensions": [
+    360,
+    480
+  ],
+  "out_of_safe_area": [],
+  "page_text": [
+    {
+      "page": 1,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n01 / 12\n合成器的前后左右\n概念依据：Ableton / Apple / iZotope · 无音频实测\n先分清位置、宽度与深度\n先安排音乐角色，再决定怎样摆空间。\nAI 概念插画，非音频、声波或物理声场。\n主旋律要清楚 · 铺底要支撑 · 琶音要有位置\n分工可以随段落改变。\n不是让每个声部都最响、最亮、最宽。\n",
+      "text_spans": 10,
+      "sha256": "df8a75c7dbd55ad9755fe130bfa4e54294bb9118fe0f2ca995ec50d4f11e34da",
+      "phone_sha256": "7ac30d77fc35afbcfdd88f1b5ca3a71b7e9842bb5416d0c5897ce4644e479113"
+    },
+    {
+      "page": 2,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n02 / 12\n宽，也可以很靠前\n感知示意：Ableton / Apple / iZotope · 无距离或参数映射\n居中不等于靠前，窄也不等于靠后。\n三个问题，分别做决定。\nPan\n横向位置\nL\nR\nWidth\n展开范围\n窄\n宽\nDepth\n前后层次\n电平\n相对空间量\n频谱与起音\nDepth 是多种线索形成的听感。\n这里没有米数，也没有通用的“远近坐标”。\n",
+      "text_spans": 21,
+      "sha256": "5a328d65b1490b1a81abaefac27b15bcbe0ce3727dedff578d9f9d7dea52e05d",
+      "phone_sha256": "870322e4c12d312b1bdaac5328e2f23f50cb40048588812df7db0ca0e5a2eb54"
+    },
+    {
+      "page": 3,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n03 / 12\n偏左，不一定是整声部左移\n控件：Ableton Live 12 Utility · Pan 模式：Ableton / Apple\nStereo 的 Balance 通常改 L/R 相对电平。\n右边独有的内容，可能只是变小了。\n官方手册图：Width 100%、Balance C；不是推荐设置。\n完整软件版本未显示，原图与裁切均未改参数。\n要移动两路输入的摆位\n先核对 DAW 的 Stereo Pan 或左右独立 Pan。\n不要把所有叫 Pan 的控件当成同一种算法。\nUtility：Width 0% 合为 Mono，100% 是原宽度参考。\n这个百分比定义，不能跨插件照抄。\n",
+      "text_spans": 13,
+      "sha256": "030586d2da30cbab5fad966d0864264fe63f25181dac7823c40e0828ca55c46e",
+      "phone_sha256": "4b09693a4d9634ca487c5e8991fb1efa740a5a057846ca0122774fc5f4e67389"
+    },
+    {
+      "page": 4,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n04 / 12\n前后，先听干声与空间的对比\n人为构造的 RMS 支路读数 · 代数可复核，非录音测量\n湿声（Wet）相对更多，可能更退后，也可能更糊。\n还要听干声电平、频谱和起音。\n同源、同窗、同一标尺；RMS = 均方根\nA\nDry 干声\nWet 湿声\n−18\n−30\nB\nDry 干声\nWet 湿声\n−18\n−24\n−36\n−30\n−24\n−18\n−12\n−6\n0\ndBFS RMS\n干湿差：12 dB → 6 dB\nWet 的 RMS 幅度约 ×2\n非房间 DRR（直达/混响能量比），不能换算距离。\n也不能推断听感倍数；总 RMS 还受两路相关性影响。\n两个 dBFS 读数不能直接相加。\n",
+      "text_spans": 30,
+      "sha256": "17ee4e584fe465d84bab26cb7e27043ab5304ecd407d63ed1d0418f3e1c5b761",
+      "phone_sha256": "b2b7463e3a941503744af60d0a98adac7bc8a0749633292594b6137bab944ac7"
+    },
+    {
+      "page": 5,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n05 / 12\nPre-Delay 不是距离尺\n定义：Ableton / FabFilter · 样本数为本文换算，非实测\n主体可以先出现，空间随后跟上。\n拉长间隔可能更清楚，也可能出现分离感。\n只标混响开始时间，不画衰减长度。\n10 ms\n40 ms\nDry\nDry\nWet 开始\nWet 开始\n0\n10\n25\n40\n60\n80\n100\n时间 / ms\n48 kHz：10 ms = 480 samples\n               40 ms = 1920 samples\n人工时间示意，非脉冲响应或远近配方。\n快速琶音 若出现松散的第二次起音，就尝试缩短。\n",
+      "text_spans": 25,
+      "sha256": "161a2256e4e79060bd9338c41d934d2826d2fd8cc0051efafd9642b3030f38e0",
+      "phone_sha256": "aceb47ee803efe51d3555d92d2587e0034082a19fbd87f9505f8d5bf9f819ec6"
+    },
+    {
+      "page": 6,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n06 / 12\n开始间隔与空间线索，分开调\nFabFilter Pro-R 2 官方帮助图 · © FabFilter\n先在真实界面定位 PREDELAY 与 DISTANCE。\n官方图：Vintage / Vintage Hall / 3.20 s。\n只找控件，不抄参数；未显示的数值不能从角度猜。\nPREDELAY\n调原声与混响\n开始的间隔。\nDISTANCE\n调该算法的空间线索，\n不是米数。\nPro-R 2 低 Distance 时，早期反射反而更突出、更亮。\n反射更响，不能通用地等于“更远”。\n",
+      "text_spans": 15,
+      "sha256": "d102fd02dab85cef2e0f4f8e3f53bf403b4b9dd6e01b90dd1e75fc3e4061c0fc",
+      "phone_sha256": "fb2c3357d00d79a51a62de2bfef9459afe16611563c78450bb49575d8391cf1f"
+    },
+    {
+      "page": 7,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n07 / 12\n混响明暗与干湿关系，分开调\n控件定义：FabFilter Pro-R 2 Help · 图片 © FabFilter\n改混响的音色，不等于改合成器干声。\n官方图裁切，保留原色与状态；不是本篇试验工程。\nBRIGHTNESS\n混响明暗平衡。干声是否太亮，要另外判断。\nMIX\n最终干湿关系。常规并行 Return 上设 100%，\n再用 Send / Return 电平控制空间量。\n图中 WIDTH 是这个混响的宽度控制，含内部声道联动。\n不要把它当成 Utility Width 的同一套百分比。\n",
+      "text_spans": 13,
+      "sha256": "572cf017cf82bf632ef70393c16d91b77ea9f52cc4175931365d3c7619d78337",
+      "phone_sha256": "e8861380184a20c925af828f05e27ac6eb4960f26fc642b96ca17c8eca9948f6"
+    },
+    {
+      "page": 8,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n08 / 12\n降推子之前，先检查发送点\n条件推导：Post-Fader、近似线性与静态处理 · 非音频测量\nPost-Fader 发送时，推子变小，\n干声和送往混响的信号通常一起变小。\nSynth\n轨道推子\n总输出\nPost-Fader Send\nReverb\n100% Wet\nReturn\n推子 −6 dB\n→ 干声与混响输入通常一起下降约 6 dB。\n要改相对 Wet，核对 Send / Return。\n比例推导限近似线性、静态处理；旧尾声有过渡。\nPre-Fader、Ducking、饱和等另看路由。\n也要确认发送是否跟随 Pan，以及取点在推子前后。\n",
+      "text_spans": 19,
+      "sha256": "754051405c15b394cc75c7ccda1b686fed992b7085fc86d6c96577996462b996",
+      "phone_sha256": "66baa44665c191b6348a5af53a307c3450c4fa5dc9f7d3259e148fd1cc32f8e6"
+    },
+    {
+      "page": 9,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n09 / 12\n给每个声部一个任务\n本文试听方案 · 角色与空间依据：Ableton / iZotope\n循环同一段，先单变量，再协调多个线索。\nLead\n主旋律音色\n先保持旋律清楚，再加少量空间。\n不要用无目的加宽替代清楚的主体。\nPad\n持续铺底音色\n先比基准降约 3 dB；必要时试高架 EQ −2 dB。\n每步单独听，再调整相对 Wet。\nArp\n琶音\n先错开节奏或音域，再试左右位置。\nStereo 声源先认清当前 Pan 模式。\n3 dB 与 2 dB 是试听步长，非最佳参数或实测结论。\n每一步保存可退回状态；角色可随段落重新分工。\n",
+      "text_spans": 19,
+      "sha256": "71f92cf20f71fd30a2bb0711ca30d30dd1ad64a77a7197ba8571bb8d5a583af9",
+      "phone_sha256": "fc402e9dba3ccfb355e745d2e422d6f2bf08f3658557404b9fb53aa3e5da325b"
+    },
+    {
+      "page": 10,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n10 / 12\n最后，听一次真正的 Mono\nM/S 约定与代数：本文 · 参考 FabFilter / iZotope\n合并 L + R；不要只听左声道。\n关键旋律与音色，折叠后还成立吗？\n约定 M = (L + R)/2，S = (L − R)/2\nL = M + S\nR = M − S\nMono = (L + R)/2\n= M\nSide 是左右差异项，不等于“两侧乐器”。\n怎么查\n1  先核对折叠增益，排除单纯音量变化。\n2  听旋律是否变小、低频是否变空、Pad 是否遮挡。\n3  依次旁路 Unison / Chorus / Delay / 加宽。\n短暂负相关不自动判错；M/S 编码本身可逆。\n要检查的是实际处理与目标播放方式下的结果。\n",
+      "text_spans": 18,
+      "sha256": "70c50afc4d85e9bde68640fc198dbcf1a527e7f396037e27f6e297a66c13881a",
+      "phone_sha256": "5d6b591324b9d0ca72cd97dfd6daaa224733678850bb7205400e42df62e9f0ac"
+    },
+    {
+      "page": 11,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n11 / 12\n别只在 Solo 里决定\n综合试听建议 · 官方控件依据与完整原始资料见研究报告\n一次完整对照，从音乐角色走到播放检查。\n关空间，定角色、电平、左右。\n调宽度，再增加相对 Wet。\n用 Pre-Delay 与频谱修整。\n带伴奏、匹配响度、折叠单声道。\n旋律清楚 · 铺底有效\n左右平衡 · 关键内容折叠后可用\n本篇没有输入音频或插件实测，参数为示意 / 试听建议。\n听感策略参考 iZotope 与 AES；不把深度换算成米数。\n",
+      "text_spans": 13,
+      "sha256": "f6afd33a4063975838929a851c9693aa523f20b31f9ec11a364e46b36c96c589",
+      "phone_sha256": "a32f08b02b9eb4f38c90c8372938bbc493a67ef72af68b9ab013a0f34d418556"
+    },
+    {
+      "page": 12,
+      "text": "合成器空间 · 位置 / 宽度 / 深度\n12 / 12\n完整图文与可编辑源码\nKangdi Wang · 阅读 · 核对 · 复用\n继续拆开合成器的空间：图解、计算与原始资料。\ngithub.com / DDDPG\nmusic-mixing-secrets ↗\nBIBTEX\n2026\n@misc{wang2026musicmixingsecrets,\n  author = {Kangdi, Wang},\n  title = {Music Mixing Secrets},\n  year = {2026},\n  url = {https://github.com/DDDPG/}\n      # {music-mixing-secrets}\n}\n具体结论请同时核对对应的一手资料。\n仓库引用不代替原始来源或图片许可。\n完整资料与源文件以仓库实际内容为准。\n",
+      "text_spans": 19,
+      "sha256": "6d0fa9b3567a9b20eb0923eeb3cd958fc52b2706ceed729b9445265e75de7835",
+      "phone_sha256": "dbb659c33141bffb35100973737fcbfa539eeea026cd1000def9b00857857954"
+    }
+  ],
+  "renderer": "WeasyPrint 66.0 / PyMuPDF"
+}
