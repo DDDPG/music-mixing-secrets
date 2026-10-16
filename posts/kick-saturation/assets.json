@@ -39,10 +39,8 @@
       "asset_url": null,
       "version": null,
       "rights_basis": "AI generated conceptual drum/ribbon image; not measured acoustic waveform",
-      "modifications": "Unmodified original",
-      "used_on_pages": [
-        1
-      ]
+      "modifications": "Archived pre-R2 concept image; not used in the current carousel",
+      "used_on_pages": []
     },
     {
       "asset_id": "saturn-band-controls",
@@ -83,12 +81,8 @@
       "asset_url": "https://cdn-b.fabfilter.com/img/products/saturn-2-screenshot.jpg?v=1710150538",
       "version": "Saturn 2; exact patch and component not specified",
       "rights_basis": "Official product Press screenshot; necessary proportional teaching reference with attribution. No blanket republication or sublicensing grant inferred. Rights reserved. No standalone press-kit distribution.",
-      "modifications": "Proportional full UI in attributed teaching context; original vendor image not distributed standalone",
-      "used_on_pages": [
-        5,
-        8,
-        "report"
-      ]
+      "modifications": "Source reference preserved. Current presentation uses the interface-only SVG viewBox crop; source-image editorial caption is outside the crop.",
+      "used_on_pages": []
     },
     {
       "asset_id": "crest",
@@ -112,7 +106,7 @@
     {
       "asset_id": "transfer",
       "path": "assets/diagrams/transfer.svg",
-      "sha256": "e48aa487b063b05439e4880cf837a70511f31115567e3b40fa6f8270b89059b2",
+      "sha256": "98df71f2da9f05862137ec64211f36a5490c73d4846e3cafa1581ee204db12c5",
       "dimensions": "SVG viewBox",
       "entity": "Original teaching illustration",
       "retrieved_at": "2026-10-16",
@@ -188,7 +182,7 @@
     {
       "asset_id": "crest",
       "path": "assets/diagrams/crest.png",
-      "sha256": "48d227b1b8103b556b2126964e23e5698fdb7c7f12b2db52c94fa5593f29f153",
+      "sha256": "fe36d3546ad16748a3ec85848ee8649a085a944ff4797483b83ddac3b695508e",
       "dimensions": [
         936,
         480
@@ -210,7 +204,7 @@
     {
       "asset_id": "transfer",
       "path": "assets/diagrams/transfer.png",
-      "sha256": "dcf8e4464bbdb0ab61fc2111ea6aa0f561f99d723e97695bcd58bf90a5f04c33",
+      "sha256": "844e23adee430bd0e4f1767454bd078e351da402afe74555b4149d328968062a",
       "dimensions": [
         936,
         460
@@ -254,7 +248,7 @@
     {
       "asset_id": "harmonics",
       "path": "assets/diagrams/harmonics.png",
-      "sha256": "a53f85a67ac922657eb43a63aeaf6b6033cc4f4f221cf95dc80beb3ffe23e3d9",
+      "sha256": "914a95da009ff37ba38f6b05684b4e50c81a26de7b9a436c186413acd8d450c0",
       "dimensions": [
         936,
         460
@@ -276,7 +270,7 @@
     {
       "asset_id": "aliasing",
       "path": "assets/diagrams/aliasing.png",
-      "sha256": "ceb426bcbdf283fa6f0d9ead5b3f5be22770e80c7d121171c7c79f733607a339",
+      "sha256": "0663961c234098ee210f04ae4ccf5e3b7a7f459987f10b91760ec0a0115b78c6",
       "dimensions": [
         936,
         460
@@ -293,6 +287,40 @@
       "used_on_pages": [
         "carousel",
         "report"
+      ]
+    },
+    {
+      "asset_id": "saturn-2-interface",
+      "path": "assets/derived/saturn-2-interface.svg",
+      "sha256": "b26aa9e4f2a14b5c73b1113037f36df8fadee7225eae0698d82604d6f01e10cf",
+      "dimensions": [
+        880,
+        550
+      ],
+      "entity": "FabFilter Saturn 2",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "FabFilter",
+      "rights_status": "limited_editorial_reference_rights_reserved",
+      "source_page": "https://www.fabfilter.com/products/saturn-2-multiband-distortion-saturation-plug-in",
+      "asset_url": "https://cdn-b.fabfilter.com/img/products/saturn-2-screenshot.jpg?v=1710150538",
+      "version": "Saturn 2; exact patch and component not specified",
+      "rights_basis": "Same reserved-rights editorial reference as the source image. Attribution on final resources page and report sources.",
+      "modifications": "SVG viewBox [28,12,880,550] crops out the previously added caption; interface pixels unchanged.",
+      "used_on_pages": [
+        5
+      ]
+    },
+    {
+      "asset_id": "cover-hero-r2",
+      "path": "assets/derived/cover-hero-r2.png",
+      "sha256": "1d33d745890d9f103518dcff7102d273b4d9532ab75e7e2635d5d4f6f1213996",
+      "entity": "R2 kick-saturation concept hero",
+      "rights_status": "AI_generated_concept",
+      "rights_holder": "Original project illustration",
+      "source_page": "Original image generation; prompt and generation provenance in companion JSON",
+      "modifications": "Unchanged by R3 editorial cleanup",
+      "used_on_pages": [
+        1
       ]
     }
   ],

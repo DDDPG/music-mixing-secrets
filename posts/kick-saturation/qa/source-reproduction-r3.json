@@ -1,0 +1,101 @@
+{
+  "revision": "R3",
+  "method": "Regenerated from compact source without rendered outputs or unused variable-font original, using bundled static font subsets. All PDF pages compared at 1080px carousel resolution / equivalent report scale.",
+  "results": [
+    {
+      "pdf": "output/kick-saturation.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 2,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 3,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 4,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 5,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 6,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 7,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 8,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 9,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 10,
+          "pixel_identical": true,
+          "text_identical": true
+        }
+      ]
+    },
+    {
+      "pdf": "output/research-report.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 2,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 3,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 4,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 5,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 6,
+          "pixel_identical": true,
+          "text_identical": true
+        },
+        {
+          "page": 7,
+          "pixel_identical": true,
+          "text_identical": true
+        }
+      ]
+    }
+  ]
+}

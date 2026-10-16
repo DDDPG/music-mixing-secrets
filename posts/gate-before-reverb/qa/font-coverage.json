@@ -1,0 +1,10 @@
+{
+  "400": {
+    "required_characters": 624,
+    "missing": []
+  },
+  "600": {
+    "required_characters": 624,
+    "missing": []
+  }
+}

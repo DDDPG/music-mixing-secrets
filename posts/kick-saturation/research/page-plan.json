@@ -13,20 +13,20 @@
   },
   {
     "page": 3,
-    "title": "03 从 50 Hz 到 150 Hz 的解释实验",
-    "body": "输入纯 50 Hz 正弦 x=sin(2π50t)，用教学曲线 y=x−0.25x³。解析展开得到 y=0.8125sin(2π50t)+0.0625sin(2π150t)。三次谐波相对基频约 −22.3 dB。它说明非线性如何生成频率成分，不是插件或真实底鼓的测量。真实底鼓会变调，有噪声和瞬态，不能照这张谱图预测。",
+    "title": "03 从 50 Hz 到 150 Hz 的解析例子",
+    "body": "输入纯 50 Hz 正弦 x=sin(2π50t)，用教学曲线 y=x−0.25x³。解析展开得到 y=0.8125sin(2π50t)+0.0625sin(2π150t)。三次谐波相对基频约 −22.3 dB。这个纯正弦例子说明非线性如何生成频率成分。真实底鼓的变调、噪声和瞬态也会影响结果。",
     "visual": "analytic harmonics spectrum"
   },
   {
     "page": 4,
     "title": "04 峰值低了 不等于声音更小",
-    "body": "在同一解析模型中：原始 Peak=0 dBFS，RMS=−3.01 dBFS；处理后 Peak=−2.50 dBFS，RMS=−4.79 dBFS。以原始 RMS 为目标，补偿 +1.78 dB 后 Peak≈−0.72 dBFS，Crest Factor 从 3.01 降至约 2.29 dB。这是同 RMS 下峰值变小的例子，不是保证省下 0.72 dB，也不是相同感知响度。真实素材须实测；RMS 不是 LUFS。",
+    "body": "在同一解析模型中：原始 Peak=0 dBFS，RMS=−3.01 dBFS；处理后 Peak=−2.50 dBFS，RMS=−4.79 dBFS。以原始 RMS 为目标，补偿 +1.78 dB 后 Peak≈−0.72 dBFS，Crest Factor 从 3.01 降至约 2.29 dB。这是同 RMS 下模型峰值变小的解析例子；实际素材的余量需另行检查。同 RMS 不等于同感知响度，RMS 与 LUFS 也需分开理解。",
     "visual": "peak RMS comparison"
   },
   {
     "page": 5,
     "title": "05 在真实界面上 找到四个角色",
-    "body": "以 FabFilter Saturn 2 为操作对象：Drive 影响饱和程度；Mix 控制该频段干湿比例；Level 调整该频段输出；High Quality 控制内部过采样。首次测试用单频段并保持其余变量不动，避免同时调整 Dynamics、Tone 和 Feedback 后不知变化来自哪里。官方宣传截图只用于识别控件，截图里的预设和数值不是本教程参数。",
+    "body": "以 FabFilter Saturn 2 为例：Drive 影响饱和程度；Mix 控制该频段干湿比例；Level 调整该频段输出；High Quality 控制内部过采样。首次测试用单频段并保持其余变量不动，避免同时调整 Dynamics、Tone 和 Feedback 后不知变化来自哪里。试听从单频段、低 Drive 开始，再随素材调整。",
     "visual": "official Saturn UI with actual control crop"
   },
   {
@@ -44,13 +44,13 @@
   {
     "page": 8,
     "title": "08 过采样 是取舍而非音质开关",
-    "body": "非线性会产生高次成分，超过 Nyquist 后可能折叠为混叠。48 kHz 采样率下，教学例中的 10 kHz 三次谐波为 30 kHz，折叠到 18 kHz；这里假设未被滤除。Saturn 2 的 Good 为 8×，Superb 为 32×，用于减少内部饱和算法的混叠，代价是 CPU。别把这个例子当成插件实测；底鼓的点击声也含高频。Linear Phase 仅覆盖手册列出的分频及过采样滤波，不让所有处理都变成线性相位。改变质量模式后重听瞬态并确认延迟补偿。",
+    "body": "非线性会产生高次成分，超过 Nyquist 后可能折叠为混叠。48 kHz 采样率下，教学例中的 10 kHz 三次谐波为 30 kHz，折叠到 18 kHz；这里假设未被滤除。Saturn 2 的 Good 为 8×，Superb 为 32×，用于减少内部饱和算法的混叠，代价是 CPU。底鼓的点击声也含高频。Linear Phase 仅覆盖手册列出的分频及过采样滤波，不让所有处理都变成线性相位。改变质量模式后重听瞬态并确认延迟补偿。",
     "visual": "aliasing folding diagram"
   },
   {
     "page": 9,
     "title": "09 最后用三次检查收尾",
-    "body": "小音量下：是否更容易跟住节奏？正常监听下：起音、尾音、与贝斯的关系是否合适？输出检查：是否仍有预期余量，是否出现新的过载？能解释收益，也能听到代价，才留下这一步。无实际音频，本教程不提供“通用最佳 Drive 值”或实测结论。",
+    "body": "小音量下：是否更容易跟住节奏？正常监听下：起音、尾音、与贝斯的关系是否合适？输出检查：是否仍有预期余量，是否出现新的过载？能解释收益，也能听到代价，才留下这一步。以听感决定 Drive 与 Mix 的最终设置。",
     "visual": "three listening checks"
   },
   {

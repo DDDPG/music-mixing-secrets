@@ -3,7 +3,8 @@ import fitz,json
 from PIL import Image,ImageDraw
 from weasyprint import HTML,default_url_fetcher
 from urllib.parse import urlparse
-R=Path(__file__).resolve().parents[1];P=R/'phone-preview';P.mkdir(exist_ok=True)
+R=Path(__file__).resolve().parents[1];P=R/'phone-preview'
+for directory in [P,R/'output',R/'qa',R/'research']:directory.mkdir(parents=True,exist_ok=True)
 def fetch(url,*a,**k):
  if urlparse(url).scheme not in ('file','data'):raise ValueError(url)
  return default_url_fetcher(url,*a,**k)

@@ -1,0 +1,55 @@
+{
+  "carousel": {
+    "pages": 8,
+    "fonts": [
+      "EBEZZI+Noto-Semi-Bold",
+      "ILRCBW+NotoCoverR2-Semi-Bold",
+      "JSQVWL+Noto-Sans-SC",
+      "KEYXTE+NotoCoverR2",
+      "LAJOIN+Noto"
+    ],
+    "replacement_glyphs": 0,
+    "prohibited_label_hits": []
+  },
+  "report": {
+    "pages": 5,
+    "fonts": [
+      "EBEZZI+Noto-Semi-Bold",
+      "JSQVWL+Noto-Sans-SC",
+      "LAJOIN+Noto"
+    ],
+    "replacement_glyphs": 0,
+    "prohibited_label_hits": []
+  },
+  "preserved_assets": {
+    "source/assets/derived/cover-hero-r2.png": true,
+    "source/assets/derived/pro-g-commentary.png": true,
+    "source/assets/derived/timing-controls.png": true,
+    "source/assets/fonts/CoverNotoSansSC-400.ttf": true,
+    "source/assets/fonts/CoverNotoSansSC-600.ttf": true
+  },
+  "source_font_sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+  "local_font_coverage": {
+    "400": {
+      "required_characters": 624,
+      "missing": []
+    },
+    "600": {
+      "required_characters": 624,
+      "missing": []
+    }
+  },
+  "layout": {
+    "carousel": {
+      "pages": 8,
+      "bounds_warnings": [],
+      "text_characters": 1961
+    },
+    "report": {
+      "pages": 5,
+      "bounds_warnings": [],
+      "text_characters": 4390
+    }
+  },
+  "review_status": "Self-check complete; independent review pending"
+}

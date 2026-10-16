@@ -1,7 +1,7 @@
 [
   {
     "path": "assets/derived/timing.svg",
-    "sha256": "f5fc29bd327310a6c4a730b3a67f9377de9687a9ddf653d7ec2d2713ffa6db89",
+    "sha256": "a0afd978a51ed6505de8c763b26b1ca0879ae6e6dc4aa90906e90a7313f3b3b0",
     "rights": "Original explanatory SVG or SIL OFL font/license",
     "source": "Project authored / bundled font license"
   },
@@ -9,11 +9,12 @@
     "path": "assets/derived/pro-c3-editorial.jpg",
     "sha256": "2d0448e73be1273fcca600b951088fc244e7a664ede66d376b772ec3cca399ef",
     "rights": "FabFilter reserved; bounded contextual educational reproduction",
-    "source": "https://www.fabfilter.com/press"
+    "source": "https://www.fabfilter.com/press",
+    "display_modification": "Carousel: top-aligned crop. Report: proportional SVG clipping viewport in pro-c3-display.svg, showing precisely the original 1680 × 1386 screenshot and excluding only the appended 100 px editorial strip. Attribution is on final resources and report sources."
   },
   {
     "path": "assets/derived/hierarchy.svg",
-    "sha256": "992a6763691fa6148107773d37a2a24985d982822838e5294af48ebe9f895100",
+    "sha256": "ea6a3efdb2721e31770c4809a50312641fb9f5d4b541122ee63aed9035020893",
     "rights": "Original explanatory SVG or SIL OFL font/license",
     "source": "Project authored / bundled font license"
   },
@@ -25,13 +26,13 @@
   },
   {
     "path": "assets/derived/routing.svg",
-    "sha256": "a8516414ce9bd10d9ca0f9e78f3bc0a6345eb0efc1adbc44d0b1f6537c00cb84",
+    "sha256": "27509c338004969fb50410c425445749afd25fca03da0a339738a4a405a8d380",
     "rights": "Original explanatory SVG or SIL OFL font/license",
     "source": "Project authored / bundled font license"
   },
   {
     "path": "assets/derived/math.svg",
-    "sha256": "f1c65f4022998b21322bebdc6501a2680c6f21cbc2d9f2fc6975be4b9dc4cd9c",
+    "sha256": "e8dc756168dca16202f52b214420ab327ae939d6d27dbda93c50c696cf54cb91",
     "rights": "Original explanatory SVG or SIL OFL font/license",
     "source": "Project authored / bundled font license"
   },
@@ -43,14 +44,21 @@
   },
   {
     "path": "assets/fonts/NotoSansSC-600.ttf",
-    "sha256": "bb90e75828e9fb536d0d92b680023b3c8517c9f36f44d1fc0bde0a122cbc2025",
+    "sha256": "e8ab2eb6ae5aeeb45d44d986b0ab43979c610ba2fd084feb41f3f35414ff9bc5",
     "rights": "Original explanatory SVG or SIL OFL font/license",
     "source": "Project authored / bundled font license"
   },
   {
     "path": "assets/fonts/NotoSansSC-400.ttf",
-    "sha256": "aeaa420a5ccbc2eedab2ccfdb06106e67acb019be9b46006ccef11a576a7ae9c",
+    "sha256": "9278d74e545c66aa7beb7c317e0f275a1f83e525cebbf94a18ee07caca878182",
     "rights": "Original explanatory SVG or SIL OFL font/license",
     "source": "Project authored / bundled font license"
+  },
+  {
+    "path": "assets/derived/pro-c3-display.svg",
+    "sha256": "d01de004b7c154698119e464d80cfc2b5a16916ac3f03c87ea1f221e31c40f25",
+    "rights": "Original presentation wrapper; embedded screenshot © FabFilter under existing contextual use",
+    "source": "pro-c3-editorial.jpg, itself sourced from https://www.fabfilter.com/press",
+    "modifications": "Viewport clips only the previously appended 100 px editorial strip; all original screenshot pixels are included at preserved aspect ratio."
   }
 ]

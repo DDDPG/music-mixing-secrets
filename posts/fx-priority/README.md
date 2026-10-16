@@ -8,4 +8,4 @@
 ## 渲染
 Python 环境安装 requirements.txt 后执行 python source/render.py。编辑 HTML/CSS/SVG 后重渲；使用本地 Noto Sans SC 400/600，字体许可随附。
 
-计算与时序图为原创教学例子，不是音频实测。产品语境 Pro-C 3、Pro-Q 4、Live 12；技术来源见 research/sources.md，引用作者为 Kangdi, Wang。
+计算与时序图用于估算衰减和练习 Automation。产品语境 Pro-C 3、Pro-Q 4、Live 12；技术来源见 research/sources.md，引用作者为 Kangdi, Wang。

@@ -1,0 +1,34 @@
+{
+  "asset": "cover-hero-r2.png",
+  "source": "ChatGPT built-in default image generator",
+  "generated_date": "2026-10-16",
+  "classification": "Conceptual illustration; not a measurement, actual audio-device photograph, software UI, or experimental result.",
+  "prompt": "Create a premium editorial conceptual illustration for an educational audio-mixing carousel, a 6:5 landscape image with a seamless white studio background. The scene is a striking miniature architectural sound gate leading into an open reverberant chamber, shown in a clean three-quarter view. One tall sculptural off-white rectangular doorway with a restrained cobalt-blue inner edge stands slightly left of center. A single coherent, vivid blue sound-object, shaped like a smooth compact sculptural pulse rather than a measured waveform, travels from the lower-left through the doorway. A few faint pale-gray wisps remain outside on the entrance side. On the far side of the doorway, the blue sound opens into several broad, delicate translucent curved veils that linger naturally and become more transparent with distance, creating an airy sense of reverberant space; the tail must remain intact and never look sharply chopped. The metaphor is selecting what enters a reverberation, not filtering frequencies and not cutting an existing tail. No grille, sieve, scissors, guillotine, science chart, arrows or diagram boxes. Keep the complete doorway and meaningful lingering space fully visible, within the central 80 percent of the image. The visual mass fills the frame generously. Materials: matte white ceramic, translucent blue acrylic or delicate fabric, soft gray shadow, subtle fine detail. Palette overwhelmingly white and very light neutral gray with controlled #0066cc blue; absolutely no purple, orange, neon or dark background. Refined high-key lighting, tangible dimensionality, strong instantly readable silhouette. Keep a clean white outer margin for integration with an editorial layout. No typography, no words, no letters, no numbers, no logos, no watermark, no software UI, no knobs, no meters, no actual waveform or spectrum. This is clearly a conceptual illustration, not a real audio-device product shot or measurement.",
+  "original_dimensions_px": [
+    1374,
+    1145
+  ],
+  "original_sha256": "87d2c3fb323485f5fcfeadf2ff88ac43e990f91fff322850168d874162c6d7e2",
+  "stored_original": "cover-hero-r2.png",
+  "derivation": {
+    "crop": null,
+    "aspect_ratio_preserved": true,
+    "display_rectangle_px": {
+      "x": 48,
+      "y": 490,
+      "width": 984,
+      "height": 820
+    },
+    "method": "Uncropped original displayed proportionally in editable HTML/CSS; no stretch or raster text."
+  },
+  "cover_font": {
+    "family": "Noto Sans SC",
+    "weights": [
+      400,
+      600
+    ],
+    "source_font_sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "license": "../fonts/OFL.txt",
+    "method": "Static 400 and 600 weight instances subset to the editable cover copy; interior fonts unchanged."
+  }
+}

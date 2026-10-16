@@ -7,7 +7,7 @@ https://www.fabfilter.com/help/pro-g/using/timecontrols
 
 S2 FabFilter Pro-G, Dynamic controls
 https://www.fabfilter.com/help/pro-g/using/dynamiccontrols
-支持：Threshold 依音频设定；Range 限制最大衰减。仅引用 Range 的20 dB例子并以独立算术解释，不把 Ratio 跨产品泛化。
+支持：Threshold 依音频设定；Range 限制最大衰减。本文以 20 dB 的 Range 说明最大衰减的计算。
 
 S3 Ableton Live 12 Reference, 29.20 Gate
 https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#gate
@@ -15,15 +15,15 @@ https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#gate
 
 S4 FabFilter Pro-G Overview
 https://www.fabfilter.com/help/pro-g/using/overview
-支持：界面区域与实际控件名。未断言媒体包截图属于当前软件版本。
+支持：界面区域与实际控件名。
 
 S5 FabFilter Press Area
 https://www.fabfilter.com/press
 官方媒体包：https://www.fabfilter.com/downloads/press/fabfilter-pro-g.zip
-实际取得官方截图，文件时间2015-12-14；媒体用途提供方式不等于明确通用再分发许可。仅作有实质评论的教学配图：比例缩放、明确厂商署名与来源、保留版权；不分发完整媒体包或独立原件。此为有限编辑使用评估，不是许可证或法律结论，权利仍保留。
+界面配图 © FabFilter，文件日期 2015-12-14，具体版本及组件未注明。配图按比例缩放并裁切用于教学评论。未找到通用再分发许可，第三方图像版权保留；进一步复用应核对权利人许可。
 
 D1 作者原创信号流推导
-前级 Gate: y=R(g·x)；后级 Gate: y=g·R(x)。R 是有记忆的混响系统。两者一般不等价；此为机制解释，不是厂商测试结论。图中 gate 的 g 是控制增益而非混响衰减。
+前级 Gate: y=R(g·x)；后级 Gate: y=g·R(x)。R 是有记忆的混响系统。两者一般不等价。图中 gate 的 g 表示控制增益，混响自身的衰减由 R 决定。
 
 D2 作者构造分析例
-开门 −24 dBFS，关门 −30 dBFS，相差6 dB；满足关闭条件120 ms，加Hold40 ms与Release80 ms，得到160/240 ms；无再触发、线性绘图示意，不代表产品时间响应。
+开门 −24 dBFS，关门 −30 dBFS，相差6 dB；满足关闭条件120 ms，加Hold40 ms与Release80 ms，得到160/240 ms；以无再触发、线性关闭过程作图；具体时间行为依产品与音频内容调整。

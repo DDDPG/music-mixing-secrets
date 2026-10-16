@@ -1,0 +1,34 @@
+{
+  "asset": "cover-hero-r2.png",
+  "source": "ChatGPT built-in default image generator",
+  "generated_date": "2026-10-16",
+  "classification": "Conceptual illustration; not a measurement, actual audio-device photograph, software UI, or experimental result.",
+  "prompt": "Create a striking high-end editorial conceptual illustration for an audio-mixing education cover, 6:5 landscape, isolated seamlessly on a clean white studio background. The central subject is a very large, instantly recognizable acoustic kick drum photographed as a sophisticated surreal still-life, viewed almost front-on from a slightly elevated three-quarter angle. It has an off-white drum shell and head, tasteful brushed-silver rim hardware, dark neutral support feet, one believable bass-drum pedal and soft felt beater. The drum is the hero and fills most of the image, not a small accessory. From the upper-right region of the drumhead, several nested sculptural cobalt-blue curved shells fan outward in a compact dimensional bloom, like carefully spaced translucent acrylic petals with a precise material edge. These are a poetic visual metaphor for added harmonic layers, not an acoustic wave measurement. Make the blue forms broad, clean, and nested; do not draw long trailing ribbons, sine waves, spectral bars or literal explosion flames. Preserve the drum's recognizable round silhouette and plausible hardware. Visual contrast is between the solid single drum body and the richer blue material layers, with no before/after split and no implication of louder output. Place the complete subject within the central 84 percent of the frame, with a clean white outer margin and enough room below for the full pedal. Palette: white #ffffff, very light neutral gray #f5f5f7, restrained deep blue #0066cc, minimal dark metallic detail. Beautiful soft high-key product lighting, restrained natural contact shadow, tactile surface detail, confident bold silhouette. No warm wood, orange, purple, neon, club lighting, or dark backdrop. No typography, no Chinese, no words, no letters, no numbers, no logos, no watermark, no UI, no graphs, no axes, no meters, no real or fabricated waveform or spectrum. This is a conceptual illustration rather than an acoustic experiment or a branded product image.",
+  "original_dimensions_px": [
+    1374,
+    1145
+  ],
+  "original_sha256": "1d33d745890d9f103518dcff7102d273b4d9532ab75e7e2635d5d4f6f1213996",
+  "stored_original": "cover-hero-r2.png",
+  "derivation": {
+    "crop": null,
+    "aspect_ratio_preserved": true,
+    "display_rectangle_px": {
+      "x": 48,
+      "y": 490,
+      "width": 984,
+      "height": 820
+    },
+    "method": "Uncropped original displayed proportionally in editable HTML/CSS; no stretch or raster text."
+  },
+  "cover_font": {
+    "family": "Noto Sans SC",
+    "weights": [
+      400,
+      600
+    ],
+    "source_font_sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "license": "../fonts/OFL.txt",
+    "method": "Static 400 and 600 weight instances subset to the editable cover copy; interior fonts unchanged."
+  }
+}

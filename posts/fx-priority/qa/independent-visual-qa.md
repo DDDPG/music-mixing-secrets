@@ -1,3 +1,5 @@
+历史记录：本文件记录 R3 文案清理前的版本，不代表当前交付状态。当前检查见 editorial-r3-qa.md。
+
 # Independent visual QA — topic03
 
 1 PASS: staged role handoff explicitly conceptual and arrangement-dependent.

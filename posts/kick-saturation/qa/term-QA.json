@@ -32,7 +32,7 @@
     "Polarity vs phase"
   ],
   "before_render": "Terms checked against baseline and official Saturn2 manual. No unsupported preset or actual audio performance claims.",
-  "after_render": "Independent designer checked all10 full-size/mobile carousel pages and all8 report pages; final revised P4/P5/P8/P10 pass. Independent model calculations match rounded values. No remaining visual blockers.",
+  "after_render": "R3 editorial render: ten carousel pages, zero automated text-bounds warnings; see editorial-r3-QA.md for visual checks and independent review status.",
   "citation": "author={Kangdi, Wang}, root URL verified upstream; standard BibTeX string concatenation in HTML",
   "privacy": "No note identifiers, account data or raw original note in public payload."
 }

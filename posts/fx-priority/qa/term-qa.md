@@ -1,3 +1,5 @@
+历史记录：本文件记录 R3 文案清理前的版本，不代表当前交付状态。当前检查见 editorial-r3-qa.md。
+
 # 双轮术语 QA
 
 渲染前：FX 定义限定为编曲音效轨；保留 Impact/Riser/Atmosphere、Automation、Ducking、Sidechain、Release、Range、Threshold、Ratio 原名。没有把检测 EQ 写成主音频动态 EQ。

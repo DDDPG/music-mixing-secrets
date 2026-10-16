@@ -13,7 +13,7 @@ for ox,title,non in [(60,'线性：y = x',False),(510,'饱和模型：y = x − 
  for i in range(101):
   x=-1+i/50;y=x-.25*x**3 if non else x;pts.append(f'{ox+185+x*130:.2f},{260-y*130:.2f}')
  b+=f'<polyline points="{" ".join(pts)}" fill="none" stroke="#0066cc" stroke-width="6"/>'+text(ox+320,302,'+1',size=24)+text(ox+145,143,'+1',size=24)
-svg('transfer.svg',b+text(40,440,'教学曲线；不代表 Saturn 2 的内部算法',size=25))
+svg('transfer.svg',b+text(40,440,'以三次曲线为例：观察幅值压缩与谐波生成',size=25))
 # harmonics vertical bars with exact relative level scale
 b=text(40,50,'处理后解析频谱 / 相对基频 dB')
 for db in [0,-10,-20,-30]:

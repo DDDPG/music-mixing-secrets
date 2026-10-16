@@ -1,0 +1,43 @@
+{
+  "revision": "R3",
+  "hero_sha256": "1d33d745890d9f103518dcff7102d273b4d9532ab75e7e2635d5d4f6f1213996",
+  "hero_unchanged": true,
+  "visible_ai_label_removed": true,
+  "vendor_credits_location": [
+    "carousel page 10",
+    "report sources"
+  ],
+  "retained_technical_qualifiers": [
+    "pure-sine analytic model",
+    "complete-cycle RMS",
+    "analytic model peak and True Peak distinction",
+    "RMS versus perceived loudness",
+    "phase and polarity",
+    "Saturn 2 oversampling and Linear Phase scope"
+  ],
+  "render_review": "Creator review complete; independent review pending",
+  "rendered": {
+    "kick-saturation.pdf": {
+      "pages": 10,
+      "unwanted_labels": []
+    },
+    "research-report.pdf": {
+      "pages": 7,
+      "unwanted_labels": []
+    }
+  },
+  "banned_phrase_scan": {},
+  "static_font_missing_glyphs": {
+    "400": "",
+    "600": ""
+  },
+  "automated_bounds_warnings": 0,
+  "static_font_variable_source_required_at_runtime": false,
+  "embedded_source_caption_handling": "SVG viewBox crops presentation to original interface; source image and rights retained",
+  "visual_review": [
+    "10 carousel phone previews",
+    "full-resolution carousel contact sheet and detailed pages 3/5",
+    "7 report pages"
+  ],
+  "independent_review": "pending"
+}

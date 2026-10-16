@@ -1,18 +1,31 @@
 {
-  "date":"2026-10-16",
-  "carousel_pages":8,
-  "canvas_px":[1080,1440],
-  "mobile_preview_px":[360,480],
-  "illustrated_report_pages":5,
-  "renderer":"WeasyPrint 66.0 + PyMuPDF",
-  "network_during_render":false,
-  "bounds_warnings":0,
-  "replacement_glyphs":0,
-  "bibtex_author":"Kangdi, Wang",
-  "pdf_repository_link":"https://github.com/DDDPG/music-mixing-secrets",
-  "numeric_examples":"analytic assumptions labeled, not measurements",
-  "source_note_and_private_identifiers":"excluded",
-  "vendor_originals_in_public_package":false,
-  "vendor_illustration_basis":"bounded attributed educational use, no blanket license",
-  "upload_performed":false
+  "date": "2026-10-16",
+  "carousel_pages": 8,
+  "canvas_px": [
+    1080,
+    1440
+  ],
+  "mobile_preview_px": [
+    360,
+    480
+  ],
+  "illustrated_report_pages": 5,
+  "renderer": "WeasyPrint 66.0 + PyMuPDF",
+  "network_during_render": false,
+  "bounds_warnings": 0,
+  "replacement_glyphs": 0,
+  "bibtex_author": "Kangdi, Wang",
+  "pdf_repository_link": "https://github.com/DDDPG/music-mixing-secrets",
+  "numeric_examples": "Simplified examples with gating, no-retrigger and maximum-attenuation conditions retained.",
+  "source_note_and_private_identifiers": "excluded",
+  "vendor_originals_in_public_package": false,
+  "vendor_illustration_basis": "bounded attributed educational use, no blanket license",
+  "upload_performed": false,
+  "revision": "editorial-r3",
+  "attribution_location": "Final carousel resources and report sources",
+  "visible_provenance_labels": 0,
+  "independent_review": "pending",
+  "body_font_coverage_characters": 624,
+  "body_font_missing_glyphs": 0,
+  "system_font_fallback": false
 }

@@ -12,11 +12,11 @@
 ③ Range 不必一开始就设成完全静音。
 ④ 先听混响前的信号，再听 Wet，最后回编曲里做响度接近的 A/B。
 
-注意：Pro-G 的 hysteresis 是内建机制，不是一个独立旋钮；不同 Gate 的 Hold 定义也不完全相同。图里的 −24/−30 dBFS 和时间数值都是分析示例，不能照抄当预设。
+Pro-G 的 hysteresis 按风格内建；不同 Gate 的 Hold 定义也有差异。图中以 −24/−30 dBFS 和简化时序解释门限逻辑，实际起点要结合音频调整。
 
 如果有效弱音和串音电平重叠，单靠门限分不开，可以考虑检测侧链、发送自动化或手工编辑。别把气息、鬼音和自然延音误当垃圾一起剪掉。
 
 完整资料与可编辑源码：https://github.com/DDDPG/music-mixing-secrets
-一手资料：FabFilter Pro-G 官方帮助；Ableton Live 12 Gate 手册。真实截图 © FabFilter，有限教学评论配图，版权保留。
+一手资料：FabFilter Pro-G 官方帮助；Ableton Live 12 Gate 手册。界面配图 © FabFilter，来源与使用说明见研究报告。
 
 #混音 #音乐制作 #混响 #Gate #声音设计 #录音

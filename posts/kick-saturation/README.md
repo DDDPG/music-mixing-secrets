@@ -10,6 +10,8 @@
 - source/：生成、渲染、打包脚本
 - assets.json / RIGHTS_AND_SOURCES.md：来源、版权边界与裁切记录
 
-复现顺序：python source/generate_visuals.py；python source/build.py；python source/render_carousel.py；python source/render_report.py。依赖 Python、WeasyPrint 66、PyMuPDF、Pillow。渲染离线读取本地资产。SVG 标签使用随包 Noto 字体。所有数值是明示解析模型，未运行商业插件或音频实测。
+复现顺序：python source/generate_visuals.py；python source/build.py；python source/render_carousel.py；python source/render_report.py。依赖 Python、WeasyPrint 66、PyMuPDF、Pillow。渲染离线读取本地资产。SVG 标签使用随包 Noto 字体。数值计算采用文中写明的解析模型。当前源码保留 R2 封面与 R3 文案整理。
 
 官方产品像素版权保留，不因代码许可而获得再许可。源码压缩包不入公开 GitHub。根仓库：https://github.com/DDDPG/music-mixing-secrets
+
+复现时无需 NotoSansSC-Variable.ttf；渲染使用已随包保存的静态子集字体。完整变量字体可从紧凑源码包排除。

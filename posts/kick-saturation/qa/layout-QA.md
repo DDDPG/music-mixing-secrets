@@ -1,3 +1,7 @@
+# Historical pre-R3 layout QA
+
+This prior review describes the version before R3 editorial cleanup. Current output is covered by editorial-r3-QA.md; visible AI labels and repetitive disclaimer text were removed.
+
 # 布局与术语复核
 
 2026-10-16。10 页，1080×1440；10 张 360×480 手机预览。WeasyPrint 66 → PDF → PyMuPDF；每页文字边界自动检查无越界。图表与数值另用解析及离散采样重算，误差小于 1e−12。

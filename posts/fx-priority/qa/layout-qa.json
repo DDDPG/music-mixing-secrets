@@ -1,124 +1,37 @@
 {
+  "revision": "editorial-r3",
   "automated": [
     {
-      "page": 1,
-      "size": [
-        1080,
-        1440
-      ],
+      "file": "carousel.pdf",
+      "pages": 9,
       "text_bounds": "pass",
-      "text_characters": 215,
-      "preview": [
-        360,
-        480
-      ]
+      "replacement_characters": 0
     },
     {
-      "page": 2,
-      "size": [
-        1080,
-        1440
-      ],
+      "file": "research-report.pdf",
+      "pages": 9,
       "text_bounds": "pass",
-      "text_characters": 222,
-      "preview": [
-        360,
-        480
-      ]
-    },
-    {
-      "page": 3,
-      "size": [
-        1080,
-        1440
-      ],
-      "text_bounds": "pass",
-      "text_characters": 224,
-      "preview": [
-        360,
-        480
-      ]
-    },
-    {
-      "page": 4,
-      "size": [
-        1080,
-        1440
-      ],
-      "text_bounds": "pass",
-      "text_characters": 318,
-      "preview": [
-        360,
-        480
-      ]
-    },
-    {
-      "page": 5,
-      "size": [
-        1080,
-        1440
-      ],
-      "text_bounds": "pass",
-      "text_characters": 294,
-      "preview": [
-        360,
-        480
-      ]
-    },
-    {
-      "page": 6,
-      "size": [
-        1080,
-        1440
-      ],
-      "text_bounds": "pass",
-      "text_characters": 291,
-      "preview": [
-        360,
-        480
-      ]
-    },
-    {
-      "page": 7,
-      "size": [
-        1080,
-        1440
-      ],
-      "text_bounds": "pass",
-      "text_characters": 185,
-      "preview": [
-        360,
-        480
-      ]
-    },
-    {
-      "page": 8,
-      "size": [
-        1080,
-        1440
-      ],
-      "text_bounds": "pass",
-      "text_characters": 209,
-      "preview": [
-        360,
-        480
-      ]
-    },
-    {
-      "page": 9,
-      "size": [
-        1080,
-        1440
-      ],
-      "text_bounds": "pass",
-      "text_characters": 426,
-      "preview": [
-        360,
-        480
-      ]
+      "replacement_characters": 0
     }
   ],
-  "manual": "Full contact sheet reviewed; final independent review recorded separately. No clipped page text found.",
-  "numeric": "120BPM = 500/250/125ms; −50/0/125/250ms automation points; ideal GR 2dB",
-  "report_pages": 9
+  "canvas": [
+    1080,
+    1440
+  ],
+  "phone": [
+    360,
+    480
+  ],
+  "font_coverage": {
+    "400": {
+      "bundled_glyphs": 723,
+      "missing": 0
+    },
+    "600": {
+      "bundled_glyphs": 723,
+      "missing": 0
+    }
+  },
+  "manual": "Current contact sheets, full-size affected pages and phone previews inspected; independent final review is separate.",
+  "numeric": "120 BPM = 500/250/125 ms; ideal GR = 4 × (1 − 1/2) = 2 dB; Automation points unchanged."
 }

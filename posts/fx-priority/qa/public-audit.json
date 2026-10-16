@@ -1,19 +1,46 @@
 {
+  "revision": "editorial-r3",
+  "date": "2026-10-16",
+  "hero_sha256": "6c4b2fdf86883ed08c42cfeeb4095a95e1b854c8c64f4f1533078aea6d8a5d6f",
+  "font_coverage": {
+    "400": {
+      "bundled_glyphs": 723,
+      "missing": 0
+    },
+    "600": {
+      "bundled_glyphs": 723,
+      "missing": 0
+    }
+  },
   "local_references": "all exist",
   "pdf": [
     {
       "file": "carousel.pdf",
       "pages": 9,
-      "text_bounds": "pass"
+      "text_bounds": "pass",
+      "replacement_characters": 0
     },
     {
       "file": "research-report.pdf",
       "pages": 9,
-      "text_bounds": "pass"
+      "text_bounds": "pass",
+      "replacement_characters": 0
     }
   ],
+  "carousel_pages": 9,
+  "png_size": [
+    1080,
+    1440
+  ],
+  "phone_size": [
+    360,
+    480
+  ],
+  "defensive_copy_scan": "pass for current reading surfaces and PDF text",
+  "empty_label_boxes": 0,
+  "source_attribution": "Final carousel resource page and report source section",
+  "genuine_UI": "Original screenshot controls unchanged. Carousel excludes added footer using top-aligned crop; report uses a proportional SVG viewport with exact 1680 × 1386 bounds.",
   "private_sources": "none",
   "vendor_source_archives": "none",
-  "genuine_UI": "contextual derivative and used crop only",
-  "attribution_strip": "checked rendered text, Noto Sans Latin font corrected"
+  "report_page5_review": "Fixed partial attribution-strip exposure; full-page rerender inspected at 1.5×. No strip remains; bottom status bar is complete."
 }

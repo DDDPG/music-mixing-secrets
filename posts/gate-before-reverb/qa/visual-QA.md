@@ -1,15 +1,10 @@
-# Final visual QA
+# R3 editorial visual QA
 2026-10-16
 
-All eight carousel pages checked individually at1080×1440 and360×480. All five illustrated research-report pages checked individually. Final result: pass.
+This current record supersedes the earlier visual-QA notes for the initial export. The R2 cover artwork, title, benefit sentence, composition and editable layout are preserved. The original hero and both product image files are byte-identical to R2.
 
-Corrections completed:
-- Removed extra overflow page and stale exports.
-- Removed nested processor borders on the route comparison.
-- Enlarged timeline annotations to32px at full936px diagram width.
-- Reworked timing page title and top crop proportions without shrinking main text.
-- Lifted screenshot rights note20px and preserved two clean lines.
-- Reduced listening-panel whitespace to end above the footer safe line.
-- Tightened citation-block whitespace; preserved readable29px BibTeX text.
+Reviewed the updated eight-page carousel contact sheet, cover, control-page, timing-page and final-resource mobile previews, plus the five-page report contact sheet. The label removals leave no empty label boxes. Attribution is consolidated on the final resource page and in the report source section.
 
-No visible clipping, missing Chinese glyphs or misleading screenshot edits. Report URLs and illustration caveats intact. SVGs are analytical examples, not recorded waveforms. Full image and local crop preserve real UI controls. Sources, numerical conditions, product-version caveat and third-party rights boundaries remain visible. Zero automated page-bounds warnings.
+The gate-state assumption, hysteresis threshold difference, no-retrigger timeline condition, product-dependent Hold behavior and maximum-attenuation condition remain. Technical examples use natural explanatory qualifiers. No measurements or test outcomes have been added.
+
+Current automated checks: eight 1080 × 1440 carousel pages, eight 360 × 480 previews, five report pages, zero page-bounds warnings and zero replacement glyphs in extracted PDF text. Independent review is pending.

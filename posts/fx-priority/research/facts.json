@@ -46,7 +46,7 @@
   },
   {
     "id": "F7",
-    "claim": "宣传图是 Internal，不是 FX 外部侧链预设",
+    "claim": "源图显示 Internal / Nice Pumping；外部 FX 侧链需选择 External 并接入宿主发送",
     "kind": "image inspection",
     "sources": [
       "S6"
