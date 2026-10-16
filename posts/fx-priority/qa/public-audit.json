@@ -1,0 +1,19 @@
+{
+  "local_references": "all exist",
+  "pdf": [
+    {
+      "file": "carousel.pdf",
+      "pages": 9,
+      "text_bounds": "pass"
+    },
+    {
+      "file": "research-report.pdf",
+      "pages": 9,
+      "text_bounds": "pass"
+    }
+  ],
+  "private_sources": "none",
+  "vendor_source_archives": "none",
+  "genuine_UI": "contextual derivative and used crop only",
+  "attribution_strip": "checked rendered text, Noto Sans Latin font corrected"
+}

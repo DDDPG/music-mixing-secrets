@@ -1,0 +1,16 @@
+{
+  "model": "x=sin(2*pi*50*t); y=x-0.25*x^3; full cycle analytic RMS; full scale amplitude=1",
+  "raw": {
+    "peak_dbfs": 0,
+    "rms_dbfs": -3.0102999566398125
+  },
+  "processed": {
+    "peak_dbfs": -2.4987747321659985,
+    "rms_dbfs": -4.788210395975568
+  },
+  "rms_matched": {
+    "gain_db": 1.7779104393357552,
+    "peak_dbfs": -0.7208642928302436,
+    "rms_dbfs": -3.0102999566398125
+  }
+}

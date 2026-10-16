@@ -53,8 +53,29 @@
       "pages": 12,
       "research_report_pages": 9,
       "history": []
+    },
+    {
+      "id": "gate-before-reverb",
+      "current": "posts/gate-before-reverb",
+      "pages": 8,
+      "research_report_pages": 5,
+      "history": []
+    },
+    {
+      "id": "kick-saturation",
+      "current": "posts/kick-saturation",
+      "pages": 10,
+      "research_report_pages": 8,
+      "history": []
+    },
+    {
+      "id": "fx-priority",
+      "current": "posts/fx-priority",
+      "pages": 9,
+      "research_report_pages": 9,
+      "history": []
     }
   ],
-  "research_report_status": "The first three reports were reconstructed from retained production artifacts; the three new tutorials include reports prepared alongside the illustrated posts. Historical missing reports are disclosed separately.",
-  "updated_date": "2026-10-13"
+  "research_report_status": "The first three reports were reconstructed from retained production artifacts; subsequent tutorials include reports prepared alongside the illustrated posts. Historical missing reports are disclosed separately.",
+  "updated_date": "2026-10-16"
 }

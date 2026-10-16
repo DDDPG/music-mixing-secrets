@@ -1,0 +1,38 @@
+{
+  "dimensions": [
+    1080,
+    1440
+  ],
+  "pages": 10,
+  "automated_bounds_warnings": 0,
+  "model_checked": {
+    "model": "x=sin(2*pi*50*t); y=x-0.25*x^3; full cycle analytic RMS; full scale amplitude=1",
+    "raw": {
+      "peak_dbfs": 0,
+      "rms_dbfs": -3.0102999566398125
+    },
+    "processed": {
+      "peak_dbfs": -2.4987747321659985,
+      "rms_dbfs": -4.788210395975568
+    },
+    "rms_matched": {
+      "gain_db": 1.7779104393357552,
+      "peak_dbfs": -0.7208642928302436,
+      "rms_dbfs": -3.0102999566398125
+    }
+  },
+  "terms_reviewed": [
+    "Gain vs saturation",
+    "Peak vs RMS vs LUFS",
+    "Crest Factor",
+    "sample peak vs True Peak",
+    "band Level vs global output",
+    "Mix",
+    "High Quality Good 8x Superb32x",
+    "Polarity vs phase"
+  ],
+  "before_render": "Terms checked against baseline and official Saturn2 manual. No unsupported preset or actual audio performance claims.",
+  "after_render": "Independent designer checked all10 full-size/mobile carousel pages and all8 report pages; final revised P4/P5/P8/P10 pass. Independent model calculations match rounded values. No remaining visual blockers.",
+  "citation": "author={Kangdi, Wang}, root URL verified upstream; standard BibTeX string concatenation in HTML",
+  "privacy": "No note identifiers, account data or raw original note in public payload."
+}

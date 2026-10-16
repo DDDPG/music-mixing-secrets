@@ -1,0 +1,56 @@
+[
+  {
+    "path": "assets/derived/timing.svg",
+    "sha256": "f5fc29bd327310a6c4a730b3a67f9377de9687a9ddf653d7ec2d2713ffa6db89",
+    "rights": "Original explanatory SVG or SIL OFL font/license",
+    "source": "Project authored / bundled font license"
+  },
+  {
+    "path": "assets/derived/pro-c3-editorial.jpg",
+    "sha256": "2d0448e73be1273fcca600b951088fc244e7a664ede66d376b772ec3cca399ef",
+    "rights": "FabFilter reserved; bounded contextual educational reproduction",
+    "source": "https://www.fabfilter.com/press"
+  },
+  {
+    "path": "assets/derived/hierarchy.svg",
+    "sha256": "992a6763691fa6148107773d37a2a24985d982822838e5294af48ebe9f895100",
+    "rights": "Original explanatory SVG or SIL OFL font/license",
+    "source": "Project authored / bundled font license"
+  },
+  {
+    "path": "assets/derived/controls.jpg",
+    "sha256": "5add50c4a83daf5a58250d57acbf0a38139af6386f930cb9f5d7a97c673f9f0e",
+    "rights": "FabFilter reserved; bounded contextual educational reproduction",
+    "source": "https://www.fabfilter.com/press"
+  },
+  {
+    "path": "assets/derived/routing.svg",
+    "sha256": "a8516414ce9bd10d9ca0f9e78f3bc0a6345eb0efc1adbc44d0b1f6537c00cb84",
+    "rights": "Original explanatory SVG or SIL OFL font/license",
+    "source": "Project authored / bundled font license"
+  },
+  {
+    "path": "assets/derived/math.svg",
+    "sha256": "f1c65f4022998b21322bebdc6501a2680c6f21cbc2d9f2fc6975be4b9dc4cd9c",
+    "rights": "Original explanatory SVG or SIL OFL font/license",
+    "source": "Project authored / bundled font license"
+  },
+  {
+    "path": "assets/fonts/OFL.txt",
+    "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "rights": "Original explanatory SVG or SIL OFL font/license",
+    "source": "Project authored / bundled font license"
+  },
+  {
+    "path": "assets/fonts/NotoSansSC-600.ttf",
+    "sha256": "bb90e75828e9fb536d0d92b680023b3c8517c9f36f44d1fc0bde0a122cbc2025",
+    "rights": "Original explanatory SVG or SIL OFL font/license",
+    "source": "Project authored / bundled font license"
+  },
+  {
+    "path": "assets/fonts/NotoSansSC-400.ttf",
+    "sha256": "aeaa420a5ccbc2eedab2ccfdb06106e67acb019be9b46006ccef11a576a7ae9c",
+    "rights": "Original explanatory SVG or SIL OFL font/license",
+    "source": "Project authored / bundled font license"
+  }
+]

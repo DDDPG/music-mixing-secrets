@@ -1,0 +1,46 @@
+[
+  {
+    "label": "FX",
+    "meaning": "本篇为编曲音效轨，不泛指效果返回"
+  },
+  {
+    "label": "Impact",
+    "meaning": "强调落点的冲击音效"
+  },
+  {
+    "label": "Riser",
+    "meaning": "转场前上升音效"
+  },
+  {
+    "label": "Ducking",
+    "meaning": "受控压低避让"
+  },
+  {
+    "label": "Sidechain",
+    "meaning": "检测/控制支路，不是主音频混合支路"
+  },
+  {
+    "label": "Automation",
+    "meaning": "按时间保存与回放参数变化"
+  },
+  {
+    "label": "Gain Reduction (GR)",
+    "meaning": "增益衰减量，不是输出电平"
+  },
+  {
+    "label": "Release",
+    "meaning": "恢复响应速度，不保证设定时间等于完全恢复"
+  },
+  {
+    "label": "Range",
+    "meaning": "Pro-C 3 最大增益变化限制"
+  },
+  {
+    "label": "Dynamic EQ",
+    "meaning": "随信号变化的频段增益"
+  },
+  {
+    "label": "Bus",
+    "meaning": "汇合路由，非天然等于 Master"
+  }
+]

@@ -1,0 +1,265 @@
+{
+  "files": [
+    {
+      "path": "CITATION.bib",
+      "bytes": 288,
+      "sha256": "dba7697356fcc26e2008d63de630d92c9b3a821a295fe9260c6c29fdb86d7dc4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1366,
+      "sha256": "0ab0597100a1980d721aaf4adbcb580dd02a04612e7cb000eedce7274e320e88"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 1372,
+      "sha256": "fd8e09e345fb23485c8c2d24fe9c1ab24e9d0ccb493dc410833f0c43cfc0edfd"
+    },
+    {
+      "path": "output/gate-before-reverb.pdf",
+      "bytes": 877449,
+      "sha256": "a818a26a3b965aebd3fd5426eb242ee181d14d086f53f84ef2024644cdd5af52"
+    },
+    {
+      "path": "output/xhs-01.png",
+      "bytes": 119747,
+      "sha256": "7ead5571705da1046e726d5927ad7979153719ef154be42b79d6428c5779bb30"
+    },
+    {
+      "path": "output/xhs-02.png",
+      "bytes": 117701,
+      "sha256": "91206c6600d7c8a2ea89919f24883371ecfb5ce5177547a22c2cda6179886b3e"
+    },
+    {
+      "path": "output/xhs-03.png",
+      "bytes": 124752,
+      "sha256": "dd591308fdb4489ae15d33a4eb744ab38c885d165bd10622cb6db3e9dfa862bf"
+    },
+    {
+      "path": "output/xhs-04.png",
+      "bytes": 517693,
+      "sha256": "ce087ff9f338a39dbfddd53ff2c40f804ea29e8d0c7fe5be2a2d80487b24551d"
+    },
+    {
+      "path": "output/xhs-05.png",
+      "bytes": 185749,
+      "sha256": "827783ac027019432450845abff03da860a080bb5aedaefe614afb8e4e8c30d2"
+    },
+    {
+      "path": "output/xhs-06.png",
+      "bytes": 129854,
+      "sha256": "c371d073538c075b8e80d7d369489eee44ec79669083ae5e967b87c42df2d121"
+    },
+    {
+      "path": "output/xhs-07.png",
+      "bytes": 122391,
+      "sha256": "3dd9c0e28917403598c20c504f1f215c6cfe13147e48d8aa8d704ebd922cf6d2"
+    },
+    {
+      "path": "output/xhs-08.png",
+      "bytes": 131697,
+      "sha256": "87000b6c24b6b29d8856452d8bbb1ec10342a230265524f4f9062b7957067082"
+    },
+    {
+      "path": "phone-preview/xhs-01-360.png",
+      "bytes": 56692,
+      "sha256": "4a80ae3d75ae9a9b4a84619987e99d0ae74a3dafaefe0bd3b62b84ff71444f84"
+    },
+    {
+      "path": "phone-preview/xhs-02-360.png",
+      "bytes": 54724,
+      "sha256": "a1d1b39ff222113fb9caf95e1b88fe404445cb250f1d1f90e1f5380755e0df81"
+    },
+    {
+      "path": "phone-preview/xhs-03-360.png",
+      "bytes": 60811,
+      "sha256": "7642f79385567079279b199f7db8b8ff71989d8921c5b0e4a3da6a60d569622a"
+    },
+    {
+      "path": "phone-preview/xhs-04-360.png",
+      "bytes": 113173,
+      "sha256": "e60793a2b474c9797e97589e5a4109e32c3fec03f3adebd5a82af49d0fabe0d9"
+    },
+    {
+      "path": "phone-preview/xhs-05-360.png",
+      "bytes": 69470,
+      "sha256": "47184995a5ef3a2ff93487adb4a67c57312b1000e3977baf947843f98d3e718a"
+    },
+    {
+      "path": "phone-preview/xhs-06-360.png",
+      "bytes": 63274,
+      "sha256": "399e7b7b830fcd1e11b0ed46eed0a3401707a9439ce471ec661de9f40d094b8d"
+    },
+    {
+      "path": "phone-preview/xhs-07-360.png",
+      "bytes": 58468,
+      "sha256": "b5367c7c69d1e15efa8a3a7356379d19c65738e06ea8c645ab172530afc3189c"
+    },
+    {
+      "path": "phone-preview/xhs-08-360.png",
+      "bytes": 61878,
+      "sha256": "80225ce595d8457215e98e441ad60a24a5c7b9c7a2a82ffcdb4ec40ab22164f5"
+    },
+    {
+      "path": "qa/final-checks.json",
+      "bytes": 656,
+      "sha256": "6b3ee80f7ca51cad97a44d0d5c38511b731fd8c9055d28de9c1a464f96229d0d"
+    },
+    {
+      "path": "qa/layout-report.json",
+      "bytes": 184,
+      "sha256": "c04b7e1b8344f549a02a5602d68f786f8b479a34c68f804d3163419f8d36b981"
+    },
+    {
+      "path": "qa/term-QA.md",
+      "bytes": 1593,
+      "sha256": "e4d9136d0f05dbfc0b523bf11ab2a9172b711efbb11f96cff7cf81e34763288f"
+    },
+    {
+      "path": "qa/visual-QA.md",
+      "bytes": 1054,
+      "sha256": "bddb58d257d86fe073f4724f431fe7ede9bf15fdf7ab400dc203f36e86bd8288"
+    },
+    {
+      "path": "research/RESEARCH_REPORT.html",
+      "bytes": 11177,
+      "sha256": "f28dabeb5dacdd947d0eda13118e22871f2025ff8ab98a0791fdda643ff84edb"
+    },
+    {
+      "path": "research/RESEARCH_REPORT.md",
+      "bytes": 9128,
+      "sha256": "e849f3aaa05874e2d65fa78406bfd150607d13d44319d59328600a39dadbd404"
+    },
+    {
+      "path": "research/RESEARCH_REPORT.pdf",
+      "bytes": 822566,
+      "sha256": "0ee6ac567754fca92626e9785f336067b7b4635dbdf0933a570ae767b7ca2a7a"
+    },
+    {
+      "path": "research/assets.json",
+      "bytes": 1135,
+      "sha256": "03f2e35fea025710ac7afda2bf87e53522c241c27ed1d842b736a4336a65e97e"
+    },
+    {
+      "path": "research/design-decision.md",
+      "bytes": 985,
+      "sha256": "5e460597575bb7950f5f318c57c2c7cf2c6ace709a6f2c03d2c0ab86f8d0b749"
+    },
+    {
+      "path": "research/facts.json",
+      "bytes": 711,
+      "sha256": "2ad25b40729b748a9638b7d1dd5d040d41caa6b4b9340332d4030f3be2d0738d"
+    },
+    {
+      "path": "research/page-plan.json",
+      "bytes": 594,
+      "sha256": "a5d61f13cd240084aa3de01193e106cb035e285ed5302c14924cc4bdf0e6bfcb"
+    },
+    {
+      "path": "research/sources.md",
+      "bytes": 2015,
+      "sha256": "a9b902c013553357e46ee79fc4866c42016154fca2a8806e06f19b452fd9c78f"
+    },
+    {
+      "path": "research/term-map.json",
+      "bytes": 520,
+      "sha256": "78e461005345ce613c2d708627605431193766cbf42a8c04e619ad012f0b0c63"
+    },
+    {
+      "path": "source/assets/derived/pro-g-commentary.png",
+      "bytes": 374809,
+      "sha256": "09ccf2627e12be76a82e44638a76f1bb66bf554c49e8751af36cb02d15225dcd"
+    },
+    {
+      "path": "source/assets/derived/timing-controls.png",
+      "bytes": 83752,
+      "sha256": "c70bad90a287d43bc66659202b6c8749b9aa81ca109dac4dcddf3c0d2735afa8"
+    },
+    {
+      "path": "source/assets/diagrams/example-data.json",
+      "bytes": 858,
+      "sha256": "6afbbf72c8575c368df77d644e1bca055ec1af2e155f8eb2312c75c4700eaf74"
+    },
+    {
+      "path": "source/assets/diagrams/hysteresis.png",
+      "bytes": 33831,
+      "sha256": "1c100162602e8dcc29bdba96063d0930fe76fe1976dc7fd3a9fa5448a50961fb"
+    },
+    {
+      "path": "source/assets/diagrams/hysteresis.svg",
+      "bytes": 1532,
+      "sha256": "f4bd91986c8228347448d8e3c1e27867661e379f3d711ff8c0469ff93c3c1eb4"
+    },
+    {
+      "path": "source/assets/diagrams/routing.png",
+      "bytes": 31907,
+      "sha256": "5666efe10a63227c4639f7471f56b2d50f0ccbc6191bd031304e4eb357cab6d3"
+    },
+    {
+      "path": "source/assets/diagrams/routing.svg",
+      "bytes": 1578,
+      "sha256": "db48f56439be2c64c4f545e0202cd1e3c04ac293d2f393adc46eafd09ff6c4d3"
+    },
+    {
+      "path": "source/assets/diagrams/timing.png",
+      "bytes": 46309,
+      "sha256": "cea54bf2aae8cdae737d63bf966c5dd1d75b396f9076864e27a3dc7d44403fba"
+    },
+    {
+      "path": "source/assets/diagrams/timing.svg",
+      "bytes": 1800,
+      "sha256": "a4a31ee8572558fb3be85ef7b5e608377384cd5c70b6d4c2d3c86545c7338748"
+    },
+    {
+      "path": "source/assets/fonts/NotoSansSC-400.ttf",
+      "bytes": 145524,
+      "sha256": "aeaa420a5ccbc2eedab2ccfdb06106e67acb019be9b46006ccef11a576a7ae9c"
+    },
+    {
+      "path": "source/assets/fonts/NotoSansSC-600.ttf",
+      "bytes": 145464,
+      "sha256": "bb90e75828e9fb536d0d92b680023b3c8517c9f36f44d1fc0bde0a122cbc2025"
+    },
+    {
+      "path": "source/assets/fonts/OFL.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "path": "source/build_diagrams.py",
+      "bytes": 2507,
+      "sha256": "bff9ea47627209d6f4c9e0301eab4c71de2521db875d4bc283b49f193941d28e"
+    },
+    {
+      "path": "source/index.html",
+      "bytes": 7842,
+      "sha256": "d3994459fc0fac7fadb2e81577b0866400ab0719bee017eb9b01085b5cf84e4a"
+    },
+    {
+      "path": "source/render.py",
+      "bytes": 1676,
+      "sha256": "3c8f64676b5a749fa21df8e5ffc0a0c5afdb0c3887d453c5ec1df919f864a909"
+    },
+    {
+      "path": "source/render_assets.py",
+      "bytes": 611,
+      "sha256": "2bb4f45b0349a86c84c30ab0a9bb9eb7932ada2301721ffb2c38957c3322af1b"
+    },
+    {
+      "path": "source/style.css",
+      "bytes": 1771,
+      "sha256": "cd44fcc5dc33267ba090791680ff8b2005234ee11e57515c77eac36778506669"
+    },
+    {
+      "path": "title-caption.txt",
+      "bytes": 1479,
+      "sha256": "184128818c52d93c7b924a60545d1b3153977ebc930d18006c04ca0db4b54708"
+    }
+  ],
+  "excluded": [
+    "raw private source note and identifiers",
+    "vendor press-kit originals and unrelated assets",
+    "intermediate overflow render pages"
+  ],
+  "scope": "educational article with limited attributed third-party illustrations; see RIGHTS.md"
+}

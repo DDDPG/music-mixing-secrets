@@ -1,0 +1,47 @@
+[
+  {
+    "page": 1,
+    "title": "FX 出场，谁该让位？",
+    "visual": "主次时间轴与一句有限定的主张"
+  },
+  {
+    "page": 2,
+    "title": "先分角色，再谈优先",
+    "visual": "Impact / Riser / Atmosphere 三种任务与保留主角"
+  },
+  {
+    "page": 3,
+    "title": "只动真正冲突的部分",
+    "visual": "编排→自动化→侧链→动态EQ 决策阶梯"
+  },
+  {
+    "page": 4,
+    "title": "侧链接对，才会让对",
+    "visual": "双路径路由图：音频与控制，排除主唱/Kick"
+  },
+  {
+    "page": 5,
+    "title": "2 dB 是怎么算出来的",
+    "visual": "4 dB over threshold / 2:1 → 2 dB GR，理想静态例子"
+  },
+  {
+    "page": 6,
+    "title": "恢复要跟着乐句",
+    "visual": "120BPM 时间标尺和原创增益包络，不伪装测量"
+  },
+  {
+    "page": 7,
+    "title": "看懂真实控件",
+    "visual": "官方 Pro-C 3 全图+真实裁切；Internal 状态明确"
+  },
+  {
+    "page": 8,
+    "title": "十秒检查，听主角回来",
+    "visual": "转场前后试听步骤与失败修正"
+  },
+  {
+    "page": 9,
+    "title": "完整图文与可编辑源码",
+    "visual": "GitHub引用、简明来源与BibTeX"
+  }
+]

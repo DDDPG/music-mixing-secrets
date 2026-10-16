@@ -19,6 +19,12 @@
   <a href="posts/synth-placement/"><img src="posts/synth-placement/output/01.png" alt="合成器的前后左右" width="280"></a>
 </p>
 
+<p>
+  <a href="posts/gate-before-reverb/"><img src="posts/gate-before-reverb/output/xhs-01.png" alt="混响入口门限：只让需要的声音进入空间" width="280"></a>
+  <a href="posts/kick-saturation/"><img src="posts/kick-saturation/output/xhs-01.png" alt="底鼓不够扎实，先别只加音量" width="280"></a>
+  <a href="posts/fx-priority/"><img src="posts/fx-priority/output/01.png" alt="FX 出场，谁该让位？" width="280"></a>
+</p>
+
 ### 01 · 给人声一点空间
 
 低 Wet 的 Ping Pong Delay：把延迟时间、反馈、干湿混合与滤波分开理解，控制重复声的节奏与存在感。
@@ -55,6 +61,24 @@
 
 [研究报告（9 页）](posts/synth-placement/output/合成器的左右宽度与前后层次_研究报告.pdf) · [完整图文 PDF（12 页）](posts/synth-placement/output/合成器的前后左右_图文.pdf) · [逐页图片](posts/synth-placement/output/) · [HTML 源码](posts/synth-placement/index.html)
 
+### 07 · 混响入口门限
+
+把门限放在混响前，理解检测、Attack、Hold、Release 与迟滞怎样控制进入空间的信号；分清入口清理和切断混响尾音。
+
+[研究报告（5 页）](posts/gate-before-reverb/research/RESEARCH_REPORT.pdf) · [完整图文 PDF（8 页）](posts/gate-before-reverb/output/gate-before-reverb.pdf) · [逐页图片](posts/gate-before-reverb/output/) · [HTML 源码](posts/gate-before-reverb/source/index.html)
+
+### 08 · 底鼓不够扎实，先别只加音量
+
+分清增益、谐波与瞬态，通过解析模型理解饱和、峰均比和过采样，再用输出补偿与混音内试听判断是否值得保留。
+
+[研究报告（8 页）](posts/kick-saturation/output/research-report.pdf) · [完整图文 PDF（10 页）](posts/kick-saturation/output/kick-saturation.pdf) · [逐页图片](posts/kick-saturation/output/) · [HTML 源码](posts/kick-saturation/index.html)
+
+### 09 · FX 出场，谁该让位？
+
+先安排特效的前后层次，再判断是否需要静态让位或侧链压低；用增益、路由和时间示意理解处理边界。
+
+[研究报告（9 页）](posts/fx-priority/output/research-report.pdf) · [完整图文 PDF（9 页）](posts/fx-priority/output/carousel.pdf) · [逐页图片](posts/fx-priority/output/) · [HTML 源码](posts/fx-priority/index.html)
+
 ## 怎么使用
 
 - **先看图文**：用 PDF 或逐页图片了解主题，再带着具体问题阅读研究报告。
@@ -84,3 +108,4 @@
 </details>
 
 素材与源码适用不同的授权条款，转载或修改前请阅读[版权与许可说明](RIGHTS.md)。
+

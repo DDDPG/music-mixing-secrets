@@ -1,0 +1,35 @@
+{
+  "status": "constructed analytic examples, not audio measurements",
+  "hysteresis": {
+    "unit": "dBFS",
+    "open_threshold": -24,
+    "close_threshold": -30,
+    "difference_dB": 6,
+    "descending_examples": [
+      -12,
+      -27,
+      -32,
+      -40
+    ],
+    "assumption": "gate previously opened; hold/release handled separately"
+  },
+  "timing": {
+    "unit": "ms",
+    "closing_condition_at": 120,
+    "hold_duration": 40,
+    "release_duration": 80,
+    "release_starts_at": 160,
+    "maximum_attenuation_reached_at": 240,
+    "assumptions": [
+      "no retriggering",
+      "illustrative linear closing curve",
+      "not Pro-G measured envelope"
+    ]
+  },
+  "range": {
+    "input_dBFS": -40,
+    "maximum_reduction_dB": 20,
+    "output_dBFS": -60,
+    "assumption": "maximum reduction already reached; not a reverb-output prediction"
+  }
+}

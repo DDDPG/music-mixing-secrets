@@ -1,0 +1,15 @@
+{
+  "Gate": "门限器；不是 Threshold 参数本身",
+  "Threshold": "开门阈值",
+  "Hysteresis": "开门/关门阈值的差异；Pro-G 内建",
+  "Hold": "保持阶段，计时定义依产品",
+  "Release": "关闭过渡",
+  "Range": "最大衰减范围",
+  "Reverb": "混响",
+  "Send / Return": "发送 / 返回效果支路",
+  "Dry / Wet": "原声 / 效果声",
+  "Sidechain": "侧链检测控制路径",
+  "Attack": "开门响应",
+  "dBFS": "相对数字满刻度的电平",
+  "dB": "增益或电平差值"
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "asset_id": "pro-g-official",
+    "entity": "FabFilter Pro-G",
+    "version": "Official media kit screenshot, exact version unspecified; file date 2015-12-14",
+    "component": "unspecified",
+    "source_page": "https://www.fabfilter.com/press",
+    "asset_url": "https://www.fabfilter.com/downloads/press/fabfilter-pro-g.zip",
+    "retrieved_at": "2026-10-16",
+    "dimensions": [
+      1240,
+      944
+    ],
+    "sha256": "b183b2450f29a0c9248efc6b279da4fe306257196fdbecfa56e5de45189d5afc",
+    "rights_status": "editorial-use-review-not-a-license",
+    "rights_basis": "Official press-kit screenshot, limited proportional educational illustration with substantive control commentary and clear vendor/source attribution. Copyright reserved; no blanket license claimed. Public educational excerpt only; do not redistribute press kit or standalone original. Parent approved bounded editorial-use review; explicit usage license not located.",
+    "attribution": "Screenshot © FabFilter",
+    "modifications": "none for original; proportion-preserving crop for research explanation",
+    "used_on_pages": [
+      4
+    ]
+  }
+]

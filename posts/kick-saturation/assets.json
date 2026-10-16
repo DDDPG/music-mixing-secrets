@@ -1,0 +1,313 @@
+{
+  "assets": [
+    {
+      "asset_id": "saturn-high-quality",
+      "path": "assets/derived/saturn-high-quality.png",
+      "sha256": "275a2e2d126adee1caa925ad6b09188d5d5ea8aa00e3006910ccb60fd65056fd",
+      "dimensions": [
+        220,
+        51
+      ],
+      "entity": "FabFilter Saturn 2",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "FabFilter",
+      "rights_status": "limited_editorial_reference_rights_reserved",
+      "source_page": "https://www.fabfilter.com/products/saturn-2-multiband-distortion-saturation-plug-in",
+      "asset_url": "https://cdn-b.fabfilter.com/img/products/saturn-2-screenshot.jpg?v=1710150538",
+      "version": "Saturn 2; exact patch and component not specified",
+      "rights_basis": "Official product Press screenshot; necessary proportional teaching reference with attribution. No blanket republication or sublicensing grant inferred. Rights reserved. No standalone press-kit distribution.",
+      "modifications": "Proportional crop only; see crop coordinates",
+      "used_on_pages": [
+        5,
+        8,
+        "report"
+      ]
+    },
+    {
+      "asset_id": "kick-concept",
+      "path": "assets/derived/kick-concept.png",
+      "sha256": "69a714e45c41037ee5b09b3c4bab3502afc54479d6271641ee12a3cd6b82ff39",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "AI_generated_concept",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "AI generated conceptual drum/ribbon image; not measured acoustic waveform",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        1
+      ]
+    },
+    {
+      "asset_id": "saturn-band-controls",
+      "path": "assets/derived/saturn-band-controls.png",
+      "sha256": "a2d17f8d939d6ebd0ede6d054c9f1bbe00d2c3c07463fcf21456ae79243bfbd1",
+      "dimensions": [
+        1200,
+        225
+      ],
+      "entity": "FabFilter Saturn 2",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "FabFilter",
+      "rights_status": "limited_editorial_reference_rights_reserved",
+      "source_page": "https://www.fabfilter.com/products/saturn-2-multiband-distortion-saturation-plug-in",
+      "asset_url": "https://cdn-b.fabfilter.com/img/products/saturn-2-screenshot.jpg?v=1710150538",
+      "version": "Saturn 2; exact patch and component not specified",
+      "rights_basis": "Official product Press screenshot; necessary proportional teaching reference with attribution. No blanket republication or sublicensing grant inferred. Rights reserved. No standalone press-kit distribution.",
+      "modifications": "Proportional crop only; see crop coordinates",
+      "used_on_pages": [
+        5,
+        8,
+        "report"
+      ]
+    },
+    {
+      "asset_id": "saturn-2-context",
+      "path": "assets/derived/saturn-2-context.png",
+      "sha256": "19a10ffad2fb46b4db75fac8702043fa17d140bd69fd0f41fd3b5745b9244462",
+      "dimensions": [
+        936,
+        655
+      ],
+      "entity": "FabFilter Saturn 2",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "FabFilter",
+      "rights_status": "limited_editorial_reference_rights_reserved",
+      "source_page": "https://www.fabfilter.com/products/saturn-2-multiband-distortion-saturation-plug-in",
+      "asset_url": "https://cdn-b.fabfilter.com/img/products/saturn-2-screenshot.jpg?v=1710150538",
+      "version": "Saturn 2; exact patch and component not specified",
+      "rights_basis": "Official product Press screenshot; necessary proportional teaching reference with attribution. No blanket republication or sublicensing grant inferred. Rights reserved. No standalone press-kit distribution.",
+      "modifications": "Proportional full UI in attributed teaching context; original vendor image not distributed standalone",
+      "used_on_pages": [
+        5,
+        8,
+        "report"
+      ]
+    },
+    {
+      "asset_id": "crest",
+      "path": "assets/diagrams/crest.svg",
+      "sha256": "a14d97bc2872ccf7d57a33af2244d1cf89216f9daeeaaa3da29e3c5aadfbbcfa",
+      "dimensions": "SVG viewBox",
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "original_analytic_diagram",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "Original SVG analytic teaching figure",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        "carousel",
+        "report"
+      ]
+    },
+    {
+      "asset_id": "transfer",
+      "path": "assets/diagrams/transfer.svg",
+      "sha256": "e48aa487b063b05439e4880cf837a70511f31115567e3b40fa6f8270b89059b2",
+      "dimensions": "SVG viewBox",
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "original_analytic_diagram",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "Original SVG analytic teaching figure",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        "carousel",
+        "report"
+      ]
+    },
+    {
+      "asset_id": "aliasing",
+      "path": "assets/diagrams/aliasing.svg",
+      "sha256": "d765ebfff864219d34fdd6473782835d6fef0bd624563d3ab418e4507d3e07c9",
+      "dimensions": "SVG viewBox",
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "original_analytic_diagram",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "Original SVG analytic teaching figure",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        "carousel",
+        "report"
+      ]
+    },
+    {
+      "asset_id": "parallel",
+      "path": "assets/diagrams/parallel.svg",
+      "sha256": "c6b04b4eba5e8c04fd65ef217da1f93f44d4c3b6e7e054c5a5cf8af4613c5492",
+      "dimensions": "SVG viewBox",
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "original_analytic_diagram",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "Original SVG analytic teaching figure",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        "carousel",
+        "report"
+      ]
+    },
+    {
+      "asset_id": "harmonics",
+      "path": "assets/diagrams/harmonics.svg",
+      "sha256": "c088013eb916fe44ad0501d96583839e36ec409f99c98189fa77340810990da4",
+      "dimensions": "SVG viewBox",
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "original_analytic_diagram",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "Original SVG analytic teaching figure",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        "carousel",
+        "report"
+      ]
+    },
+    {
+      "asset_id": "crest",
+      "path": "assets/diagrams/crest.png",
+      "sha256": "48d227b1b8103b556b2126964e23e5698fdb7c7f12b2db52c94fa5593f29f153",
+      "dimensions": [
+        936,
+        480
+      ],
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "original_analytic_diagram",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "Original SVG analytic teaching figure",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        "carousel",
+        "report"
+      ]
+    },
+    {
+      "asset_id": "transfer",
+      "path": "assets/diagrams/transfer.png",
+      "sha256": "dcf8e4464bbdb0ab61fc2111ea6aa0f561f99d723e97695bcd58bf90a5f04c33",
+      "dimensions": [
+        936,
+        460
+      ],
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "original_analytic_diagram",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "Original SVG analytic teaching figure",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        "carousel",
+        "report"
+      ]
+    },
+    {
+      "asset_id": "parallel",
+      "path": "assets/diagrams/parallel.png",
+      "sha256": "e572f539bbefa296b1ab5d54e2887c2401d4731f6e55d63536680463bfe0f3ea",
+      "dimensions": [
+        936,
+        370
+      ],
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "original_analytic_diagram",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "Original SVG analytic teaching figure",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        "carousel",
+        "report"
+      ]
+    },
+    {
+      "asset_id": "harmonics",
+      "path": "assets/diagrams/harmonics.png",
+      "sha256": "a53f85a67ac922657eb43a63aeaf6b6033cc4f4f221cf95dc80beb3ffe23e3d9",
+      "dimensions": [
+        936,
+        460
+      ],
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "original_analytic_diagram",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "Original SVG analytic teaching figure",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        "carousel",
+        "report"
+      ]
+    },
+    {
+      "asset_id": "aliasing",
+      "path": "assets/diagrams/aliasing.png",
+      "sha256": "ceb426bcbdf283fa6f0d9ead5b3f5be22770e80c7d121171c7c79f733607a339",
+      "dimensions": [
+        936,
+        460
+      ],
+      "entity": "Original teaching illustration",
+      "retrieved_at": "2026-10-16",
+      "rights_holder": "Original project illustration",
+      "rights_status": "original_analytic_diagram",
+      "source_page": "original generation/calculation",
+      "asset_url": null,
+      "version": null,
+      "rights_basis": "Original SVG analytic teaching figure",
+      "modifications": "Unmodified original",
+      "used_on_pages": [
+        "carousel",
+        "report"
+      ]
+    }
+  ],
+  "crops": {
+    "saturn-band-controls.png": [
+      385,
+      585,
+      1585,
+      810
+    ],
+    "saturn-high-quality.png": [
+      970,
+      1145,
+      1190,
+      1196
+    ]
+  }
+}

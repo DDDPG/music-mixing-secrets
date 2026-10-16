@@ -1,0 +1,55 @@
+[
+  {
+    "id": "F1",
+    "claim": "FX 优先是编曲判断，不是通用声学规则",
+    "kind": "editorial recommendation",
+    "sources": []
+  },
+  {
+    "id": "F2",
+    "claim": "外部 Sidechain 控制被插入通道的压缩",
+    "kind": "product fact",
+    "sources": [
+      "S1"
+    ]
+  },
+  {
+    "id": "F3",
+    "claim": "Release 与程序/模式有关，不等于严格完成计时",
+    "kind": "product fact",
+    "sources": [
+      "S2"
+    ]
+  },
+  {
+    "id": "F4",
+    "claim": "稳态硬拐点 Δ=4dB Ratio=2:1 得 GR=2dB",
+    "kind": "derived idealized calculation",
+    "sources": [
+      "S3"
+    ]
+  },
+  {
+    "id": "F5",
+    "claim": "120 BPM 四分500ms 八分250ms 十六分125ms",
+    "kind": "arithmetic",
+    "formula": "60000/BPM; divide by 2 or 4",
+    "sources": []
+  },
+  {
+    "id": "F6",
+    "claim": "动态 EQ 可外部触发且只改变所设频段",
+    "kind": "product fact",
+    "sources": [
+      "S5"
+    ]
+  },
+  {
+    "id": "F7",
+    "claim": "宣传图是 Internal，不是 FX 外部侧链预设",
+    "kind": "image inspection",
+    "sources": [
+      "S6"
+    ]
+  }
+]

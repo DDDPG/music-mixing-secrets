@@ -1,0 +1,32 @@
+[
+  {
+    "id": "F1",
+    "claim": "前级 Gate 改变进入混响的信号，后级 Gate 改变混响输出",
+    "source": "D1",
+    "type": "signal-logic deduction"
+  },
+  {
+    "id": "F2",
+    "claim": "Pro-G hysteresis 按风格内建，不是单独的用户旋钮",
+    "source": "S1",
+    "type": "vendor fact"
+  },
+  {
+    "id": "F3",
+    "claim": "Hold计时定义依产品",
+    "source": "S1/S3",
+    "type": "vendor fact"
+  },
+  {
+    "id": "F4",
+    "claim": "6dB与160/240ms为构造示例",
+    "source": "D2",
+    "type": "analytic example"
+  },
+  {
+    "id": "F5",
+    "claim": "Range20dB限制最大衰减，非完全静音",
+    "source": "S2",
+    "type": "vendor fact plus arithmetic"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "Saturation": "饱和；非线性处理",
+  "Gain": "增益；不等于感知响度",
+  "Peak": "峰值；此模型为 sample peak",
+  "RMS": "均方根；本例以幅度满刻度为参考",
+  "Crest Factor": "同一窗口 Peak 与 RMS 的 dB 差",
+  "Drive": "Saturn 2 饱和驱动量",
+  "Mix": "Saturn 2 频段干湿比例",
+  "Level": "Saturn 2 频段输出电平",
+  "High Quality": "Saturn 2 内部过采样模式",
+  "Polarity": "极性；不等同 phase",
+  "HPF": "高通滤波器",
+  "Nyquist": "采样率的一半",
+  "Aliasing": "混叠",
+  "Linear Phase": "线性相位；适用范围按实现限定"
+}

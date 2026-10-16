@@ -1,0 +1,58 @@
+{
+  "canvas": [
+    1080,
+    1440
+  ],
+  "pages": [
+    {
+      "number": 1,
+      "title": "底鼓不够扎实<br>先别只加音量",
+      "body_html": "<p class=\"lead\">先分清：<span class=\"blue\">电平、辨识度、瞬态。</span></p><img class=\"photo\" style=\"height:390px\" src=\"assets/derived/kick-concept.png\"><p class=\"tiny\">AI 概念插画：蓝色带状线只作谐波丰富度隐喻。</p><div class=\"row\"><strong>整体偏小 → 先调电平</strong><span>有余量时，Gain 本来就是合理工具。</span></div><div class=\"row\"><strong>小音箱难辨认 → 可试少量饱和</strong><span>增加谐波可能有帮助；仍要放回混音比较。</span></div><div class=\"row\"><strong>起音已经钝 → 先别再加 Drive</strong><span>饱和也可能削弱瞬态与冲击感。</span></div>"
+    },
+    {
+      "number": 2,
+      "title": "增益与饱和<br>改变不同关系",
+      "body_html": "<p>在线性且不削波的路径中，<span class=\"blue\">+6 dB Gain</span> 使幅度约变为 2 倍。</p><img class=\"diagram\" src=\"assets/diagrams/transfer.svg\" /><div class=\"row\"><strong>Gain：Peak / RMS 同步改变</strong><span>波形比例不变，Crest Factor 不变。</span></div><div class=\"row\"><strong>Saturation：非线性改变波形</strong><span>可能生成谐波，也可能压平峰值。</span></div><p class=\"small\">上图线性参照为 y=x；饱和曲线仅是教学模型。<br>“更饱满”仍需在输出补偿后验证。</p>"
+    },
+    {
+      "number": 3,
+      "title": "50 Hz，怎样<br>多出 150 Hz？",
+      "body_html": "<p class=\"lead\">非线性会生成新的频率成分。</p><img class=\"diagram\" src=\"assets/diagrams/harmonics.svg\" /><div class=\"formula\">x = sin(2π × 50t)<br>y = x − 0.25x³<br>y = 0.8125sin(2π × 50t)<br>　 + 0.0625sin(2π × 150t)</div><p>三次谐波 / 基频 = 1/13<br><span class=\"blue\">相对电平约 −22.3 dB</span></p><p class=\"small\">谱图以处理后基频为 0 dB。纯正弦解析教学模型，不是底鼓或插件实测。真实底鼓有变调、瞬态与噪声。</p>"
+    },
+    {
+      "number": 4,
+      "title": "同 RMS，也可能<br>有不同峰值",
+      "body_html": "<p class=\"lead\">同一模型，完整周期的解析结果。</p><table style=\"font-size:40px;margin:45px 0\"><tr><th></th><th>原始</th><th>处理后</th><th>补偿后</th></tr><tr><th>Peak<br>dBFS</th><td>0.00</td><td>−2.50</td><td class=\"blue\">−0.72</td></tr><tr><th>RMS<br>dBFS</th><td>−3.01</td><td>−4.79</td><td class=\"blue\">−3.01</td></tr></table><p class=\"blue\">处理后 → 输出补偿 +1.78 dB → 同 RMS</p><h2>Crest Factor：3.01 → 2.29 dB</h2><p class=\"small\">同 RMS 不等于同感知响度。这里只证明一种可能，不保证真实底鼓节省同样余量。满刻度幅度 = 1；不是 True Peak 测试。</p>"
+    },
+    {
+      "number": 5,
+      "title": "真实界面上<br>找到三个角色",
+      "body_html": "<img class=\"photo\" style=\"height:325px\" src=\"assets/derived/saturn-2-context.png\"><p class=\"tiny\">FabFilter 官方界面 © FabFilter，原色原比例。<br>Voyager 2 / Warm Tape 为宣传状态，不是推荐参数。</p><img class=\"photo\" src=\"assets/derived/saturn-band-controls.png\"><div class=\"row\"><strong>DRIVE → 改变饱和程度</strong><span>MIX → 调整所选频段的干湿比例。</span></div><div class=\"row\"><strong>LEVEL → 所选频段输出</strong><span>全局输出补偿与频段 Level 不是同一角色。</span></div><p class=\"small\">首次用单频段，暂不同时调整 Dynamics、Tone、Feedback。</p>"
+    },
+    {
+      "number": 6,
+      "title": "拉近响度<br>再决定留不留",
+      "body_html": "<div class=\"step\"><b>01</b><h2>固定同一段循环</h2><p>带上底鼓、贝斯和主要伴奏。</p></div><div class=\"step\"><b>02</b><h2>逐渐增加 Drive</h2><p>一次只改一个变量，听到变化后可稍回退。</p></div><div class=\"step\"><b>03</b><h2>做输出补偿</h2><p>拉近旁通与处理后的主观响度，表头作辅助。</p></div><div class=\"step\"><b>04</b><h2>回到音乐里比较</h2><p>可辨认？起音利落？低频仍稳？</p></div><p class=\"lead blue\">每次改变 Mix，<br>都重新匹配电平。</p><p class=\"small\">短促底鼓不宜只凭一个 LUFS 数字裁定。<br>同 RMS 也不保证同感知响度。</p><p class=\"small\">若更厚却更钝，试减 Drive 或少量并行。<br>这些是试听步骤，不是保证成功的预设。</p>"
+    },
+    {
+      "number": 7,
+      "title": "低频要稳<br>先检查并行关系",
+      "body_html": "<img class=\"diagram\" src=\"assets/diagrams/parallel.svg\" /><div class=\"row\"><strong>滤波会改变相位关系</strong><span>并行路加入 HPF 后，合并结果可能改变。</span></div><div class=\"row\"><strong>延迟补偿 ≠ 相位完全相同</strong><span>Polarity 反转也不是所有抵消问题的解药。</span></div><div class=\"row\"><strong>先全频轻处理，必要才分频</strong><span>没有通用的“低于 100 Hz 都不动”。</span></div><p class=\"blue\">依次听：旁通 → 处理 → 合并 → 单声道。</p><p class=\"small\">分频点由底鼓和贝斯关系决定。先排查异常削薄，再决定要不要保留处理。</p>"
+    },
+    {
+      "number": 8,
+      "title": "过采样，是取舍<br>而非音质开关",
+      "body_html": "<img class=\"diagram\" src=\"assets/diagrams/aliasing.svg\" /><div class=\"two\"><div><img style=\"width:330px;height:auto\" src=\"assets/derived/saturn-high-quality.png\"><p class=\"tiny\">官方 High Quality 控件局部<br>© FabFilter</p></div><div><h2 class=\"blue\">Good：8×<br>Superb：32×</h2><p class=\"small\">档位来自 Saturn 2 手册，<br>代价包括更多 CPU。</p></div></div><p>过采样减少内部饱和算法的混叠，<br>不保证所有失真都会消失。</p><p class=\"small\">上图是未滤除三次谐波的采样理论例子，不是 Saturn 2 实测，也不是底鼓基频假设。</p><p class=\"small\">Linear Phase 仅覆盖分频与过采样滤波。<br>换模式后重听瞬态，并检查延迟补偿。</p>"
+    },
+    {
+      "number": 9,
+      "title": "听出收益<br>也听见代价",
+      "body_html": "<div class=\"row\"><strong>01  小音量下</strong><span>更容易跟住底鼓节奏了吗？<br>新增谐波会不会挤占其他声音？</span></div><div class=\"row\"><strong>02  正常监听下</strong><span>起音还利落吗？尾音是否合适？<br>与贝斯同时出现时，低频仍然稳吗？</span></div><div class=\"row\"><strong>03  输出检查</strong><span>余量是否符合当前工程需要？<br>新增过载来自哪里？</span></div><p class=\"lead blue\" style=\"margin-top:65px\">能解释收益，也能听到代价，<br>才留下这一步。</p><p>如果只是更响时才觉得更好，<br>重新配平，再听一次。</p><p class=\"small\">无实际音频，本教程不提供通用最佳 Drive 值。改变音色、编配或包络，也可能比继续叠处理直接。</p>"
+    },
+    {
+      "number": 10,
+      "title": "完整图文<br>与可编辑源码",
+      "body_html": "<p class=\"lead\">研究、解析计算、图解与可编辑 HTML</p><p><a href=\"https://github.com/DDDPG/music-mixing-secrets\">github.com/DDDPG/<br>music-mixing-secrets</a></p><pre>@misc{wang2026musicmixingsecrets,\n  author = {Kangdi, Wang},\n  title = {Music Mixing Secrets},\n  year = {2026},\n  url = {https://github.com/DDDPG/}\n        # {music-mixing-secrets}\n}</pre><h2>如何理解这里的证据</h2><p class=\"small\">公式与频谱：原创解析教学模型。<br>界面：FabFilter 官方素材，用于识别控件。<br>概念插画：AI 生成，不是声学测量。<br>试听步骤：实践建议，不是通用效果保证。</p><p class=\"small\">一手来源：Ableton Live 12 Manual；FabFilter Saturn 2 Help / Press Area。完整链接与素材权属记录随源码保留。</p><p class=\"tiny\">官方图 © FabFilter，权利保留；仅限必要的产品教学说明，不主张厂商背书或素材再许可。</p>"
+    }
+  ]
+}
